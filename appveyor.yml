@@ -11,5 +11,4 @@ build_script:
   - node --version
   - npm --version
   - npm test
-  - npm start
 shallow_clone: true
