@@ -36,6 +36,7 @@ if (process.platform !== 'darwin') {
         title: `About ${appName}`,
         message: `${appName} ${app.getVersion()}`,
         detail: 'Created by the Champloo HQ team',
+        icon: path.join(__dirname, 'static/Icon.png'),
         buttons: []
       });
     }
