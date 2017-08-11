@@ -45,7 +45,11 @@
   ],
   "scripts": {
     "test": "xo",
-    "start": "electron ."
+    "start": "electron .",
+    "build": "npm run build:macos && npm run build:linux && npm run build:windows",
+    "build:macos": "electron-packager . --no-prune --overwrite --asar --out=dist --platform=darwin --arch=x64 --icon=static/Icon.icns --app-bundle-id=com.hyper-pokemon.tusk && cd dist/Tusk-darwin-x64 && zip -ryXq9 ../Tusk-macos-v${npm_package_version}.zip Tusk.app",
+    "build:linux": "electron-packager . --no-prune --overwrite --out=dist --platform=linux --arch=x64 --app-bundle-id=com.hyper-pokemon.tusk && cd dist/Tusk-linux-x64/ && zip -ryq9 ../Tusk-linux-v${npm_package_version}.zip *",
+    "build:windows": "electron-packager . --no-prune --overwrite --asar --out=dist --platform=win32 --arch=ia32 --icon=static/Icon.ico --version-string.ProductName=$npm_package_productName && cd dist/Tusk-win32-ia32 && zip -ryq9 ../Tusk-windows-v${npm_package_version}.zip *"
   },
   "dependencies": {
     "devtron": "^1.4.0",
