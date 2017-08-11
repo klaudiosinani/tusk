@@ -1,9 +1,9 @@
 'use strict';
+const path = require('path');
 const fs = require('fs');
 const electron = require('electron');
-const path = require('path');
-const tray = require('./tray');
 const appMenu = require('./menu');
+const tray = require('./tray');
 const config = require('./config');
 
 const app = electron.app;
@@ -40,6 +40,7 @@ function createMainWindow() {
     y: lastWindowState.y,
     width: lastWindowState.width,
     height: lastWindowState.height,
+    icon: process.platform === 'linux' && path.join(__dirname, 'static/Icon.png'),
     minWidth: 480,
     minHeight: 480,
     titleBarStyle: 'hidden-inset',

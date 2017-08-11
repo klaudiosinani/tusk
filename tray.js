@@ -10,6 +10,8 @@ exports.create = win => {
     return;
   }
 
+  const iconPath = path.join(__dirname, 'static/IconTray.png');
+
   const toggleWin = () => {
     if (win.isVisible()) {
       win.hide();
@@ -28,4 +30,9 @@ exports.create = win => {
   }, {
     role: 'quit'
   }]);
+
+  tray = new electron.Tray(iconPath);
+  tray.setToolTip(`${app.getName()}`);
+  tray.setContextMenu(contextMenu);
+  tray.on('click', toggleWin);
 };
