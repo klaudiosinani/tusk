@@ -1,0 +1,70 @@
+{
+  "name": "tusk",
+  "productName": "Tusk",
+  "version": "0.0.0",
+  "description": "Tusk app",
+  "private": true,
+  "license": "MIT",
+  "repository": "hyper-pokemon/tusk",
+  "author": {
+    "name": "Klaus Sinani",
+    "email": "klauscfhq@protonmail.com",
+    "url": "https://cookfood.me"
+  },
+  "maintainers": [
+    {
+      "name": "Leonidas Avdelas",
+      "email": "avdelasleonidas@gmail.com",
+      "url": "github.com/LoniasGR"
+    },
+    {
+      "name": "George Baxopoulos",
+      "email": "baxopoulos.george@gmail.com",
+      "url": "github.com/georgebax"
+    },
+    {
+      "name": "Konstantinos Mitropoulos",
+      "email": "konsmitr@gmail.com",
+      "url": "github.com/tsikos7"
+    },
+    {
+      "name": "Konstantinos Skouras",
+      "email": "konst.skouras@gmail.com",
+      "url": "github.com/KonSkouras"
+    },
+    {
+      "name": "Thanasis Gkanos",
+      "email": "athanasiosgkanos@hotmail.com",
+      "url": "github.com/ThanasisGkanos"
+    },
+    {
+      "name": "Mario Sinani",
+      "email": "mariosinani@protonmail.ch",
+      "url": "github.com/snowmancfhq"
+    }
+  ],
+  "scripts": {
+    "test": "xo",
+    "start": "electron ."
+  },
+  "dependencies": {
+    "devtron": "^1.4.0",
+    "electron-dl": "^1.9.0",
+    "electron-debug": "^1.3.0",
+    "electron-config": "^1.0.0",
+    "electron-context-menu": "^0.9.0"
+  },
+  "devDependencies": {
+    "xo": "^0.19.0",
+    "electron": "^1.6.12",
+    "electron-packager": "^8.7.2"
+  },
+  "xo": {
+    "esnext": true,
+    "space": 2,
+    "envs": [
+      "node",
+      "browser"
+    ]
+  }
+}
