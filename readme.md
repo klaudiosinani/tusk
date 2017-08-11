@@ -1,2 +1,1 @@
-# tusk
-
+# Tusk [![Build Status](https://travis-ci.org/hyper-pokemon/tusk.svg?branch=master)](https://travis-ci.org/hyper-pokemon/tusk) [![Build status](https://ci.appveyor.com/api/projects/status/7cu1w612n5wt3xel?svg=true)](https://ci.appveyor.com/project/klauscfhq/tusk) [![Dependency Status](https://dependencyci.com/github/hyper-pokemon/tusk/badge)](https://dependencyci.com/github/hyper-pokemon/tusk)
