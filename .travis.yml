@@ -20,6 +20,7 @@ install:
   - npm prune
 script:
   - npm test
+  - npm run dist
 branches:
   except:
     - "/^v\\d+\\.\\d+\\.\\d+$/"
