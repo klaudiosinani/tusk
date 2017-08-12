@@ -8,6 +8,12 @@ matrix:
     - os: linux
       env: CC=clang CXX=clang++ npm_config_clang=1
       compiler: clang
+addons:
+  apt:
+    packages:
+      - xz-utils
+      - icnsutils
+      - graphicsmagick
 install:
   - nvm install 6
   - npm install
