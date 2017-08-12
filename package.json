@@ -49,7 +49,7 @@
     "pack": "build --dir",
     "dist": "build",
     "pack-all": "npm run pack:macos && npm run pack:linux && npm run pack:windows",
-    "pack:macos": "electron-packager . --no-prune --overwrite --asar --out=dist --platform=darwin --arch=x64 --icon=static/Icon.icns && cd dist/Tusk-darwin-x64 && zip -ryXq9 ../Tusk-macos-v${npm_package_version}.zip Tusk.app",
+    "pack:macos": "electron-packager . --no-prune --overwrite --asar --out=dist --platform=darwin --arch=x64 --icon=static/Icon.icns && cd dist/Tusk-darwin-x64 && zip -ryXq9 ../Tusk-macos-v${npm_package_version}.zip Tusk.app && electron-installer-dmg . Tusk",
     "pack:linux": "electron-packager . --no-prune --overwrite --out=dist --platform=linux --arch=x64 --app-bundle-id=com.hyper-pokemon.tusk && cd dist/Tusk-linux-x64/ && zip -ryq9 ../Tusk-linux-v${npm_package_version}.zip *",
     "pack:windows": "electron-packager . --no-prune --overwrite --asar --out=dist --platform=win32 --arch=ia32 --icon=static/Icon.ico --version-string.ProductName=$npm_package_productName && cd dist/Tusk-win32-ia32 && zip -ryq9 ../Tusk-windows-v${npm_package_version}.zip *"
   },
@@ -64,7 +64,8 @@
     "xo": "^0.19.0",
     "electron": "^1.6.12",
     "electron-packager": "^8.7.2",
-    "electron-builder": "^17.0.1"
+    "electron-builder": "^17.0.1",
+    "electron-installer-dmg": "^0.2.1"
   },
   "xo": {
     "esnext": true,
@@ -79,29 +80,6 @@
       "**/*",
       "!media${/*}"
     ],
-    "mac": {
-      "category": "public.app-category.productivity",
-      "target": [
-        "dmg",
-        "zip",
-        "mas"
-      ]
-    },
-    "dmg": {
-      "iconSize": 160,
-      "contents": [
-        {
-          "x": 180,
-          "y": 170
-        },
-        {
-          "x": 480,
-          "y": 170,
-          "type": "link",
-          "path": "/Applications"
-        }
-      ]
-    },
     "linux": {
       "category": "Productivity",
       "target": [
