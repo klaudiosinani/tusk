@@ -11,4 +11,5 @@ build_script:
   - node --version
   - npm --version
   - npm test
+  - npm run dist
 shallow_clone: true
