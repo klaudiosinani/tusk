@@ -15,3 +15,7 @@
 .GDAMOPFCE5B {
   margin: 20px 0px !important;
 }
+
+.FocusClipperButton-button {
+  visibility: hidden !important;
+}
