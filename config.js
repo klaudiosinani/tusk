@@ -5,8 +5,8 @@ module.exports = new Config({
   defaults: {
     zoomFactor: 1,
     lastWindowState: {
-      width: 840,
-      height: 840
+      width: 800,
+      height: 600
     },
     lastURL: 'https://www.evernote.com/Login.action'
   }
