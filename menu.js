@@ -5,7 +5,18 @@ const electron = require('electron');
 
 const app = electron.app;
 const shell = electron.shell;
+const BrowserWindow = electron.BrowserWindow;
 const appName = app.getName();
+
+function sendAction(action) {
+  const [win] = BrowserWindow.getAllWindows();
+
+  if (process.platform === 'darwin') {
+    win.restore();
+  }
+
+  win.webContents.send(action);
+}
 
 const helpSubmenu = [{
   label: `${appName} Website`,
@@ -97,6 +108,12 @@ const darwinTpl = [{
       }
     }
   }, {
+    label: 'Toggle Focus Mode',
+    accelerator: 'CmdOrCtrl+M',
+    click() {
+      sendAction('focus-mode');
+    }
+  }, {
     label: 'Toggle Full Screen',
     accelerator: 'Ctrl+Command+F',
     click: (item, focusedWindow) => {
@@ -169,6 +186,12 @@ const otherTpl = [{
       if (focusedWindow) {
         focusedWindow.reload();
       }
+    }
+  }, {
+    label: 'Toggle Focus Mode',
+    accelerator: 'CmdOrCtrl+M',
+    click() {
+      sendAction('focus-mode');
     }
   }, {
     label: 'Toggle Full Screen',
