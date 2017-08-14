@@ -1,0 +1,55 @@
+:root{
+  --app-sidebar: rgba(29, 29, 29, 1);
+  --note-list: rgba(30, 30, 30, 1);
+  --note-editor: rgba(33, 33, 33, 1);
+}
+
+#header {
+  padding-left: 80px !important;
+  -webkit-app-region: drag;
+}
+
+.GDAMOPFCN4B {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 25px;
+  height: 66px;
+  position: relative;
+}
+
+.GDAMOPFCE5B {
+  margin: 20px 0px !important;
+}
+
+.FocusClipperButton-button {
+  visibility: hidden !important;
+}
+
+.en-note {
+  color: #F0F0F0 !important;
+}
+
+.GDAMOPFCG4B { /* App left sidebar */
+  background-color: var(--app-sidebar) !important;
+}
+
+.GDAMOPFCJYB { /* Notes list head */
+  background-color: var(--note-list) !important;
+}
+
+.focus-NotesView-NotesView * { /* Notes list body */
+  background-color: var(--note-list) !important;
+}
+
+.GDAMOPFCKNB { /* Note editor body */
+  background-color: var(--note-editor) !important;
+}
+
+.GDAMOPFCIKB { /* Note editor toolbar */
+  background-color: var(--note-editor) !important;
+}
+
+.GDAMOPFCHLB { /* Note editor head */
+  background-color: var(--note-editor) !important;
+}
