@@ -27,3 +27,8 @@ ipc.on('exit-focus-mode', () => {
   // Exit focus mode
   document.querySelector('#gwt-debug-NoteAttributes-doneButton').click();
 });
+
+ipc.on('return', () => {
+  // Return to Notes
+  document.querySelector('#gwt-debug-Sidebar-notesButton').click();
+});

@@ -141,6 +141,12 @@ const darwinTpl = [{
       sendAction('exit-focus-mode');
     }
   }, {
+    label: 'Return to Notes',
+    accelerator: 'Esc',
+    click() {
+      sendAction('return');
+    }
+  }, {
     label: 'Toggle Full Screen',
     accelerator: 'Ctrl+Command+F',
     click: (item, focusedWindow) => {
@@ -243,6 +249,12 @@ const otherTpl = [{
     accelerator: 'CmdorCtrl+K',
     click() {
       sendAction('exit-focus-mode');
+    }
+  }, {
+    label: 'Return to Notes',
+    accelerator: 'Esc',
+    click() {
+      sendAction('return');
     }
   }, {
     label: 'Toggle Full Screen',
