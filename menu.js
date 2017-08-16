@@ -91,6 +91,12 @@ const darwinTpl = [{
       sendAction('delete-note');
     }
   }, {
+    label: 'Set Reminder',
+    accelerator: 'CmdorCtrl+E',
+    click() {
+      sendAction('set-reminder');
+    }
+  }, {
     label: 'Search',
     accelerator: 'CmdorCtrl+F',
     click() {
@@ -213,6 +219,12 @@ const otherTpl = [{
     accelerator: 'CmdorCtrl+D',
     click() {
       sendAction('delete-note');
+    }
+  }, {
+    label: 'Set Reminder',
+    accelerator: 'CmdorCtrl+E',
+    click() {
+      sendAction('set-reminder');
     }
   }, {
     label: 'Search',
