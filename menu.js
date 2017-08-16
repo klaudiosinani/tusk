@@ -122,7 +122,7 @@ const darwinTpl = [{
   label: 'View',
   submenu: [{
     label: 'Reload',
-    accelerator: 'CmdOrCtrl+R',
+    accelerator: 'CmdOrCtrl+Shift+R',
     click: (item, focusedWindow) => {
       if (focusedWindow) {
         focusedWindow.reload();
@@ -232,7 +232,7 @@ const otherTpl = [{
   label: 'View',
   submenu: [{
     label: 'Reload',
-    accelerator: 'CmdOrCtrl+R',
+    accelerator: 'CmdOrCtrl+Shift+R',
     click: (item, focusedWindow) => {
       if (focusedWindow) {
         focusedWindow.reload();
