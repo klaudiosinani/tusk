@@ -84,6 +84,12 @@ const darwinTpl = [{
     click() {
       sendAction('new-note');
     }
+  }, {
+    label: 'Search',
+    accelerator: 'CmdorCtrl+F',
+    click() {
+      sendAction('search');
+    }
   }]
 }, {
   label: 'Edit',
@@ -171,6 +177,12 @@ const otherTpl = [{
     accelerator: 'CmdorCtrl+N',
     click() {
       sendAction('new-note');
+    }
+  }, {
+    label: 'Search',
+    accelerator: 'CmdorCtrl+F',
+    click() {
+      sendAction('search');
     }
   }, {
     role: 'quit'
