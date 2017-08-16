@@ -21,7 +21,7 @@ function sendAction(action) {
 const helpSubmenu = [{
   label: `${appName} Website`,
   click() {
-    shell.openExternal('https://github.com/hyper-pokemon/tusk');
+    shell.openExternal('https://github.com/champloohq/tusk');
   }
 }, {
   label: 'Report an Issue',
@@ -33,7 +33,7 @@ ${app.getName()} ${app.getVersion()}
 Electron ${process.versions.electron}
 ${process.platform} ${process.arch} ${os.release()}`;
 
-    shell.openExternal(`https://github.com/hyper-pokemon/tusk/issues/new?body=${encodeURIComponent(body)}`);
+    shell.openExternal(`https://github.com/champloohq/tusk/issues/new?body=${encodeURIComponent(body)}`);
   }
 }];
 
@@ -117,7 +117,7 @@ const darwinTpl = [{
     label: 'Exit Focus Mode',
     accelerator: 'CmdorCtrl+K',
     click() {
-      sendAction('focus-mode');
+      sendAction('exit-focus-mode');
     }
   }, {
     label: 'Toggle Full Screen',
@@ -203,7 +203,7 @@ const otherTpl = [{
     label: 'Exit Focus Mode',
     accelerator: 'CmdorCtrl+K',
     click() {
-      sendAction('focus-mode');
+      sendAction('exit-focus-mode');
     }
   }, {
     label: 'Toggle Full Screen',
