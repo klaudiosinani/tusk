@@ -114,6 +114,12 @@ const darwinTpl = [{
       sendAction('focus-mode');
     }
   }, {
+    label: 'Exit Focus Mode',
+    accelerator: 'CmdorCtrl+K',
+    click() {
+      sendAction('focus-mode');
+    }
+  }, {
     label: 'Toggle Full Screen',
     accelerator: 'Ctrl+Command+F',
     click: (item, focusedWindow) => {
@@ -190,6 +196,12 @@ const otherTpl = [{
   }, {
     label: 'Toggle Focus Mode',
     accelerator: 'CmdOrCtrl+M',
+    click() {
+      sendAction('focus-mode');
+    }
+  }, {
+    label: 'Exit Focus Mode',
+    accelerator: 'CmdorCtrl+K',
     click() {
       sendAction('focus-mode');
     }
