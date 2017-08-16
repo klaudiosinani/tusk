@@ -85,6 +85,12 @@ const darwinTpl = [{
       sendAction('new-note');
     }
   }, {
+    label: 'Delete Note',
+    accelerator: 'CmdorCtrl+D',
+    click() {
+      sendAction('delete-note');
+    }
+  }, {
     label: 'Search',
     accelerator: 'CmdorCtrl+F',
     click() {
@@ -177,6 +183,12 @@ const otherTpl = [{
     accelerator: 'CmdorCtrl+N',
     click() {
       sendAction('new-note');
+    }
+  }, {
+    label: 'Delete Note',
+    accelerator: 'CmdorCtrl+D',
+    click() {
+      sendAction('delete-note');
     }
   }, {
     label: 'Search',
