@@ -32,3 +32,18 @@ ipc.on('return', () => {
   // Return to Notes
   document.querySelector('#gwt-debug-Sidebar-notesButton').click();
 });
+
+ipc.on('bold', () => {
+  // Bold text
+  document.querySelector('#gwt-debug-FormattingBar-boldButton').click();
+});
+
+ipc.on('italic', () => {
+  // Italic text
+  document.querySelector('#gwt-debug-FormattingBar-italicButton').click();
+});
+
+ipc.on('underline', () => {
+  // Underline text
+  document.querySelector('#gwt-debug-FormattingBar-underlineButton').click();
+});

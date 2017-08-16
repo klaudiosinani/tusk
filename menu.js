@@ -100,6 +100,24 @@ const darwinTpl = [{
 }, {
   label: 'Edit',
   submenu: [{
+    label: 'Bold text',
+    accelerator: 'CmdorCtrl+B',
+    click() {
+      sendAction('bold');
+    }
+  }, {
+    label: 'Italic text',
+    accelerator: 'CmdorCtrl+I',
+    click() {
+      sendAction('italic');
+    }
+  }, {
+    label: 'Underline text',
+    accelerator: 'CmdorCtrl+U',
+    click() {
+      sendAction('underline');
+    }
+  }, {
     role: 'undo'
   }, {
     role: 'redo'
@@ -208,6 +226,24 @@ const otherTpl = [{
 }, {
   label: 'Edit',
   submenu: [{
+    label: 'Bold text',
+    accelerator: 'CmdorCtrl+B',
+    click() {
+      sendAction('bold');
+    }
+  }, {
+    label: 'Italic text',
+    accelerator: 'CmdorCtrl+I',
+    click() {
+      sendAction('italic');
+    }
+  }, {
+    label: 'Underline text',
+    accelerator: 'CmdorCtrl+U',
+    click() {
+      sendAction('underline');
+    }
+  }, {
     role: 'undo'
   }, {
     role: 'redo'
