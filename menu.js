@@ -77,6 +77,15 @@ const darwinTpl = [{
     role: 'quit'
   }]
 }, {
+  label: 'File',
+  submenu: [{
+    label: 'New Note',
+    accelerator: 'CmdorCtrl+N',
+    click() {
+      sendAction('new-note');
+    }
+  }]
+}, {
   label: 'Edit',
   submenu: [{
     role: 'undo'
@@ -158,6 +167,12 @@ const darwinTpl = [{
 const otherTpl = [{
   label: 'File',
   submenu: [{
+    label: 'New Note',
+    accelerator: 'CmdorCtrl+N',
+    click() {
+      sendAction('new-note');
+    }
+  }, {
     role: 'quit'
   }]
 }, {
