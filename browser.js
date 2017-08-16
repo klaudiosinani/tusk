@@ -8,6 +8,11 @@ ipc.on('new-note', () => {
   document.querySelector('#gwt-debug-Sidebar-newNoteButton').click();
 });
 
+ipc.on('search', () => {
+  // Search notes
+  document.querySelector('#gwt-debug-Sidebar-searchButton').click();
+});
+
 ipc.on('focus-mode', () => {
   // Toggle focus mode
   document.querySelector('#gwt-debug-NoteAttributes-focusButton').click();
