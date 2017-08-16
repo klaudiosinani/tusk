@@ -13,6 +13,11 @@ ipc.on('delete-note', () => {
   document.querySelector('#gwt-debug-NoteAttributes-trashButton').click();
 });
 
+ipc.on('set-reminder', () => {
+  // Set reminder
+  document.querySelector('#gwt-debug-NoteAttributes-reminderButton').click();
+});
+
 ipc.on('search', () => {
   // Search notes
   document.querySelector('#gwt-debug-Sidebar-searchButton').click();
