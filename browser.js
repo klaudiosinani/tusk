@@ -48,6 +48,11 @@ ipc.on('return', () => {
   document.querySelector('#gwt-debug-Sidebar-notesButton').click();
 });
 
+ipc.on('settings', () => {
+  // Toggle Settings
+  document.querySelector('#gwt-debug-AccountMenu-settings').click();
+});
+
 ipc.on('bold', () => {
   // Bold text
   document.querySelector('#gwt-debug-FormattingBar-boldButton').click();

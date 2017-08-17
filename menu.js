@@ -183,6 +183,12 @@ const darwinTpl = [{
       sendAction('shortcuts');
     }
   }, {
+    label: 'Toggle Settings',
+    accelerator: 'CmdorCtrl+,',
+    click() {
+      sendAction('settings');
+    }
+  }, {
     label: 'Toggle Full Screen',
     accelerator: 'Ctrl+Command+F',
     click: (item, focusedWindow) => {
@@ -327,6 +333,12 @@ const otherTpl = [{
     accelerator: 'CmdorCtrl+Shift+S',
     click() {
       sendAction('shortcuts');
+    }
+  }, {
+    label: 'Toggle Settings',
+    accelerator: 'CmdorCtrl+,',
+    click() {
+      sendAction('settings');
     }
   }, {
     label: 'Toggle Full Screen',
