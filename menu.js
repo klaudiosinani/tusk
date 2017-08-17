@@ -94,7 +94,7 @@ const darwinTpl = [{
     }
   }, {
     label: 'Delete Note',
-    accelerator: 'CmdorCtrl+D',
+    accelerator: 'Delete',
     click() {
       sendAction('delete-note');
     }
@@ -266,7 +266,7 @@ const otherTpl = [{
     }
   }, {
     label: 'Delete Note',
-    accelerator: 'CmdorCtrl+D',
+    accelerator: 'Delete',
     click() {
       sendAction('delete-note');
     }
