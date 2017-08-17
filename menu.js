@@ -130,6 +130,18 @@ const darwinTpl = [{
       sendAction('underline');
     }
   }, {
+    label: 'Checkbox',
+    accelerator: 'CmdorCtrl+T',
+    click() {
+      sendAction('checkbox');
+    }
+  }, {
+    label: 'Code block',
+    accelerator: 'CmdorCtrl+W',
+    click() {
+      sendAction('code-block');
+    }
+  }, {
     role: 'undo'
   }, {
     role: 'redo'
@@ -278,6 +290,18 @@ const otherTpl = [{
     accelerator: 'CmdorCtrl+U',
     click() {
       sendAction('underline');
+    }
+  }, {
+    label: 'Checkbox',
+    accelerator: 'CmdorCtrl+T',
+    click() {
+      sendAction('checkbox');
+    }
+  }, {
+    label: 'Code block',
+    accelerator: 'CmdorCtrl+W',
+    click() {
+      sendAction('code-block');
     }
   }, {
     role: 'undo'

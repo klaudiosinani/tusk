@@ -67,3 +67,13 @@ ipc.on('underline', () => {
   // Underline text
   document.querySelector('#gwt-debug-FormattingBar-underlineButton').click();
 });
+
+ipc.on('checkbox', () => {
+  // Toggle checkbox
+  document.querySelector('#gwt-debug-FormattingBar-checkboxButton').click();
+});
+
+ipc.on('code-block', () => {
+  // Toggle code-block
+  document.querySelector('#gwt-debug-FormattingBar-codeBlockButton').click();
+});
