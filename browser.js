@@ -13,6 +13,11 @@ ipc.on('delete-note', () => {
   document.querySelector('#gwt-debug-NoteAttributes-trashButton').click();
 });
 
+ipc.on('add-shortcut', () => {
+  // Add shortcut
+  document.querySelector('#gwt-debug-NoteAttributes-shortcutButton').click();
+});
+
 ipc.on('set-reminder', () => {
   // Set reminder
   document.querySelector('#gwt-debug-NoteAttributes-reminderButton').click();
@@ -31,6 +36,11 @@ ipc.on('focus-mode', () => {
 ipc.on('exit-focus-mode', () => {
   // Exit focus mode
   document.querySelector('#gwt-debug-NoteAttributes-doneButton').click();
+});
+
+ipc.on('shortcuts', () => {
+  // Toggle Shortcuts
+  document.querySelector('#gwt-debug-Sidebar-shortcutsButton').click();
 });
 
 ipc.on('return', () => {
