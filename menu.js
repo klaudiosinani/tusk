@@ -19,7 +19,7 @@ function sendAction(action) {
 }
 
 const helpSubmenu = [{
-  label: `${appName} Website`,
+  label: `${appName} Homepage`,
   click() {
     shell.openExternal('https://github.com/champloohq/tusk');
   }
@@ -79,6 +79,14 @@ const darwinTpl = [{
 }, {
   label: 'File',
   submenu: [{
+    label: 'Search',
+    accelerator: 'CmdorCtrl+F',
+    click() {
+      sendAction('search');
+    }
+  }, {
+    type: 'separator'
+  }, {
     label: 'New Note',
     accelerator: 'CmdorCtrl+N',
     click() {
@@ -91,6 +99,8 @@ const darwinTpl = [{
       sendAction('delete-note');
     }
   }, {
+    type: 'separator'
+  }, {
     label: 'Set Reminder',
     accelerator: 'CmdorCtrl+E',
     click() {
@@ -101,12 +111,6 @@ const darwinTpl = [{
     accelerator: 'CmdorCtrl+S',
     click() {
       sendAction('add-shortcut');
-    }
-  }, {
-    label: 'Search',
-    accelerator: 'CmdorCtrl+F',
-    click() {
-      sendAction('search');
     }
   }]
 }, {
@@ -142,6 +146,8 @@ const darwinTpl = [{
       sendAction('code-block');
     }
   }, {
+    type: 'separator'
+  }, {
     role: 'undo'
   }, {
     role: 'redo'
@@ -171,7 +177,9 @@ const darwinTpl = [{
       }
     }
   }, {
-    label: 'Toggle Focus Mode',
+    type: 'separator'
+  }, {
+    label: 'Focus Mode',
     accelerator: 'CmdOrCtrl+M',
     click() {
       sendAction('focus-mode');
@@ -183,23 +191,27 @@ const darwinTpl = [{
       sendAction('exit-focus-mode');
     }
   }, {
+    type: 'separator'
+  }, {
+    label: 'Settings',
+    accelerator: 'CmdorCtrl+,',
+    click() {
+      sendAction('settings');
+    }
+  }, {
+    label: 'Shortcuts',
+    accelerator: 'CmdorCtrl+Shift+S',
+    click() {
+      sendAction('shortcuts');
+    }
+  }, {
     label: 'Return to Notes',
     accelerator: 'Esc',
     click() {
       sendAction('return');
     }
   }, {
-    label: 'Toggle Shortcuts',
-    accelerator: 'CmdorCtrl+Shift+S',
-    click() {
-      sendAction('shortcuts');
-    }
-  }, {
-    label: 'Toggle Settings',
-    accelerator: 'CmdorCtrl+,',
-    click() {
-      sendAction('settings');
-    }
+    type: 'separator'
   }, {
     label: 'Toggle Full Screen',
     accelerator: 'Ctrl+Command+F',
@@ -239,6 +251,14 @@ const darwinTpl = [{
 const otherTpl = [{
   label: 'File',
   submenu: [{
+    label: 'Search',
+    accelerator: 'CmdorCtrl+F',
+    click() {
+      sendAction('search');
+    }
+  }, {
+    type: 'separator'
+  }, {
     label: 'New Note',
     accelerator: 'CmdorCtrl+N',
     click() {
@@ -250,6 +270,8 @@ const otherTpl = [{
     click() {
       sendAction('delete-note');
     }
+  }, {
+    type: 'separator'
   }, {
     label: 'Set Reminder',
     accelerator: 'CmdorCtrl+E',
@@ -263,11 +285,7 @@ const otherTpl = [{
       sendAction('add-shortcut');
     }
   }, {
-    label: 'Search',
-    accelerator: 'CmdorCtrl+F',
-    click() {
-      sendAction('search');
-    }
+    type: 'separator'
   }, {
     role: 'quit'
   }]
@@ -304,6 +322,8 @@ const otherTpl = [{
       sendAction('code-block');
     }
   }, {
+    type: 'separator'
+  }, {
     role: 'undo'
   }, {
     role: 'redo'
@@ -335,7 +355,9 @@ const otherTpl = [{
       }
     }
   }, {
-    label: 'Toggle Focus Mode',
+    type: 'separator'
+  }, {
+    label: 'Focus Mode',
     accelerator: 'CmdOrCtrl+M',
     click() {
       sendAction('focus-mode');
@@ -347,23 +369,27 @@ const otherTpl = [{
       sendAction('exit-focus-mode');
     }
   }, {
+    type: 'separator'
+  }, {
+    label: 'Settings',
+    accelerator: 'CmdorCtrl+,',
+    click() {
+      sendAction('settings');
+    }
+  }, {
+    label: 'Shortcuts',
+    accelerator: 'CmdorCtrl+Shift+S',
+    click() {
+      sendAction('shortcuts');
+    }
+  }, {
     label: 'Return to Notes',
     accelerator: 'Esc',
     click() {
       sendAction('return');
     }
   }, {
-    label: 'Toggle Shortcuts',
-    accelerator: 'CmdorCtrl+Shift+S',
-    click() {
-      sendAction('shortcuts');
-    }
-  }, {
-    label: 'Toggle Settings',
-    accelerator: 'CmdorCtrl+,',
-    click() {
-      sendAction('settings');
-    }
+    type: 'separator'
   }, {
     label: 'Toggle Full Screen',
     accelerator: 'F11',
