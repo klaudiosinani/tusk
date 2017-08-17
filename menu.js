@@ -97,6 +97,12 @@ const darwinTpl = [{
       sendAction('set-reminder');
     }
   }, {
+    label: 'Add Shortcut',
+    accelerator: 'CmdorCtrl+S',
+    click() {
+      sendAction('add-shortcut');
+    }
+  }, {
     label: 'Search',
     accelerator: 'CmdorCtrl+F',
     click() {
@@ -171,6 +177,12 @@ const darwinTpl = [{
       sendAction('return');
     }
   }, {
+    label: 'Toggle Shortcuts',
+    accelerator: 'CmdorCtrl+Shift+S',
+    click() {
+      sendAction('shortcuts');
+    }
+  }, {
     label: 'Toggle Full Screen',
     accelerator: 'Ctrl+Command+F',
     click: (item, focusedWindow) => {
@@ -225,6 +237,12 @@ const otherTpl = [{
     accelerator: 'CmdorCtrl+E',
     click() {
       sendAction('set-reminder');
+    }
+  }, {
+    label: 'Add Shortcut',
+    accelerator: 'CmdorCtrl+S',
+    click() {
+      sendAction('add-shortcut');
     }
   }, {
     label: 'Search',
@@ -303,6 +321,12 @@ const otherTpl = [{
     accelerator: 'Esc',
     click() {
       sendAction('return');
+    }
+  }, {
+    label: 'Toggle Shortcuts',
+    accelerator: 'CmdorCtrl+Shift+S',
+    click() {
+      sendAction('shortcuts');
     }
   }, {
     label: 'Toggle Full Screen',
