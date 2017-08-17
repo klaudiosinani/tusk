@@ -61,4 +61,4 @@ Tusk is a third-party, open source app and is not affiliated in no way with Ever
 
 ## License
 
-MIT
+[MIT](https://github.com/champloohq/tusk/blob/master/license.md)
