@@ -94,6 +94,11 @@ ipc.on('underline', () => {
   document.querySelector('#gwt-debug-FormattingBar-underlineButton').click();
 });
 
+ipc.on('add-link', () => {
+  // Add link
+  document.querySelector('#gwt-debug-FormattingBar-linkButton').click();
+});
+
 ipc.on('align-left', () => {
   // Align text left
   document.querySelector('#gwt-debug-EditorAlignDropdown-left').click();
