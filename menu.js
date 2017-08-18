@@ -101,6 +101,12 @@ const darwinTpl = [{
   }, {
     type: 'separator'
   }, {
+    label: 'New Tag',
+    accelerator: 'CmdorCtrl+Shift+T',
+    click() {
+      sendAction('new-tag');
+    }
+  }, {
     label: 'New Notebook',
     accelerator: 'CmdorCtrl+Shift+N',
     click() {
@@ -280,6 +286,12 @@ const otherTpl = [{
     }
   }, {
     type: 'separator'
+  }, {
+    label: 'New Tag',
+    accelerator: 'CmdorCtrl+Shift+T',
+    click() {
+      sendAction('new-tag');
+    }
   }, {
     label: 'New Notebook',
     accelerator: 'CmdorCtrl+Shift+N',
