@@ -253,6 +253,21 @@ const darwinTpl = [{
       sendAction('strikethrough');
     }
   }, {
+    label: 'Paragraph',
+    submenu: [{
+      label: 'Numbered list',
+      accelerator: 'CmdorCtrl+Shift+O',
+      click() {
+        sendAction('numbered');
+      }
+    }, {
+      label: 'Bulleted list',
+      accelerator: 'CmdorCtrl+Shift+.',
+      click() {
+        sendAction('bulleted');
+      }
+    }]
+  }, {
     type: 'separator'
   }, {
     label: 'Checkbox',
@@ -489,6 +504,21 @@ const otherTpl = [{
     click() {
       sendAction('strikethrough');
     }
+  }, {
+    label: 'Paragraph',
+    submenu: [{
+      label: 'Numbered list',
+      accelerator: 'CmdorCtrl+Shift+O',
+      click() {
+        sendAction('numbered');
+      }
+    }, {
+      label: 'Bulleted list',
+      accelerator: 'CmdorCtrl+Shift+.',
+      click() {
+        sendAction('bulleted');
+      }
+    }]
   }, {
     type: 'separator'
   }, {
