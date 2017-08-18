@@ -96,22 +96,16 @@ ipc.on('underline', () => {
 
 ipc.on('align-left', () => {
   // Align text left
-  const alignMenu = document.querySelector('#gwt-debug-FormattingBar-alignButton');
-  alignMenu.click();
   document.querySelector('#gwt-debug-EditorAlignDropdown-left').click();
 });
 
 ipc.on('align-center', () => {
   // Align text center
-  const alignMenu = document.querySelector('#gwt-debug-FormattingBar-alignButton');
-  alignMenu.click();
   document.querySelector('#gwt-debug-EditorAlignDropdown-center').click();
 });
 
 ipc.on('align-right', () => {
   // Align text right
-  const alignMenu = document.querySelector('#gwt-debug-FormattingBar-alignButton');
-  alignMenu.click();
   document.querySelector('#gwt-debug-EditorAlignDropdown-right').click();
 });
 
