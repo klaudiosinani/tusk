@@ -194,13 +194,13 @@ const darwinTpl = [{
     type: 'separator'
   }, {
     label: 'Focus Mode',
-    accelerator: 'CmdOrCtrl+M',
+    accelerator: 'CmdOrCtrl+K',
     click() {
       sendAction('focus-mode');
     }
   }, {
     label: 'Exit Focus Mode',
-    accelerator: 'CmdorCtrl+K',
+    accelerator: 'CmdorCtrl+O',
     click() {
       sendAction('exit-focus-mode');
     }
@@ -386,13 +386,13 @@ const otherTpl = [{
     type: 'separator'
   }, {
     label: 'Focus Mode',
-    accelerator: 'CmdOrCtrl+M',
+    accelerator: 'CmdOrCtrl+K',
     click() {
       sendAction('focus-mode');
     }
   }, {
     label: 'Exit Focus Mode',
-    accelerator: 'CmdorCtrl+K',
+    accelerator: 'CmdorCtrl+O',
     click() {
       sendAction('exit-focus-mode');
     }
