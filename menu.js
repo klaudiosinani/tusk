@@ -247,6 +247,12 @@ const darwinTpl = [{
       sendAction('underline');
     }
   }, {
+    label: 'Strikethrough text',
+    accelerator: 'CmdorCtrl+T',
+    click() {
+      sendAction('strikethrough');
+    }
+  }, {
     type: 'separator'
   }, {
     label: 'Checkbox',
@@ -259,6 +265,20 @@ const darwinTpl = [{
     accelerator: 'CmdorCtrl+Shift+L',
     click() {
       sendAction('code-block');
+    }
+  }, {
+    type: 'separator'
+  }, {
+    label: 'Subscript text',
+    accelerator: 'CmdorCtrl+Shift+]',
+    click() {
+      sendAction('subscript');
+    }
+  }, {
+    label: 'Superscript text',
+    accelerator: 'CmdorCtrl+Shift+[',
+    click() {
+      sendAction('superscript');
     }
   }, {
     type: 'separator'
@@ -464,6 +484,12 @@ const otherTpl = [{
       sendAction('underline');
     }
   }, {
+    label: 'Strikethrough text',
+    accelerator: 'CmdorCtrl+T',
+    click() {
+      sendAction('strikethrough');
+    }
+  }, {
     type: 'separator'
   }, {
     label: 'Checkbox',
@@ -476,6 +502,20 @@ const otherTpl = [{
     accelerator: 'CmdorCtrl+Shift+L',
     click() {
       sendAction('code-block');
+    }
+  }, {
+    type: 'separator'
+  }, {
+    label: 'Subscript text',
+    accelerator: 'CmdorCtrl+Shift+]',
+    click() {
+      sendAction('subscript');
+    }
+  }, {
+    label: 'Superscript text',
+    accelerator: 'CmdorCtrl+Shift+[',
+    click() {
+      sendAction('superscript');
     }
   }, {
     type: 'separator'
