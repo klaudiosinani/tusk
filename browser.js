@@ -21,6 +21,14 @@ ipc.on('new-notebook', () => {
   notebooks.click();
 });
 
+ipc.on('new-tag', () => {
+  // Create new tag
+  const tags = document.querySelector('#gwt-debug-Sidebar-tagsButton');
+  tags.click();
+  document.querySelector('.focus-drawer-TagsDrawer-TagsDrawer-create-tag-icon').click();
+  tags.click();
+});
+
 ipc.on('add-shortcut', () => {
   // Add shortcut
   document.querySelector('#gwt-debug-NoteAttributes-shortcutButton').click();
