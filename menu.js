@@ -207,6 +207,20 @@ const darwinTpl = [{
   }, {
     type: 'separator'
   }, {
+    label: 'Tags',
+    accelerator: 'Shift+Alt+T',
+    click() {
+      sendAction('toggle-tags');
+    }
+  }, {
+    label: 'Notebooks',
+    accelerator: 'Shift+Alt+N',
+    click() {
+      sendAction('toggle-notebooks');
+    }
+  }, {
+    type: 'separator'
+  }, {
     label: 'Settings',
     accelerator: 'CmdorCtrl+,',
     click() {
@@ -395,6 +409,20 @@ const otherTpl = [{
     accelerator: 'CmdorCtrl+O',
     click() {
       sendAction('exit-focus-mode');
+    }
+  }, {
+    type: 'separator'
+  }, {
+    label: 'Tags',
+    accelerator: 'Shift+Alt+T',
+    click() {
+      sendAction('toggle-tags');
+    }
+  }, {
+    label: 'Notebooks',
+    accelerator: 'Shift+Alt+N',
+    click() {
+      sendAction('toggle-notebooks');
     }
   }, {
     type: 'separator'
