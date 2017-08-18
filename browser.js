@@ -94,6 +94,11 @@ ipc.on('underline', () => {
   document.querySelector('#gwt-debug-FormattingBar-underlineButton').click();
 });
 
+ipc.on('strikethrough', () => {
+  // Strikethrough text
+  document.querySelector('#gwt-debug-FormattingBar-strikeButton').click();
+});
+
 ipc.on('checkbox', () => {
   // Toggle checkbox
   document.querySelector('#gwt-debug-FormattingBar-checkboxButton').click();
@@ -102,6 +107,20 @@ ipc.on('checkbox', () => {
 ipc.on('code-block', () => {
   // Toggle code-block
   document.querySelector('#gwt-debug-FormattingBar-codeBlockButton').click();
+});
+
+ipc.on('subscript', () => {
+  // Subscript text
+  const formatMenu = document.querySelector('#gwt-debug-FormattingBar-overflowButton');
+  formatMenu.click();
+  document.querySelector('#gwt-debug-FormattingBar-subscriptButton').click();
+});
+
+ipc.on('superscript', () => {
+  // Superscript text
+  const formatMenu = document.querySelector('#gwt-debug-FormattingBar-overflowButton');
+  formatMenu.click();
+  document.querySelector('#gwt-debug-FormattingBar-superscriptButton').click();
 });
 
 ipc.on('horizontal-rule', () => {
