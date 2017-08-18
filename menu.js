@@ -256,7 +256,7 @@ const darwinTpl = [{
     }
   }, {
     label: 'Code block',
-    accelerator: 'CmdorCtrl+W',
+    accelerator: 'CmdorCtrl+Shift+L',
     click() {
       sendAction('code-block');
     }
@@ -465,7 +465,7 @@ const otherTpl = [{
     }
   }, {
     label: 'Code block',
-    accelerator: 'CmdorCtrl+W',
+    accelerator: 'CmdorCtrl+Shift+L',
     click() {
       sendAction('code-block');
     }
