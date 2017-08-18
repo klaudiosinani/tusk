@@ -275,6 +275,20 @@ const darwinTpl = [{
     }, {
       type: 'separator'
     }, {
+      label: 'Increase indentation',
+      accelerator: 'CmdorCtrl+M',
+      click() {
+        sendAction('increase-indentation');
+      }
+    }, {
+      label: 'Decrease indentation',
+      accelerator: 'CmdorCtrl+Shift+M',
+      click() {
+        sendAction('decrease-indentation');
+      }
+    }, {
+      type: 'separator'
+    }, {
       label: 'Numbered list',
       accelerator: 'CmdorCtrl+Shift+O',
       click() {
@@ -543,6 +557,20 @@ const otherTpl = [{
       accelerator: 'CmdorCtrl+Alt+R',
       click() {
         sendAction('align-right');
+      }
+    }, {
+      type: 'separator'
+    }, {
+      label: 'Increase indentation',
+      accelerator: 'CmdorCtrl+M',
+      click() {
+        sendAction('indent');
+      }
+    }, {
+      label: 'Decrease indentation',
+      accelerator: 'CmdorCtrl+Shift+M',
+      click() {
+        sendAction('outdent');
       }
     }, {
       type: 'separator'

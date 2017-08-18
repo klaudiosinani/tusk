@@ -115,6 +115,16 @@ ipc.on('align-right', () => {
   document.querySelector('#gwt-debug-EditorAlignDropdown-right').click();
 });
 
+ipc.on('indent', () => {
+  // Increase indentation
+  document.querySelector('#gwt-debug-FormattingBar-indentButton').click();
+});
+
+ipc.on('outdent', () => {
+  // Decrease indentation
+  document.querySelector('#gwt-debug-FormattingBar-outdentButton').click();
+});
+
 ipc.on('numbered', () => {
   // Numbered list
   document.querySelector('#gwt-debug-FormattingBar-listButton').click();
