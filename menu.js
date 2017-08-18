@@ -101,6 +101,14 @@ const darwinTpl = [{
   }, {
     type: 'separator'
   }, {
+    label: 'New Notebook',
+    accelerator: 'CmdorCtrl+Shift+N',
+    click() {
+      sendAction('new-notebook');
+    }
+  }, {
+    type: 'separator'
+  }, {
     label: 'Set Reminder',
     accelerator: 'CmdorCtrl+E',
     click() {
@@ -269,6 +277,14 @@ const otherTpl = [{
     accelerator: 'Delete',
     click() {
       sendAction('delete-note');
+    }
+  }, {
+    type: 'separator'
+  }, {
+    label: 'New Notebook',
+    accelerator: 'CmdorCtrl+Shift+N',
+    click() {
+      sendAction('new-notebook');
     }
   }, {
     type: 'separator'
