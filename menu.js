@@ -253,6 +253,12 @@ const darwinTpl = [{
       sendAction('strikethrough');
     }
   }, {
+    label: 'Add link',
+    accelerator: 'CmdorCtrl+Shift+K',
+    click() {
+      sendAction('add-link');
+    }
+  }, {
     label: 'Paragraph',
     submenu: [{
       label: 'Align left',
@@ -537,6 +543,12 @@ const otherTpl = [{
     accelerator: 'CmdorCtrl+T',
     click() {
       sendAction('strikethrough');
+    }
+  }, {
+    label: 'Add link',
+    accelerator: 'CmdorCtrl+Shift+K',
+    click() {
+      sendAction('add-link');
     }
   }, {
     label: 'Paragraph',
