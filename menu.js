@@ -130,36 +130,6 @@ const darwinTpl = [{
 }, {
   label: 'Edit',
   submenu: [{
-    label: 'Bold text',
-    accelerator: 'CmdorCtrl+B',
-    click() {
-      sendAction('bold');
-    }
-  }, {
-    label: 'Italic text',
-    accelerator: 'CmdorCtrl+I',
-    click() {
-      sendAction('italic');
-    }
-  }, {
-    label: 'Underline text',
-    accelerator: 'CmdorCtrl+U',
-    click() {
-      sendAction('underline');
-    }
-  }, {
-    label: 'Checkbox',
-    accelerator: 'CmdorCtrl+Shift+C',
-    click() {
-      sendAction('checkbox');
-    }
-  }, {
-    label: 'Code block',
-    accelerator: 'CmdorCtrl+W',
-    click() {
-      sendAction('code-block');
-    }
-  }, {
     type: 'separator'
   }, {
     role: 'undo'
@@ -257,6 +227,41 @@ const darwinTpl = [{
     }
   }]
 }, {
+  label: 'Format',
+  submenu: [{
+    label: 'Bold text',
+    accelerator: 'CmdorCtrl+B',
+    click() {
+      sendAction('bold');
+    }
+  }, {
+    label: 'Italic text',
+    accelerator: 'CmdorCtrl+I',
+    click() {
+      sendAction('italic');
+    }
+  }, {
+    label: 'Underline text',
+    accelerator: 'CmdorCtrl+U',
+    click() {
+      sendAction('underline');
+    }
+  }, {
+    type: 'separator'
+  }, {
+    label: 'Checkbox',
+    accelerator: 'CmdorCtrl+Shift+C',
+    click() {
+      sendAction('checkbox');
+    }
+  }, {
+    label: 'Code block',
+    accelerator: 'CmdorCtrl+W',
+    click() {
+      sendAction('code-block');
+    }
+  }]
+}, {
   role: 'window',
   submenu: [{
     role: 'minimize'
@@ -334,38 +339,6 @@ const otherTpl = [{
 }, {
   label: 'Edit',
   submenu: [{
-    label: 'Bold text',
-    accelerator: 'CmdorCtrl+B',
-    click() {
-      sendAction('bold');
-    }
-  }, {
-    label: 'Italic text',
-    accelerator: 'CmdorCtrl+I',
-    click() {
-      sendAction('italic');
-    }
-  }, {
-    label: 'Underline text',
-    accelerator: 'CmdorCtrl+U',
-    click() {
-      sendAction('underline');
-    }
-  }, {
-    label: 'Checkbox',
-    accelerator: 'CmdorCtrl+Shift+C',
-    click() {
-      sendAction('checkbox');
-    }
-  }, {
-    label: 'Code block',
-    accelerator: 'CmdorCtrl+W',
-    click() {
-      sendAction('code-block');
-    }
-  }, {
-    type: 'separator'
-  }, {
     role: 'undo'
   }, {
     role: 'redo'
@@ -460,6 +433,41 @@ const otherTpl = [{
     accelerator: 'Ctrl+Shift+I',
     click: (item, focusedWindow) => {
       focusedWindow.toggleDevTools();
+    }
+  }]
+}, {
+  label: 'Format',
+  submenu: [{
+    label: 'Bold text',
+    accelerator: 'CmdorCtrl+B',
+    click() {
+      sendAction('bold');
+    }
+  }, {
+    label: 'Italic text',
+    accelerator: 'CmdorCtrl+I',
+    click() {
+      sendAction('italic');
+    }
+  }, {
+    label: 'Underline text',
+    accelerator: 'CmdorCtrl+U',
+    click() {
+      sendAction('underline');
+    }
+  }, {
+    type: 'separator'
+  }, {
+    label: 'Checkbox',
+    accelerator: 'CmdorCtrl+Shift+C',
+    click() {
+      sendAction('checkbox');
+    }
+  }, {
+    label: 'Code block',
+    accelerator: 'CmdorCtrl+W',
+    click() {
+      sendAction('code-block');
     }
   }]
 }, {
