@@ -149,7 +149,7 @@ const darwinTpl = [{
     }
   }, {
     label: 'Checkbox',
-    accelerator: 'CmdorCtrl+T',
+    accelerator: 'CmdorCtrl+Shift+C',
     click() {
       sendAction('checkbox');
     }
@@ -339,7 +339,7 @@ const otherTpl = [{
     }
   }, {
     label: 'Checkbox',
-    accelerator: 'CmdorCtrl+T',
+    accelerator: 'CmdorCtrl+Shift+C',
     click() {
       sendAction('checkbox');
     }
