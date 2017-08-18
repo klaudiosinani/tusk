@@ -13,6 +13,14 @@ ipc.on('delete-note', () => {
   document.querySelector('#gwt-debug-NoteAttributes-trashButton').click();
 });
 
+ipc.on('new-notebook', () => {
+  // Create new notebook
+  const notebooks = document.querySelector('#gwt-debug-Sidebar-notebooksButton');
+  notebooks.click();
+  document.querySelector('#gwt-debug-NotebooksDrawer-createNotebookButton').click();
+  notebooks.click();
+});
+
 ipc.on('add-shortcut', () => {
   // Add shortcut
   document.querySelector('#gwt-debug-NoteAttributes-shortcutButton').click();
