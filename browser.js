@@ -94,6 +94,16 @@ ipc.on('underline', () => {
   document.querySelector('#gwt-debug-FormattingBar-underlineButton').click();
 });
 
+ipc.on('numbered', () => {
+  // Numbered list
+  document.querySelector('#gwt-debug-FormattingBar-listButton').click();
+});
+
+ipc.on('bulleted', () => {
+  // Bulleted list
+  document.querySelector('#gwt-debug-FormattingBar-bulletButton').click();
+});
+
 ipc.on('strikethrough', () => {
   // Strikethrough text
   document.querySelector('#gwt-debug-FormattingBar-strikeButton').click();
