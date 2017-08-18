@@ -255,6 +255,26 @@ const darwinTpl = [{
   }, {
     label: 'Paragraph',
     submenu: [{
+      label: 'Align left',
+      accelerator: 'CmdorCtrl+Alt+L',
+      click() {
+        sendAction('align-left');
+      }
+    }, {
+      label: 'Align center',
+      accelerator: 'CmdorCtrl+Alt+M',
+      click() {
+        sendAction('align-center');
+      }
+    }, {
+      label: 'Align right',
+      accelerator: 'CmdorCtrl+Alt+R',
+      click() {
+        sendAction('align-right');
+      }
+    }, {
+      type: 'separator'
+    }, {
       label: 'Numbered list',
       accelerator: 'CmdorCtrl+Shift+O',
       click() {
@@ -507,6 +527,26 @@ const otherTpl = [{
   }, {
     label: 'Paragraph',
     submenu: [{
+      label: 'Align left',
+      accelerator: 'CmdorCtrl+Alt+L',
+      click() {
+        sendAction('align-left');
+      }
+    }, {
+      label: 'Align center',
+      accelerator: 'CmdorCtrl+Alt+M',
+      click() {
+        sendAction('align-center');
+      }
+    }, {
+      label: 'Align right',
+      accelerator: 'CmdorCtrl+Alt+R',
+      click() {
+        sendAction('align-right');
+      }
+    }, {
+      type: 'separator'
+    }, {
       label: 'Numbered list',
       accelerator: 'CmdorCtrl+Shift+O',
       click() {
