@@ -54,6 +54,16 @@ ipc.on('exit-focus-mode', () => {
   document.querySelector('#gwt-debug-NoteAttributes-doneButton').click();
 });
 
+ipc.on('toggle-notebooks', () => {
+  // Toggle notebooks list
+  document.querySelector('#gwt-debug-Sidebar-notebooksButton').click();
+});
+
+ipc.on('toggle-tags', () => {
+  // Toggle tags list
+  document.querySelector('#gwt-debug-Sidebar-tagsButton').click();
+});
+
 ipc.on('shortcuts', () => {
   // Toggle Shortcuts
   document.querySelector('#gwt-debug-Sidebar-shortcutsButton').click();
