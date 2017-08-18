@@ -103,3 +103,8 @@ ipc.on('code-block', () => {
   // Toggle code-block
   document.querySelector('#gwt-debug-FormattingBar-codeBlockButton').click();
 });
+
+ipc.on('horizontal-rule', () => {
+  // Insert horizontal rule
+  document.querySelector('#gwt-debug-FormattingBar-horizontalRuleButton').click();
+});

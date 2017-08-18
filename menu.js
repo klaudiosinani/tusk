@@ -260,6 +260,14 @@ const darwinTpl = [{
     click() {
       sendAction('code-block');
     }
+  }, {
+    type: 'separator'
+  }, {
+    label: 'Insert Horizontal Rule',
+    accelerator: 'CmdorCtrl+Shift+-',
+    click() {
+      sendAction('horizontal-rule');
+    }
   }]
 }, {
   role: 'window',
@@ -468,6 +476,14 @@ const otherTpl = [{
     accelerator: 'CmdorCtrl+Shift+L',
     click() {
       sendAction('code-block');
+    }
+  }, {
+    type: 'separator'
+  }, {
+    label: 'Insert Horizontal Rule',
+    accelerator: 'CmdorCtrl+Shift+-',
+    click() {
+      sendAction('horizontal-rule');
     }
   }]
 }, {
