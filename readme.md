@@ -40,8 +40,8 @@ Description            | Keys
 -----------------------| -----------------------
 Toggle window menu     | <kbd>Alt</kbd>
 Return to Notes        | <kbd>Esc</kbd>
+Delete note            | <kbd>Delete</kbd>
 New note               | <kbd>Cmd/Ctrl</kbd> <kbd>N</kbd>
-Delete note            | <kbd>Cmd/Ctrl</kbd> <kbd>D</kbd>
 Add shortcut           | <kbd>Cmd/Ctrl</kbd> <kbd>S</kbd>
 Set reminder           | <kbd>Cmd/Ctrl</kbd> <kbd>E</kbd>
 Search notes           | <kbd>Cmd/Ctrl</kbd> <kbd>F</kbd>
