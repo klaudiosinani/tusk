@@ -229,29 +229,32 @@ const darwinTpl = [{
 }, {
   label: 'Format',
   submenu: [{
-    label: 'Bold text',
-    accelerator: 'CmdorCtrl+B',
-    click() {
-      sendAction('bold');
-    }
-  }, {
-    label: 'Italic text',
-    accelerator: 'CmdorCtrl+I',
-    click() {
-      sendAction('italic');
-    }
-  }, {
-    label: 'Underline text',
-    accelerator: 'CmdorCtrl+U',
-    click() {
-      sendAction('underline');
-    }
-  }, {
-    label: 'Strikethrough text',
-    accelerator: 'CmdorCtrl+T',
-    click() {
-      sendAction('strikethrough');
-    }
+    label: 'Style',
+    submenu: [{
+      label: 'Bold text',
+      accelerator: 'CmdorCtrl+B',
+      click() {
+        sendAction('bold');
+      }
+    }, {
+      label: 'Italic text',
+      accelerator: 'CmdorCtrl+I',
+      click() {
+        sendAction('italic');
+      }
+    }, {
+      label: 'Underline text',
+      accelerator: 'CmdorCtrl+U',
+      click() {
+        sendAction('underline');
+      }
+    }, {
+      label: 'Strikethrough text',
+      accelerator: 'CmdorCtrl+T',
+      click() {
+        sendAction('strikethrough');
+      }
+    }]
   }, {
     label: 'Add link',
     accelerator: 'CmdorCtrl+Shift+K',
@@ -533,29 +536,32 @@ const otherTpl = [{
 }, {
   label: 'Format',
   submenu: [{
-    label: 'Bold text',
-    accelerator: 'CmdorCtrl+B',
-    click() {
-      sendAction('bold');
-    }
-  }, {
-    label: 'Italic text',
-    accelerator: 'CmdorCtrl+I',
-    click() {
-      sendAction('italic');
-    }
-  }, {
-    label: 'Underline text',
-    accelerator: 'CmdorCtrl+U',
-    click() {
-      sendAction('underline');
-    }
-  }, {
-    label: 'Strikethrough text',
-    accelerator: 'CmdorCtrl+T',
-    click() {
-      sendAction('strikethrough');
-    }
+    label: 'Style',
+    submenu: [{
+      label: 'Bold text',
+      accelerator: 'CmdorCtrl+B',
+      click() {
+        sendAction('bold');
+      }
+    }, {
+      label: 'Italic text',
+      accelerator: 'CmdorCtrl+I',
+      click() {
+        sendAction('italic');
+      }
+    }, {
+      label: 'Underline text',
+      accelerator: 'CmdorCtrl+U',
+      click() {
+        sendAction('underline');
+      }
+    }, {
+      label: 'Strikethrough text',
+      accelerator: 'CmdorCtrl+T',
+      click() {
+        sendAction('strikethrough');
+      }
+    }]
   }, {
     label: 'Add link',
     accelerator: 'CmdorCtrl+Shift+K',
