@@ -99,6 +99,16 @@ ipc.on('add-link', () => {
   document.querySelector('#gwt-debug-FormattingBar-linkButton').click();
 });
 
+ipc.on('attach-file', () => {
+  // Add link
+  document.querySelector('#gwt-debug-FormattingBar-attachmentButton.GDAMOPFCE0.GDAMOPFCE1').click();
+});
+
+ipc.on('insert-drive', () => {
+  // Add link
+  document.querySelector('#gwt-debug-FormattingBar-attachmentButton.GDAMOPFCA1.GDAMOPFCE1').click();
+});
+
 ipc.on('align-left', () => {
   // Align text left
   document.querySelector('#gwt-debug-EditorAlignDropdown-left').click();
