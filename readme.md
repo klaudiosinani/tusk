@@ -45,15 +45,33 @@ Delete note            | <kbd>Cmd/Ctrl</kbd> <kbd>D</kbd>
 Add shortcut           | <kbd>Cmd/Ctrl</kbd> <kbd>S</kbd>
 Set reminder           | <kbd>Cmd/Ctrl</kbd> <kbd>E</kbd>
 Search notes           | <kbd>Cmd/Ctrl</kbd> <kbd>F</kbd>
-Toggle focus mode      | <kbd>Cmd/Ctrl</kbd> <kbd>M</kbd>
-Exit focus mode        | <kbd>Cmd/Ctrl</kbd> <kbd>K</kbd>
-Toggle Settings        | <kbd>Cmd/Ctrl</kbd> <kbd>,</kbd>
+Toggle focus mode      | <kbd>Cmd/Ctrl</kbd> <kbd>K</kbd>
+Exit focus mode        | <kbd>Cmd/Ctrl</kbd> <kbd>O</kbd>
 Bold text              | <kbd>Cmd/Ctrl</kbd> <kbd>B</kbd>
 Italic text            | <kbd>Cmd/Ctrl</kbd> <kbd>I</kbd>
 Underline text         | <kbd>Cmd/Ctrl</kbd> <kbd>U</kbd>
-Toggle checkbox        | <kbd>Cmd/Ctrl</kbd> <kbd>T</kbd>
-Code block             | <kbd>Cmd/Ctrl</kbd> <kbd>W</kbd>
+Strikethrough text     | <kbd>Cmd/Ctrl</kbd> <kbd>T</kbd>
+Increase indentation   | <kbd>Cmd/Ctrl</kbd> <kbd>M</kbd>
+Toggle Settings        | <kbd>Cmd/Ctrl</kbd> <kbd>,</kbd>
+Toggle Tags            | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>T</kbd>
+Toggle Notebooks       | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>N</kbd>
+Align left             | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>L</kbd>
+Align center           | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>M</kbd>
+Align right            | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>R</kbd>
+New Tag                | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>T</kbd>
+New Notebook           | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>N</kbd>
+Toggle checkbox        | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>C</kbd>
+Code block             | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>L</kbd>
+Add link               | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>K</kbd>
+Attach file            | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>F</kbd>
+Insert from Drive      | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>D</kbd>
+Decrease indentation   | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>M</kbd>
+Numbered list          | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>O</kbd>
 Toggle shortcuts       | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>S</kbd>
+Bulleted list          | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>.</kbd>
+Subscript text         | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>]</kbd>
+Superscript text       | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>[</kbd>
+Insert Horizontal Rule | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>-</kbd>
 
 ## Disclaimer
 
