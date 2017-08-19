@@ -259,6 +259,18 @@ const darwinTpl = [{
       sendAction('add-link');
     }
   }, {
+    label: 'Attach file',
+    accelerator: 'CmdorCtrl+Shift+F',
+    click() {
+      sendAction('attach-file');
+    }
+  }, {
+    label: 'Insert from Drive',
+    accelerator: 'CmdorCtrl+Shift+D',
+    click() {
+      sendAction('insert-drive');
+    }
+  }, {
     label: 'Paragraph',
     submenu: [{
       label: 'Align left',
@@ -549,6 +561,18 @@ const otherTpl = [{
     accelerator: 'CmdorCtrl+Shift+K',
     click() {
       sendAction('add-link');
+    }
+  }, {
+    label: 'Attach file',
+    accelerator: 'CmdorCtrl+Shift+F',
+    click() {
+      sendAction('attach-file');
+    }
+  }, {
+    label: 'Insert from Drive',
+    accelerator: 'CmdorCtrl+Shift+D',
+    click() {
+      sendAction('insert-drive');
     }
   }, {
     label: 'Paragraph',
