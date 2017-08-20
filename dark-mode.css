@@ -4,12 +4,15 @@
   --note-editor: rgba(33, 33, 33, 1);
 }
 
-#header {
-  padding-left: 80px !important;
+html.dark-mode html {
+  overflow: hidden;
+}
+
+html.dark-mode body {
   -webkit-app-region: drag;
 }
 
-.GDAMOPFCN4B {
+html.dark-mode .GDAMOPFCN4B {
   left: 0;
   right: 0;
   bottom: 0;
@@ -18,38 +21,78 @@
   position: relative;
 }
 
-.GDAMOPFCE5B {
+html.dark-mode .GDAMOPFCE5B {
   margin: 20px 0px !important;
 }
 
-.FocusClipperButton-button {
+html.dark-mode .FocusClipperButton-button {
   visibility: hidden !important;
 }
 
-.en-note {
+html.dark-mode .en-note {
   color: #F0F0F0 !important;
 }
 
-.GDAMOPFCG4B { /* App left sidebar */
+html.dark-mode ::-webkit-scrollbar { /* Notes list scrollbar */
+  width: 6px !important;
+}
+
+html.dark-mode ::-webkit-scrollbar-track { /* Notes list scrollbar track */
+  background: var(--note-list) !important;
+  border-radius: 0px !important;
+}
+
+html.dark-mode ::-webkit-scrollbar-thumb { /* Notes list scrollbar thumb */
+  border-radius: 0px;
+  background: #2dbe60;
+}
+
+html.dark-mode .GDAMOPFCKYB { /* Notes Title minor tweak */
+  padding-bottom: 1px !important;
+}
+
+html.dark-mode .GDAMOPFCBR.GDAMOPFCCR,
+html.dark-mode .GDAMOPFCDR {
+  opacity: 1 !important;
+}
+
+html.dark-mode .GDAMOPFCG4B { /* App left sidebar */
   background-color: var(--app-sidebar) !important;
 }
 
-.GDAMOPFCJYB { /* Notes list head */
+html.dark-mode .GDAMOPFCJYB { /* Notes list head */
   background-color: var(--note-list) !important;
 }
 
-.focus-NotesView-NotesView * { /* Notes list body */
+html.dark-mode .focus-NotesView-NotesView * { /* Notes list body */
   background-color: var(--note-list) !important;
 }
 
-.GDAMOPFCKNB { /* Note editor body */
+html.dark-mode .GDAMOPFCKNB { /* Note editor body */
   background-color: var(--note-editor) !important;
 }
 
-.GDAMOPFCIKB { /* Note editor toolbar */
+html.dark-mode .GDAMOPFCIKB { /* Note editor toolbar */
   background-color: var(--note-editor) !important;
 }
 
-.GDAMOPFCHLB { /* Note editor head */
+html.dark-mode .GDAMOPFCJ1 { /* Note editor toolbar options */
+  background-color: var(--note-editor) !important;
+}
+
+html.dark-mode .GDAMOPFCOF.GDAMOPFCAG { /* Colors background */
+  background-color: var(--note-editor) !important;
+}
+
+html.dark-mode .GDAMOPFCHK,
+html.dark-mode .GDAMOPFCOQ.GDAMOPFCAR { /* Submenus background */
+  background-color: var(--note-editor) !important;
+}
+
+html.dark-mode .GDAMOPFCNHC { /* Dialogs background */
+  background-color: var(--note-editor) !important;
+}
+
+html.dark-mode .GDAMOPFCHLB { /* Note editor head */
   background-color: var(--note-editor) !important;
 }
