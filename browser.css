@@ -1,4 +1,7 @@
-html,
+html {
+  overflow: hidden;
+}
+
 body {
   -webkit-app-region: drag;
 }
