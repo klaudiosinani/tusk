@@ -64,7 +64,7 @@ html.dark-mode .GDAMOPFCJYB { /* Notes list head */
   background-color: var(--note-list) !important;
 }
 
-html.dark-mode .focus-NotesView-NotesView * { /* Notes list body */
+html.dark-mode .focus-NotesView-NotesView { /* Notes list body */
   background-color: var(--note-list) !important;
 }
 
