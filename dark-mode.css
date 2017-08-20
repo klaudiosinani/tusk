@@ -43,8 +43,8 @@ html.dark-mode ::-webkit-scrollbar-track { /* Notes list scrollbar track */
 }
 
 html.dark-mode ::-webkit-scrollbar-thumb { /* Notes list scrollbar thumb */
-  border-radius: 0px;
-  background: #2dbe60;
+  border-radius: 0px !important;
+  background: #2dbe60 !important;
 }
 
 html.dark-mode .GDAMOPFCKYB { /* Notes Title minor tweak */
@@ -54,6 +54,10 @@ html.dark-mode .GDAMOPFCKYB { /* Notes Title minor tweak */
 html.dark-mode .GDAMOPFCBR.GDAMOPFCCR,
 html.dark-mode .GDAMOPFCDR {
   opacity: 1 !important;
+}
+
+html.dark-mode .Dropdown-menu {
+  background: var(--note-list) !important;
 }
 
 html.dark-mode .GDAMOPFCG4B { /* App left sidebar */
