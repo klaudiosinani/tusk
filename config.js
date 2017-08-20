@@ -8,6 +8,7 @@ module.exports = new Config({
       width: 900,
       height: 500
     },
+    darkMode: false,
     alwaysOnTop: false,
     lastURL: 'https://www.evernote.com/Login.action'
   }

@@ -32,6 +32,7 @@ function createMainWindow() {
   const lastWindowState = config.get('lastWindowState');
   const lastURL = config.get('lastURL');
   const maxWindowInteger = 2147483647;
+  const darkModeFlag = config.get('darkMode');
 
   const win = new electron.BrowserWindow({
     title: app.getName(),
@@ -46,6 +47,7 @@ function createMainWindow() {
     alwaysOnTop: config.get('alwaysOnTop'),
     titleBarStyle: 'hidden-inset',
     autoHideMenuBar: true,
+    darkTheme: darkModeFlag,
     backgroundColor: '#fff',
     webPreferences: {
       preload: path.join(__dirname, 'browser.js'),
@@ -99,6 +101,7 @@ app.on('ready', () => {
 
   page.on('dom-ready', () => {
     page.insertCSS(fs.readFileSync(path.join(__dirname, 'browser.css'), 'utf8'));
+    page.insertCSS(fs.readFileSync(path.join(__dirname, 'dark-mode.css'), 'utf8'));
     mainWindow.show();
   });
 
