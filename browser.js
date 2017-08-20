@@ -1,5 +1,6 @@
 'use strict';
 const electron = require('electron');
+const config = require('./config');
 
 const {ipcRenderer: ipc} = electron;
 
@@ -52,6 +53,15 @@ ipc.on('focus-mode', () => {
 ipc.on('exit-focus-mode', () => {
   // Exit focus mode
   document.querySelector('#gwt-debug-NoteAttributes-doneButton').click();
+});
+
+function darkMode() {
+  document.documentElement.classList.toggle('dark-mode', config.get('darkMode'));
+}
+
+ipc.on('toggle-dark-mode', () => {
+  config.set('darkMode', !config.get('darkMode'));
+  darkMode();
 });
 
 ipc.on('toggle-notebooks', () => {
@@ -176,4 +186,9 @@ ipc.on('superscript', () => {
 ipc.on('horizontal-rule', () => {
   // Insert horizontal rule
   document.querySelector('#gwt-debug-FormattingBar-horizontalRuleButton').click();
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Toggle dark mode
+  darkMode();
 });
