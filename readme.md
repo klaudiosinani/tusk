@@ -13,6 +13,7 @@
 - [Install](#install)
 - [Features](#features)
   - [Dark Theme](#dark-theme)
+  - [Black Theme](#black-theme)
   - [Keyboard shortcuts](#keyboard-shortcuts)
 - [Disclaimer](#disclaimer)
 - [Team](#team)
@@ -26,11 +27,21 @@ Head to the [releases](https://github.com/champloohq/tusk/releases/latest) page 
 
 ### Dark Theme
 
-Silky & relaxing. Make it yours through the `View` menu or by pressing <kbd>Cmd</kbd> <kbd>D</kbd> / <kbd>Ctrl</kbd> <kbd>D</kbd>.
+Silky & relaxing. Make it yours through the `View` menu or by pressing <kbd>Cmd/Ctrl</kbd> <kbd>D</kbd>.
 
 <div align="center">
       <a href="https://github.com/hyper-pokemon/tusk">
         <img src="https://cdn.rawgit.com/champloohq/tusk/5fad98fd/media/dark-theme.png" alt="Tusk Dark Theme" width="100%">
+      </a>
+</div>
+
+### Black Theme
+
+Deep focus materialized. Boost your productivity by visiting the `View` menu or by pressing <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>D</kbd>.
+
+<div align="center">
+      <a href="https://github.com/hyper-pokemon/tusk">
+        <img src="https://cdn.rawgit.com/champloohq/tusk/10b6d929/media/black-theme.png" alt="Tusk Black Theme" width="100%">
       </a>
 </div>
 
@@ -54,6 +65,7 @@ Underline Text         | <kbd>Cmd/Ctrl</kbd> <kbd>U</kbd>
 Strikethrough Text     | <kbd>Cmd/Ctrl</kbd> <kbd>T</kbd>
 Increase Indentation   | <kbd>Cmd/Ctrl</kbd> <kbd>M</kbd>
 Toggle Settings        | <kbd>Cmd/Ctrl</kbd> <kbd>,</kbd>
+Toggle Black Theme     | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>D</kbd>
 Toggle Tags            | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>T</kbd>
 Toggle Notebooks       | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>N</kbd>
 Align Left             | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>L</kbd>
