@@ -41,6 +41,7 @@ Description            | Keys
 Toggle window menu     | <kbd>Alt</kbd>
 Return to Notes        | <kbd>Esc</kbd>
 Delete note            | <kbd>Delete</kbd>
+Toggle Dark mode       | <kbd>Cmd/Ctrl</kbd> <kbd>D</kbd>
 New note               | <kbd>Cmd/Ctrl</kbd> <kbd>N</kbd>
 Add shortcut           | <kbd>Cmd/Ctrl</kbd> <kbd>S</kbd>
 Set reminder           | <kbd>Cmd/Ctrl</kbd> <kbd>E</kbd>
