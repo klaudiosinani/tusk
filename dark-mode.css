@@ -1,4 +1,15 @@
 :root{
+  --base: black;
+  --base-ninety: rgba(255, 255, 255, 0.9);
+  --base-seventy-five: rgba(255, 255, 255, 0.75);
+  --base-seventy: rgba(255, 255, 255, 0.7);
+  --base-fifty: rgba(255, 255, 255, 0.5);
+  --base-fourty: rgba(255, 255, 255, 0.4);
+  --base-thiry: rgba(255, 255, 255, 0.3);
+  --base-twenty: rgba(255, 255, 255, 0.2);
+  --base-five: rgba(255, 255, 255, 0.05);
+  --base-ten: rgba(255, 255, 255, 0.1);
+  --base-nine: rgba(255, 255, 255, 0.09);
   --app-sidebar: rgba(29, 29, 29, 1);
   --note-list: rgba(30, 30, 30, 1);
   --note-editor: rgba(33, 33, 33, 1);
@@ -60,6 +71,59 @@ html.dark-mode .Dropdown-menu {
   background: var(--note-list) !important;
 }
 
+html.dark-mode .GDAMOPFCDKB,
+html.dark-mode .GDAMOPFCHYC,
+html.dark-mode .GDAMOPFCO5.GDAMOPFCAAB { /* Chat windows */
+  background: var(--note-list) !important;
+}
+
+html.dark-mode .GDAMOPFCHYC {
+  color: #e1e1e1 !important;
+}
+
+html.dark-mode .GDAMOPFCKKC { /* Reminder modal */
+  background: var(--note-list) !important;
+}
+
+html.dark-mode .GDAMOPFCHEB {
+  background: var(--note-list) !important;
+}
+
+html.dark-mode .GDAMOPFCI-B,
+html.dark-mode .GDAMOPFCDAC.GDAMOPFCL5B { /* Search modal */
+  background-color: var(--note-list) !important;
+}
+
+html.dark-mode .GDAMOPFCEWB,
+html.dark-mode .GDAMOPFCIXB,
+html.dark-mode .GDAMOPFCN5B,
+html.dark-mode .GDAMOPFCFTB { /* Notebooks modal */
+  background-color: var(--note-list) !important;
+}
+
+html.dark-mode .GDAMOPFCJJ,
+html.dark-mode .focus-drawer-Filter-input { /* Search notebook/tags input text */
+  color: #e1e1e1 !important;
+}
+
+html.dark-mode .GDAMOPFCPE { /* Notebook info */
+  color: #e1e1e1 !important;
+}
+
+html.dark-mode .GDAMOPFCN-B .GDAMOPFCC1B,
+html.dark-mode .GDAMOPFCDQB { /* Saved search */
+  background-color: var(--note-list) !important;
+}
+
+html.dark-mode .GDAMOPFCEHB,
+html.dark-mode .GDAMOPFCN5B { /* Shortcuts modal */
+  background-color: var(--note-list) !important;
+}
+
+html.dark-mode .GDAMOPFCP2 { /* Setting menu */
+  background-color: var(--note-editor) !important;
+}
+
 html.dark-mode .GDAMOPFCG4B { /* App left sidebar */
   background-color: var(--app-sidebar) !important;
 }
@@ -72,7 +136,8 @@ html.dark-mode .focus-NotesView-NotesView { /* Notes list body */
   background-color: var(--note-list) !important;
 }
 
-html.dark-mode .GDAMOPFCKNB { /* Note editor body */
+html.dark-mode .GDAMOPFCKNB,
+html.dark-mode .GDAMOPFCOPB { /* Note editor body */
   background-color: var(--note-editor) !important;
 }
 
