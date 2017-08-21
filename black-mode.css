@@ -1,0 +1,216 @@
+:root{
+  --black: rgba(0, 0, 0, 1);
+  --white-ninety: rgba(255, 255, 255, 0.9);
+  --white-seventy-five: rgba(255, 255, 255, 0.75);
+  --white-seventy: rgba(255, 255, 255, 0.7);
+  --white-fifty: rgba(255, 255, 255, 0.5);
+  --white-fourty: rgba(255, 255, 255, 0.4);
+  --white-thirty: rgba(255, 255, 255, 0.3);
+  --white-twenty: rgba(255, 255, 255, 0.2);
+  --white-ten: rgba(255, 255, 255, 0.1);
+  --white-nine: rgba(255, 255, 255, 0.09);
+  --white-seven: rgba(255, 255, 255, 0.07);
+  --white-five: rgba(255, 255, 255, 0.05);
+  --white-three: rgba(255, 255, 255, 0.03);
+  --white-two: rgba(255, 255, 255, 0.02);
+  --white-one: rgba(255, 255, 255, 0.01);
+}
+
+html.black-mode html {
+  overflow: hidden;
+}
+
+html.black-mode body {
+  -webkit-app-region: drag;
+}
+
+html.black-mode .GDAMOPFCN4B {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 25px;
+  height: 66px;
+  position: relative;
+}
+
+html.black-mode .GDAMOPFCE5B {
+  margin: 20px 0px !important;
+}
+
+html.black-mode .FocusClipperButton-button {
+  visibility: hidden !important;
+}
+
+html.black-mode .en-note {
+  color: #F0F0F0 !important;
+}
+
+html.black-mode ::-webkit-scrollbar { /* Notes list scrollbar */
+  width: 6px !important;
+}
+
+html.black-mode ::-webkit-scrollbar-track { /* Notes list scrollbar track */
+  background: var(--black) !important;
+  border-radius: 0px !important;
+}
+
+html.black-mode ::-webkit-scrollbar-thumb { /* Notes list scrollbar thumb */
+  border-radius: 0px !important;
+  background: #2dbe60 !important;
+}
+
+html.black-mode .GDAMOPFCKYB { /* Notes Title minor tweak */
+  padding-bottom: 1px !important;
+}
+
+html.black-mode .GDAMOPFCBR.GDAMOPFCCR,
+html.black-mode .GDAMOPFCDR {
+  opacity: 1 !important;
+}
+
+html.black-mode .Dropdown-menu {
+  background: var(--black) !important;
+}
+
+html.black-mode .GDAMOPFCDKB,
+html.black-mode .GDAMOPFCHYC,
+html.black-mode .GDAMOPFCO5.GDAMOPFCAAB { /* Chat windows */
+  background: var(--black) !important;
+}
+
+html.black-mode .GDAMOPFCHYC {
+  color: #e1e1e1 !important;
+}
+
+html.black-mode .GDAMOPFCKKC { /* Reminder modal */
+  background: var(--black) !important;
+}
+
+html.black-mode .GDAMOPFCHEB {
+  background: var(--black) !important;
+}
+
+html.black-mode .GDAMOPFCI-B,
+html.black-mode .GDAMOPFCDAC.GDAMOPFCL5B { /* Search modal */
+  background-color: var(--black) !important;
+}
+
+html.black-mode .GDAMOPFCEWB,
+html.black-mode .GDAMOPFCIXB,
+html.black-mode .GDAMOPFCN5B,
+html.black-mode .GDAMOPFCFTB { /* Notebooks modal */
+  background-color: var(--black) !important;
+}
+
+html.black-mode .GDAMOPFCJJ,
+html.black-mode .focus-drawer-Filter-input { /* Search notebook/tags input text */
+  color: #e1e1e1 !important;
+}
+
+html.black-mode .GDAMOPFCPE { /* Notebook info */
+  color: #e1e1e1 !important;
+}
+
+html.black-mode .GDAMOPFCN-B .GDAMOPFCC1B,
+html.black-mode .GDAMOPFCDQB { /* Saved search */
+  background-color: var(--black) !important;
+}
+
+html.black-mode .GDAMOPFCEHB,
+html.black-mode .GDAMOPFCN5B { /* Shortcuts modal */
+  background-color: var(--black) !important;
+}
+
+html.black-mode .GDAMOPFCP2 { /* Setting menu */
+  background-color: var(--black) !important;
+}
+
+html.black-mode .GDAMOPFCG4B { /* App left sidebar */
+  background-color: var(--black) !important;
+}
+
+html.black-mode .GDAMOPFCJYB { /* Notes list head */
+  background-color: var(--black) !important;
+}
+
+html.black-mode .GDAMOPFCOPB { /* Notes list left border */
+  background-color: var(--black) !important;
+  border-left: 1px solid var(--white-five) !important;
+}
+
+html.black-mode .GDAMOPFCA5B { /* Notes list left border */
+  border-left: 1px solid var(--white-five) !important;
+  border-right: 1px solid var(--white-five) !important;
+}
+
+html.black-mode .GDAMOPFCN3B { /* Profile top border */
+  border-top: 1px solid var(--white-five) !important;
+}
+
+html.black-mode .focus-NotesView-Note.focus-NotesView-Note-selected
+.focus-NotesView-Note-selectOverlay { /* Selected note bordered box */
+  border: 3px solid var(--white-five) !important;
+}
+
+html.black-mode .focus-NotesView-RemindersList { /* Reminders list borders */
+  border-top: 2px solid var(--white-five) !important;
+  border-bottom: 3px solid var(--white-five) !important;
+}
+
+html.black-mode .focus-NotesView-NotebookReminders-DropAreaContainer { /* Notebook reminder background */
+  background: var(--black) !important;
+}
+
+html.black-mode .focus-NotesView-Subheader { /* Subheader border */
+  border-bottom: 1px solid var(--white-five) !important;
+}
+
+html.black-mode .GDAMOPFCHKB { /* Toolbar bottom border */
+  border-bottom: 1px solid var(--white-five) !important;
+}
+
+html.black-mode .GDAMOPFCP0 { /* Toolbar separators */
+  border-left: 1px solid var(--white-five) !important;
+}
+
+html.black-mode .focus-NotesView-Note .focus-NotesView-Note-snippetDivider { /* Notes divider color */
+  border-top: 1px solid var(--white-five) !important;
+}
+
+html.black-mode .GDAMOPFCN3B { /* Profile background */
+  background-color: var(--black) !important;
+}
+
+html.black-mode .focus-NotesView-NotesView { /* Notes list body */
+  background-color: var(--black) !important;
+}
+
+html.black-mode .GDAMOPFCKNB,
+html.black-mode .GDAMOPFCOPB { /* Note editor body */
+  background-color: var(--black) !important;
+}
+
+html.black-mode .GDAMOPFCIKB { /* Note editor toolbar */
+  background-color: var(--black) !important;
+}
+
+html.black-mode .GDAMOPFCJ1 { /* Note editor toolbar options */
+  background-color: var(--black) !important;
+}
+
+html.black-mode .GDAMOPFCOF.GDAMOPFCAG { /* Colors background */
+  background-color: var(--black) !important;
+}
+
+html.black-mode .GDAMOPFCHK,
+html.black-mode .GDAMOPFCOQ.GDAMOPFCAR { /* Submenus background */
+  background-color: var(--black) !important;
+}
+
+html.black-mode .GDAMOPFCNHC { /* Dialogs background */
+  background-color: var(--black) !important;
+}
+
+html.black-mode .GDAMOPFCHLB { /* Note editor head */
+  background-color: var(--black) !important;
+}
