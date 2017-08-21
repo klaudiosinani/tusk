@@ -181,6 +181,12 @@ const darwinTpl = [{
       sendAction('toggle-dark-mode');
     }
   }, {
+    label: 'Toggle Black Mode',
+    accelerator: 'CmdOrCtrl+Alt+D',
+    click() {
+      sendAction('toggle-black-mode');
+    }
+  }, {
     type: 'separator'
   }, {
     label: 'Tags',
@@ -492,6 +498,12 @@ const otherTpl = [{
     accelerator: 'CmdOrCtrl+D',
     click() {
       sendAction('toggle-dark-mode');
+    }
+  }, {
+    label: 'Toggle Black Mode',
+    accelerator: 'CmdOrCtrl+Alt+D',
+    click() {
+      sendAction('toggle-black-mode');
     }
   }, {
     type: 'separator'

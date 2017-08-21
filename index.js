@@ -33,6 +33,7 @@ function createMainWindow() {
   const lastURL = config.get('lastURL');
   const maxWindowInteger = 2147483647;
   const darkModeFlag = config.get('darkMode');
+  const blackModeFlag = config.get('blackMode');
 
   const win = new electron.BrowserWindow({
     title: app.getName(),
@@ -102,6 +103,7 @@ app.on('ready', () => {
   page.on('dom-ready', () => {
     page.insertCSS(fs.readFileSync(path.join(__dirname, 'browser.css'), 'utf8'));
     page.insertCSS(fs.readFileSync(path.join(__dirname, 'dark-mode.css'), 'utf8'));
+    page.insertCSS(fs.readFileSync(path.join(__dirname, 'black-mode.css'), 'utf8'));
     mainWindow.show();
   });
 
