@@ -176,6 +176,10 @@ html.dark-mode .focus-NotesView-Note .focus-NotesView-Note-snippetDivider { /* N
   border-top: 1px solid var(--base-five) !important;
 }
 
+html.dark-mode .GDAMOPFCN3B { /* Profile background */
+  background-color: var(--app-sidebar) !important;
+}
+
 html.dark-mode .focus-NotesView-NotesView { /* Notes list body */
   background-color: var(--note-list) !important;
 }
