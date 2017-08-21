@@ -14,6 +14,7 @@
 - [Features](#features)
   - [Dark Theme](#dark-theme)
   - [Black Theme](#black-theme)
+  - [Focus Mode](#focus-mode)
   - [Keyboard shortcuts](#keyboard-shortcuts)
 - [Disclaimer](#disclaimer)
 - [Team](#team)
@@ -45,6 +46,16 @@ Deep focus materialized. Boost your productivity by visiting the `View` menu or 
       </a>
 </div>
 
+### Focus Mode
+
+Press <kbd>Cmd/Ctrl</kbd> <kbd>K</kbd> and immerse yourself in a distraction-free note-taking mode.
+
+<div align="center">
+      <a href="https://github.com/hyper-pokemon/tusk">
+        <img src="https://cdn.rawgit.com/champloohq/tusk/78dd867e/media/focus-mode.png" alt="Tusk Focus Mode" width="100%">
+      </a>
+</div>
+
 ### Keyboard shortcuts
 
 Description            | Keys
@@ -53,12 +64,12 @@ Toggle Window Menu     | <kbd>Alt</kbd>
 Return to Notes        | <kbd>Esc</kbd>
 Delete Note            | <kbd>Delete</kbd>
 Toggle Dark Theme      | <kbd>Cmd/Ctrl</kbd> <kbd>D</kbd>
+Toggle Focus Mode      | <kbd>Cmd/Ctrl</kbd> <kbd>K</kbd>
+Exit Focus Mode        | <kbd>Cmd/Ctrl</kbd> <kbd>O</kbd>
 New Note               | <kbd>Cmd/Ctrl</kbd> <kbd>N</kbd>
 Add Shortcut           | <kbd>Cmd/Ctrl</kbd> <kbd>S</kbd>
 Set Reminder           | <kbd>Cmd/Ctrl</kbd> <kbd>E</kbd>
 Search Notes           | <kbd>Cmd/Ctrl</kbd> <kbd>F</kbd>
-Toggle Focus Mode      | <kbd>Cmd/Ctrl</kbd> <kbd>K</kbd>
-Exit Focus Mode        | <kbd>Cmd/Ctrl</kbd> <kbd>O</kbd>
 Bold Text              | <kbd>Cmd/Ctrl</kbd> <kbd>B</kbd>
 Italic Text            | <kbd>Cmd/Ctrl</kbd> <kbd>I</kbd>
 Underline Text         | <kbd>Cmd/Ctrl</kbd> <kbd>U</kbd>
