@@ -2,10 +2,10 @@
   "name": "tusk",
   "productName": "Tusk",
   "version": "0.0.0",
-  "description": "Tusk app",
+  "description": "🐘Refined Evernote desktop app",
   "private": true,
   "license": "MIT",
-  "repository": "hyper-pokemon/tusk",
+  "repository": "champloohq/tusk",
   "author": {
     "name": "Klaus Sinani",
     "email": "klauscfhq@protonmail.com",
