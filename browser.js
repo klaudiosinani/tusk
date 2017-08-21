@@ -64,6 +64,15 @@ ipc.on('toggle-dark-mode', () => {
   darkMode();
 });
 
+function blackMode() {
+  document.documentElement.classList.toggle('black-mode', config.get('blackMode'));
+}
+
+ipc.on('toggle-black-mode', () => {
+  config.set('blackMode', !config.get('blackMode'));
+  blackMode();
+});
+
 ipc.on('toggle-notebooks', () => {
   // Toggle notebooks list
   document.querySelector('#gwt-debug-Sidebar-notebooksButton').click();
