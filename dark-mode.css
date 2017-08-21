@@ -5,11 +5,11 @@
   --base-seventy: rgba(255, 255, 255, 0.7);
   --base-fifty: rgba(255, 255, 255, 0.5);
   --base-fourty: rgba(255, 255, 255, 0.4);
-  --base-thiry: rgba(255, 255, 255, 0.3);
+  --base-thirty: rgba(255, 255, 255, 0.3);
   --base-twenty: rgba(255, 255, 255, 0.2);
-  --base-five: rgba(255, 255, 255, 0.05);
   --base-ten: rgba(255, 255, 255, 0.1);
   --base-nine: rgba(255, 255, 255, 0.09);
+  --base-five: rgba(255, 255, 255, 0.05);
   --app-sidebar: rgba(29, 29, 29, 1);
   --note-list: rgba(30, 30, 30, 1);
   --note-editor: rgba(33, 33, 33, 1);
@@ -130,6 +130,50 @@ html.dark-mode .GDAMOPFCG4B { /* App left sidebar */
 
 html.dark-mode .GDAMOPFCJYB { /* Notes list head */
   background-color: var(--note-list) !important;
+}
+
+html.dark-mode .GDAMOPFCOPB { /* Notes list left border */
+  background-color: var(--note-list) !important;
+  border-left: 1px solid var(--base-five) !important;
+}
+
+html.dark-mode .GDAMOPFCA5B { /* Notes list left border */
+  border-left: 1px solid var(--base-five) !important;
+  border-right: 1px solid var(--base-five) !important;
+}
+
+html.dark-mode .GDAMOPFCN3B { /* Profile top border */
+  border-top: 1px solid var(--base-five) !important;
+}
+
+html.dark-mode .focus-NotesView-Note.focus-NotesView-Note-selected
+.focus-NotesView-Note-selectOverlay { /* Selected note bordered box */
+  border: 3px solid var(--base-five) !important;
+}
+
+html.dark-mode .focus-NotesView-RemindersList { /* Reminders list borders */
+  border-top: 2px solid var(--base-five) !important;
+  border-bottom: 3px solid var(--base-five) !important;
+}
+
+html.dark-mode .focus-NotesView-NotebookReminders-DropAreaContainer { /* Notebook reminder background */
+  background: var(--note-list) !important;
+}
+
+html.dark-mode .focus-NotesView-Subheader { /* Subheader border */
+  border-bottom: 1px solid var(--base-five) !important;
+}
+
+html.dark-mode .GDAMOPFCHKB { /* Toolbar bottom border */
+  border-bottom: 1px solid var(--base-five) !important;
+}
+
+html.dark-mode .GDAMOPFCP0 { /* Toolbar separators */
+  border-left: 1px solid var(--base-five) !important;
+}
+
+html.dark-mode .focus-NotesView-Note .focus-NotesView-Note-snippetDivider { /* Notes divider color */
+  border-top: 1px solid var(--base-five) !important;
 }
 
 html.dark-mode .focus-NotesView-NotesView { /* Notes list body */
