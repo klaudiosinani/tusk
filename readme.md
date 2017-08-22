@@ -28,7 +28,7 @@ Head to the [releases](https://github.com/champloohq/tusk/releases/latest) page 
 
 ### Dark Theme
 
-Silky & relaxing. Make it yours through the `View` menu or by pressing <kbd>Cmd/Ctrl</kbd> <kbd>D</kbd>.
+Silky & relaxing. Make it yours by pressing <kbd>Cmd/Ctrl</kbd> <kbd>D</kbd>.
 
 <div align="center">
       <a href="https://github.com/hyper-pokemon/tusk">
@@ -38,7 +38,7 @@ Silky & relaxing. Make it yours through the `View` menu or by pressing <kbd>Cmd/
 
 ### Black Theme
 
-Deep focus materialized. Boost your productivity by visiting the `View` menu or by pressing <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>D</kbd>.
+Deep focus materialized. Boost your productivity by pressing <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>D</kbd>.
 
 <div align="center">
       <a href="https://github.com/hyper-pokemon/tusk">
@@ -105,8 +105,9 @@ Tusk is a third-party, community driven, open source app and is not affiliated i
 
 **<>** with ❤ by
 
-- [Klaus Sinani](https://github.com/klauscfhq)
-- [Mario Sinani](https://github.com/snowmancfhq)
+[![Klaus Sinani](https://avatars.githubusercontent.com/u/12670537?s=130)](https://github.com/klauscfhq) | [![Mario Sinani](https://avatars.githubusercontent.com/u/29512262?s=130)](https://github.com/snowmancfhq)
+--- | ---
+[Klaus Sinani](https://github.com/klauscfhq) | [Mario Sinani](https://github.com/snowmancfhq)
 
 ## License
 
