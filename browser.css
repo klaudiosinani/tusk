@@ -36,6 +36,22 @@ body {
   visibility: hidden !important;
 }
 
+.focus-NotesView-NotesView {
+  background-color: #FFFFFF !important;
+}
+
+.GDAMOPFCKYB {
+  padding-bottom: 1px !important;
+}
+
+.focus-NotesView-RemindersList {
+  background-color: #FFFFFF;
+}
+
+.GDAMOPFCLYB { /* Note list header */
+  background-color: #FFFFFF;
+}
+
 .GDAMOPFCN3B { /* Profile background */
   background-color: #F8F8F8 !important;
 }
