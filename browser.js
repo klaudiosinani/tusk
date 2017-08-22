@@ -200,4 +200,5 @@ ipc.on('horizontal-rule', () => {
 document.addEventListener('DOMContentLoaded', () => {
   // Toggle dark mode
   darkMode();
+  blackMode();
 });
