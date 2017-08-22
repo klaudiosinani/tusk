@@ -198,7 +198,10 @@ ipc.on('horizontal-rule', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Toggle black mode
+  blackMode();
   // Toggle dark mode
   darkMode();
-  blackMode();
+
+  document.documentElement.style.backgroundColor = '#1E1E1E';
 });
