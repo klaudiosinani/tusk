@@ -149,6 +149,8 @@ html.black-mode .GDAMOPFCOPB { /* Notes list left border */
 html.black-mode .GDAMOPFCA5B { /* Notes list left border */
   border-left: 1px solid var(--white-five) !important;
   border-right: 1px solid var(--white-five) !important;
+  background: var(--black) !important;
+  background-color: var(--black) !important;
 }
 
 html.black-mode .GDAMOPFCN3B { /* Profile top border */
@@ -185,6 +187,14 @@ html.black-mode .focus-NotesView-Note .focus-NotesView-Note-snippetDivider { /* 
 }
 
 html.black-mode .GDAMOPFCN3B { /* Profile background */
+  background-color: var(--black) !important;
+}
+
+html.back-mode .GDAMOPFCPYB { /* Note list transition background */
+  background-color: var(--black) !important;
+}
+
+html.black-mode div#gwt-debug-FocusView-root { /* Sidebar transition background */
   background-color: var(--black) !important;
 }
 
