@@ -45,9 +45,10 @@ function createMainWindow() {
     minWidth: 400,
     minHeight: 200,
     alwaysOnTop: config.get('alwaysOnTop'),
-    titleBarStyle: 'hidden-inset',
+    titleBarStyle: 'hiddenInset',
     autoHideMenuBar: true,
     darkTheme: darkModeFlag,
+    backgroundColor: '#1E1E1E',
     webPreferences: {
       preload: path.join(__dirname, 'browser.js'),
       nodeIntegration: false,
