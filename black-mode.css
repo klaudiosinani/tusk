@@ -59,6 +59,14 @@ html.black-mode ::-webkit-scrollbar-thumb { /* Notes list scrollbar thumb */
   background: #2dbe60 !important;
 }
 
+html.black-mode .GDAMOPFCLYB { /* Note list header */
+  background-color: var(--black) !important;
+}
+
+html.black-mode .focus-NotesView-RemindersList { /* Reminders background */
+  background-color: var(--black) !important;
+}
+
 html.black-mode .GDAMOPFCKYB { /* Notes Title minor tweak */
   padding-bottom: 1px !important;
 }
@@ -147,8 +155,7 @@ html.black-mode .GDAMOPFCN3B { /* Profile top border */
   border-top: 1px solid var(--white-five) !important;
 }
 
-html.black-mode .focus-NotesView-Note.focus-NotesView-Note-selected
-.focus-NotesView-Note-selectOverlay { /* Selected note bordered box */
+html.black-mode .focus-NotesView-Note.focus-NotesView-Note-selected .focus-NotesView-Note-selectOverlay { /* Selected note bordered box */
   border: 3px solid var(--white-five) !important;
 }
 
