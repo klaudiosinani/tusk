@@ -4,6 +4,8 @@ const config = require('./config');
 
 const {ipcRenderer: ipc} = electron;
 
+const notesList = '.NotesView-ScrollWindow > div';
+
 ipc.on('new-note', () => {
   // Create new note
   document.querySelector('#gwt-debug-Sidebar-newNoteButton').click();
@@ -72,6 +74,16 @@ ipc.on('toggle-black-mode', () => {
   config.set('blackMode', !config.get('blackMode'));
   blackMode();
 });
+
+function goToNote(key) {
+  const index = key;
+  selectNote(index);
+}
+
+// Select the appropriate note based on given index
+function selectNote(index) {
+  document.querySelector(notesList).children[index].firstChild.firstChild.click();
+}
 
 ipc.on('toggle-notebooks', () => {
   // Toggle notebooks list
@@ -204,4 +216,28 @@ document.addEventListener('DOMContentLoaded', () => {
   darkMode();
 
   document.documentElement.style.backgroundColor = '#1E1E1E';
+});
+
+document.addEventListener('keydown', event => {
+  let comboKey;
+
+  // OS check
+  if (process.platform === 'darwin') {
+    comboKey = event.metaKey;
+  } else {
+    comboKey = event.ctrlKey;
+  }
+
+  // Validity check
+  if (!comboKey) {
+    return null;
+  }
+
+  // Parse as decimal
+  const givenNum = parseInt(event.key, 10);
+
+  // Get index
+  if (givenNum >= 1 && givenNum <= 9) {
+    goToNote(givenNum);
+  }
 });
