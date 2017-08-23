@@ -55,3 +55,9 @@ body {
 .GDAMOPFCN3B { /* Profile background */
   background-color: #F8F8F8 !important;
 }
+
+@media all and (max-width: 800px) {
+	.GDAMOPFCOPB.GDAMOPFCCQB {	/* Enter compact mode */
+    margin-left: 0px !important;
+	}
+}

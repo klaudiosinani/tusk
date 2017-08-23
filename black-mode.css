@@ -231,3 +231,9 @@ html.black-mode .GDAMOPFCNHC { /* Dialogs background */
 html.black-mode .GDAMOPFCHLB { /* Note editor head */
   background-color: var(--black) !important;
 }
+
+@media all and (max-width: 800px) {
+html.black-mode	.GDAMOPFCOPB.GDAMOPFCCQB {	/* Enter compact mode */
+    margin-left: 0px !important;
+	}
+}
