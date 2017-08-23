@@ -8,8 +8,13 @@
 
 [![Build Status](https://travis-ci.org/champloohq/tusk.svg?branch=master)](https://travis-ci.org/champloohq/tusk) [![Build status](https://ci.appveyor.com/api/projects/status/ok91rnp4a442rbmq?svg=true)](https://ci.appveyor.com/project/klauscfhq/tusk) [![Dependency Status](https://dependencyci.com/github/champloohq/tusk/badge)](https://dependencyci.com/github/champloohq/tusk) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/champloohq/tusk) [![Latest version](https://badge.fury.io/gh/champloohq%2Ftusk.svg)](https://github.com/champloohq/tusk/releases)
 
+## Description 
+
+Tusk is an unofficial, open source, third-party, community driven, free Evernote app with a handful of useful features.
+
 ## Contents
 
+- [Description](#description)
 - [Install](#install)
 - [Features](#features)
   - [Dark Theme](#dark-theme)
@@ -110,7 +115,7 @@ Insert Horizontal Rule | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>-</kbd>
 
 ## Disclaimer
 
-Tusk is a third-party, community driven, open source app and is not affiliated in no way with Evernote.
+Tusk is an unofficial, open source, third-party, community driven, free app and is not affiliated in no way with Evernote.
 
 ## Team
 
