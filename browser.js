@@ -4,8 +4,6 @@ const config = require('./config');
 
 const {ipcRenderer: ipc} = electron;
 
-const notesList = '.NotesView-ScrollWindow > div';
-
 ipc.on('new-note', () => {
   // Create new note
   document.querySelector('#gwt-debug-Sidebar-newNoteButton').click();
@@ -79,6 +77,8 @@ function goToNote(key) {
   const index = key;
   selectNote(index);
 }
+
+const notesList = '.NotesView-ScrollWindow > div';
 
 // Select the appropriate note based on given index
 function selectNote(index) {
