@@ -15,6 +15,7 @@
   - [Dark Theme](#dark-theme)
   - [Black Theme](#black-theme)
   - [Focus Mode](#focus-mode)
+  - [Compact Mode](#compact-mode)
   - [Keyboard shortcuts](#keyboard-shortcuts)
 - [Disclaimer](#disclaimer)
 - [Team](#team)
@@ -53,6 +54,16 @@ Press <kbd>Cmd/Ctrl</kbd> <kbd>K</kbd> and immerse yourself in a distraction-fre
 <div align="center">
       <a href="https://github.com/hyper-pokemon/tusk">
         <img src="https://cdn.rawgit.com/champloohq/tusk/78dd867e/media/focus-mode.png" alt="Tusk Focus Mode" width="100%">
+      </a>
+</div>
+
+### Compact Mode
+
+Get more for less. Keep your productivity to the maximum no matter the screen size. Simply downsize the window to enter the mode.
+
+<div align="center">
+      <a href="https://github.com/hyper-pokemon/tusk">
+        <img src="https://cdn.rawgit.com/champloohq/tusk/55edef55/media/compact-mode.png" alt="Tusk Compact Mode" width="100%">
       </a>
 </div>
 
