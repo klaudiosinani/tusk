@@ -36,19 +36,19 @@ function createMainWindow() {
 
   const win = new electron.BrowserWindow({
     title: app.getName(),
-    show: false,
     x: lastWindowState.x,
     y: lastWindowState.y,
     width: lastWindowState.width,
     height: lastWindowState.height,
-    icon: process.platform === 'linux' && path.join(__dirname, 'static/Icon.png'),
     minWidth: 400,
     minHeight: 200,
+    icon: process.platform === 'linux' && path.join(__dirname, 'static/Icon.png'),
     alwaysOnTop: config.get('alwaysOnTop'),
     titleBarStyle: 'hiddenInset',
-    autoHideMenuBar: true,
-    darkTheme: darkModeFlag,
     backgroundColor: '#1E1E1E',
+    darkTheme: darkModeFlag,
+    autoHideMenuBar: true,
+    show: false,
     webPreferences: {
       preload: path.join(__dirname, 'browser.js'),
       nodeIntegration: false,
