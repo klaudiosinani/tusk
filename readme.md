@@ -21,6 +21,7 @@ Tusk is an unofficial, open source, third-party, community driven, free Evernote
   - [Black Theme](#black-theme)
   - [Focus Mode](#focus-mode)
   - [Compact Mode](#compact-mode)
+  - [Note Navigation](#note-navigation)
   - [Keyboard shortcuts](#keyboard-shortcuts)
 - [Disclaimer](#disclaimer)
 - [Team](#team)
@@ -71,6 +72,12 @@ Get more for less. Keep your productivity to the maximum no matter the screen si
         <img src="https://cdn.rawgit.com/champloohq/tusk/55edef55/media/compact-mode.png" alt="Tusk Compact Mode" width="100%">
       </a>
 </div>
+
+### Note Navigation
+
+Using <kbd>Cmd/Ctrl</kbd> <kbd>1</kbd> - <kbd>9</kbd> navigate seamlessly between notes without taking your hands away from the keyboard.
+
+![](media/note-navigation.gif)
 
 ### Keyboard shortcuts
 
