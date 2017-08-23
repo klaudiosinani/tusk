@@ -19,9 +19,9 @@ function activate(action) {
 }
 
 const helpSubmenu = [{
-  label: 'Visit Repo',
+  label: 'Tusk Repo',
   click() {
-    shell.openExternal(`https://github.com/champloohq`);
+    shell.openExternal(`https://github.com/champloohq/tusk`);
   }
 }, {
   label: `Tusk Homepage`,
@@ -39,7 +39,7 @@ if (process.platform !== 'darwin') {
       electron.dialog.showMessageBox({
         title: `About Tusk`,
         message: `Tusk ${app.getVersion()}`,
-        detail: 'Created by the Champloo HQ team',
+        detail: '<> with <3 by the Champloo HQ team',
         icon: path.join(__dirname, 'static/Icon.png'),
         buttons: []
       });
