@@ -8,7 +8,7 @@
 
 [![Build Status](https://travis-ci.org/champloohq/tusk.svg?branch=master)](https://travis-ci.org/champloohq/tusk) [![Build status](https://ci.appveyor.com/api/projects/status/ok91rnp4a442rbmq?svg=true)](https://ci.appveyor.com/project/klauscfhq/tusk) [![Dependency Status](https://dependencyci.com/github/champloohq/tusk/badge)](https://dependencyci.com/github/champloohq/tusk) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/champloohq/tusk) [![Latest version](https://badge.fury.io/gh/champloohq%2Ftusk.svg)](https://github.com/champloohq/tusk/releases)
 
-## Description 
+## Description
 
 Tusk is an unofficial, open source, third-party, community driven, free Evernote app with a handful of useful features.
 
@@ -69,7 +69,7 @@ Get more for less. Keep your productivity to the maximum no matter the screen si
 
 <div align="center">
       <a href="https://github.com/hyper-pokemon/tusk">
-        <img src="https://cdn.rawgit.com/champloohq/tusk/55edef55/media/compact-mode.png" alt="Tusk Compact Mode" width="100%">
+        <img src="https://cdn.rawgit.com/champloohq/tusk/55edef55/media/compact-mode.png" alt="Tusk Compact Mode" width="90%">
       </a>
 </div>
 
@@ -77,7 +77,11 @@ Get more for less. Keep your productivity to the maximum no matter the screen si
 
 Using <kbd>Cmd/Ctrl</kbd> <kbd>1</kbd> - <kbd>9</kbd> navigate seamlessly between notes without taking your hands away from the keyboard.
 
-![](media/note-navigation.gif)
+<div align="center">
+      <a href="https://github.com/hyper-pokemon/tusk">
+        <img src="https://cdn.rawgit.com/champloohq/tusk/6d05e0c4/media/note-navigation.gif" alt="Note Navigation" width="100%">
+      </a>
+</div>
 
 ### Keyboard shortcuts
 
