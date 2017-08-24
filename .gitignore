@@ -1,9 +1,12 @@
-node_modules
-yarn.lock
-/dist
 .idea
 .directory
 .DS_Store
+Thumbs.db
+node_modules
 *.log
 *.swp
 *.swo
+tags
+cscope.*
+*~
+yarn.lock
