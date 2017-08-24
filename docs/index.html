@@ -10,16 +10,32 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
   <link href="main.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <style>
+    ::-webkit-scrollbar {
+      width: 10px !important;
+    }
+
+    ::-webkit-scrollbar-track {
+      border-radius: 0px !important;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border-radius: 0px !important;
+      background: #000000 !important;
+    }
+
     html {
       font-family: 'Raleway', sans-serif;
     }
 
     h3 {
-      padding-top: 30px !important;
     }
 
     hr {
       width: 30%;
+    }
+
+    .logo {
+      padding-top: 30px !important;
     }
 
     .text-link {
@@ -144,6 +160,7 @@
 <body>
   <div class="section">
     <div class="container center">
+      <img class="logo" src="../media/logo.png" width="15%">
       <h3 class="header center">Tusk</h3>
       <div class="row center">
         <h5 class="col s12 light">Refined Evernote desktop app</h5>
