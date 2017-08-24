@@ -1,6 +1,7 @@
 .idea
 .directory
 .DS_Store
+/dist
 Thumbs.db
 node_modules
 *.log
