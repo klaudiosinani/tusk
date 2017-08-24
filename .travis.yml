@@ -22,6 +22,3 @@ script:
   - npm test
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then npm run dist; fi
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then npm run pack:macos; fi
-branches:
-  except:
-    - "/^v\\d+\\.\\d+\\.\\d+$/"

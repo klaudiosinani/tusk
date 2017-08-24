@@ -6,10 +6,7 @@ install:
   - ps: Install-Product node 6 x64
   - npm install -g npm
   - npm install
-  - npm prune
 build_script:
-  - node --version
-  - npm --version
   - npm test
   - npm run dist
 shallow_clone: true
