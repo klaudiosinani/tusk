@@ -7,14 +7,11 @@ const shell = electron.shell;
 const BrowserWindow = electron.BrowserWindow;
 const appName = app.getName();
 
-function activate(action) {
-  const [win] = BrowserWindow.getAllWindows();
-
-  if (process.platform === 'darwin') {
-    win.restore();
-  }
-
-  win.webContents.send(action);
+function activate(command) {
+  const appWindow = BrowserWindow.getAllWindows()[0];
+  // Extra measure in order to be shown
+  appWindow.show();
+  appWindow.webContents.send(command);
 }
 
 const helpSubmenu = [{

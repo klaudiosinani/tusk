@@ -13,9 +13,9 @@ require('electron-dl')();
 require('electron-context-menu')();
 
 let mainWindow;
-let isQuitting = false;
+let exiting = false;
 
-const isAlreadyRunning = app.makeSingleInstance(() => {
+const functioning = app.makeSingleInstance(() => {
   if (mainWindow) {
     if (mainWindow.isMinimized()) {
       mainWindow.restore();
@@ -24,7 +24,7 @@ const isAlreadyRunning = app.makeSingleInstance(() => {
   }
 });
 
-if (isAlreadyRunning) {
+if (functioning) {
   app.quit();
 }
 
@@ -34,7 +34,7 @@ function createMainWindow() {
   const maxWindowInteger = 2147483647;
   const darkModeFlag = config.get('darkMode');
 
-  const win = new electron.BrowserWindow({
+  const tuskWindow = new electron.BrowserWindow({
     title: app.getName(),
     x: lastWindowState.x,
     y: lastWindowState.y,
@@ -53,60 +53,54 @@ function createMainWindow() {
       preload: path.join(__dirname, 'browser.js'),
       nodeIntegration: false,
       plugins: true
-    },
-    nodeIntegration: true
+    }
   });
 
-  if (process.platform === 'darwin') {
-    win.setSheetOffset(40);
-  }
+  tuskWindow.loadURL(lastURL);
 
-  win.loadURL(lastURL);
-
-  win.on('close', e => {
-    if (!isQuitting) {
+  tuskWindow.on('close', e => {
+    if (!exiting) {
       e.preventDefault();
 
       if (process.platform === 'darwin') {
         app.hide();
       } else {
-        win.hide();
+        tuskWindow.hide();
       }
     }
   });
 
-  win.on('page-title-updated', e => {
+  tuskWindow.on('enter-full-screen', () => {
+    tuskWindow.setMaximumSize(maxWindowInteger, maxWindowInteger);
+  });
+
+  tuskWindow.on('page-title-updated', e => {
     e.preventDefault();
   });
 
-  win.on('enter-full-screen', () => {
-    win.setMaximumSize(maxWindowInteger, maxWindowInteger);
-  });
-
-  win.webContents.on('did-navigate-in-page', (e, url) => {
+  tuskWindow.webContents.on('did-navigate-in-page', (e, url) => {
     config.set('lastURL', url);
   });
 
   require('devtron').install();
 
-  return win;
+  return tuskWindow;
 }
 
 app.on('ready', () => {
   electron.Menu.setApplicationMenu(appMenu);
   mainWindow = createMainWindow();
   tray.create(mainWindow);
+  const windowContent = mainWindow.webContents;
 
-  const page = mainWindow.webContents;
-
-  page.on('dom-ready', () => {
-    page.insertCSS(fs.readFileSync(path.join(__dirname, 'browser.css'), 'utf8'));
-    page.insertCSS(fs.readFileSync(path.join(__dirname, 'dark-mode.css'), 'utf8'));
-    page.insertCSS(fs.readFileSync(path.join(__dirname, 'black-mode.css'), 'utf8'));
+  windowContent.on('dom-ready', () => {
+    windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'browser.css'), 'utf8'));
+    windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'dark-mode.css'), 'utf8'));
+    windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'black-mode.css'), 'utf8'));
     mainWindow.show();
   });
 
-  page.on('new-window', (e, url) => {
+  windowContent.on('new-window', (e, url) => {
     e.preventDefault();
     electron.shell.openExternal(url);
   });
@@ -117,7 +111,7 @@ app.on('activate', () => {
 });
 
 app.on('before-quit', () => {
-  isQuitting = true;
+  exiting = true;
 
   if (!mainWindow.isFullScreen()) {
     config.set('lastWindowState', mainWindow.getBounds());

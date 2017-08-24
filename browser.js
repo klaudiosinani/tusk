@@ -2,7 +2,7 @@
 const electron = require('electron');
 const config = require('./config');
 
-const {ipcRenderer: ipc} = electron;
+const ipc = electron.ipcRenderer;
 
 ipc.on('new-note', () => {
   // Create new note
@@ -209,15 +209,6 @@ ipc.on('horizontal-rule', () => {
   document.querySelector('#gwt-debug-FormattingBar-horizontalRuleButton').click();
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  // Toggle black mode
-  blackMode();
-  // Toggle dark mode
-  darkMode();
-
-  document.documentElement.style.backgroundColor = '#1E1E1E';
-});
-
 document.addEventListener('keydown', event => {
   let comboKey;
 
@@ -229,7 +220,7 @@ document.addEventListener('keydown', event => {
   }
 
   // Validity check
-  if (!comboKey) {
+  if (comboKey === false) {
     return null;
   }
 
@@ -240,4 +231,13 @@ document.addEventListener('keydown', event => {
   if (givenNum >= 1 && givenNum <= 9) {
     goToNote(givenNum);
   }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Toggle black mode
+  blackMode();
+  // Toggle dark mode
+  darkMode();
+  // Prevent white flashing screen on startup
+  document.documentElement.style.backgroundColor = '#1E1E1E';
 });
