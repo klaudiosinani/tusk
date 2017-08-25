@@ -1,6 +1,6 @@
 <h1 align="center">
       <a href="https://github.com/hyper-pokemon/tusk">
-        <img src="https://cdn.rawgit.com/champloohq/tusk/5fad98fd/media/header.png" alt="Tusk" width="100%">
+        <img src="https://cdn.rawgit.com/champloohq/tusk/c0475c42/media/header.png" alt="Tusk" width="100%">
       </a>
 </h1>
 
@@ -39,7 +39,7 @@ Silky & relaxing. Make it yours by pressing <kbd>Cmd/Ctrl</kbd> <kbd>D</kbd>.
 
 <div align="center">
       <a href="https://github.com/hyper-pokemon/tusk">
-        <img src="https://cdn.rawgit.com/champloohq/tusk/5fad98fd/media/dark-theme.png" alt="Tusk Dark Theme" width="100%">
+        <img src="https://cdn.rawgit.com/champloohq/tusk/c0475c42/media/dark-theme.png" alt="Tusk Dark Theme" width="100%">
       </a>
 </div>
 
@@ -49,7 +49,7 @@ Deep focus materialized. Boost your productivity by pressing <kbd>Cmd/Ctrl</kbd>
 
 <div align="center">
       <a href="https://github.com/hyper-pokemon/tusk">
-        <img src="https://cdn.rawgit.com/champloohq/tusk/10b6d929/media/black-theme.png" alt="Tusk Black Theme" width="100%">
+        <img src="https://cdn.rawgit.com/champloohq/tusk/c0475c42/media/black-theme.png" alt="Tusk Black Theme" width="100%">
       </a>
 </div>
 
@@ -59,7 +59,7 @@ Press <kbd>Cmd/Ctrl</kbd> <kbd>K</kbd> and immerse yourself in a distraction-fre
 
 <div align="center">
       <a href="https://github.com/hyper-pokemon/tusk">
-        <img src="https://cdn.rawgit.com/champloohq/tusk/78dd867e/media/focus-mode.png" alt="Tusk Focus Mode" width="100%">
+        <img src="https://cdn.rawgit.com/champloohq/tusk/c0475c42/media/focus-mode.png" alt="Tusk Focus Mode" width="100%">
       </a>
 </div>
 
@@ -69,7 +69,7 @@ Get more for less. Keep your productivity to the maximum no matter the screen si
 
 <div align="center">
       <a href="https://github.com/hyper-pokemon/tusk">
-        <img src="https://cdn.rawgit.com/champloohq/tusk/55edef55/media/compact-mode.png" alt="Tusk Compact Mode" width="90%">
+        <img src="https://cdn.rawgit.com/champloohq/tusk/c0475c42/media/compact-mode.png" alt="Tusk Compact Mode" width="90%">
       </a>
 </div>
 
@@ -79,7 +79,7 @@ Using <kbd>Cmd/Ctrl</kbd> <kbd>1</kbd> - <kbd>9</kbd> navigate seamlessly betwee
 
 <div align="center">
       <a href="https://github.com/hyper-pokemon/tusk">
-        <img src="https://cdn.rawgit.com/champloohq/tusk/6d05e0c4/media/note-navigation.gif" alt="Note Navigation" width="100%">
+        <img src="https://cdn.rawgit.com/champloohq/tusk/c0475c42/media/note-navigation.gif" alt="Note Navigation" width="100%">
       </a>
 </div>
 
