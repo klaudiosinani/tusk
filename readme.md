@@ -12,6 +12,8 @@
 
 Tusk is an unofficial, open source, third-party, community driven, free Evernote app with a handful of useful features.
 
+Come over to our [Twitter](https://twitter.com/champloohq) account to share your thoughts on the project or to just say hi!
+
 ## Contents
 
 - [Description](#description)
