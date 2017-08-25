@@ -171,7 +171,7 @@ const darwinTpl = [{
     }
   }, {
     label: 'Toggle Black Mode',
-    accelerator: 'CmdOrCtrl+Alt+D',
+    accelerator: 'CmdOrCtrl+Alt+E',
     click() {
       activate('toggle-black-mode');
     }
@@ -490,7 +490,7 @@ const otherTpl = [{
     }
   }, {
     label: 'Toggle Black Mode',
-    accelerator: 'CmdOrCtrl+Alt+D',
+    accelerator: 'CmdOrCtrl+Alt+E',
     click() {
       activate('toggle-black-mode');
     }

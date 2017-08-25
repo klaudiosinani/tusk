@@ -45,7 +45,7 @@ Silky & relaxing. Make it yours by pressing <kbd>Cmd/Ctrl</kbd> <kbd>D</kbd>.
 
 ### Black Theme
 
-Deep focus materialized. Boost your productivity by pressing <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>D</kbd>.
+Deep focus materialized. Boost your productivity by pressing <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>E</kbd>.
 
 <div align="center">
       <a href="https://github.com/hyper-pokemon/tusk">
@@ -103,7 +103,7 @@ Underline Text         | <kbd>Cmd/Ctrl</kbd> <kbd>U</kbd>
 Strikethrough Text     | <kbd>Cmd/Ctrl</kbd> <kbd>T</kbd>
 Increase Indentation   | <kbd>Cmd/Ctrl</kbd> <kbd>M</kbd>
 Toggle Settings        | <kbd>Cmd/Ctrl</kbd> <kbd>,</kbd>
-Toggle Black Theme     | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>D</kbd>
+Toggle Black Theme     | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>E</kbd>
 Toggle Tags            | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>T</kbd>
 Toggle Notebooks       | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>N</kbd>
 Align Left             | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>L</kbd>
