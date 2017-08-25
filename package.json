@@ -3,7 +3,6 @@
   "productName": "Tusk",
   "version": "0.0.0",
   "description": "🐘Refined Evernote desktop app",
-  "private": true,
   "license": "MIT",
   "repository": "champloohq/tusk",
   "author": {
