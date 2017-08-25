@@ -24,7 +24,7 @@ html.black-mode body {
   -webkit-app-region: drag;
 }
 
-html.black-mode .GDAMOPFCN4B {
+html.black-mode .GDAMOPFCO4B {
   left: 0;
   right: 0;
   bottom: 0;
@@ -33,7 +33,7 @@ html.black-mode .GDAMOPFCN4B {
   position: relative;
 }
 
-html.black-mode .GDAMOPFCE5B {
+html.black-mode .GDAMOPFCF5B, .GDAMOPFCP4B {
   margin: 20px 0px !important;
 }
 
@@ -59,11 +59,11 @@ html.black-mode ::-webkit-scrollbar-thumb { /* Notes list scrollbar thumb */
   background: #2dbe60 !important;
 }
 
-html.black-mode .GDAMOPFCLYB { /* Note list header */
+html.black-mode .GDAMOPFCIEB { /* Metting note background */
   background-color: var(--black) !important;
 }
 
-html.black-mode .focus-NotesView-RemindersList { /* Reminders background */
+html.black-mode .GDAMOPFCLYB { /* Note list header */
   background-color: var(--black) !important;
 }
 
@@ -80,17 +80,14 @@ html.black-mode .Dropdown-menu {
   background: var(--black) !important;
 }
 
-html.black-mode .GDAMOPFCDKB,
-html.black-mode .GDAMOPFCHYC,
-html.black-mode .GDAMOPFCO5.GDAMOPFCAAB { /* Chat windows */
+html.black-mode .GDAMOPFCEKB, /* Middle part */
+html.black-mode .GDAMOPFCAHB, /* Bottom part */
+html.black-mode .GDAMOPFCPGB, /* Top part */
+html.black-mode .GDAMOPFCHYC.GDAMOPFCLD { /* Chat windows */
   background: var(--black) !important;
 }
 
-html.black-mode .GDAMOPFCHYC {
-  color: #e1e1e1 !important;
-}
-
-html.black-mode .GDAMOPFCKKC { /* Reminder modal */
+html.black-mode .GDAMOPFCLKC { /* Reminder modal */
   background: var(--black) !important;
 }
 
@@ -98,9 +95,14 @@ html.black-mode .GDAMOPFCHEB {
   background: var(--black) !important;
 }
 
-html.black-mode .GDAMOPFCI-B,
+html.black-mode .GDAMOPFCJ-B,
+html.black-mode .GDAMOPFCEQB,
 html.black-mode .GDAMOPFCDAC.GDAMOPFCL5B { /* Search modal */
   background-color: var(--black) !important;
+}
+
+html.black-mode .GDAMOPFCP-B {
+  border-bottom: 1px solid var(--white-five) !important;
 }
 
 html.black-mode .GDAMOPFCEWB,
@@ -110,9 +112,25 @@ html.black-mode .GDAMOPFCFTB { /* Notebooks modal */
   background-color: var(--black) !important;
 }
 
+html.black-mode .GDAMOPFCAXB.GDAMOPFCMXB { /* Selected notebook in notebooks modal */
+  background-color: #2dbe60 !important;
+}
+
+html.black-mode .GDAMOPFCGTB { /* Select notebook at toolbar option */
+  background-color: var(--black) !important;
+}
+
 html.black-mode .GDAMOPFCJJ,
 html.black-mode .focus-drawer-Filter-input { /* Search notebook/tags input text */
   color: #e1e1e1 !important;
+}
+
+html.black-mode div#gwt-debug-GlassModalDialog-container { /* Glass modal background */
+  background-color: var(--black) !important;
+}
+
+html.black-mode .GDAMOPFCIHC { /* Glass modal bottom part background */
+  background-color: var(--black) !important;
 }
 
 html.black-mode .GDAMOPFCPE { /* Notebook info */
@@ -124,24 +142,30 @@ html.black-mode .GDAMOPFCDQB { /* Saved search */
   background-color: var(--black) !important;
 }
 
-html.black-mode .GDAMOPFCEHB,
-html.black-mode .GDAMOPFCN5B { /* Shortcuts modal */
+html.black-mode .GDAMOPFCFHB,
+html.black-mode .GDAMOPFCO5B { /* Shortcuts modal */
   background-color: var(--black) !important;
 }
 
-html.black-mode .GDAMOPFCP2 { /* Setting menu */
+html.black-mode .GDAMOPFCP2 { /* Settings menu */
   background-color: var(--black) !important;
 }
 
-html.black-mode .GDAMOPFCG4B { /* App left sidebar */
+html.black-mode .GDAMOPFCH4B { /* App left sidebar */
   background-color: var(--black) !important;
+}
+
+html.black-mode .GDAMOPFCB5B {
+  background: var(--black) !important;
+  background-color: var(--black) !important;
+  border-right: 1px solid var(--white-five) !important;
 }
 
 html.black-mode .GDAMOPFCJYB { /* Notes list head */
   background-color: var(--black) !important;
 }
 
-html.black-mode .GDAMOPFCOPB { /* Notes list left border */
+html.black-mode .GDAMOPFCPPB { /* Notes list left border */
   background-color: var(--black) !important;
   border-left: 1px solid var(--white-five) !important;
 }
@@ -166,6 +190,10 @@ html.black-mode .focus-NotesView-RemindersList { /* Reminders list borders */
   border-bottom: 3px solid var(--white-five) !important;
 }
 
+html.black-mode .focus-NotesView-RemindersList { /* Reminders background */
+  background-color: var(--black) !important;
+}
+
 html.black-mode .focus-NotesView-NotebookReminders-DropAreaContainer { /* Notebook reminder background */
   background: var(--black) !important;
 }
@@ -174,8 +202,16 @@ html.black-mode .focus-NotesView-Subheader { /* Subheader border */
   border-bottom: 1px solid var(--white-five) !important;
 }
 
-html.black-mode .GDAMOPFCHKB { /* Toolbar bottom border */
+html.black-mode .GDAMOPFCJKB {
+  background-color: var(--black) !important;
+}
+
+html.black-mode .GDAMOPFCIKB { /* Toolbar bottom border */
   border-bottom: 1px solid var(--white-five) !important;
+}
+
+html.black-mode .GDAMOPFCILB { /* Note attributes background */
+  background: var(--black) !important;
 }
 
 html.black-mode .GDAMOPFCP0 { /* Toolbar separators */
@@ -186,11 +222,17 @@ html.black-mode .focus-NotesView-Note .focus-NotesView-Note-snippetDivider { /* 
   border-top: 1px solid var(--white-five) !important;
 }
 
-html.black-mode .GDAMOPFCN3B { /* Profile background */
+html.black-mode .GDAMOPFCO3B { /* Profile background */
   background-color: var(--black) !important;
+  border-top: 1px solid var(--white-five) !important;
 }
 
-html.back-mode .GDAMOPFCPYB { /* Note list transition background */
+html.black-mode .GDAMOPFCPYB { /* Note list transition background */
+  background-color: var(--black) !important;
+  border-top: 1px solid var(--white-five) !important;
+}
+
+html.black-mode .GDAMOPFCMYB { /* Note list header */
   background-color: var(--black) !important;
 }
 
@@ -207,11 +249,15 @@ html.black-mode .GDAMOPFCOPB { /* Note editor body */
   background-color: var(--black) !important;
 }
 
-html.black-mode .GDAMOPFCIKB { /* Note editor toolbar */
+html.black-mode .GDAMOPFCELB { /* Note editor toolbar */
   background-color: var(--black) !important;
 }
 
 html.black-mode .GDAMOPFCJ1 { /* Note editor toolbar options */
+  background-color: var(--black) !important;
+}
+
+html.black-mode .GDAMOPFCLNB { /* Note editor background */
   background-color: var(--black) !important;
 }
 
@@ -233,7 +279,7 @@ html.black-mode .GDAMOPFCHLB { /* Note editor head */
 }
 
 @media all and (max-width: 800px) {
-html.black-mode	.GDAMOPFCOPB.GDAMOPFCCQB {	/* Enter compact mode */
+html.black-mode .GDAMOPFCPPB.GDAMOPFCDQB { /* Enter compact mode */
     margin-left: 0px !important;
-	}
+  }
 }
