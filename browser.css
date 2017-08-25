@@ -19,7 +19,7 @@ body {
   background: #2dbe60 !important;
 }
 
-.GDAMOPFCN4B {
+.GDAMOPFCO4B {
   left: 0;
   right: 0;
   bottom: 0;
@@ -28,7 +28,7 @@ body {
   position: relative;
 }
 
-.GDAMOPFCE5B {
+.GDAMOPFCF5B, .GDAMOPFCP4B {
   margin: 20px 0px !important;
 }
 
@@ -48,16 +48,24 @@ body {
   background-color: #FFFFFF;
 }
 
-.GDAMOPFCLYB { /* Note list header */
+.GDAMOPFCMYB { /* Note list header */
   background-color: #FFFFFF;
 }
 
-.GDAMOPFCN3B { /* Profile background */
+.GDAMOPFCO3B { /* Profile background */
+  background-color: #F8F8F8 !important;
+}
+
+.GDAMOPFCPYB { /* Note list transition background */
+  background-color: #FFFFFF !important;
+}
+
+div#gwt-debug-FocusView-root { /* Sidebar transition background */
   background-color: #F8F8F8 !important;
 }
 
 @media all and (max-width: 800px) {
-	.GDAMOPFCOPB.GDAMOPFCCQB {	/* Enter compact mode */
+	.GDAMOPFCPPB.GDAMOPFCDQB {	/* Enter compact mode */
     margin-left: 0px !important;
 	}
 }
