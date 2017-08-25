@@ -45,7 +45,7 @@ function createMainWindow() {
     icon: process.platform === 'linux' && path.join(__dirname, 'static/Icon.png'),
     alwaysOnTop: config.get('alwaysOnTop'),
     titleBarStyle: 'hiddenInset',
-    backgroundColor: '#1E1E1E',
+    backgroundColor: '#212121',
     darkTheme: darkModeFlag,
     autoHideMenuBar: true,
     show: false,

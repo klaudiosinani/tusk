@@ -239,5 +239,5 @@ document.addEventListener('DOMContentLoaded', () => {
   // Toggle dark mode
   darkMode();
   // Prevent white flashing screen on startup
-  document.documentElement.style.backgroundColor = '#1E1E1E';
+  document.documentElement.style.backgroundColor = '#212121';
 });
