@@ -25,6 +25,8 @@ Come over to our [Twitter](https://twitter.com/champloohq) account to share your
   - [Compact Mode](#compact-mode)
   - [Note Navigation](#note-navigation)
   - [Keyboard shortcuts](#keyboard-shortcuts)
+  - [Cross Platform](https://github.com/champloohq/tusk/releases/latest)
+- [Upcoming Features](#upcoming-features)
 - [Disclaimer](#disclaimer)
 - [Team](#team)
 - [License](#license)
@@ -71,7 +73,7 @@ Get more for less. Keep your productivity to the maximum no matter the screen si
 
 <div align="center">
       <a href="https://github.com/hyper-pokemon/tusk">
-        <img src="https://cdn.rawgit.com/champloohq/tusk/c0475c42/media/compact-mode.png" alt="Tusk Compact Mode" width="90%">
+        <img src="https://cdn.rawgit.com/champloohq/tusk/c0475c42/media/compact-mode.png" alt="Tusk Compact Mode" width="70%">
       </a>
 </div>
 
@@ -125,6 +127,19 @@ Bulleted List          | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>.</kbd>
 Subscript Text         | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>]</kbd>
 Superscript Text       | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>[</kbd>
 Insert Horizontal Rule | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>-</kbd>
+
+## Upcoming Features
+
+A list of features to be added on the upcoming releases.<br/>
+Feel like suggesting a new feature? Open a [`feature-request` issue](https://github.com/champloohq/tusk/issues/new) :tada:
+
+- [ ] Auto-updates
+- [ ] Vibrant theme
+- [ ] App pin lock
+- [ ] Automatic night mode
+- [ ] Note printing
+- [ ] Code blocks highlighting 
+- [ ] RTL support
 
 ## Disclaimer
 
