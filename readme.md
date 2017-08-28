@@ -149,9 +149,9 @@ Tusk is an unofficial, open source, third-party, community driven, free app and 
 
 **<>** with ❤ by
 
-[![Klaus Sinani](https://avatars.githubusercontent.com/u/12670537?s=130)](https://github.com/klauscfhq) | [![Mario Sinani](https://avatars.githubusercontent.com/u/29512262?s=130)](https://github.com/snowmancfhq) | [![Thanasis Gkanos](https://avatars3.githubusercontent.com/u/18072542?v=4&u=120dbd9a2e4ad54e82ca30017da8baf2d7ce2ee8&s=400)
---- | --- | ---
-[Klaus Sinani](https://github.com/klauscfhq) | [Mario Sinani](https://github.com/snowmancfhq) | [Thanasis Gkanos](https://github.com/ThanasisGkanos)
+[![Klaus Sinani](https://avatars.githubusercontent.com/u/12670537?s=130)](https://github.com/klauscfhq) | [![Mario Sinani](https://avatars.githubusercontent.com/u/29512262?s=130)](https://github.com/snowmancfhq) | [![George Baxopoulos](https://avatars.githubusercontent.com/u/19195396?s=130)](https://github.com/georgebax) | [![Thanasis Gkanos](https://avatars1.githubusercontent.com/u/18072542?v=4&s=460)](https://github.com/ThanasisGkanos)
+--- | --- | --- | ---
+[Klaus Sinani](https://github.com/klauscfhq) | [Mario Sinani](https://github.com/snowmancfhq) | [George Baxopoulos](https://github.com/georgebax) | [Thanasis Gkanos](https://github.com/ThanasisGkanos) 
 
 ## License
 
