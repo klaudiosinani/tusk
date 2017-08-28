@@ -138,7 +138,7 @@ Feel like suggesting a new feature? Open a [`feature-request` issue](https://git
 - [ ] App pin lock
 - [ ] Automatic night mode
 - [ ] Note printing
-- [ ] Code blocks highlighting 
+- [ ] Code blocks highlighting
 - [ ] RTL support
 
 ## Disclaimer
@@ -149,9 +149,9 @@ Tusk is an unofficial, open source, third-party, community driven, free app and 
 
 **<>** with ❤ by
 
-[![Klaus Sinani](https://avatars.githubusercontent.com/u/12670537?s=130)](https://github.com/klauscfhq) | [![Mario Sinani](https://avatars.githubusercontent.com/u/29512262?s=130)](https://github.com/snowmancfhq)
---- | ---
-[Klaus Sinani](https://github.com/klauscfhq) | [Mario Sinani](https://github.com/snowmancfhq)
+[![Klaus Sinani](https://avatars.githubusercontent.com/u/12670537?s=130)](https://github.com/klauscfhq) | [![Mario Sinani](https://avatars.githubusercontent.com/u/29512262?s=130)](https://github.com/snowmancfhq) | [![Thanasis Gkanos](https://avatars3.githubusercontent.com/u/18072542?v=4&u=120dbd9a2e4ad54e82ca30017da8baf2d7ce2ee8&s=400)
+--- | --- | ---
+[Klaus Sinani](https://github.com/klauscfhq) | [Mario Sinani](https://github.com/snowmancfhq) | [Thanasis Gkanos](https://github.com/ThanasisGkanos)
 
 ## License
 
