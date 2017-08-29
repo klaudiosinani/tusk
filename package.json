@@ -43,7 +43,6 @@
     }
   ],
   "scripts": {
-    "postinstall": "electron-builder install-app-deps",
     "test": "xo",
     "start": "electron .",
     "pack": "build --dir",
