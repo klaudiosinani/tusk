@@ -43,6 +43,7 @@
     }
   ],
   "scripts": {
+    "postinstall": "electron-builder install-app-deps",
     "test": "xo",
     "start": "electron .",
     "pack": "build --dir",
@@ -79,11 +80,31 @@
       "**/*",
       "!media${/*}"
     ],
+    "appId": "com.champloohq.tusk",
     "linux": {
       "category": "Productivity",
       "target": [
-        "AppImage",
-        "deb"
+        {
+          "target": "deb",
+          "arch": [
+            "ia32",
+            "x64"
+          ]
+        },
+        {
+          "target": "AppImage",
+          "arch": [
+            "ia32",
+            "x64"
+          ]
+        },
+        {
+          "target": "rpm",
+          "arch": [
+            "ia32",
+            "x64"
+          ]
+        }
       ]
     },
     "win": {
