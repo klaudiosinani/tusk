@@ -14,6 +14,7 @@ addons:
       - xz-utils
       - icnsutils
       - graphicsmagick
+      - rpm
 install:
   - nvm install 6
   - npm install
