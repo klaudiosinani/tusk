@@ -2,6 +2,7 @@
 const path = require('path');
 const fs = require('fs');
 const electron = require('electron');
+const ms = require('ms');
 const appMenu = require('./menu');
 const tray = require('./tray');
 const config = require('./config');
@@ -106,10 +107,11 @@ app.on('ready', () => {
     electron.shell.openExternal(url);
   });
 
-  if (process.platform !== 'linux') {
-    update.init(electron.Menu.getApplicationMenu());
+  update.init(electron.Menu.getApplicationMenu());
+
+  setTimeout(() => {
     update.checkUpdate();
-  }
+  }, ms('2m'));
 });
 
 app.on('activate', () => {
