@@ -26,6 +26,7 @@ Come over to our [Twitter](https://twitter.com/champloohq) account to share your
   - [Note Navigation](#note-navigation)
   - [Keyboard shortcuts](#keyboard-shortcuts)
   - [Cross Platform](https://github.com/champloohq/tusk/releases/latest)
+  - [Background Auto-updates](#background-auto-updates)
 - [Upcoming Features](#upcoming-features)
 - [Disclaimer](#disclaimer)
 - [Team](#team)
@@ -133,7 +134,6 @@ Insert Horizontal Rule | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>-</kbd>
 A list of features to be added on the upcoming releases.<br/>
 Feel like suggesting a new feature? Open a [`feature-request` issue](https://github.com/champloohq/tusk/issues/new) :tada:
 
-- [ ] Auto-updates
 - [ ] Vibrant theme
 - [ ] App pin lock
 - [ ] Automatic night mode
