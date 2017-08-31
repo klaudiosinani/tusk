@@ -15,14 +15,26 @@ function activate(command) {
 }
 
 const helpSubmenu = [{
-  label: 'Tusk Repo',
+  label: `Tusk Homepage`,
+  click() {
+    shell.openExternal('https://champloohq.github.io/tusk');
+  }
+}, {
+  type: 'separator'
+}, {
+  label: 'Fork Source',
   click() {
     shell.openExternal(`https://github.com/champloohq/tusk`);
   }
 }, {
-  label: `Tusk Homepage`,
+  label: `Report Issue`,
   click() {
-    shell.openExternal('https://champloohq.github.io/tusk');
+    shell.openExternal(`https://github.com/champloohq/tusk/issues/new`);
+  }
+}, {
+  label: `Latest Release`,
+  click() {
+    shell.openExternal(`https://github.com/champloohq/tusk/releases/latest`);
   }
 }];
 
