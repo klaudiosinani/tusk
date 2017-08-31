@@ -3,6 +3,7 @@ const electron = require('electron');
 const config = require('./config');
 
 const ipc = electron.ipcRenderer;
+const shell = electron.shell;
 
 ipc.on('new-note', () => {
   // Create new note
@@ -107,7 +108,7 @@ ipc.on('return', () => {
 
 ipc.on('settings', () => {
   // Toggle Settings
-  document.querySelector('#gwt-debug-AccountMenu-settings').click();
+  shell.openExternal('https://www.evernote.com/Settings.action');
 });
 
 ipc.on('bold', () => {
