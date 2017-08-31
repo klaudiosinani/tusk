@@ -2,6 +2,7 @@
 const path = require('path');
 const fs = require('fs');
 const electron = require('electron');
+const isDevMode = require('electron-is-dev');
 const ms = require('ms');
 const appMenu = require('./menu');
 const tray = require('./tray');
@@ -109,9 +110,11 @@ app.on('ready', () => {
 
   update.init(electron.Menu.getApplicationMenu());
 
-  setTimeout(() => {
-    update.checkUpdate();
-  }, ms('2m'));
+  if (!isDevMode) {
+    setTimeout(() => {
+      update.checkUpdate();
+    }, ms('2m'));
+  }
 });
 
 app.on('activate', () => {
