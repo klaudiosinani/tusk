@@ -26,7 +26,7 @@ Come over to our [Twitter](https://twitter.com/champloohq) account to share your
   - [Note Navigation](#note-navigation)
   - [Keyboard shortcuts](#keyboard-shortcuts)
   - [Cross Platform](https://github.com/champloohq/tusk/releases/latest)
-  - Background Auto-updates
+  - Automagical Auto-updates
   - Background Behavior
 - [Upcoming Features](#upcoming-features)
 - [Disclaimer](#disclaimer)
