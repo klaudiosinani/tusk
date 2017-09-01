@@ -22,6 +22,10 @@ module.exports.init = () => {
     console.log('update-downloaded');
   });
 
+  electron.autoUpdater.on('error', err => {
+    console.log('Error fetching updates', err);
+  });
+
   const version = electron.app.getVersion();
   const feedURL = `https://hazel-cqlccwdbrf.now.sh/update/${process.platform}/${version}`;
   electron.autoUpdater.setFeedURL(feedURL);
