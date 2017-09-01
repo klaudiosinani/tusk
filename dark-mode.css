@@ -132,7 +132,7 @@ html.dark-mode div#gwt-debug-GlassModalDialog-container { /* Glass modal backgro
   background-color: var(--dark-grey) !important;
 }
 
-html.dark-mode .GDAMOPFCIHC { /* Glass modal bottom part background */
+html.dark-mode div#gwt-debug-GlassModalDialog-glass { /* Glass modal bottom line */
   background-color: var(--dark-grey) !important;
 }
 
