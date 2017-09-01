@@ -11,6 +11,6 @@ module.exports = new Config({
     darkMode: false,
     blackMode: false,
     alwaysOnTop: false,
-    lastURL: 'https://www.evernote.com/Login.action'
+    useYinxiang: false
   }
 });
