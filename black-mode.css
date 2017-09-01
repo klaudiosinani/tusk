@@ -24,6 +24,10 @@ html.black-mode body {
   -webkit-app-region: drag;
 }
 
+html.black-mode #switch-link {
+  -webkit-app-region: no-drag;
+}
+
 html.black-mode .GDAMOPFCO4B {
   left: 0;
   right: 0;

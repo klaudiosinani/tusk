@@ -23,6 +23,10 @@ html.dark-mode body {
   -webkit-app-region: drag;
 }
 
+html.dark-mode #switch-link {
+  -webkit-app-region: no-drag;
+}
+
 html.dark-mode .GDAMOPFCO4B {
   left: 0;
   right: 0;
