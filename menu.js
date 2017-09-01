@@ -1,6 +1,7 @@
 'use strict';
 const path = require('path');
 const electron = require('electron');
+const config = require('./config');
 
 const app = electron.app;
 const shell = electron.shell;
@@ -59,6 +60,24 @@ const darwinTpl = [{
   label: appName,
   submenu: [{
     role: 'about'
+  }, {
+    type: 'separator'
+  }, {
+    label: 'Switch to Yinxiang',
+    visible: !config.get('useYinxiang'),
+    click() {
+      config.set('useYinxiang', true);
+      app.relaunch();
+      app.quit();
+    }
+  }, {
+    label: 'Switch to Evernote',
+    visible: config.get('useYinxiang'),
+    click() {
+      config.set('useYinxiang', false);
+      app.relaunch();
+      app.quit();
+    }
   }, {
     type: 'separator'
   }, {
@@ -441,6 +460,24 @@ const otherTpl = [{
     accelerator: 'CmdorCtrl+S',
     click() {
       activate('add-shortcut');
+    }
+  }, {
+    type: 'separator'
+  }, {
+    label: 'Switch to Yinxiang',
+    visible: !config.get('useYinxiang'),
+    click() {
+      config.set('useYinxiang', true);
+      app.relaunch();
+      app.quit();
+    }
+  }, {
+    label: 'Switch to Evernote',
+    visible: config.get('useYinxiang'),
+    click() {
+      config.set('useYinxiang', false);
+      app.relaunch();
+      app.quit();
     }
   }, {
     type: 'separator'

@@ -33,7 +33,7 @@ if (functioning) {
 
 function createMainWindow() {
   const lastWindowState = config.get('lastWindowState');
-  const lastURL = config.get('lastURL');
+  const lastURL = config.get('useYinxiang') ? 'https://app.yinxiang.com/Login.action' : 'https://www.evernote.com/Login.action';
   const maxWindowInteger = 2147483647;
   const darkModeFlag = config.get('darkMode');
 
