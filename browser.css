@@ -19,6 +19,10 @@ body {
   background: #2dbe60 !important;
 }
 
+#switch-link {
+  -webkit-app-region: no-drag;
+}
+
 .GDAMOPFCO4B {
   left: 0;
   right: 0;
