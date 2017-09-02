@@ -23,3 +23,12 @@ script:
   - npm test
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then npm run dist; fi
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then npm run pack:macos; fi
+deploy:
+  provider: releases
+  api_key:
+    secure: "XVG6pvUXeMs0LW4cZlQktkBV/RBEp0Lt7avNRI9A8dZZ5lvnrQBZbmp+smT93I97C7NokxPjdu3rODXPUivyYKgC+kSKMIqU4awh1OjPyu8Ji/nyzEX9TT7VePF46XIpPAQo0yqmMfM6ecollAi0wFp7MGIQbvQdLYZAFjxyHFEob3vEbbkhsOXPKEt4gAmIytyE9ZI84t7hCFCKGtdxDVOcfYK4WTM+01FCzNQQpprqtiv5NOZihMEaPf/Zu8Afhpu6S0TP7o+w/l96RCthtLphiqU55iGVmHIbqWty3ORIdJy6/o8cDDL/STJIlyL0G85zQQg921GaF/G/BfvCe1umm1HPpYr9x32jFKYXeK9jPf9nVT8xt3U1tgpsxBbNzkdgjZjUOrKQb8ZwE3AmIp+3IZ8Q6psRppgH5tvuquThzPoPH8Ccu5HnBCO6kHoR6M7aQBriiWfH/phCHKfmyanG5661y+skOAv0FL82yzH64nKSI9YH+ENS7YxNmaQBJeUIyHL3kAQAOK6IQHB3A5wLbW8M7nbN9xWs1DtD6zvQtXQtap+NL7BoQ+LANMRp7BS4HfWh/ho49QacVbJXkwRaNN0bYqUUqGEVYex6VFW36yRgIq1rGwcytDTwhHDpPitWOFY0ye7ZNXSePOURZcer0Ap9zHPr7m15TK3PySQ="
+  file_glob: true
+  file: dist/*
+  skip_cleanup: true
+  on:
+    tags: true
