@@ -4,6 +4,7 @@ const config = require('./config');
 
 const ipc = electron.ipcRenderer;
 const shell = electron.shell;
+const webFrame = electron.webFrame;
 
 ipc.on('new-note', () => {
   // Create new note
@@ -104,6 +105,34 @@ ipc.on('shortcuts', () => {
 ipc.on('return', () => {
   // Return to Notes
   document.querySelector('#gwt-debug-Sidebar-notesButton').click();
+});
+
+ipc.on('zoom-in', () => {
+  // Get zoom factor and increase it
+  const currentZoomFactor = webFrame.getZoomFactor();
+  const zoomFactor = currentZoomFactor + 0.05;
+  // Upper bound check
+  if (zoomFactor < 1.3) {
+    webFrame.setZoomFactor(zoomFactor);
+    config.set('zoomFactor', zoomFactor);
+  }
+});
+
+ipc.on('zoom-out', () => {
+  // Get zoom factor and decrease it
+  const currentZoomFactor = webFrame.getZoomFactor();
+  const zoomFactor = currentZoomFactor - 0.05;
+  // Lower bound check
+  if (zoomFactor > 0.7) {
+    webFrame.setZoomFactor(zoomFactor);
+    config.set('zoomFactor', zoomFactor);
+  }
+});
+
+ipc.on('zoom-reset', () => {
+  // Reset zoom factor
+  webFrame.setZoomFactor(1.0);
+  config.set('zoomFactor', 1.0);
 });
 
 ipc.on('settings', () => {
@@ -235,6 +264,9 @@ document.addEventListener('keydown', event => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Preserve zoom factor
+  const zoomFactor = config.get('zoomFactor');
+  webFrame.setZoomFactor(zoomFactor);
   // Toggle black mode
   blackMode();
   // Toggle dark mode
