@@ -3,10 +3,9 @@ platform:
 init:
   - git config --global core.autocrlf input
 install:
-  - ps: Install-Product node 4 x64
+  - ps: Install-Product node 6 x64
   - npm install npm
   - set PATH=%APPDATA%\npm;%PATH%
-  - npm config set unsafe-perm true
   - npm --version
   - node --version
   - npm install
