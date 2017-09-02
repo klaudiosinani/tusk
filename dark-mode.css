@@ -237,6 +237,7 @@ html.dark-mode .GDAMOPFCPYB { /* Note list transition background */
 
 html.dark-mode .GDAMOPFCMYB { /* Note list header */
   background-color: var(--dark-grey) !important;
+  margin-bottom:  -6px !important;
 }
 
 html.dark-mode div#gwt-debug-FocusView-root { /* Sidebar transition background */
