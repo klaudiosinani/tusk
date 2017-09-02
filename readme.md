@@ -144,7 +144,7 @@ Feel like suggesting a new feature? Open a [`feature-request` issue](https://git
 
 ## Disclaimer
 
-Tusk is an unofficial, open source, third-party, community driven, free app and is not affiliated in no way with Evernote.
+Tusk is an unofficial, open source, third-party, community driven, free app and is not affiliated in any way with Evernote.
 
 ## Team
 
