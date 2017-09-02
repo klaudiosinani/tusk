@@ -26,6 +26,8 @@ Come over to our [Twitter](https://twitter.com/champloohq) account to share your
   - [Note Navigation](#note-navigation)
   - [Keyboard shortcuts](#keyboard-shortcuts)
   - [Cross Platform](https://github.com/champloohq/tusk/releases/latest)
+  - Scalable Interface
+  - Yinxiang Support
   - Automagical Auto-updates
   - Background Behavior
 - [Upcoming Features](#upcoming-features)
@@ -109,12 +111,15 @@ Underline Text         | <kbd>Cmd/Ctrl</kbd> <kbd>U</kbd>
 Strikethrough Text     | <kbd>Cmd/Ctrl</kbd> <kbd>T</kbd>
 Increase Indentation   | <kbd>Cmd/Ctrl</kbd> <kbd>M</kbd>
 Toggle Settings        | <kbd>Cmd/Ctrl</kbd> <kbd>,</kbd>
+Make Text Smaller      | <kbd>Cmd/Ctrl</kbd> <kbd>-</kbd>
+Reset Zoom Level       | <kbd>Cmd/Ctrl</kbd> <kbd>0</kbd>
 Toggle Black Theme     | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>E</kbd>
 Toggle Tags            | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>T</kbd>
 Toggle Notebooks       | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>N</kbd>
 Align Left             | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>L</kbd>
 Align Center           | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>M</kbd>
 Align Right            | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>R</kbd>
+Make Text Larger       | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>=</kbd>
 New Tag                | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>T</kbd>
 New Notebook           | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>N</kbd>
 Toggle Checkbox        | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>C</kbd>
