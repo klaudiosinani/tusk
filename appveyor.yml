@@ -6,6 +6,7 @@ install:
   - ps: Install-Product node 6 x64
   - npm install -g npm
   - set PATH=%APPDATA%\npm;%PATH%
+  - npm config set unsafe-perm true
   - npm --version
   - node --version
   - npm install
