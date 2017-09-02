@@ -183,6 +183,26 @@ const darwinTpl = [{
   }, {
     type: 'separator'
   }, {
+    label: 'Make Text Larger',
+    accelerator: 'CmdOrCtrl+Plus',
+    click() {
+      activate('zoom-in');
+    }
+  }, {
+    label: 'Make Text Smaller',
+    accelerator: 'CmdOrCtrl+-',
+    click() {
+      activate('zoom-out');
+    }
+  }, {
+    label: 'Reset Zoom Level',
+    accelerator: 'CmdOrCtrl+0',
+    click() {
+      activate('zoom-reset');
+    }
+  }, {
+    type: 'separator'
+  }, {
     label: 'Focus Mode',
     accelerator: 'CmdOrCtrl+K',
     click() {
@@ -516,6 +536,26 @@ const otherTpl = [{
       if (focusedWindow) {
         focusedWindow.reload();
       }
+    }
+  }, {
+    type: 'separator'
+  }, {
+    label: 'Make Text Larger',
+    accelerator: 'CmdOrCtrl+Plus',
+    click() {
+      activate('zoom-in');
+    }
+  }, {
+    label: 'Make Text Smaller',
+    accelerator: 'CmdOrCtrl+-',
+    click() {
+      activate('zoom-out');
+    }
+  }, {
+    label: 'Reset Zoom Level',
+    accelerator: 'CmdOrCtrl+0',
+    click() {
+      activate('zoom-reset');
     }
   }, {
     type: 'separator'
