@@ -5,11 +5,12 @@ init:
 install:
   - ps: Install-Product node 6 x64
   - npm install -g npm
+  - set PATH=%APPDATA%\npm;%PATH%
+  - npm --version
+  - node --version
   - npm install
   - npm prune
 build_script:
-  - npm --version
-  - node --version
   - npm test
   - npm run dist
 shallow_clone: true
