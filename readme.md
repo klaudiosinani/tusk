@@ -1,5 +1,5 @@
 <h1 align="center">
-      <a href="https://github.com/hyper-pokemon/tusk">
+      <a href="https://github.com/champloohq/tusk">
         <img src="https://cdn.rawgit.com/champloohq/tusk/c0475c42/media/header.png" alt="Tusk" width="100%">
       </a>
 </h1>
@@ -24,10 +24,10 @@ Come over to our [Twitter](https://twitter.com/champloohq) account to share your
   - [Focus Mode](#focus-mode)
   - [Compact Mode](#compact-mode)
   - [Note Navigation](#note-navigation)
+  - [Scalable Interface](#scalable-interface)
+  - [Yinxiang Support](#yinxiang-support)
   - [Keyboard shortcuts](#keyboard-shortcuts)
   - [Cross Platform](https://github.com/champloohq/tusk/releases/latest)
-  - Scalable Interface
-  - Yinxiang Support
   - Automagical Auto-updates
   - Background Behavior
 - [Upcoming Features](#upcoming-features)
@@ -46,7 +46,7 @@ Head to the [releases](https://github.com/champloohq/tusk/releases/latest) page 
 Silky & relaxing. Make it yours by pressing <kbd>Cmd/Ctrl</kbd> <kbd>D</kbd>.
 
 <div align="center">
-      <a href="https://github.com/hyper-pokemon/tusk">
+      <a href="https://github.com/champloohq/tusk">
         <img src="https://cdn.rawgit.com/champloohq/tusk/c0475c42/media/dark-theme.png" alt="Tusk Dark Theme" width="100%">
       </a>
 </div>
@@ -56,7 +56,7 @@ Silky & relaxing. Make it yours by pressing <kbd>Cmd/Ctrl</kbd> <kbd>D</kbd>.
 Deep focus materialized. Boost your productivity by pressing <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>E</kbd>.
 
 <div align="center">
-      <a href="https://github.com/hyper-pokemon/tusk">
+      <a href="https://github.com/champloohq/tusk">
         <img src="https://cdn.rawgit.com/champloohq/tusk/c0475c42/media/black-theme.png" alt="Tusk Black Theme" width="100%">
       </a>
 </div>
@@ -66,7 +66,7 @@ Deep focus materialized. Boost your productivity by pressing <kbd>Cmd/Ctrl</kbd>
 Press <kbd>Cmd/Ctrl</kbd> <kbd>K</kbd> and immerse yourself in a distraction-free note-taking mode.
 
 <div align="center">
-      <a href="https://github.com/hyper-pokemon/tusk">
+      <a href="https://github.com/champloohq/tusk">
         <img src="https://cdn.rawgit.com/champloohq/tusk/c0475c42/media/focus-mode.png" alt="Tusk Focus Mode" width="100%">
       </a>
 </div>
@@ -76,7 +76,7 @@ Press <kbd>Cmd/Ctrl</kbd> <kbd>K</kbd> and immerse yourself in a distraction-fre
 Get more for less. Keep your productivity to the maximum no matter the screen size. Simply downsize the window to enter the mode.
 
 <div align="center">
-      <a href="https://github.com/hyper-pokemon/tusk">
+      <a href="https://github.com/champloohq/tusk">
         <img src="https://cdn.rawgit.com/champloohq/tusk/c0475c42/media/compact-mode.png" alt="Tusk Compact Mode" width="70%">
       </a>
 </div>
@@ -86,8 +86,28 @@ Get more for less. Keep your productivity to the maximum no matter the screen si
 Using <kbd>Cmd/Ctrl</kbd> <kbd>1</kbd> - <kbd>9</kbd> navigate seamlessly between notes without taking your hands away from the keyboard.
 
 <div align="center">
-      <a href="https://github.com/hyper-pokemon/tusk">
+      <a href="https://github.com/champloohq/tusk">
         <img src="https://cdn.rawgit.com/champloohq/tusk/c0475c42/media/note-navigation.gif" alt="Note Navigation" width="100%">
+      </a>
+</div>
+
+### Scalable Interface
+
+Adjust the zooming factor to your own preference by pressing <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>=</kbd> or <kbd>Cmd/Ctrl</kbd> <kbd>-</kbd>
+
+<div align="center">
+      <a href="https://github.com/champloohq/tusk">
+        <img src="https://cdn.rawgit.com/champloohq/tusk/00c01c4d/media/scalable-interface.gif" alt="Scalable Interface" width="100%">
+      </a>
+</div>
+
+### Yinxiang Support
+
+Login with your Yinxiang account by visiting the `Tusk` menu on Macos or the `File` menu on Windows and Linux.
+
+<div align="center">
+      <a href="https://github.com/champloohq/tusk">
+        <img src="https://cdn.rawgit.com/champloohq/tusk/f4701b08/media/yinxiang-support.png" alt="Yinxiang Support" width="97%">
       </a>
 </div>
 
