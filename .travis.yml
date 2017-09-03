@@ -23,14 +23,15 @@ script:
   - npm test
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then npm run dist; fi
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then npm run pack:macos; fi
-  before_deploy:
-  - export ARTIFACTS=$(ls dist/tusk*)
+before_deploy:
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then rm -rf dist/linux-ia32-unpacked && rm -rf dist/linux-unpacked; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then rm -rf dist/Tusk-darwin-x64; fi
 deploy:
   provider: releases
   api_key:
     secure: "afMfIR99MyToK9XwRuyeHW5n/KeuwkrcqeL3jSI7EdNE1PmveQB6+JXJ8FfdNi9++BVoa01YIyiG5zwBfuTHmKFaqkagG0GS8tQcFD9Qg9+dwIPZIZNw2rtBVU4O2c2Mhh3TKGIJj2jfrWpiMfEn1KAeth4QMU0JmVJjk/JVhzongKRYrjO8ctNTWojVqFgAZAQrfZhD+e5KOdV/4CZbS92KPXdltDyvRzIAld+3ssLOTOFlh7ESkWTqrxR2fyjHv1R2WQasOXAzbA2PHuTgXz2JkE0Vb6XaidzfgRRclhVxzzlx1Db4U+20GDBsBcY8VRMevWWjXj43HPpDg7s3W5mH+nJe6EL14/m27ZU0Wnem583W0DN6yxoE/mhZfE+mvaXx0FACV4kETkoJ5VlK6Ea5Kcr7EDoQ9KhyR0uZuP0TctWfdnLPXthQmzoR4i+4eeFerUIgo/OJ0v8MID+sL2eGWu+nXVOGHZeS78bRuxU77GM5G37Wx7o9/wAHe22bnK+DQzafdJyFwRn4KFfC1VC9fKnTyw9+Sy0vpQ88qJVT3ArKHZDN9IQHYbnGchF7IaoPsdHikKD9ZWvdmcIzTDvi2R0d1g178UdhSVa0k8dC5fcu08ks9cuhGgpiJoJurrMPPIzm/3L9jsU9ZhYzb6lGzIZ1E4mCjrPHueIXvVc="
   file_glob: true
-  file: "${ARTIFACTS}"
+  file: dist/*
   skip_cleanup: true
   on:
     tags: true
