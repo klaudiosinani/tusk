@@ -13,4 +13,14 @@ install:
 build_script:
   - npm test
   - npm run dist
+deploy:
+  description: 'Tusk - Refined Evernote desktop app'
+  provider: GitHub
+  auth_token:
+    secure: vS3PbROPIEs5ZGaeK7vLTojdSbM33G8cLknTV5OBUDt/utMNiBv9UmrZnuNqR96E
+  artifact: dist\win\tusk-app-0.3.0-full.nupkg, dist\win\RELEASES, dist\win\Tusk Setup 0.3.0.exe
+  draft: true
+  prerelease: false
+  on:
+    appveyor_repo_tag: true
 shallow_clone: true
