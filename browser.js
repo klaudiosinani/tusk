@@ -75,6 +75,15 @@ ipc.on('toggle-black-mode', () => {
   blackMode();
 });
 
+function sepiaMode() {
+  document.documentElement.classList.toggle('sepia-mode', config.get('sepiaMode'));
+}
+
+ipc.on('toggle-sepia-mode', () => {
+  config.set('sepiaMode', !config.get('sepiaMode'));
+  sepiaMode();
+});
+
 function goToNote(key) {
   const index = key;
   selectNote(index);
@@ -267,6 +276,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // Preserve zoom factor
   const zoomFactor = config.get('zoomFactor');
   webFrame.setZoomFactor(zoomFactor);
+  // Toggle sepia mode
+  sepiaMode();
   // Toggle black mode
   blackMode();
   // Toggle dark mode

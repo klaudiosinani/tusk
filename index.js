@@ -100,6 +100,7 @@ app.on('ready', () => {
     windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'browser.css'), 'utf8'));
     windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'dark-mode.css'), 'utf8'));
     windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'black-mode.css'), 'utf8'));
+    windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'sepia-mode.css'), 'utf8'));
     mainWindow.show();
   });
 
