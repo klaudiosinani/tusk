@@ -215,6 +215,12 @@ const darwinTpl = [{
       activate('exit-focus-mode');
     }
   }, {
+    label: 'Toggle Sepia Mode',
+    accelerator: 'CmdOrCtrl+Alt+S',
+    click() {
+      activate('toggle-sepia-mode');
+    }
+  }, {
     label: 'Toggle Dark Mode',
     accelerator: 'CmdOrCtrl+D',
     click() {
@@ -570,6 +576,12 @@ const otherTpl = [{
     accelerator: 'CmdorCtrl+O',
     click() {
       activate('exit-focus-mode');
+    }
+  }, {
+    label: 'Toggle Sepia Mode',
+    accelerator: 'CmdOrCtrl+Alt+S',
+    click() {
+      activate('toggle-sepia-mode');
     }
   }, {
     label: 'Toggle Dark Mode',
