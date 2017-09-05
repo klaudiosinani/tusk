@@ -63,6 +63,12 @@ exports.create = win => {
   }, {
     type: 'separator'
   }, {
+    label: 'Toggle Sepia Mode',
+    click() {
+      toggleWin();
+      activate('toggle-sepia-mode');
+    }
+  }, {
     label: 'Toggle Dark Mode',
     click() {
       toggleWin();

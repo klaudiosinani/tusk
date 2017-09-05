@@ -10,6 +10,7 @@ module.exports = new Config({
     },
     darkMode: false,
     blackMode: false,
+    sepiaMode: false,
     alwaysOnTop: false,
     useYinxiang: false
   }
