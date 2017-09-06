@@ -2,7 +2,7 @@
 const electron = require('electron');
 
 module.exports.init = () => {
-  if (process.platform === 'linux') {
+  if (process.platform !== 'win32') {
     return;
   }
 
@@ -32,7 +32,7 @@ module.exports.init = () => {
 };
 
 module.exports.checkUpdate = () => {
-  if (process.platform === 'linux') {
+  if (process.platform !== 'win32') {
     return;
   }
 
