@@ -1,2 +1,2 @@
-include: [".well-known", "update"]
+include: [".well-known", "update.json"]
 auto: true
