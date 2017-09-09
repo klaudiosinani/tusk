@@ -26,10 +26,11 @@ Come over to our [Twitter](https://twitter.com/champloohq) account to share your
   - [Note Navigation](#note-navigation)
   - [Scalable Interface](#scalable-interface)
   - [Yinxiang Support](#yinxiang-support)
-  - [Keyboard shortcuts](#keyboard-shortcuts)
+  - [Keyboard Shortcuts](#keyboard-shortcuts)
   - [Cross Platform](https://github.com/champloohq/tusk/releases/latest)
   - Automagical Auto-updates
   - Background Behavior
+  - Drag and Drop Files
 - [Upcoming Features](#upcoming-features)
 - [Disclaimer](#disclaimer)
 - [Team](#team)
