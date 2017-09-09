@@ -42,9 +42,19 @@ Head to the [releases](https://github.com/champloohq/tusk/releases/latest) page 
 
 ## Features
 
+### Sepia Theme
+
+Perfect for glossy screens. Activate it by pressing <kbd>Cmd/Ctrl</kbd> <kbd>G</kbd>
+
+<div align="center">
+      <a href="https://github.com/champloohq/tusk">
+        <img src="https://cdn.rawgit.com/champloohq/tusk/0f0ab0a1/media/sepia-theme.png" alt="Tusk Sepia Theme" width="100%">
+      </a>
+</div>
+
 ### Dark Theme
 
-Silky & relaxing. Make it yours by pressing <kbd>Cmd/Ctrl</kbd> <kbd>D</kbd>.
+Silky & relaxing. Make it yours by pressing <kbd>Cmd/Ctrl</kbd> <kbd>D</kbd>
 
 <div align="center">
       <a href="https://github.com/champloohq/tusk">
@@ -54,7 +64,7 @@ Silky & relaxing. Make it yours by pressing <kbd>Cmd/Ctrl</kbd> <kbd>D</kbd>.
 
 ### Black Theme
 
-Deep focus materialized. Boost your productivity by pressing <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>E</kbd>.
+Deep focus materialized. Boost your productivity by pressing <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>E</kbd>
 
 <div align="center">
       <a href="https://github.com/champloohq/tusk">
