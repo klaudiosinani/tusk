@@ -123,6 +123,7 @@ Toggle Sepia Theme     | <kbd>Cmd/Ctrl</kbd> <kbd>G</kbd>
 Toggle Focus Mode      | <kbd>Cmd/Ctrl</kbd> <kbd>K</kbd>
 Exit Focus Mode        | <kbd>Cmd/Ctrl</kbd> <kbd>O</kbd>
 New Note               | <kbd>Cmd/Ctrl</kbd> <kbd>N</kbd>
+Save Note              | <kbd>Cmd/Ctrl</kbd> <kbd>S</kbd>
 Set Reminder           | <kbd>Cmd/Ctrl</kbd> <kbd>E</kbd>
 Search Notes           | <kbd>Cmd/Ctrl</kbd> <kbd>F</kbd>
 Bold Text              | <kbd>Cmd/Ctrl</kbd> <kbd>B</kbd>
