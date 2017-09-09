@@ -93,11 +93,6 @@ exports.create = win => {
       shell.openExternal(`https://github.com/champloohq/tusk/issues/new`);
     }
   }, {
-    label: `Latest Release`,
-    click() {
-      shell.openExternal(`https://github.com/champloohq/tusk/releases/latest`);
-    }
-  }, {
     type: 'separator'
   }, {
     role: 'quit'
