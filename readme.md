@@ -119,6 +119,7 @@ Toggle Window Menu     | <kbd>Alt</kbd>
 Return to Notes        | <kbd>Esc</kbd>
 Delete Note            | <kbd>Delete</kbd>
 Toggle Dark Theme      | <kbd>Cmd/Ctrl</kbd> <kbd>D</kbd>
+Toggle Sepia Theme     | <kbd>Cmd/Ctrl</kbd> <kbd>G</kbd>
 Toggle Focus Mode      | <kbd>Cmd/Ctrl</kbd> <kbd>K</kbd>
 Exit Focus Mode        | <kbd>Cmd/Ctrl</kbd> <kbd>O</kbd>
 New Note               | <kbd>Cmd/Ctrl</kbd> <kbd>N</kbd>
