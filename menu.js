@@ -142,7 +142,7 @@ const darwinTpl = [{
     }
   }, {
     label: 'Add Shortcut',
-    accelerator: 'CmdorCtrl+S',
+    accelerator: 'CmdorCtrl+Alt+S',
     click() {
       activate('add-shortcut');
     }
@@ -483,7 +483,7 @@ const otherTpl = [{
     }
   }, {
     label: 'Add Shortcut',
-    accelerator: 'CmdorCtrl+S',
+    accelerator: 'CmdorCtrl+Alt+S',
     click() {
       activate('add-shortcut');
     }
