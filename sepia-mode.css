@@ -283,6 +283,15 @@ html.sepia-mode .GDAMOPFCHLB { /* Note editor head */
   background-color: var(--sepia) !important;
 }
 
+html.sepia-mode div#imggal-glass { /* Image gallery background*/
+  background-color: var(--sepia) !important;
+}
+
+html.sepia-mode #imggal-top .close-icon { /* Image gallery exit button */
+  border-radius: 0% !important; /* Makes the button square */
+  background-color: var(--sepia) !important;
+}
+
 @media all and (max-width: 800px) {
 html.sepia-mode .GDAMOPFCPPB.GDAMOPFCDQB { /* Enter compact mode */
     margin-left: 0px !important;

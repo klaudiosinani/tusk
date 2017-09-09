@@ -282,6 +282,15 @@ html.dark-mode .GDAMOPFCHLB { /* Note editor head */
   background-color: var(--dark-grey) !important;
 }
 
+html.dark-mode div#imggal-glass { /* Image gallery background*/
+  background-color: var(--dark-grey) !important;
+}
+
+html.dark-mode #imggal-top .close-icon { /* Image gallery exit button */
+  border-radius: 0% !important; /* Makes the button square */
+  background-color: var(--dark-grey) !important;
+}
+
 @media all and (max-width: 800px) {
 html.dark-mode .GDAMOPFCPPB.GDAMOPFCDQB {	/* Enter compact mode */
     margin-left: 0px !important;
