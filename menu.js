@@ -411,6 +411,12 @@ const darwinTpl = [{
   }, {
     type: 'separator'
   }, {
+    label: 'Remove Formatting',
+    accelerator: 'CmdorCtrl+Shift+Space',
+    click() {
+      activate('remove-formatting');
+    }
+  }, {
     label: 'Insert Horizontal Rule',
     accelerator: 'CmdorCtrl+Shift+-',
     click() {
@@ -773,6 +779,12 @@ const otherTpl = [{
     }
   }, {
     type: 'separator'
+  }, {
+    label: 'Remove Formatting',
+    accelerator: 'CmdorCtrl+Shift+Space',
+    click() {
+      activate('remove-formatting');
+    }
   }, {
     label: 'Insert Horizontal Rule',
     accelerator: 'CmdorCtrl+Shift+-',

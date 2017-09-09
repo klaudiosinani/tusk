@@ -243,6 +243,11 @@ ipc.on('superscript', () => {
   document.querySelector('#gwt-debug-FormattingBar-superscriptButton').click();
 });
 
+ipc.on('remove-formatting', () => {
+  // Remove text formatting
+  document.querySelector('#gwt-debug-FormattingBar-noFormatButton').click();
+});
+
 ipc.on('horizontal-rule', () => {
   // Insert horizontal rule
   document.querySelector('#gwt-debug-FormattingBar-horizontalRuleButton').click();
