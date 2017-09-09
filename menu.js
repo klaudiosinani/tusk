@@ -216,7 +216,7 @@ const darwinTpl = [{
     }
   }, {
     label: 'Toggle Sepia Mode',
-    accelerator: 'CmdOrCtrl+Alt+S',
+    accelerator: 'CmdOrCtrl+G',
     click() {
       activate('toggle-sepia-mode');
     }
@@ -579,7 +579,7 @@ const otherTpl = [{
     }
   }, {
     label: 'Toggle Sepia Mode',
-    accelerator: 'CmdOrCtrl+Alt+S',
+    accelerator: 'CmdOrCtrl+G',
     click() {
       activate('toggle-sepia-mode');
     }
