@@ -190,7 +190,7 @@ Strikethrough text  | `~~Strikethrough~~`
 Bulleted list       | `* Bulleted list`
 Numbered list       | `1. Numbered list`
 Inline code         | \`Inline code\`
-Code block          | ```\nCode block\n````
+Code block          | ```\nCode block\n```
 Horizontal rule     | `---` or `===`
 
 <sub>`\n` is the `new line` character</sub>
