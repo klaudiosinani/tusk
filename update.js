@@ -2,11 +2,14 @@
 const electron = require('electron');
 const get = require('simple-get');
 
+let result;
+let latestVersion;
 const app = electron.app;
 const shell = electron.shell;
 const dialog = electron.dialog;
 const currentVersion = app.getVersion();
 const updateURL = 'https://champloohq.github.io/tusk/update.json';
+const releaseURL = 'https://github.com/champloohq/tusk/releases/latest';
 
 function checkUpdate(err, res, data) {
   if (err) {
@@ -18,28 +21,36 @@ function checkUpdate(err, res, data) {
     } catch (err) {
       console.log('Invalid JSON object');
     }
-    const latestVersion = data.version; // Get the latest version
+    // Intialize the update process
+    latestVersion = data.version; // Get the latest version
     console.log('Latest version of Tusk is: ' + latestVersion);
     console.log('You are running Tusk on version: ' + currentVersion);
-    if (latestVersion === currentVersion) {
-      // User is already on the latest version
-      console.log('You are on the latest version');
-    } else {
-      // An updated version has been released
-      console.log('An update is available');
-      const result = dialog.showMessageBox({
-        type: 'info',
-        buttons: ['Download', 'Dismiss'],
-        defaultId: 0, // Make `Download` the default action button
-        title: 'Update Tusk',
-        message: 'Version ' + latestVersion + ' is now available',
-        detail: 'Click Download to get it now'
-      });
-      response(result); // Check which button was pressed based on index
-    }
+    // Decide if the app should be updated
+    decideUpdate(latestVersion, currentVersion);
+    // Get user's response on update notification
+    response(result);
   } else {
     // Updating URL did not resolve properly
     console.log('Unexpected status code error');
+  }
+}
+
+function decideUpdate(latestVerion, currentVersion) {
+  if (latestVersion === currentVersion) {
+    // User is already on the latest version
+    console.log('You are on the latest version');
+  } else {
+    // An updated version has been released
+    console.log('An update is available');
+    result = dialog.showMessageBox({
+      type: 'info',
+      buttons: ['Download', 'Dismiss'],
+      defaultId: 0, // Make `Download` the default action button
+      title: 'Update Tusk',
+      message: 'Version ' + latestVersion + ' is now available',
+      detail: 'Click Download to get it now'
+    });
+    return result;
   }
 }
 
@@ -47,7 +58,7 @@ function response(result) {
   // If the `Download` button was pressed
   // send the user to the latest Github release
   if (result === 0) {
-    shell.openExternal('https://github.com/champloohq/tusk/releases/latest');
+    shell.openExternal(releaseURL);
   }
 }
 
