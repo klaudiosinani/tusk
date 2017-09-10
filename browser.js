@@ -70,6 +70,7 @@ function untoggleDark() {
 ipc.on('toggle-dark-mode', () => {
   untoggleSepia();
   untoggleBlack();
+  untoggleVibrant();
   // Toggle the dark theme
   config.set('darkMode', !config.get('darkMode'));
   darkMode();
@@ -88,6 +89,7 @@ function untoggleBlack() {
 ipc.on('toggle-black-mode', () => {
   untoggleDark();
   untoggleSepia();
+  untoggleVibrant();
   // Toggle the black theme
   config.set('blackMode', !config.get('blackMode'));
   blackMode();
@@ -106,9 +108,33 @@ function untoggleSepia() {
 ipc.on('toggle-sepia-mode', () => {
   untoggleBlack();
   untoggleDark();
+  untoggleVibrant();
   // Toggle the sepia theme
   config.set('sepiaMode', !config.get('sepiaMode'));
   sepiaMode();
+});
+
+function vibrantMode() {
+  document.documentElement.classList.toggle('vibrant-mode', config.get('vibrantMode'));
+  // Activate vibrant mode on main window
+  ipc.send('activate-vibrant');
+  // Make app background transparent
+  document.documentElement.style.backgroundColor = 'transparent';
+}
+
+function untoggleVibrant() {
+  // Untoggle the vibrant theme
+  config.set('vibrantMode', false);
+  vibrantMode();
+}
+
+ipc.on('toggle-vibrant-mode', () => {
+  untoggleBlack();
+  untoggleDark();
+  untoggleSepia();
+  // Toggle the vibrant theme
+  config.set('vibrantMode', !config.get('vibrantMode'));
+  vibrantMode();
 });
 
 function goToNote(key) {
@@ -390,6 +416,6 @@ document.addEventListener('DOMContentLoaded', () => {
   blackMode();
   // Toggle dark mode
   darkMode();
-  // Prevent white flashing screen on startup
-  document.documentElement.style.backgroundColor = '#212121';
+  // Toggle vibrant mode
+  vibrantMode();
 });
