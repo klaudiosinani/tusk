@@ -61,7 +61,16 @@ function darkMode() {
   document.documentElement.classList.toggle('dark-mode', config.get('darkMode'));
 }
 
+function untoggleDark() {
+  // Untoggle the dark theme
+  config.set('darkMode', false);
+  darkMode();
+}
+
 ipc.on('toggle-dark-mode', () => {
+  untoggleSepia();
+  untoggleBlack();
+  // Toggle the dark theme
   config.set('darkMode', !config.get('darkMode'));
   darkMode();
 });
@@ -70,7 +79,16 @@ function blackMode() {
   document.documentElement.classList.toggle('black-mode', config.get('blackMode'));
 }
 
+function untoggleBlack() {
+  // Untoggle the black theme
+  config.set('blackMode', false);
+  blackMode();
+}
+
 ipc.on('toggle-black-mode', () => {
+  untoggleDark();
+  untoggleSepia();
+  // Toggle the black theme
   config.set('blackMode', !config.get('blackMode'));
   blackMode();
 });
@@ -79,7 +97,16 @@ function sepiaMode() {
   document.documentElement.classList.toggle('sepia-mode', config.get('sepiaMode'));
 }
 
+function untoggleSepia() {
+  // Untoggle the sepia theme
+  config.set('sepiaMode', false);
+  sepiaMode();
+}
+
 ipc.on('toggle-sepia-mode', () => {
+  untoggleBlack();
+  untoggleDark();
+  // Toggle the sepia theme
   config.set('sepiaMode', !config.get('sepiaMode'));
   sepiaMode();
 });
@@ -91,8 +118,8 @@ function goToNote(key) {
 
 const notesList = '.NotesView-ScrollWindow > div';
 
-// Select the appropriate note based on given index
 function selectNote(index) {
+  // Select the appropriate note based on given index
   document.querySelector(notesList).children[index].firstChild.firstChild.click();
 }
 
