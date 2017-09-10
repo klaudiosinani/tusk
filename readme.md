@@ -19,6 +19,7 @@ Come over to our [Twitter](https://twitter.com/champloohq) account to share your
 - [Description](#description)
 - [Install](#install)
 - [Features](#features)
+  - [Sepia Theme](#sepia-theme)
   - [Dark Theme](#dark-theme)
   - [Black Theme](#black-theme)
   - [Focus Mode](#focus-mode)
@@ -28,13 +29,16 @@ Come over to our [Twitter](https://twitter.com/champloohq) account to share your
   - [Yinxiang Support](#yinxiang-support)
   - [Keyboard Shortcuts](#keyboard-shortcuts)
   - [Cross Platform](https://github.com/champloohq/tusk/releases/latest)
-  - Automagical Auto-updates
+  - Automagical Auto-updates 🐘
+  - In-app Notifications
   - Background Behavior
   - Drag and Drop Files
 - [Upcoming Features](#upcoming-features)
 - [Disclaimer](#disclaimer)
 - [Team](#team)
 - [License](#license)
+
+<sup>🐘 Windows only atm</sup>
 
 ## Install
 
