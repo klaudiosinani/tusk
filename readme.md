@@ -28,6 +28,7 @@ Come over to our [Twitter](https://twitter.com/champloohq) account to share your
   - [Scalable Interface](#scalable-interface)
   - [Yinxiang Support](#yinxiang-support)
   - [Keyboard Shortcuts](#keyboard-shortcuts)
+  - [Build-in Markdown](build-in-markdown)
   - [Cross Platform](https://github.com/champloohq/tusk/releases/latest)
   - Automagical Auto-updates 🐘
   - In-app Notifications
@@ -172,6 +173,27 @@ Subscript Text         | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>]</kbd>
 Superscript Text       | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>[</kbd>
 Insert Horizontal Rule | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>-</kbd>
 Remove Formatting      | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>Space</kbd>
+
+### Build-in Markdown
+
+Tusk takes advantage of the build-in Markdown support that lives inside the Evernote web editor.
+
+Here is cheat-sheet with all the available options.<br/>
+Is a syntax option missing? Open a [`pull-request`](https://github.com/champloohq/tusk/issues/new) or [issue](https://github.com/champloohq/tusk/issues/new) to include it.
+
+Description         | Syntax
+------------------- | ---------
+Bold text           | `**Bold**`
+Italic text         | `*Italic*`
+Highlight text      | `!!Highlight!!`
+Strikethrough text  | `~~Strikethrough~~`
+Bulleted list       | `* Bulleted list`
+Numbered list       | `1. Numbered list`
+Inline code         | \`Inline code\`
+Code block          | ```\nCode block\n````
+Horizontal rule     | `---` or `===`
+
+<sub>`\n` is the `new line` character</sub>
 
 ## Upcoming Features
 
