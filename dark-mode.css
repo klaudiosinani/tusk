@@ -1,20 +1,3 @@
-:root{
-  --black: rgba(0, 0, 0, 1);
-  --white-ninety: rgba(255, 255, 255, 0.9);
-  --white-seventy-five: rgba(255, 255, 255, 0.75);
-  --white-seventy: rgba(255, 255, 255, 0.7);
-  --white-fifty: rgba(255, 255, 255, 0.5);
-  --white-fourty: rgba(255, 255, 255, 0.4);
-  --white-thirty: rgba(255, 255, 255, 0.3);
-  --white-twenty: rgba(255, 255, 255, 0.2);
-  --white-ten: rgba(255, 255, 255, 0.1);
-  --white-nine: rgba(255, 255, 255, 0.09);
-  --white-five: rgba(255, 255, 255, 0.05);
-  --darkest-grey: rgba(29, 29, 29, 1);
-  --darker-grey: rgba(30, 30, 30, 1);
-  --dark-grey: rgba(33, 33, 33, 1);
-}
-
 html.dark-mode html {
   overflow: hidden;
 }
@@ -42,10 +25,6 @@ html.dark-mode .GDAMOPFCF5B, .GDAMOPFCP4B {
 
 html.dark-mode .FocusClipperButton-button {
   visibility: hidden !important;
-}
-
-html.dark-mode .en-note {
-  color: #F0F0F0 !important;
 }
 
 html.dark-mode ::-webkit-scrollbar { /* Notes list scrollbar */
