@@ -28,7 +28,7 @@ Come over to our [Twitter](https://twitter.com/champloohq) account to share your
   - [Scalable Interface](#scalable-interface)
   - [Yinxiang Support](#yinxiang-support)
   - [Keyboard Shortcuts](#keyboard-shortcuts)
-  - [Build-in Markdown](build-in-markdown)
+  - [Build-in Markdown](#build-in-markdown)
   - [Cross Platform](https://github.com/champloohq/tusk/releases/latest)
   - Automagical Auto-updates 🐘
   - In-app Notifications
