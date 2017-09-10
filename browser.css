@@ -4,6 +4,7 @@
   --dark-grey: rgba(33, 33, 33, 1);
   --black-five: rgba(0, 0, 0, 0.05);
   --white-five: rgba(255, 255, 255, 0.05);
+  --transparent-white: rgba(255, 255, 255, 0);
 }
 
 html {
