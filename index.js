@@ -10,6 +10,7 @@ const config = require('./config');
 const update = require('./update');
 
 const app = electron.app;
+const ipcMain = electron.ipcMain;
 
 require('electron-debug')({enabled: true});
 require('electron-dl')();
@@ -48,7 +49,6 @@ function createMainWindow() {
     icon: process.platform === 'linux' && path.join(__dirname, 'static/Icon.png'),
     alwaysOnTop: config.get('alwaysOnTop'),
     titleBarStyle: 'hiddenInset',
-    backgroundColor: '#212121',
     darkTheme: darkModeFlag,
     autoHideMenuBar: true,
     show: false,
@@ -101,6 +101,7 @@ app.on('ready', () => {
     windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'dark-mode.css'), 'utf8'));
     windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'black-mode.css'), 'utf8'));
     windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'sepia-mode.css'), 'utf8'));
+    windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'vibrant-mode.css'), 'utf8'));
     mainWindow.show();
   });
 
@@ -115,6 +116,17 @@ app.on('ready', () => {
     setTimeout(() => {
       update.checkUpdate();
     }, ms('2m'));
+  }
+});
+
+ipcMain.on('activate-vibrant', () => {
+  // Check if the vibrant theme was activated
+  if (config.get('vibrantMode')) {
+    // Set the app's background vibrant light
+    mainWindow.setVibrancy('light');
+  } else {
+    // Remove background vibrancy
+    mainWindow.setVibrancy(null);
   }
 });
 
