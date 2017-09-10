@@ -1,11 +1,11 @@
-# Reporting an Issue 🚀
+# Reporting an Issue
 
-✨🎉 Thank you for taking the time to contribute to Tusk! ✨🎉
+Thank you for taking the time to contribute to Tusk! ✨🎉
 
 ## Suggested quick smart steps
 
 - Run through the [contributing guidelines](https://github.com/champloohq/tusk/blob/master/contributing.md)
-- Support questions are better asked in the project's [chat](https://gitter.im/tusk/Lobby)! We will get back at you in a flash! 🙌 ❤️
+- Support questions are better asked in the project's [chat](https://gitter.im/tusk/Lobby). We will get back at you in a flash!
 - Ensure the issue is not already reported
 
 *Delete the above section and the content in the sections below before submitting your issue*

@@ -179,7 +179,7 @@ Remove Formatting      | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>Space</kbd>
 Tusk takes advantage of the build-in Markdown support that lives inside the Evernote web editor.
 
 Here is cheat-sheet with all the available options.<br/>
-Is a syntax option missing? Open a [`pull-request`](https://github.com/champloohq/tusk/issues/new) or [issue](https://github.com/champloohq/tusk/issues/new) to include it.
+Is a syntax option missing? Open a [`pull-request`](https://github.com/champloohq/tusk/compare) or [`issue`](https://github.com/champloohq/tusk/issues/new) to include it.
 
 Description         | Syntax
 ------------------- | ---------
@@ -198,7 +198,7 @@ Horizontal rule     | `---` or `===`
 ## Upcoming Features
 
 A list of features to be added on the upcoming releases.<br/>
-Feel like suggesting a new feature? Open a [`feature-request` issue](https://github.com/champloohq/tusk/issues/new) :tada:
+Feel like suggesting a new feature? Open a [`feature-request issue`](https://github.com/champloohq/tusk/issues/new) :tada:
 
 - [ ] Vibrant theme
 - [ ] App pin lock

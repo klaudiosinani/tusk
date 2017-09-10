@@ -8,6 +8,6 @@ We are always excited about pull requests!
 If the pull request fixes any open issues, reference the corresponding issues in the following fashion: `Fixes #321`.
 Including test results/screenshots/.gifs (if applicable/possible) alongside new features and bug fixes is something that we strongly encourage!
 
-Thank you so much again for all of your time invested in the project! 🙌 ❤️
+Thank you so much again for all of your time invested in the project!
 
 -->
