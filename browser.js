@@ -116,12 +116,81 @@ function goToNote(key) {
   selectNote(index);
 }
 
+const noteSelector = '.focus-NotesView-Note';
 const notesList = '.NotesView-ScrollWindow > div';
+const notesListSelector = '.NotesView-ScrollWindow';
+const selectedNoteSelector = '.focus-NotesView-Note-selected';
 
 function selectNote(index) {
   // Select the appropriate note based on given index
   document.querySelector(notesList).children[index].firstChild.firstChild.click();
 }
+
+function goToNextNote() {
+  // Navigate to the next note
+  const index = getCurrentIndex();
+  const nextIndex = getNextIndex(index);
+  console.log('Next note index is: ' + nextIndex);
+  selectNote(nextIndex);
+}
+
+function goToPreviewsNote() {
+  // Navigate to the previews note
+  const index = getCurrentIndex();
+  const previewsIndex = getPreviewsIndex(index);
+  console.log('Previews note index is: ' + previewsIndex);
+  selectNote(previewsIndex);
+}
+
+// Calculate the index of the current note
+function getCurrentIndex() {
+  let i;
+  let currentIndex; // Index of current note
+  let notesArray = []; // Array of notes
+  // Get the css meta of the currently selected note
+  const selectedNote = document.querySelector(selectedNoteSelector);
+
+  // Create an array of notes relative to the currently selected note
+  // NOTE: Evernote adds and removes notes from the notes-list dynamically
+  // in function with the user's behavior, i.e. scrolling etc, thus the
+  // `notesArray` array holds only the notes that are available to user
+  // at that particular time
+  // TODO: Create the array dynamically so all notes can be included
+  notesArray = document.querySelector(notesListSelector).querySelectorAll(noteSelector);
+
+  // Traverse the array and find the index of selected note
+  for (i = 0; i < notesArray.length; i++) {
+    if (notesArray[i] === selectedNote) {
+      // Increment the selected note index
+      // since selectNote() navigates to
+      // positive non-zero values only
+      currentIndex = i + 1;
+      console.log('The currently selected note has an index of: ' + currentIndex);
+    }
+  }
+  // Return the current note index
+  return currentIndex;
+}
+
+// Calculate the index of the next note
+// relatively to the current note index
+function getNextIndex(currentIndex) {
+  const nextIndex = currentIndex + 1; // Index value of next note
+  console.log('The next note will have an index of: ' + nextIndex);
+  return nextIndex;
+}
+
+// Calculate the index of the previews note
+// relatively to the current note index
+function getPreviewsIndex(currentIndex) {
+  const previewsIndex = currentIndex - 1; // Index value of previews note
+  console.log('The previews note will have an index of: ' + previewsIndex);
+  return previewsIndex;
+}
+
+ipc.on('next-note', goToNextNote);
+
+ipc.on('previous-note', goToPreviewsNote);
 
 ipc.on('toggle-notebooks', () => {
   // Toggle notebooks list
