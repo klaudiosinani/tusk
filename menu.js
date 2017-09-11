@@ -63,6 +63,20 @@ const darwinTpl = [{
   }, {
     type: 'separator'
   }, {
+    label: 'Navigate to Next Note',
+    accelerator: 'Ctrl+Tab',
+    click() {
+      activate('next-note');
+    }
+  }, {
+    label: 'Navigate to Previous Note',
+    accelerator: 'Ctrl+Shift+Tab',
+    click() {
+      activate('previous-note');
+    }
+  }, {
+    type: 'separator'
+  }, {
     label: 'Switch to Yinxiang',
     visible: !config.get('useYinxiang'),
     click() {
@@ -492,6 +506,20 @@ const otherTpl = [{
     accelerator: 'CmdorCtrl+Alt+S',
     click() {
       activate('add-shortcut');
+    }
+  }, {
+    type: 'separator'
+  }, {
+    label: 'Navigate to Next Note',
+    accelerator: 'Ctrl+Tab',
+    click() {
+      activate('next-note');
+    }
+  }, {
+    label: 'Navigate to Previous Note',
+    accelerator: 'Ctrl+Shift+Tab',
+    click() {
+      activate('previous-note');
     }
   }, {
     type: 'separator'
