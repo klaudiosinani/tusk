@@ -121,6 +121,16 @@ const notesList = '.NotesView-ScrollWindow > div';
 const notesListSelector = '.NotesView-ScrollWindow';
 const selectedNoteSelector = '.focus-NotesView-Note-selected';
 
+function scroll(pixels, downwards) {
+  // Scroll upwards or downwards on note switch
+  const notesScrollbox = document.querySelector(notesListSelector);
+  if (downwards) {
+    notesScrollbox.scrollTop += pixels;
+  } else {
+    notesScrollbox.scrollTop -= pixels;
+  }
+}
+
 function selectNote(index) {
   // Select the appropriate note based on given index
   document.querySelector(notesList).children[index].firstChild.firstChild.click();
@@ -132,6 +142,7 @@ function goToNextNote() {
   const nextIndex = getNextIndex(index);
   console.log('Next note index is: ' + nextIndex);
   selectNote(nextIndex);
+  scroll(110, true);
 }
 
 function goToPreviewsNote() {
@@ -140,6 +151,7 @@ function goToPreviewsNote() {
   const previewsIndex = getPreviewsIndex(index);
   console.log('Previews note index is: ' + previewsIndex);
   selectNote(previewsIndex);
+  scroll(110, false);
 }
 
 // Calculate the index of the current note
@@ -147,15 +159,10 @@ function getCurrentIndex() {
   let i;
   let currentIndex; // Index of current note
   let notesArray = []; // Array of notes
+
   // Get the css meta of the currently selected note
   const selectedNote = document.querySelector(selectedNoteSelector);
-
   // Create an array of notes relative to the currently selected note
-  // NOTE: Evernote adds and removes notes from the notes-list dynamically
-  // in function with the user's behavior, i.e. scrolling etc, thus the
-  // `notesArray` array holds only the notes that are available to user
-  // at that particular time
-  // TODO: Create the array dynamically so all notes can be included
   notesArray = document.querySelector(notesListSelector).querySelectorAll(noteSelector);
 
   // Traverse the array and find the index of selected note
