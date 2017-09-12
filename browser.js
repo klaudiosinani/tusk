@@ -418,4 +418,8 @@ document.addEventListener('DOMContentLoaded', () => {
   darkMode();
   // Toggle vibrant mode
   vibrantMode();
+  // Prevent white flashing screen on startup
+  if (!config.get('vibrantMode')) {
+    document.documentElement.style.backgroundColor = '#212121';
+  }
 });

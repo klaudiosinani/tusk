@@ -37,6 +37,8 @@ function createMainWindow() {
   const lastURL = config.get('useYinxiang') ? 'https://app.yinxiang.com/Login.action' : 'https://www.evernote.com/Login.action';
   const maxWindowInteger = 2147483647;
   const darkModeFlag = config.get('darkMode');
+  // Prevent white background on window resize
+  const windowBackground = (process.platform === 'macos') ? 'transparent' : '#212121';
 
   const tuskWindow = new electron.BrowserWindow({
     title: app.getName(),
@@ -50,6 +52,7 @@ function createMainWindow() {
     alwaysOnTop: config.get('alwaysOnTop'),
     titleBarStyle: 'hiddenInset',
     darkTheme: darkModeFlag,
+    backgroundColor: windowBackground,
     autoHideMenuBar: true,
     show: false,
     webPreferences: {
