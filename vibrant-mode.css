@@ -43,7 +43,7 @@ html.vibrant-mode ::-webkit-scrollbar-thumb { /* Notes list scrollbar thumb */
 }
 
 html.vibrant-mode .GDAMOPFCIEB { /* Metting note background */
-  background-color: var(--transparent-white) !important;
+  background-color: var(--vibrant-grey) !important;
 }
 
 html.vibrant-mode .GDAMOPFCLYB { /* Note list header */
@@ -60,18 +60,18 @@ html.vibrant-mode .GDAMOPFCDR {
 }
 
 html.vibrant-mode .Dropdown-menu {
-  background: var(--transparent-white) !important;
+  background: var(--vibrant-grey) !important;
 }
 
 html.vibrant-mode .GDAMOPFCEKB, /* Middle part */
 html.vibrant-mode .GDAMOPFCAHB, /* Bottom part */
 html.vibrant-mode .GDAMOPFCPGB, /* Top part */
 html.vibrant-mode .GDAMOPFCHYC.GDAMOPFCLD { /* Chat windows */
-  background: var(--transparent-white) !important;
+  background: var(--vibrant-grey) !important;
 }
 
 html.vibrant-mode .GDAMOPFCLKC { /* Reminder modal */
-  background: var(--transparent-white) !important;
+  background: var(--vibrant-grey) !important;
 }
 
 html.vibrant-mode .GDAMOPFCHEB {
@@ -100,7 +100,7 @@ html.vibrant-mode .GDAMOPFCAXB.GDAMOPFCMXB { /* Selected notebook in notebooks m
 }
 
 html.vibrant-mode .GDAMOPFCGTB { /* Select notebook at toolbar option */
-  background-color: var(--transparent-white) !important;
+  background-color: var(--vibrant-grey) !important;
 }
 
 html.vibrant-mode .GDAMOPFCJJ,
@@ -109,11 +109,11 @@ html.vibrant-mode .focus-drawer-Filter-input { /* Search notebook/tags input tex
 }
 
 html.vibrant-mode div#gwt-debug-GlassModalDialog-container { /* Glass modal background */
-  background-color: var(--transparent-white) !important;
+  background-color: var(--vibrant-grey) !important;
 }
 
 html.vibrant-mode div#gwt-debug-GlassModalDialog-glass { /* Glass modal bottom line */
-  background-color: var(--transparent-white) !important;
+  background-color: var(--vibrant-grey) !important;
 }
 
 html.vibrant-mode .GDAMOPFCPE { /* Notebook info */
@@ -125,22 +125,25 @@ html.vibrant-mode .GDAMOPFCDQB { /* Saved search */
   background-color: var(--transparent-white) !important;
 }
 
-html.vibrant-mode .GDAMOPFCFHB,
-html.vibrant-mode .GDAMOPFCO5B { /* Shortcuts modal */
+html.vibrant-mode .GDAMOPFCFHB { /* Shortcuts modal */
+  background-color: var(--vibrant-grey) !important;
+}
+
+html.vibrant-mode .GDAMOPFCO5B { /* Shortcuts modal shadow */
   background-color: var(--transparent-white) !important;
 }
 
 html.vibrant-mode .GDAMOPFCP2 { /* Settings menu */
-  background-color: var(--transparent-white) !important;
+  background-color: var(--vibrant-grey) !important;
 }
 
 html.vibrant-mode .GDAMOPFCH4B { /* App left sidebar */
-  background-color: var(--transparent-white) !important;
+  background-color: var(--vibrant-grey) !important;
 }
 
-html.vibrant-mode .GDAMOPFCB5B {
-  background: var(--transparent-white) !important;
-  background-color: var(--transparent-white) !important;
+html.vibrant-mode .GDAMOPFCB5B { /* App left sidebar color switch on transition */
+  background: var(--vibrant-grey) !important;
+  background-color: var(--vibrant-grey) !important;
   border-right: 1px solid var(--black-five) !important;
 }
 
@@ -206,7 +209,7 @@ html.vibrant-mode .focus-NotesView-Note .focus-NotesView-Note-snippetDivider { /
 }
 
 html.vibrant-mode .GDAMOPFCO3B { /* Profile background */
-  background-color: var(--transparent-white) !important;
+  background-color: var(--vibrant-grey) !important;
   border-top: 1px solid var(--black-five) !important;
 }
 
@@ -246,12 +249,12 @@ html.vibrant-mode .GDAMOPFCLNB { /* Note editor background */
 }
 
 html.vibrant-mode .GDAMOPFCOF.GDAMOPFCAG { /* Colors background */
-  background-color: var(--transparent-white) !important;
+  background-color: var(--vibrant-grey) !important;
 }
 
 html.vibrant-mode .GDAMOPFCHK,
 html.vibrant-mode .GDAMOPFCOQ.GDAMOPFCAR { /* Submenus background */
-  background-color: var(--transparent-white) !important;
+  background-color: var(--vibrant-grey) !important;
 }
 
 html.vibrant-mode .GDAMOPFCNHC { /* Dialogs background */
@@ -263,12 +266,12 @@ html.vibrant-mode .GDAMOPFCHLB { /* Note editor head */
 }
 
 html.vibrant-mode div#imggal-glass { /* Image gallery background*/
-  background-color: var(--transparent-white) !important;
+  background-color: var(--vibrant-grey) !important;
 }
 
 html.vibrant-mode #imggal-top .close-icon { /* Image gallery exit button */
   border-radius: 0% !important; /* Makes the button square */
-  background-color: var(--transparent-white) !important;
+  background-color: var(--vibrant-grey) !important;
 }
 
 @media all and (max-width: 800px) {
