@@ -1,45 +1,11 @@
-html.dark-mode html {
-  overflow: hidden;
-}
-html.dark-mode body {
-  -webkit-app-region: drag;
-}
-html.dark-mode #switch-link {
-  -webkit-app-region: no-drag;
-}
-html.dark-mode .GDAMOPFCO4B {
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 25px;
-  height: 66px;
-  position: relative;
-}
-html.dark-mode .GDAMOPFCF5B, .GDAMOPFCP4B {
-  margin: 20px 0px !important;
-}
-html.dark-mode .FocusClipperButton-button {
-  visibility: hidden !important;
-}
-html.dark-mode ::-webkit-scrollbar { /* Notes list scrollbar */
-  width: 6px !important;
-}
 html.dark-mode ::-webkit-scrollbar-track { /* Notes list scrollbar track */
   background: var(--dark-grey) !important;
-  border-radius: 0px !important;
-}
-html.dark-mode ::-webkit-scrollbar-thumb { /* Notes list scrollbar thumb */
-  border-radius: 0px !important;
-  background: #2dbe60 !important;
 }
 html.dark-mode .GDAMOPFCIEB { /* Metting note background */
   background-color: var(--dark-grey) !important;
 }
 html.dark-mode .GDAMOPFCLYB { /* Note list header */
   background-color: var(--dark-grey) !important;
-}
-html.dark-mode .GDAMOPFCKYB { /* Notes Title minor tweak */
-  padding-bottom: 1px !important;
 }
 html.dark-mode .GDAMOPFCBR.GDAMOPFCCR, html.dark-mode .GDAMOPFCDR {
   opacity: 1 !important;
@@ -195,9 +161,4 @@ html.dark-mode div#imggal-glass { /* Image gallery background*/
 html.dark-mode #imggal-top .close-icon { /* Image gallery exit button */
   border-radius: 0% !important; /* Makes the button square */
   background-color: var(--dark-grey) !important;
-}
-@media all and (max-width: 800px) {
-html.dark-mode .GDAMOPFCPPB.GDAMOPFCDQB {	/* Enter compact mode */
-    margin-left: 0px !important;
-	}
 }

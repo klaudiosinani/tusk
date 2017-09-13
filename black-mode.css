@@ -1,45 +1,11 @@
-html.black-mode html {
-  overflow: hidden;
-}
-html.black-mode body {
-  -webkit-app-region: drag;
-}
-html.black-mode #switch-link {
-  -webkit-app-region: no-drag;
-}
-html.black-mode .GDAMOPFCO4B {
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 25px;
-  height: 66px;
-  position: relative;
-}
-html.black-mode .GDAMOPFCF5B, .GDAMOPFCP4B {
-  margin: 20px 0px !important;
-}
-html.black-mode .FocusClipperButton-button {
-  visibility: hidden !important;
-}
-html.black-mode ::-webkit-scrollbar { /* Notes list scrollbar */
-  width: 6px !important;
-}
 html.black-mode ::-webkit-scrollbar-track { /* Notes list scrollbar track */
   background: var(--black) !important;
-  border-radius: 0px !important;
-}
-html.black-mode ::-webkit-scrollbar-thumb { /* Notes list scrollbar thumb */
-  border-radius: 0px !important;
-  background: #2dbe60 !important;
 }
 html.black-mode .GDAMOPFCIEB { /* Metting note background */
   background-color: var(--black) !important;
 }
 html.black-mode .GDAMOPFCLYB { /* Note list header */
   background-color: var(--black) !important;
-}
-html.black-mode .GDAMOPFCKYB { /* Notes Title minor tweak */
-  padding-bottom: 1px !important;
 }
 html.black-mode .GDAMOPFCBR.GDAMOPFCCR, html.black-mode .GDAMOPFCDR {
   opacity: 1 !important;
@@ -195,9 +161,4 @@ html.black-mode div#imggal-glass { /* Image gallery background*/
 html.black-mode #imggal-top .close-icon { /* Image gallery exit button */
   border-radius: 0% !important; /* Makes the button square */
   background-color: var(--black) !important;
-}
-@media all and (max-width: 800px) {
-html.black-mode .GDAMOPFCPPB.GDAMOPFCDQB { /* Enter compact mode */
-    margin-left: 0px !important;
-  }
 }
