@@ -8,32 +8,25 @@
   --white-five: rgba(255, 255, 255, 0.05);
   --transparent-white: rgba(255, 255, 255, 0);
 }
-
 html {
   overflow: hidden;
 }
-
 body {
   -webkit-app-region: drag;
 }
-
 ::-webkit-scrollbar { /* Notes list scrollbar */
   width: 6px !important;
 }
-
 ::-webkit-scrollbar-track { /* Notes list scrollbar track */
   border-radius: 0px !important;
 }
-
 ::-webkit-scrollbar-thumb { /* Notes list scrollbar thumb */
   border-radius: 0px !important;
   background: #2dbe60 !important;
 }
-
 #switch-link {
   -webkit-app-region: no-drag;
 }
-
 .GDAMOPFCO4B {
   left: 0;
   right: 0;
@@ -42,44 +35,34 @@ body {
   height: 66px;
   position: relative;
 }
-
 .GDAMOPFCF5B, .GDAMOPFCP4B {
   margin: 20px 0px !important;
 }
-
 .FocusClipperButton-button {
   visibility: hidden !important;
 }
-
 .focus-NotesView-NotesView {
   background-color: #FFFFFF !important;
 }
-
 .GDAMOPFCKYB {
   padding-bottom: 1px !important;
 }
-
 .focus-NotesView-RemindersList {
   background-color: #FFFFFF;
 }
-
 .GDAMOPFCMYB { /* Note list header */
   background-color: #FFFFFF;
   margin-bottom:  -6px !important;
 }
-
 .GDAMOPFCO3B { /* Profile background */
   background-color: #F8F8F8 !important;
 }
-
 .GDAMOPFCPYB { /* Note list transition background */
   background-color: #FFFFFF !important;
 }
-
 div#gwt-debug-FocusView-root { /* Sidebar transition background */
   background-color: #F8F8F8 !important;
 }
-
 @media all and (max-width: 800px) {
 	.GDAMOPFCPPB.GDAMOPFCDQB {	/* Enter compact mode */
     margin-left: 0px !important;
