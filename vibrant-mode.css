@@ -95,6 +95,14 @@ html.vibrant-mode .GDAMOPFCFTB { /* Notebooks modal */
   background-color: var(--transparent-white) !important;
 }
 
+html.vibrant-mode div#gwt-debug-NotebookHeader-name, html.vibrant-mode .GDAMOPFCHBC { /* Notebook title color */
+  color: #61e990 !important;
+}
+
+html.vibrant-mode div#gwt-debug-trashHeaderContainer, html.vibrant-mode div#gwt-debug-NotebookHeader-container { /* Notebook header background */
+  background-color: var(--transparent-white) !important;
+}
+
 html.vibrant-mode .GDAMOPFCAXB.GDAMOPFCMXB { /* Selected notebook in notebooks modal */
   background-color: #2dbe60 !important;
 }
