@@ -1,46 +1,14 @@
-html.vibrant-mode html {
-  overflow: hidden;
-}
 html.vibrant-mode body {
   background: transparent !important;
-  -webkit-app-region: drag;
-}
-html.vibrant-mode #switch-link {
-  -webkit-app-region: no-drag;
-}
-html.vibrant-mode .GDAMOPFCO4B {
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 25px;
-  height: 66px;
-  position: relative;
-}
-html.vibrant-mode .GDAMOPFCF5B, .GDAMOPFCP4B {
-  margin: 20px 0px !important;
-}
-html.vibrant-mode .FocusClipperButton-button {
-  visibility: hidden !important;
-}
-html.vibrant-mode ::-webkit-scrollbar { /* Notes list scrollbar */
-  width: 6px !important;
 }
 html.vibrant-mode ::-webkit-scrollbar-track { /* Notes list scrollbar track */
   background: var(--transparent-white) !important;
-  border-radius: 0px !important;
-}
-html.vibrant-mode ::-webkit-scrollbar-thumb { /* Notes list scrollbar thumb */
-  border-radius: 0px !important;
-  background: #2dbe60 !important;
 }
 html.vibrant-mode .GDAMOPFCIEB { /* Metting note background */
   background-color: var(--vibrant-grey) !important;
 }
 html.vibrant-mode .GDAMOPFCLYB { /* Note list header */
   background-color: var(--transparent-white) !important;
-}
-html.vibrant-mode .GDAMOPFCKYB { /* Notes Title minor tweak */
-  padding-bottom: 1px !important;
 }
 html.vibrant-mode .GDAMOPFCBR.GDAMOPFCCR, html.vibrant-mode .GDAMOPFCDR {
   opacity: 1 !important;
@@ -209,9 +177,4 @@ html.vibrant-mode div#imggal-glass { /* Image gallery background*/
 html.vibrant-mode #imggal-top .close-icon { /* Image gallery exit button */
   border-radius: 0% !important; /* Makes the button square */
   background-color: var(--vibrant-grey) !important;
-}
-@media all and (max-width: 800px) {
-html.vibrant-mode .GDAMOPFCPPB.GDAMOPFCDQB { /* Enter compact mode */
-    margin-left: 0px !important;
-  }
 }
