@@ -60,11 +60,16 @@ html.vibrant-dark-mode .GDAMOPFCFTB { /* Notebooks modal */
 }
 
 html.vibrant-dark-mode div#gwt-debug-NotebookHeader-name, html.vibrant-dark-mode .GDAMOPFCHBC { /* Notebook title color */
-  color: #61e990 !important;
+  color: #2dbe60 !important;
 }
 
 html.vibrant-dark-mode div#gwt-debug-trashHeaderContainer, html.vibrant-dark-mode div#gwt-debug-NotebookHeader-container { /* Notebook header background */
   background-color: var(--transparent-white) !important;
+}
+
+html.vibrant-dark-mode .GDAMOPFCJQB { /* Notebook header share button */
+  background-color: var(--vibrant-black) !important;
+  border: 1px solid var(--vibrant-black) !important;
 }
 
 html.vibrant-dark-mode .GDAMOPFCAXB.GDAMOPFCMXB { /* Selected notebook in notebooks modal */
