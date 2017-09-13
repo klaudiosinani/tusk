@@ -253,6 +253,12 @@ const darwinTpl = [{
       activate('toggle-vibrant-mode');
     }
   }, {
+    label: 'Toggle Vibrant Dark Mode',
+    accelerator: 'CmdOrCtrl+Alt+J',
+    click() {
+      activate('toggle-vibrant-dark-mode');
+    }
+  }, {
     type: 'separator'
   }, {
     label: 'Tags',
@@ -641,6 +647,13 @@ const otherTpl = [{
     accelerator: 'CmdOrCtrl+Alt+U',
     click() {
       activate('toggle-vibrant-mode');
+    }
+  }, {
+    // Available on Win/Linux for testing purposes
+    label: 'Toggle Vibrant Dark Mode',
+    accelerator: 'CmdOrCtrl+Alt+J',
+    click() {
+      activate('toggle-vibrant-dark-mode');
     }
   }, {
     type: 'separator'
