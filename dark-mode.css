@@ -1,15 +1,12 @@
 html.dark-mode html {
   overflow: hidden;
 }
-
 html.dark-mode body {
   -webkit-app-region: drag;
 }
-
 html.dark-mode #switch-link {
   -webkit-app-region: no-drag;
 }
-
 html.dark-mode .GDAMOPFCO4B {
   left: 0;
   right: 0;
@@ -18,244 +15,187 @@ html.dark-mode .GDAMOPFCO4B {
   height: 66px;
   position: relative;
 }
-
 html.dark-mode .GDAMOPFCF5B, .GDAMOPFCP4B {
   margin: 20px 0px !important;
 }
-
 html.dark-mode .FocusClipperButton-button {
   visibility: hidden !important;
 }
-
 html.dark-mode ::-webkit-scrollbar { /* Notes list scrollbar */
   width: 6px !important;
 }
-
 html.dark-mode ::-webkit-scrollbar-track { /* Notes list scrollbar track */
   background: var(--dark-grey) !important;
   border-radius: 0px !important;
 }
-
 html.dark-mode ::-webkit-scrollbar-thumb { /* Notes list scrollbar thumb */
   border-radius: 0px !important;
   background: #2dbe60 !important;
 }
-
 html.dark-mode .GDAMOPFCIEB { /* Metting note background */
   background-color: var(--dark-grey) !important;
 }
-
 html.dark-mode .GDAMOPFCLYB { /* Note list header */
   background-color: var(--dark-grey) !important;
 }
-
 html.dark-mode .GDAMOPFCKYB { /* Notes Title minor tweak */
   padding-bottom: 1px !important;
 }
-
 html.dark-mode .GDAMOPFCBR.GDAMOPFCCR, html.dark-mode .GDAMOPFCDR {
   opacity: 1 !important;
 }
-
 html.dark-mode .Dropdown-menu {
   background: var(--dark-grey) !important;
 }
-
 html.dark-mode .GDAMOPFCEKB, html.dark-mode .GDAMOPFCAHB, html.dark-mode .GDAMOPFCPGB, html.dark-mode .GDAMOPFCHYC.GDAMOPFCLD { /* Chat windows */
   background: var(--dark-grey) !important;
 }
-
 html.dark-mode .GDAMOPFCLKC { /* Reminder modal */
   background: var(--dark-grey) !important;
 }
-
 html.dark-mode .GDAMOPFCHEB {
   background: var(--dark-grey) !important;
 }
-
 html.dark-mode .GDAMOPFCJ-B, html.dark-mode .GDAMOPFCEQB, html.dark-mode .GDAMOPFCDAC.GDAMOPFCL5B { /* Search modal */
   background-color: var(--dark-grey) !important;
 }
-
 html.dark-mode .GDAMOPFCP-B {
   border-bottom: 1px solid var(--white-five) !important;
 }
-
 html.dark-mode .GDAMOPFCEWB, html.dark-mode .GDAMOPFCIXB, html.dark-mode .GDAMOPFCN5B, html.dark-mode .GDAMOPFCFTB { /* Notebooks modal */
   background-color: var(--dark-grey) !important;
 }
-
 html.dark-mode .GDAMOPFCAXB.GDAMOPFCMXB { /* Selected notebook in notebooks modal */
   background-color: #2dbe60 !important;
 }
-
 html.dark-mode .GDAMOPFCGTB { /* Select notebook at toolbar option */
   background-color: var(--dark-grey) !important;
 }
-
 html.dark-mode .GDAMOPFCJJ, html.dark-mode .focus-drawer-Filter-input { /* Search notebook/tags input text */
   color: #e1e1e1 !important;
 }
-
 html.dark-mode div#gwt-debug-GlassModalDialog-container { /* Glass modal background */
   background-color: var(--dark-grey) !important;
 }
-
 html.dark-mode div#gwt-debug-GlassModalDialog-glass { /* Glass modal bottom line */
   background-color: var(--dark-grey) !important;
 }
-
 html.dark-mode .GDAMOPFCPE { /* Notebook info */
   color: #e1e1e1 !important;
 }
-
 html.dark-mode .GDAMOPFCN-B .GDAMOPFCC1B, html.dark-mode .GDAMOPFCDQB { /* Saved search */
   background-color: var(--dark-grey) !important;
 }
-
 html.dark-mode .GDAMOPFCFHB, html.dark-mode .GDAMOPFCO5B { /* Shortcuts modal */
   background-color: var(--dark-grey) !important;
 }
-
 html.dark-mode .GDAMOPFCP2 { /* Settings menu */
   background-color: var(--dark-grey) !important;
 }
-
 html.dark-mode .GDAMOPFCH4B { /* App left sidebar */
   background-color: var(--dark-grey) !important;
 }
-
 html.dark-mode .GDAMOPFCB5B {
   background: var(--dark-grey) !important;
   background-color: var(--dark-grey) !important;
   border-right: 1px solid var(--white-five) !important;
 }
-
 html.dark-mode .GDAMOPFCJYB { /* Notes list head */
   background-color: var(--dark-grey) !important;
 }
-
 html.dark-mode .GDAMOPFCPPB { /* Notes list left border */
   background-color: var(--dark-grey) !important;
   border-left: 1px solid var(--white-five) !important;
 }
-
 html.dark-mode .GDAMOPFCA5B { /* Notes list left border */
   border-left: 1px solid var(--white-five) !important;
   border-right: 1px solid var(--white-five) !important;
   background: var(--dark-grey) !important;
   background-color: var(--dark-grey) !important;
 }
-
 html.dark-mode .GDAMOPFCN3B { /* Profile top border */
   border-top: 1px solid var(--white-five) !important;
 }
-
 html.dark-mode .focus-NotesView-Note.focus-NotesView-Note-selected .focus-NotesView-Note-selectOverlay { /* Selected note bordered box */
   border: 3px solid var(--white-five) !important;
 }
-
 html.dark-mode .focus-NotesView-RemindersList { /* Reminders list borders */
   border-top: 2px solid var(--white-five) !important;
   border-bottom: 3px solid var(--white-five) !important;
 }
-
 html.dark-mode .focus-NotesView-RemindersList { /* Reminders background */
   background-color: var(--dark-grey) !important;
 }
-
 html.dark-mode .focus-NotesView-NotebookReminders-DropAreaContainer { /* Notebook reminder background */
   background: var(--dark-grey) !important;
 }
-
 html.dark-mode .focus-NotesView-Subheader { /* Subheader border */
   border-bottom: 1px solid var(--white-five) !important;
 }
-
 html.dark-mode .GDAMOPFCJKB {
   background-color: var(--dark-grey) !important;
 }
-
 html.dark-mode .GDAMOPFCIKB { /* Toolbar bottom border */
   border-bottom: 1px solid var(--white-five) !important;
 }
-
 html.dark-mode .GDAMOPFCILB { /* Note attributes background */
   background: var(--dark-grey) !important;
 }
-
 html.dark-mode .GDAMOPFCP0 { /* Toolbar separators */
   border-left: 1px solid var(--white-five) !important;
 }
-
 html.dark-mode .focus-NotesView-Note .focus-NotesView-Note-snippetDivider { /* Notes divider color */
   border-top: 1px solid var(--white-five) !important;
 }
-
 html.dark-mode .GDAMOPFCO3B { /* Profile background */
   background-color: var(--dark-grey) !important;
   border-top: 1px solid var(--white-five) !important;
 }
-
 html.dark-mode .GDAMOPFCPYB { /* Note list transition background */
   background-color: var(--dark-grey) !important;
   border-top: 1px solid var(--white-five) !important;
 }
-
 html.dark-mode .GDAMOPFCMYB { /* Note list header */
   background-color: var(--dark-grey) !important;
   margin-bottom:  -6px !important;
 }
-
 html.dark-mode div#gwt-debug-FocusView-root { /* Sidebar transition background */
   background-color: var(--dark-grey) !important;
 }
-
 html.dark-mode .focus-NotesView-NotesView { /* Notes list body */
   background-color: var(--dark-grey) !important;
 }
-
 html.dark-mode .GDAMOPFCKNB, html.dark-mode .GDAMOPFCOPB { /* Note editor body */
   background-color: var(--dark-grey) !important;
 }
-
 html.dark-mode .GDAMOPFCELB { /* Note editor toolbar */
   background-color: var(--dark-grey) !important;
 }
-
 html.dark-mode .GDAMOPFCJ1 { /* Note editor toolbar options */
   background-color: var(--dark-grey) !important;
 }
-
 html.dark-mode .GDAMOPFCLNB { /* Note editor background */
   background-color: var(--dark-grey) !important;
 }
-
 html.dark-mode .GDAMOPFCOF.GDAMOPFCAG { /* Colors background */
   background-color: var(--dark-grey) !important;
 }
-
 html.dark-mode .GDAMOPFCHK, html.dark-mode .GDAMOPFCOQ.GDAMOPFCAR { /* Submenus background */
   background-color: var(--dark-grey) !important;
 }
-
 html.dark-mode .GDAMOPFCNHC { /* Dialogs background */
   background-color: var(--dark-grey) !important;
 }
-
 html.dark-mode .GDAMOPFCHLB { /* Note editor head */
   background-color: var(--dark-grey) !important;
 }
-
 html.dark-mode div#imggal-glass { /* Image gallery background*/
   background-color: var(--dark-grey) !important;
 }
-
 html.dark-mode #imggal-top .close-icon { /* Image gallery exit button */
   border-radius: 0% !important; /* Makes the button square */
   background-color: var(--dark-grey) !important;
 }
-
 @media all and (max-width: 800px) {
 html.dark-mode .GDAMOPFCPPB.GDAMOPFCDQB {	/* Enter compact mode */
     margin-left: 0px !important;
