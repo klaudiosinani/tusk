@@ -71,6 +71,7 @@ ipc.on('toggle-dark-mode', () => {
   untoggleSepia();
   untoggleBlack();
   untoggleVibrant();
+  untoggleDarkVibrant();
   // Toggle the dark theme
   config.set('darkMode', !config.get('darkMode'));
   darkMode();
@@ -90,6 +91,7 @@ ipc.on('toggle-black-mode', () => {
   untoggleDark();
   untoggleSepia();
   untoggleVibrant();
+  untoggleDarkVibrant();
   // Toggle the black theme
   config.set('blackMode', !config.get('blackMode'));
   blackMode();
@@ -109,6 +111,7 @@ ipc.on('toggle-sepia-mode', () => {
   untoggleBlack();
   untoggleDark();
   untoggleVibrant();
+  untoggleDarkVibrant();
   // Toggle the sepia theme
   config.set('sepiaMode', !config.get('sepiaMode'));
   sepiaMode();
@@ -132,9 +135,34 @@ ipc.on('toggle-vibrant-mode', () => {
   untoggleBlack();
   untoggleDark();
   untoggleSepia();
+  untoggleDarkVibrant();
   // Toggle the vibrant theme
   config.set('vibrantMode', !config.get('vibrantMode'));
   vibrantMode();
+});
+
+function vibrantDarkMode() {
+  document.documentElement.classList.toggle('vibrant-dark-mode', config.get('vibrantDarkMode'));
+  // Activate dark vibrant mode on main window
+  ipc.send('activate-vibrant');
+  // Make app background transparent
+  document.documentElement.style.backgroundColor = 'transparent';
+}
+
+function untoggleDarkVibrant() {
+  // Untoggle the dark vibrant theme
+  config.set('vibrantDarkMode', false);
+  vibrantDarkMode();
+}
+
+ipc.on('toggle-vibrant-dark-mode', () => {
+  untoggleBlack();
+  untoggleDark();
+  untoggleSepia();
+  untoggleVibrant();
+  // Toggle the dark vibrant theme
+  config.set('vibrantDarkMode', !config.get('vibrantDarkMode'));
+  vibrantDarkMode();
 });
 
 function goToNote(key) {
@@ -418,8 +446,10 @@ document.addEventListener('DOMContentLoaded', () => {
   darkMode();
   // Toggle vibrant mode
   vibrantMode();
+  // Toggle vibrant dark mode
+  vibrantDarkMode();
   // Prevent white flashing screen on startup
-  if (!config.get('vibrantMode')) {
+  if (!config.get('vibrantMode') && !config.get('vibrantDarkMode')) {
     document.documentElement.style.backgroundColor = '#212121';
   }
 });

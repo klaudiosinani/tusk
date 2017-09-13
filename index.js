@@ -37,8 +37,6 @@ function createMainWindow() {
   const lastURL = config.get('useYinxiang') ? 'https://app.yinxiang.com/Login.action' : 'https://www.evernote.com/Login.action';
   const maxWindowInteger = 2147483647;
   const darkModeFlag = config.get('darkMode');
-  // Prevent white background on window resize
-  const windowBackground = (process.platform === 'macos') ? 'transparent' : '#212121';
 
   const tuskWindow = new electron.BrowserWindow({
     title: app.getName(),
@@ -52,7 +50,6 @@ function createMainWindow() {
     alwaysOnTop: config.get('alwaysOnTop'),
     titleBarStyle: 'hiddenInset',
     darkTheme: darkModeFlag,
-    backgroundColor: windowBackground,
     autoHideMenuBar: true,
     show: false,
     webPreferences: {
@@ -105,6 +102,7 @@ app.on('ready', () => {
     windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'black-mode.css'), 'utf8'));
     windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'sepia-mode.css'), 'utf8'));
     windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'vibrant-mode.css'), 'utf8'));
+    windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'vibrant-dark-mode.css'), 'utf8'));
     mainWindow.show();
   });
 
@@ -127,6 +125,9 @@ ipcMain.on('activate-vibrant', () => {
   if (config.get('vibrantMode')) {
     // Set the app's background vibrant light
     mainWindow.setVibrancy('light');
+  } else if (config.get('vibrantDarkMode')) {
+    // Set the app's background vibrant ultra dark
+    mainWindow.setVibrancy('ultra-dark');
   } else {
     // Remove background vibrancy
     mainWindow.setVibrancy(null);
