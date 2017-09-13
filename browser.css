@@ -67,4 +67,7 @@ div#gwt-debug-FocusView-root { /* Sidebar transition background */
 	.GDAMOPFCPPB.GDAMOPFCDQB {	/* Enter compact mode */
     margin-left: 0px !important;
 	}
+  div#gwt-debug-notesListView { /* Auto-hide note list */
+    visibility: hidden !important;
+  }
 }
