@@ -18,8 +18,7 @@ html.vibrant-dark-mode .GDAMOPFCKYB { /* Notes Title minor tweak */
   padding-bottom: 1px !important;
 }
 
-html.vibrant-dark-mode .GDAMOPFCBR.GDAMOPFCCR,
-html.vibrant-dark-mode .GDAMOPFCDR {
+html.vibrant-dark-mode .GDAMOPFCBR.GDAMOPFCCR, html.vibrant-dark-mode .GDAMOPFCDR {
   opacity: 1 !important;
 }
 
@@ -27,10 +26,7 @@ html.vibrant-dark-mode .Dropdown-menu {
   background: var(--vibrant-black) !important;
 }
 
-html.vibrant-dark-mode .GDAMOPFCEKB, /* Middle part */
-html.vibrant-dark-mode .GDAMOPFCAHB, /* Bottom part */
-html.vibrant-dark-mode .GDAMOPFCPGB, /* Top part */
-html.vibrant-dark-mode .GDAMOPFCHYC.GDAMOPFCLD { /* Chat windows */
+html.vibrant-dark-mode .GDAMOPFCEKB, html.vibrant-dark-mode .GDAMOPFCAHB, html.vibrant-dark-mode .GDAMOPFCPGB, html.vibrant-dark-mode .GDAMOPFCHYC.GDAMOPFCLD { /* Chat windows */
   background: var(--vibrant-black) !important;
 }
 
@@ -42,9 +38,7 @@ html.vibrant-dark-mode .GDAMOPFCHEB {
   background: var(--transparent-white) !important;
 }
 
-html.vibrant-dark-mode .GDAMOPFCJ-B,
-html.vibrant-dark-mode .GDAMOPFCEQB,
-html.vibrant-dark-mode .GDAMOPFCDAC.GDAMOPFCL5B { /* Search modal */
+html.vibrant-dark-mode .GDAMOPFCJ-B, html.vibrant-dark-mode .GDAMOPFCEQB, html.vibrant-dark-mode .GDAMOPFCDAC.GDAMOPFCL5B { /* Search modal */
   background-color: var(--transparent-white) !important;
 }
 
@@ -52,10 +46,7 @@ html.vibrant-dark-mode .GDAMOPFCP-B {
   border-bottom: 1px solid var(--black-five) !important;
 }
 
-html.vibrant-dark-mode .GDAMOPFCEWB,
-html.vibrant-dark-mode .GDAMOPFCIXB,
-html.vibrant-dark-mode .GDAMOPFCN5B,
-html.vibrant-dark-mode .GDAMOPFCFTB { /* Notebooks modal */
+html.vibrant-dark-mode .GDAMOPFCEWB, html.vibrant-dark-mode .GDAMOPFCIXB, html.vibrant-dark-mode .GDAMOPFCN5B, html.vibrant-dark-mode .GDAMOPFCFTB { /* Notebooks modal */
   background-color: var(--transparent-white) !important;
 }
 
@@ -80,8 +71,7 @@ html.vibrant-dark-mode .GDAMOPFCGTB { /* Select notebook at toolbar option */
   background-color: var(--vibrant-black) !important;
 }
 
-html.vibrant-dark-mode .GDAMOPFCJJ,
-html.vibrant-dark-mode .focus-drawer-Filter-input { /* Search notebook/tags input text */
+html.vibrant-dark-mode .GDAMOPFCJJ, html.vibrant-dark-mode .focus-drawer-Filter-input { /* Search notebook/tags input text */
   color: #e1e1e1 !important;
 }
 
@@ -97,8 +87,7 @@ html.vibrant-dark-mode .GDAMOPFCPE { /* Notebook info */
   color: #e1e1e1 !important;
 }
 
-html.vibrant-dark-mode .GDAMOPFCN-B .GDAMOPFCC1B,
-html.vibrant-dark-mode .GDAMOPFCDQB { /* Saved search */
+html.vibrant-dark-mode .GDAMOPFCN-B .GDAMOPFCC1B, html.vibrant-dark-mode .GDAMOPFCDQB { /* Saved search */
   background-color: var(--transparent-white) !important;
 }
 
@@ -208,8 +197,7 @@ html.vibrant-dark-mode .focus-NotesView-NotesView { /* Notes list body */
   background-color: var(--transparent-white) !important;
 }
 
-html.vibrant-dark-mode .GDAMOPFCKNB,
-html.vibrant-dark-mode .GDAMOPFCOPB { /* Note editor body */
+html.vibrant-dark-mode .GDAMOPFCKNB, html.vibrant-dark-mode .GDAMOPFCOPB { /* Note editor body */
   background-color: var(--transparent-white) !important;
 }
 
@@ -229,8 +217,7 @@ html.vibrant-dark-mode .GDAMOPFCOF.GDAMOPFCAG { /* Colors background */
   background-color: var(--vibrant-black) !important;
 }
 
-html.vibrant-dark-mode .GDAMOPFCHK,
-html.vibrant-dark-mode .GDAMOPFCOQ.GDAMOPFCAR { /* Submenus background */
+html.vibrant-dark-mode .GDAMOPFCHK, html.vibrant-dark-mode .GDAMOPFCOQ.GDAMOPFCAR { /* Submenus background */
   background-color: var(--vibrant-black) !important;
 }
 
