@@ -7,6 +7,10 @@ const app = electron.app;
 const shell = electron.shell;
 const BrowserWindow = electron.BrowserWindow;
 const appName = app.getName();
+const sourceURL = 'https://github.com/champloohq/tusk';
+const homepageURL = 'https://champloohq.github.io/tusk';
+const issueURL = 'https://github.com/champloohq/tusk/issues/new';
+const releaseURL = 'https://github.com/champloohq/tusk/releases/latest';
 
 function activate(command) {
   const appWindow = BrowserWindow.getAllWindows()[0];
@@ -18,24 +22,24 @@ function activate(command) {
 const helpSubmenu = [{
   label: `Tusk Homepage`,
   click() {
-    shell.openExternal('https://champloohq.github.io/tusk');
+    shell.openExternal(homepageURL);
   }
 }, {
   type: 'separator'
 }, {
   label: 'Fork Source',
   click() {
-    shell.openExternal(`https://github.com/champloohq/tusk`);
+    shell.openExternal(sourceURL);
   }
 }, {
   label: `Report Issue`,
   click() {
-    shell.openExternal(`https://github.com/champloohq/tusk/issues/new`);
+    shell.openExternal(issueURL);
   }
 }, {
   label: `Latest Release`,
   click() {
-    shell.openExternal(`https://github.com/champloohq/tusk/releases/latest`);
+    shell.openExternal(releaseURL);
   }
 }];
 
