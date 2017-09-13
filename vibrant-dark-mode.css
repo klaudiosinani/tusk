@@ -10,9 +10,6 @@ html.vibrant-dark-mode .GDAMOPFCIEB { /* Metting note background */
 html.vibrant-dark-mode .GDAMOPFCLYB { /* Note list header */
   background-color: var(--transparent-white) !important;
 }
-html.vibrant-dark-mode .GDAMOPFCKYB { /* Notes Title minor tweak */
-  padding-bottom: 1px !important;
-}
 html.vibrant-dark-mode .GDAMOPFCBR.GDAMOPFCCR, html.vibrant-dark-mode .GDAMOPFCDR {
   opacity: 1 !important;
 }
