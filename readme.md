@@ -51,7 +51,7 @@ Head to the [releases](https://github.com/champloohq/tusk/releases/latest) page 
 
 ### Vibrant Themes
 
-Refreshing [dark](https://cdn.rawgit.com/champloohq/tusk/5747f2cf/media/vibrant-dark-theme.png) and [light](https://cdn.rawgit.com/champloohq/tusk/5747f2cf/media/vibrant-light-theme.png) vibrant themes. Press <kbd>Cmd</kbd> <kbd>Alt</kbd> <kbd>U</kbd> or <kbd>Cmd</kbd> <kbd>Alt</kbd> <kbd>J</kbd> to activate them respectively.
+Refreshing [dark](https://cdn.rawgit.com/champloohq/tusk/5747f2cf/media/vibrant-dark-theme.png) and [light](https://cdn.rawgit.com/champloohq/tusk/5747f2cf/media/vibrant-light-theme.png) vibrant themes. Press <kbd>Cmd</kbd> <kbd>Alt</kbd> <kbd>U</kbd> / <kbd>Cmd</kbd> <kbd>Alt</kbd> <kbd>J</kbd> to activate them respectively.
 
 <div align="center">
       <a href="https://github.com/champloohq/tusk">
@@ -158,7 +158,6 @@ Bold Text                  | <kbd>Cmd/Ctrl</kbd> <kbd>B</kbd>
 Italic Text                | <kbd>Cmd/Ctrl</kbd> <kbd>I</kbd>
 Underline Text             | <kbd>Cmd/Ctrl</kbd> <kbd>U</kbd>
 Strikethrough Text         | <kbd>Cmd/Ctrl</kbd> <kbd>T</kbd>
-Increase Indentation       | <kbd>Cmd/Ctrl</kbd> <kbd>M</kbd>
 Toggle Settings            | <kbd>Cmd/Ctrl</kbd> <kbd>,</kbd>
 Make Text Smaller          | <kbd>Cmd/Ctrl</kbd> <kbd>-</kbd>
 Reset Zoom Level           | <kbd>Cmd/Ctrl</kbd> <kbd>0</kbd>
@@ -172,7 +171,7 @@ Toggle Notebooks           | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>N</kbd>
 Align Left                 | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>L</kbd>
 Align Center               | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>M</kbd>
 Align Right                | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>R</kbd>
-Navigate to Previews Note  | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>Tab</kbd>
+Increase Indentation       | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>K</kbd>
 Make Text Larger           | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>=</kbd>
 New Tag                    | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>T</kbd>
 New Notebook               | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>N</kbd>
@@ -188,6 +187,7 @@ Bulleted List              | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>.</kbd>
 Subscript Text             | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>]</kbd>
 Superscript Text           | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>[</kbd>
 Insert Horizontal Rule     | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>-</kbd>
+Navigate to Previews Note  | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>Tab</kbd>
 Remove Formatting          | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>Space</kbd>
 
 ### Build-in Markdown
