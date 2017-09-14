@@ -18,6 +18,8 @@ require('electron-context-menu')();
 
 let mainWindow;
 let exiting = false;
+const yinxiangURL = 'https://app.yinxiang.com/Login.action';
+const evernoteURL = 'https://www.evernote.com/Login.action';
 
 const functioning = app.makeSingleInstance(() => {
   if (mainWindow) {
@@ -34,9 +36,9 @@ if (functioning) {
 
 function createMainWindow() {
   const lastWindowState = config.get('lastWindowState');
-  const lastURL = config.get('useYinxiang') ? 'https://app.yinxiang.com/Login.action' : 'https://www.evernote.com/Login.action';
   const maxWindowInteger = 2147483647;
-  const darkModeFlag = config.get('darkMode');
+  const darkModeFlag = config.get('darkMode') || config.get('blackMode');
+  const lastURL = config.get('useYinxiang') ? yinxiangURL : evernoteURL;
 
   const tuskWindow = new electron.BrowserWindow({
     title: app.getName(),

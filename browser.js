@@ -429,7 +429,7 @@ document.addEventListener('keydown', event => {
   const givenNum = parseInt(event.key, 10);
 
   // Get index
-  if (givenNum >= 1 && givenNum <= 9) {
+  if (givenNum < 10 && givenNum > 0) {
     goToNote(givenNum);
   }
 });
