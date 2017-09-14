@@ -385,7 +385,7 @@ const darwinTpl = [{
       type: 'separator'
     }, {
       label: 'Increase indentation',
-      accelerator: 'CmdorCtrl+M',
+      accelerator: 'CmdorCtrl+Alt+K',
       click() {
         activate('increase-indentation');
       }
@@ -768,7 +768,7 @@ const otherTpl = [{
       type: 'separator'
     }, {
       label: 'Increase indentation',
-      accelerator: 'CmdorCtrl+M',
+      accelerator: 'CmdorCtrl+Alt+K',
       click() {
         activate('indent');
       }
