@@ -121,6 +121,16 @@ Navigate seamlessly between your notes by pressing <kbd>Cmd/Ctrl</kbd> <kbd>Tab<
       </a>
 </div>
 
+### Note Printing
+
+Printing your notes is only a keystroke away. Press <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>P</kbd> and transfer them from screen to paper.
+
+<div align="center">
+      <a href="https://github.com/champloohq/tusk">
+        <img src="https://cdn.rawgit.com/champloohq/tusk/b7be04bd/media/print-note.gif" alt="Note Printing" width="100%">
+      </a>
+</div>
+
 ### Scalable Interface
 
 Adjust the zooming factor to your own preference by pressing <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>=</kbd> or <kbd>Cmd/Ctrl</kbd> <kbd>-</kbd>
@@ -128,6 +138,16 @@ Adjust the zooming factor to your own preference by pressing <kbd>Cmd/Ctrl</kbd>
 <div align="center">
       <a href="https://github.com/champloohq/tusk">
         <img src="https://cdn.rawgit.com/champloohq/tusk/00c01c4d/media/scalable-interface.gif" alt="Scalable Interface" width="100%">
+      </a>
+</div>
+
+### Export Notes
+
+Press <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>E</kbd> and save your notes effortlessly on your machine as `pdf` files.
+
+<div align="center">
+      <a href="https://github.com/champloohq/tusk">
+        <img src="https://cdn.rawgit.com/champloohq/tusk/b7be04bd/media/export-notes.gif" alt="Export Notes" width="100%">
       </a>
 </div>
 
