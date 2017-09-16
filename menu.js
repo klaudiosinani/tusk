@@ -87,6 +87,12 @@ const darwinTpl = [{
       activate('print');
     }
   }, {
+    label: 'Export Note as PDF',
+    accelerator: 'CmdorCtrl+Shift+E',
+    click() {
+      activate('export');
+    }
+  }, {
     type: 'separator'
   }, {
     label: 'Switch to Yinxiang',
@@ -552,6 +558,12 @@ const otherTpl = [{
     accelerator: 'CmdorCtrl+Alt+P',
     click() {
       activate('print');
+    }
+  }, {
+    label: 'Export Note as PDF',
+    accelerator: 'CmdorCtrl+Shift+E',
+    click() {
+      activate('export');
     }
   }, {
     type: 'separator'

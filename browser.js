@@ -255,6 +255,12 @@ function printToPDF() {
 
 ipc.on('print', printToPDF);
 
+function exportAsPDF() {
+  ipc.send('export-as-pdf');
+}
+
+ipc.on('export', exportAsPDF);
+
 ipc.on('next-note', goToNextNote);
 
 ipc.on('previous-note', goToPreviewsNote);

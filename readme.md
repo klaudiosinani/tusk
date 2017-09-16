@@ -26,7 +26,9 @@ Come over to our [Twitter](https://twitter.com/champloohq) account to share your
   - [Focus Mode](#focus-mode)
   - [Compact Mode](#compact-mode)
   - [Note Navigation](#note-navigation)
+  - [Note Printing](#note-printing)
   - [Scalable Interface](#scalable-interface)
+  - [Export Notes](#export-notes)
   - [Yinxiang Support](#yinxiang-support)
   - [Keyboard Shortcuts](#keyboard-shortcuts)
   - [Build-in Markdown](#build-in-markdown)
@@ -174,6 +176,7 @@ Align Center               | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>M</kbd>
 Align Right                | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>R</kbd>
 Increase Indentation       | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>K</kbd>
 Make Text Larger           | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>=</kbd>
+Export Note as PDF         | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>P</kbd>
 New Tag                    | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>T</kbd>
 New Notebook               | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>N</kbd>
 Toggle Checkbox            | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>C</kbd>
@@ -219,7 +222,6 @@ Feel like suggesting a new feature? Open a [`feature-request issue`](https://git
 
 - [ ] App pin lock
 - [ ] Automatic night mode
-- [ ] Note printing
 - [ ] Code blocks highlighting
 - [ ] RTL support
 

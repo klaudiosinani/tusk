@@ -15,6 +15,7 @@ const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 const ipcMain = electron.ipcMain;
 const shell = electron.shell;
+const dialog = electron.dialog;
 
 require('electron-debug')({enabled: true});
 require('electron-dl')();
@@ -165,6 +166,47 @@ ipcMain.on('print-to-pdf', event => {
       }
       // Open the pdf file to be printed
       shell.openExternal('file://' + filePath);
+    });
+  });
+});
+
+ipcMain.on('export-as-pdf', event => {
+  // Strin to be removed from note title
+  const removeString = ' | Evernote Web';
+  // Get the note title
+  const noteTitle = mainWindow.webContents.getTitle().replace(removeString, '');
+  console.log('Note to be exported is titled: ' + noteTitle);
+  const noteWindow = BrowserWindow.fromWebContents(event.sender);
+  // `Save note` dialog options
+  const options = {
+    // Suggest note title as filename
+    defaultPath: noteTitle,
+    filters: [{
+      name: 'PDF File',
+      extensions: ['pdf']
+    }, {
+      name: 'All Files',
+      extensions: ['*']
+    }]
+  };
+  // Intialize printing process
+  noteWindow.webContents.printToPDF({}, (error, data) => {
+    if (error) {
+      return console.log(error.message);
+    }
+    // Set out the `Save note` dialog
+    dialog.showSaveDialog(options, fileName => {
+      // Check if the filepath is valid
+      if (fileName === undefined) {
+        return console.log('Note was not exported');
+      }
+      // Intialize the file writing process
+      fs.writeFile(fileName, data, err => {
+        if (err) {
+          dialog.showErrorBox('Exporting note error', err.message);
+          return console.log(err.message);
+        }
+      });
     });
   });
 });
