@@ -249,6 +249,12 @@ function getPreviewsIndex(currentIndex) {
   return previewsIndex;
 }
 
+function printToPDF() {
+  ipc.send('print-to-pdf');
+}
+
+ipc.on('print', printToPDF);
+
 ipc.on('next-note', goToNextNote);
 
 ipc.on('previous-note', goToPreviewsNote);

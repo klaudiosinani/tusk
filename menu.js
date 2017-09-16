@@ -68,15 +68,23 @@ const darwinTpl = [{
     type: 'separator'
   }, {
     label: 'Navigate to Next Note',
-    accelerator: 'Ctrl+Tab',
+    accelerator: 'CmdorCtrl+Tab',
     click() {
       activate('next-note');
     }
   }, {
     label: 'Navigate to Previous Note',
-    accelerator: 'Ctrl+Shift+Tab',
+    accelerator: 'CmdorCtrl+Shift+Tab',
     click() {
       activate('previous-note');
+    }
+  }, {
+    type: 'separator'
+  }, {
+    label: 'Print Note',
+    accelerator: 'CmdorCtrl+Alt+P',
+    click() {
+      activate('print');
     }
   }, {
     type: 'separator'
@@ -527,15 +535,23 @@ const otherTpl = [{
     type: 'separator'
   }, {
     label: 'Navigate to Next Note',
-    accelerator: 'Ctrl+Tab',
+    accelerator: 'CmdorCtrl+Tab',
     click() {
       activate('next-note');
     }
   }, {
     label: 'Navigate to Previous Note',
-    accelerator: 'Ctrl+Shift+Tab',
+    accelerator: 'CmdorCtrl+Shift+Tab',
     click() {
       activate('previous-note');
+    }
+  }, {
+    type: 'separator'
+  }, {
+    label: 'Print Note',
+    accelerator: 'CmdorCtrl+Alt+P',
+    click() {
+      activate('print');
     }
   }, {
     type: 'separator'
