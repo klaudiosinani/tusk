@@ -2,15 +2,19 @@
 const path = require('path');
 const fs = require('fs');
 const electron = require('electron');
+const os = require('os');
 const isDevMode = require('electron-is-dev');
 const ms = require('ms');
+const timeStamp = require('time-stamp');
 const appMenu = require('./menu');
 const tray = require('./tray');
 const config = require('./config');
 const update = require('./update');
 
 const app = electron.app;
+const BrowserWindow = electron.BrowserWindow;
 const ipcMain = electron.ipcMain;
+const shell = electron.shell;
 
 require('electron-debug')({enabled: true});
 require('electron-dl')();
@@ -134,6 +138,35 @@ ipcMain.on('activate-vibrant', () => {
     // Remove background vibrancy
     mainWindow.setVibrancy(null);
   }
+});
+
+ipcMain.on('print-to-pdf', event => {
+  // Get the current date-time
+  const dateTime = timeStamp('YYYY-MM-DD_HH-mm-ss');
+  const tmpDir = os.tmpdir();
+  // Construct the filename using the current date-time
+  const fileName = 'Tusk_Note_' + dateTime + '.pdf';
+  console.log('Date - time: ' + dateTime);
+  console.log('Temp directory: ' + tmpDir);
+  console.log('File to be printed: ' + fileName);
+  // Path of the file to be printed
+  const filePath = path.join(tmpDir, fileName);
+  // Get the window with the note that is to be printed
+  const noteWindow = BrowserWindow.fromWebContents(event.sender);
+  // Intialize printing process
+  noteWindow.webContents.printToPDF({}, (error, data) => {
+    if (error) {
+      return console.log(error.message);
+    }
+    // Write the pdf file to file path
+    fs.writeFile(filePath, data, err => {
+      if (err) {
+        return console.log(err.message);
+      }
+      // Open the pdf file to be printed
+      shell.openExternal('file://' + filePath);
+    });
+  });
 });
 
 app.on('activate', () => {
