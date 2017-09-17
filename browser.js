@@ -57,14 +57,26 @@ ipc.on('exit-focus-mode', () => {
   document.querySelector('#gwt-debug-NoteAttributes-doneButton').click();
 });
 
+function untoggleTheme(themeName, activateFunction) {
+  // Deactivate theme status if it is not already deactivated
+  switch (config.get(themeName)) {
+    case true:
+      config.set(themeName, false);
+      activateFunction();
+      break;
+
+    default:
+      break;
+  }
+}
+
 function darkMode() {
   document.documentElement.classList.toggle('dark-mode', config.get('darkMode'));
 }
 
 function untoggleDark() {
   // Untoggle the dark theme
-  config.set('darkMode', false);
-  darkMode();
+  untoggleTheme('darkMode', darkMode);
 }
 
 ipc.on('toggle-dark-mode', () => {
@@ -83,8 +95,7 @@ function blackMode() {
 
 function untoggleBlack() {
   // Untoggle the black theme
-  config.set('blackMode', false);
-  blackMode();
+  untoggleTheme('blackMode', blackMode);
 }
 
 ipc.on('toggle-black-mode', () => {
@@ -103,8 +114,7 @@ function sepiaMode() {
 
 function untoggleSepia() {
   // Untoggle the sepia theme
-  config.set('sepiaMode', false);
-  sepiaMode();
+  untoggleTheme('sepiaMode', sepiaMode);
 }
 
 ipc.on('toggle-sepia-mode', () => {
@@ -127,8 +137,7 @@ function vibrantMode() {
 
 function untoggleVibrant() {
   // Untoggle the vibrant theme
-  config.set('vibrantMode', false);
-  vibrantMode();
+  untoggleTheme('vibrantMode', vibrantMode);
 }
 
 ipc.on('toggle-vibrant-mode', () => {
@@ -151,8 +160,7 @@ function vibrantDarkMode() {
 
 function untoggleDarkVibrant() {
   // Untoggle the dark vibrant theme
-  config.set('vibrantDarkMode', false);
-  vibrantDarkMode();
+  untoggleTheme('vibrantDarkMode', vibrantDarkMode);
 }
 
 ipc.on('toggle-vibrant-dark-mode', () => {

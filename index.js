@@ -92,8 +92,6 @@ function createMainWindow() {
     config.set('lastURL', url);
   });
 
-  require('devtron').install();
-
   return tuskWindow;
 }
 
@@ -171,7 +169,7 @@ ipcMain.on('print-to-pdf', event => {
 });
 
 ipcMain.on('export-as-pdf', event => {
-  // Strin to be removed from note title
+  // String to be removed from note title
   const removeString = ' | Evernote Web';
   // Get the note title
   const noteTitle = mainWindow.webContents.getTitle().replace(removeString, '');
