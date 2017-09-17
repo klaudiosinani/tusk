@@ -92,8 +92,6 @@ function createMainWindow() {
     config.set('lastURL', url);
   });
 
-  require('devtron').install();
-
   return tuskWindow;
 }
 
