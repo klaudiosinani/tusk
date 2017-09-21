@@ -12,24 +12,9 @@
   },
   "maintainers": [
     {
-      "name": "Leonidas Avdelas",
-      "email": "avdelasleonidas@gmail.com",
-      "url": "github.com/LoniasGR"
-    },
-    {
-      "name": "George Baxopoulos",
-      "email": "baxopoulos.george@gmail.com",
-      "url": "github.com/georgebax"
-    },
-    {
-      "name": "Konstantinos Mitropoulos",
-      "email": "konsmitr@gmail.com",
-      "url": "github.com/tsikos7"
-    },
-    {
-      "name": "Konstantinos Skouras",
-      "email": "konst.skouras@gmail.com",
-      "url": "github.com/KonSkouras"
+      "name": "Mario Sinani",
+      "email": "mariosinani@protonmail.ch",
+      "url": "github.com/mariocfhq"
     },
     {
       "name": "Thanasis Gkanos",
@@ -37,9 +22,9 @@
       "url": "github.com/ThanasisGkanos"
     },
     {
-      "name": "Mario Sinani",
-      "email": "mariosinani@protonmail.ch",
-      "url": "github.com/snowmancfhq"
+      "name": "George Baxopoulos",
+      "email": "baxopoulos.george@gmail.com",
+      "url": "github.com/georgebax"
     }
   ],
   "scripts": {
