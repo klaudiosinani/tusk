@@ -25,7 +25,7 @@ html.sepia-mode .GDAMOPFCHEB {
 html.sepia-mode .GJDCG5CK-B, html.sepia-mode .GDAMOPFCEQB, html.sepia-mode .GDAMOPFCDAC.GDAMOPFCL5B { /* Search modal */
   background-color: var(--sepia) !important;
 }
-html.sepia-mode .GJDCG5CK-B {
+html.sepia-mode .GJDCG5CA0B {
   border-bottom: 1px solid var(--black-five) !important;
 }
 html.sepia-mode .GJDCG5CGWB, html.sepia-mode .GDAMOPFCIXB, html.sepia-mode .GJDCG5CKXB.GJDCG5CHXB, html.sepia-mode .GDAMOPFCFTB { /* Notebooks modal */
@@ -147,7 +147,7 @@ html.sepia-mode .GJDCG5CONB, html.sepia-mode .GJDCG5CFQB { /* Note editor backgr
 html.sepia-mode .GJDCG5COF { /* Colors background */
   background-color: var(--sepia) !important;
 }
-html.sepia-mode .GJDCG5CHK, html.sepia-mode .GJDCG5CGK.GJDCG5CAK { /* Submenus background */
+html.sepia-mode .GJDCG5CHK, html.sepia-mode .GJDCG5CGK.GJDCG5CAK, html.sepia-mode .GJDCG5COQ.GJDCG5CAR { /* Submenus background */
   background-color: var(--sepia) !important;
 }
 html.sepia-mode .GDAMOPFCNHC { /* Dialogs background */
