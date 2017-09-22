@@ -348,12 +348,12 @@ ipc.on('add-link', () => {
 
 ipc.on('attach-file', () => {
   // Add link
-  document.querySelector('#gwt-debug-FormattingBar-attachmentButton.GDAMOPFCE0.GDAMOPFCE1').click();
+  document.querySelector('#gwt-debug-FormattingBar-linkButton').click();
 });
 
 ipc.on('insert-drive', () => {
   // Add link
-  document.querySelector('#gwt-debug-FormattingBar-attachmentButton.GDAMOPFCA1.GDAMOPFCE1').click();
+  document.querySelector('#gwt-debug-FormattingBar-attachmentButton').click();
 });
 
 ipc.on('align-left', () => {
