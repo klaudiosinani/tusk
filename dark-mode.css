@@ -25,7 +25,7 @@ html.dark-mode .GDAMOPFCHEB {
 html.dark-mode .GJDCG5CK-B, html.dark-mode .GDAMOPFCEQB, html.dark-mode .GDAMOPFCDAC.GDAMOPFCL5B { /* Search modal */
   background-color: var(--dark-grey) !important;
 }
-html.dark-mode .GJDCG5CK-B {
+html.dark-mode .GJDCG5CA0B {
   border-bottom: 1px solid var(--white-five) !important;
 }
 html.dark-mode .GJDCG5CGWB, html.dark-mode .GDAMOPFCIXB, html.dark-mode .GJDCG5CKXB.GJDCG5CHXB, html.dark-mode .GDAMOPFCFTB { /* Notebooks modal */
@@ -147,7 +147,7 @@ html.dark-mode .GJDCG5CONB, html.dark-mode .GJDCG5CFQB { /* Note editor backgrou
 html.dark-mode .GJDCG5COF { /* Colors background */
   background-color: var(--dark-grey) !important;
 }
-html.dark-mode .GJDCG5CHK, html.dark-mode .GJDCG5CGK.GJDCG5CAK { /* Submenus background */
+html.dark-mode .GJDCG5CHK, html.dark-mode .GJDCG5CGK.GJDCG5CAK, html.dark-mode .GJDCG5COQ.GJDCG5CAR { /* Submenus background */
   background-color: var(--dark-grey) !important;
 }
 html.dark-mode .GDAMOPFCNHC { /* Dialogs background */

@@ -25,7 +25,7 @@ html.black-mode .GDAMOPFCHEB {
 html.black-mode .GJDCG5CK-B, html.black-mode .GDAMOPFCEQB, html.black-mode .GDAMOPFCDAC.GDAMOPFCL5B { /* Search modal */
   background-color: var(--black) !important;
 }
-html.black-mode .GJDCG5CK-B {
+html.black-mode .GJDCG5CA0B {
   border-bottom: 1px solid var(--white-five) !important;
 }
 html.black-mode .GJDCG5CGWB, html.black-mode .GDAMOPFCIXB, html.black-mode .GJDCG5CKXB.GJDCG5CHXB, html.black-mode .GDAMOPFCFTB { /* Notebooks modal */
@@ -147,7 +147,7 @@ html.black-mode .GJDCG5CONB, html.black-mode .GJDCG5CFQB { /* Note editor backgr
 html.black-mode .GJDCG5COF { /* Colors background */
   background-color: var(--black) !important;
 }
-html.black-mode .GJDCG5CHK, html.black-mode .GJDCG5CGK.GJDCG5CAK { /* Submenus background */
+html.black-mode .GJDCG5CHK, html.black-mode .GJDCG5CGK.GJDCG5CAK, html.black-mode .GJDCG5COQ.GJDCG5CAR { /* Submenus background */
   background-color: var(--black) !important;
 }
 html.black-mode .GDAMOPFCNHC { /* Dialogs background */
