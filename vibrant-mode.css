@@ -29,7 +29,7 @@ html.vibrant-mode .GJDCG5CK-B, html.vibrant-mode .GDAMOPFCEQB, html.vibrant-mode
   background-color: var(--transparent-white) !important;
 }
 html.vibrant-mode .GJDCG5CA0B {
-  border-bottom: 1px solid var(--white-five) !important;
+  border-bottom: 1px solid var(--black-five) !important;
 }
 html.vibrant-mode .GJDCG5CGWB, html.vibrant-mode .GDAMOPFCIXB, html.vibrant-mode .GJDCG5CKXB.GJDCG5CHXB, html.vibrant-mode .GDAMOPFCFTB, html.vibrant-mode .GJDCG5CP-B .GJDCG5CE1B { /* Notebooks modal */
   background-color: var(--vibrant-grey) !important;
@@ -57,7 +57,7 @@ html.vibrant-mode .GDAMOPFCN-B .GDAMOPFCC1B, html.vibrant-mode .GDAMOPFCDQB { /*
 }
 html.vibrant-mode .GJDCG5CJ3B, html.vibrant-mode .GJDCG5CH3B, html.vibrant-mode .GJDCG5CP5B, html.vibrant-mode .GJDCG5CFHB { /* Shortcuts modal */
   background-color: var(--vibrant-grey) !important;
-  border-right: 3px solid var(--white-five) !important;
+  border-right: 3px solid var(--black-five) !important;
 }
 html.vibrant-mode .GJDCG5CP2 { /* Settings menu */
   background-color: var(--vibrant-grey) !important;
@@ -68,30 +68,30 @@ html.vibrant-mode .GJDCG5CC5B { /* App left sidebar */
 html.vibrant-mode .GJDCG5CC5B {
   background: var(--vibrant-grey) !important;
   background-color: var(--vibrant-grey) !important;
-  border-right: 1px solid var(--white-five) !important;
+  border-right: 1px solid var(--black-five) !important;
 }
 html.vibrant-mode .GDAMOPFCJYB { /* Notes list head */
   background-color: var(--transparent-white) !important;
 }
 html.vibrant-mode .GJDCG5CAQB { /* Notes list left border */
   background-color: var(--transparent-white) !important;
-  border-left: 1px solid var(--white-five) !important;
+  border-left: 1px solid var(--black-five) !important;
 }
 html.vibrant-mode .GDAMOPFCA5B { /* Notes list left border */
-  border-left: 1px solid var(--white-five) !important;
-  border-right: 1px solid var(--white-five) !important;
+  border-left: 1px solid var(--black-five) !important;
+  border-right: 1px solid var(--black-five) !important;
   background: var(--transparent-white) !important;
   background-color: var(--transparent-white) !important;
 }
 html.vibrant-mode .GJDCG5CP3B { /* Profile top border */
-  border-top: 1px solid var(--white-five) !important;
+  border-top: 1px solid var(--black-five) !important;
 }
 html.vibrant-mode .focus-NotesView-Note.focus-NotesView-Note-selected .focus-NotesView-Note-selectOverlay { /* Selected note bordered box */
-  border: 3px solid var(--white-five) !important;
+  border: 3px solid var(--black-five) !important;
 }
 html.vibrant-mode .focus-NotesView-RemindersList { /* Reminders list borders */
-  border-top: 2px solid var(--white-five) !important;
-  border-bottom: 3px solid var(--white-five) !important;
+  border-top: 2px solid var(--black-five) !important;
+  border-bottom: 3px solid var(--black-five) !important;
 }
 html.vibrant-mode .focus-NotesView-RemindersList { /* Reminders background */
   background-color: var(--transparent-white) !important;
@@ -100,30 +100,30 @@ html.vibrant-mode .focus-NotesView-NotebookReminders-DropAreaContainer { /* Note
   background: var(--transparent-white) !important;
 }
 html.vibrant-mode .focus-NotesView-Subheader { /* Subheader border */
-  border-bottom: 1px solid var(--white-five) !important;
+  border-bottom: 1px solid var(--black-five) !important;
 }
 html.vibrant-mode .GJDCG5CJLB {
   background-color: var(--transparent-white) !important;
 }
 html.vibrant-mode .GJDCG5CJKB { /* Toolbar bottom border */
-  border-bottom: 1px solid var(--white-five) !important;
+  border-bottom: 1px solid var(--black-five) !important;
 }
 html.vibrant-mode .GDAMOPFCILB { /* Note attributes background */
   background: var(--vibrant-grey) !important;
 }
 html.vibrant-mode .GJDCG5CP0, html.vibrant-mode .GJDCG5CLKB { /* Toolbar separators */
-  border-left: 1px solid var(--white-five) !important;
+  border-left: 1px solid var(--black-five) !important;
 }
 html.vibrant-mode .focus-NotesView-Note .focus-NotesView-Note-snippetDivider { /* Notes divider color */
-  border-top: 1px solid var(--white-five) !important;
+  border-top: 1px solid var(--black-five) !important;
 }
 html.vibrant-mode .GJDCG5CP3B { /* Profile background */
   background-color: var(--vibrant-grey) !important;
-  border-top: 1px solid var(--white-five) !important;
+  border-top: 1px solid var(--black-five) !important;
 }
 html.vibrant-mode .GDAMOPFCPYB { /* Note list transition background */
   background-color: var(--transparent-white) !important;
-  border-top: 1px solid var(--white-five) !important;
+  border-top: 1px solid var(--black-five) !important;
 }
 html.vibrant-mode .GDAMOPFCMYB { /* Note list header */
   background-color: var(--transparent-white) !important;
