@@ -6,7 +6,7 @@
 
 > 🐘 Refined Evernote desktop app
 
-[![Build Status](https://travis-ci.org/champloohq/tusk.svg?branch=master)](https://travis-ci.org/champloohq/tusk) [![Build status](https://ci.appveyor.com/api/projects/status/ok91rnp4a442rbmq?svg=true)](https://ci.appveyor.com/project/klauscfhq/tusk) [![Dependency Status](https://dependencyci.com/github/champloohq/tusk/badge)](https://dependencyci.com/github/champloohq/tusk) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/champloohq/tusk) [![Latest version](https://badge.fury.io/gh/champloohq%2Ftusk.svg)](https://github.com/champloohq/tusk/releases) [![DLs](https://img.shields.io/github/downloads/champloohq/tusk/total.svg)](https://github.com/champloohq/tusk/releases)
+[![Build Status](https://travis-ci.org/champloohq/tusk.svg?branch=master)](https://travis-ci.org/champloohq/tusk) [![Build status](https://ci.appveyor.com/api/projects/status/ok91rnp4a442rbmq?svg=true)](https://ci.appveyor.com/project/klauscfhq/tusk) [![Dependency Status](https://dependencyci.com/github/champloohq/tusk/badge)](https://dependencyci.com/github/champloohq/tusk) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/champloohq/tusk) [![Latest version](https://badge.fury.io/gh/champloohq%2Ftusk.svg)](https://github.com/champloohq/tusk/releases) [![DLs](https://img.shields.io/github/downloads/champloohq/tusk/total.svg)](https://github.com/champloohq/tusk/releases) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome-electron)
 
 ## Description
 
@@ -184,13 +184,13 @@ Toggle Settings            | <kbd>Cmd/Ctrl</kbd> <kbd>,</kbd>
 Make Text Smaller          | <kbd>Cmd/Ctrl</kbd> <kbd>-</kbd>
 Reset Zoom Level           | <kbd>Cmd/Ctrl</kbd> <kbd>0</kbd>
 Navigate to Next Note      | <kbd>Cmd/Ctrl</kbd> <kbd>Tab</kbd>
+Toggle Tags                | <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>T</kbd>
+Toggle Notebooks           | <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>N</kbd>
 Toggle Black Theme         | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>E</kbd>
 Toggle Vibrant Light Theme | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>U</kbd>
 Toggle Vibrant Dark Theme  | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>J</kbd>
 Print Note                 | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>P</kbd>
 Add Shortcut               | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>S</kbd>
-Toggle Tags                | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>T</kbd>
-Toggle Notebooks           | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>N</kbd>
 Align Left                 | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>L</kbd>
 Align Center               | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>M</kbd>
 Align Right                | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>R</kbd>

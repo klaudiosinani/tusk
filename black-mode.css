@@ -1,43 +1,43 @@
 html.black-mode ::-webkit-scrollbar-track { /* Notes list scrollbar track */
   background: var(--black) !important;
 }
-html.black-mode .GDAMOPFCIEB { /* Metting note background */
+html.black-mode .GJDCG5CIEB { /* Metting note background */
   background-color: var(--black) !important;
 }
-html.black-mode .GDAMOPFCLYB { /* Note list header */
+html.black-mode .GJDCG5CNYB { /* Note list header */
   background-color: var(--black) !important;
 }
-html.black-mode .GDAMOPFCBR.GDAMOPFCCR, html.black-mode .GDAMOPFCDR {
+html.black-mode .GJDCG5CBR.GJDCG5CCR, html.black-mode .GJDCG5CDR {
   opacity: 1 !important;
 }
 html.black-mode .Dropdown-menu {
   background: var(--black) !important;
 }
-html.black-mode .GDAMOPFCEKB, html.black-mode .GDAMOPFCAHB, html.black-mode .GDAMOPFCPGB, html.black-mode .GDAMOPFCHYC.GDAMOPFCLD { /* Chat windows */
+html.black-mode .GJDCG5CLGB, html.black-mode .GDAMOPFCAHB, html.black-mode .GDAMOPFCPGB, html.black-mode .GDAMOPFCHYC.GDAMOPFCLD { /* Chat windows */
   background: var(--black) !important;
 }
-html.black-mode .GDAMOPFCLKC { /* Reminder modal */
+html.black-mode .GJDCG5CMKC { /* Reminder modal */
   background: var(--black) !important;
 }
 html.black-mode .GDAMOPFCHEB {
   background: var(--black) !important;
 }
-html.black-mode .GDAMOPFCJ-B, html.black-mode .GDAMOPFCEQB, html.black-mode .GDAMOPFCDAC.GDAMOPFCL5B { /* Search modal */
+html.black-mode .GJDCG5CK-B, html.black-mode .GDAMOPFCEQB, html.black-mode .GDAMOPFCDAC.GDAMOPFCL5B, html.black-mode .GJDCG5CP-B .GJDCG5CE1B { /* Search modal */
   background-color: var(--black) !important;
 }
-html.black-mode .GDAMOPFCP-B {
+html.black-mode .GJDCG5CA0B {
   border-bottom: 1px solid var(--white-five) !important;
 }
-html.black-mode .GDAMOPFCEWB, html.black-mode .GDAMOPFCIXB, html.black-mode .GDAMOPFCN5B, html.black-mode .GDAMOPFCFTB { /* Notebooks modal */
+html.black-mode .GJDCG5CGWB, html.black-mode .GDAMOPFCIXB, html.black-mode .GJDCG5CKXB.GJDCG5CHXB, html.black-mode .GDAMOPFCFTB { /* Notebooks modal */
   background-color: var(--black) !important;
 }
-html.black-mode .GDAMOPFCAXB.GDAMOPFCMXB { /* Selected notebook in notebooks modal */
+html.black-mode .GJDCG5CBXB.GJDCG5CNXB { /* Selected notebook in notebooks modal */
   background-color: #2dbe60 !important;
 }
-html.black-mode .GDAMOPFCGTB { /* Select notebook at toolbar option */
+html.black-mode .GJDCG5CHTB { /* Select notebook at toolbar option */
   background-color: var(--black) !important;
 }
-html.black-mode .GDAMOPFCJJ, html.black-mode .focus-drawer-Filter-input { /* Search notebook/tags input text */
+html.black-mode .GJDCG5CJJ, html.black-mode .focus-drawer-Filter-input { /* Search notebook/tags input text */
   color: #e1e1e1 !important;
 }
 html.black-mode div#gwt-debug-GlassModalDialog-container { /* Glass modal background */
@@ -52,16 +52,17 @@ html.black-mode .GDAMOPFCPE { /* Notebook info */
 html.black-mode .GDAMOPFCN-B .GDAMOPFCC1B, html.black-mode .GDAMOPFCDQB { /* Saved search */
   background-color: var(--black) !important;
 }
-html.black-mode .GDAMOPFCFHB, html.black-mode .GDAMOPFCO5B { /* Shortcuts modal */
+html.black-mode .GJDCG5CJ3B, html.black-mode .GJDCG5CH3B, html.black-mode .GJDCG5CP5B, html.black-mode .GJDCG5CFHB { /* Shortcuts modal */
+  background-color: var(--black) !important;
+  border-right: 3px solid var(--white-five) !important;
+}
+html.black-mode .GJDCG5CP2 { /* Settings menu */
   background-color: var(--black) !important;
 }
-html.black-mode .GDAMOPFCP2 { /* Settings menu */
+html.black-mode .GJDCG5CC5B { /* App left sidebar */
   background-color: var(--black) !important;
 }
-html.black-mode .GDAMOPFCH4B { /* App left sidebar */
-  background-color: var(--black) !important;
-}
-html.black-mode .GDAMOPFCB5B {
+html.black-mode .GJDCG5CC5B {
   background: var(--black) !important;
   background-color: var(--black) !important;
   border-right: 1px solid var(--white-five) !important;
@@ -69,7 +70,7 @@ html.black-mode .GDAMOPFCB5B {
 html.black-mode .GDAMOPFCJYB { /* Notes list head */
   background-color: var(--black) !important;
 }
-html.black-mode .GDAMOPFCPPB { /* Notes list left border */
+html.black-mode .GJDCG5CAQB { /* Notes list left border */
   background-color: var(--black) !important;
   border-left: 1px solid var(--white-five) !important;
 }
@@ -79,7 +80,7 @@ html.black-mode .GDAMOPFCA5B { /* Notes list left border */
   background: var(--black) !important;
   background-color: var(--black) !important;
 }
-html.black-mode .GDAMOPFCN3B { /* Profile top border */
+html.black-mode .GJDCG5CP3B { /* Profile top border */
   border-top: 1px solid var(--white-five) !important;
 }
 html.black-mode .focus-NotesView-Note.focus-NotesView-Note-selected .focus-NotesView-Note-selectOverlay { /* Selected note bordered box */
@@ -98,22 +99,22 @@ html.black-mode .focus-NotesView-NotebookReminders-DropAreaContainer { /* Notebo
 html.black-mode .focus-NotesView-Subheader { /* Subheader border */
   border-bottom: 1px solid var(--white-five) !important;
 }
-html.black-mode .GDAMOPFCJKB {
+html.black-mode .GJDCG5CJLB {
   background-color: var(--black) !important;
 }
-html.black-mode .GDAMOPFCIKB { /* Toolbar bottom border */
+html.black-mode .GJDCG5CJKB { /* Toolbar bottom border */
   border-bottom: 1px solid var(--white-five) !important;
 }
 html.black-mode .GDAMOPFCILB { /* Note attributes background */
   background: var(--black) !important;
 }
-html.black-mode .GDAMOPFCP0 { /* Toolbar separators */
+html.black-mode .GJDCG5CP0, html.black-mode .GJDCG5CLKB { /* Toolbar separators */
   border-left: 1px solid var(--white-five) !important;
 }
 html.black-mode .focus-NotesView-Note .focus-NotesView-Note-snippetDivider { /* Notes divider color */
   border-top: 1px solid var(--white-five) !important;
 }
-html.black-mode .GDAMOPFCO3B { /* Profile background */
+html.black-mode .GJDCG5CP3B { /* Profile background */
   background-color: var(--black) !important;
   border-top: 1px solid var(--white-five) !important;
 }
@@ -131,28 +132,28 @@ html.black-mode div#gwt-debug-FocusView-root { /* Sidebar transition background 
 html.black-mode .focus-NotesView-NotesView { /* Notes list body */
   background-color: var(--black) !important;
 }
-html.black-mode .GDAMOPFCKNB, html.black-mode .GDAMOPFCOPB { /* Note editor body */
+html.black-mode .GJDCG5CMNB, html.black-mode .GDAMOPFCOPB { /* Note editor body */
   background-color: var(--black) !important;
 }
-html.black-mode .GDAMOPFCELB { /* Note editor toolbar */
+html.black-mode .GJDCG5CKKB { /* Note editor toolbar */
   background-color: var(--black) !important;
 }
-html.black-mode .GDAMOPFCJ1 { /* Note editor toolbar options */
+html.black-mode .GJDCG5CJ1 { /* Note editor toolbar options */
   background-color: var(--black) !important;
 }
-html.black-mode .GDAMOPFCLNB { /* Note editor background */
+html.black-mode .GJDCG5CONB, html.black-mode .GJDCG5CFQB { /* Note editor background */
   background-color: var(--black) !important;
 }
-html.black-mode .GDAMOPFCOF.GDAMOPFCAG { /* Colors background */
+html.black-mode .GJDCG5COF { /* Colors background */
   background-color: var(--black) !important;
 }
-html.black-mode .GDAMOPFCHK, html.black-mode .GDAMOPFCOQ.GDAMOPFCAR { /* Submenus background */
+html.black-mode .GJDCG5CHK, html.black-mode .GJDCG5CGK.GJDCG5CAK, html.black-mode .GJDCG5COQ.GJDCG5CAR { /* Submenus background */
   background-color: var(--black) !important;
 }
 html.black-mode .GDAMOPFCNHC { /* Dialogs background */
   background-color: var(--black) !important;
 }
-html.black-mode .GDAMOPFCHLB { /* Note editor head */
+html.black-mode .GJDCG5CFLB { /* Note editor head */
   background-color: var(--black) !important;
 }
 html.black-mode div#imggal-glass { /* Image gallery background*/

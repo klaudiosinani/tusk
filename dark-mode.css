@@ -1,43 +1,43 @@
 html.dark-mode ::-webkit-scrollbar-track { /* Notes list scrollbar track */
   background: var(--dark-grey) !important;
 }
-html.dark-mode .GDAMOPFCIEB { /* Metting note background */
+html.dark-mode .GJDCG5CIEB { /* Metting note background */
   background-color: var(--dark-grey) !important;
 }
-html.dark-mode .GDAMOPFCLYB { /* Note list header */
+html.dark-mode .GJDCG5CNYB { /* Note list header */
   background-color: var(--dark-grey) !important;
 }
-html.dark-mode .GDAMOPFCBR.GDAMOPFCCR, html.dark-mode .GDAMOPFCDR {
+html.dark-mode .GJDCG5CBR.GJDCG5CCR, html.dark-mode .GJDCG5CDR {
   opacity: 1 !important;
 }
 html.dark-mode .Dropdown-menu {
   background: var(--dark-grey) !important;
 }
-html.dark-mode .GDAMOPFCEKB, html.dark-mode .GDAMOPFCAHB, html.dark-mode .GDAMOPFCPGB, html.dark-mode .GDAMOPFCHYC.GDAMOPFCLD { /* Chat windows */
+html.dark-mode .GJDCG5CLGB, html.dark-mode .GDAMOPFCAHB, html.dark-mode .GDAMOPFCPGB, html.dark-mode .GDAMOPFCHYC.GDAMOPFCLD { /* Chat windows */
   background: var(--dark-grey) !important;
 }
-html.dark-mode .GDAMOPFCLKC { /* Reminder modal */
+html.dark-mode .GJDCG5CMKC { /* Reminder modal */
   background: var(--dark-grey) !important;
 }
 html.dark-mode .GDAMOPFCHEB {
   background: var(--dark-grey) !important;
 }
-html.dark-mode .GDAMOPFCJ-B, html.dark-mode .GDAMOPFCEQB, html.dark-mode .GDAMOPFCDAC.GDAMOPFCL5B { /* Search modal */
+html.dark-mode .GJDCG5CK-B, html.dark-mode .GDAMOPFCEQB, html.dark-mode .GDAMOPFCDAC.GDAMOPFCL5B, html.dark-mode .GJDCG5CP-B .GJDCG5CE1B { /* Search modal */
   background-color: var(--dark-grey) !important;
 }
-html.dark-mode .GDAMOPFCP-B {
+html.dark-mode .GJDCG5CA0B {
   border-bottom: 1px solid var(--white-five) !important;
 }
-html.dark-mode .GDAMOPFCEWB, html.dark-mode .GDAMOPFCIXB, html.dark-mode .GDAMOPFCN5B, html.dark-mode .GDAMOPFCFTB { /* Notebooks modal */
+html.dark-mode .GJDCG5CGWB, html.dark-mode .GDAMOPFCIXB, html.dark-mode .GJDCG5CKXB.GJDCG5CHXB, html.dark-mode .GDAMOPFCFTB { /* Notebooks modal */
   background-color: var(--dark-grey) !important;
 }
-html.dark-mode .GDAMOPFCAXB.GDAMOPFCMXB { /* Selected notebook in notebooks modal */
+html.dark-mode .GJDCG5CBXB.GJDCG5CNXB { /* Selected notebook in notebooks modal */
   background-color: #2dbe60 !important;
 }
-html.dark-mode .GDAMOPFCGTB { /* Select notebook at toolbar option */
+html.dark-mode .GJDCG5CHTB { /* Select notebook at toolbar option */
   background-color: var(--dark-grey) !important;
 }
-html.dark-mode .GDAMOPFCJJ, html.dark-mode .focus-drawer-Filter-input { /* Search notebook/tags input text */
+html.dark-mode .GJDCG5CJJ, html.dark-mode .focus-drawer-Filter-input { /* Search notebook/tags input text */
   color: #e1e1e1 !important;
 }
 html.dark-mode div#gwt-debug-GlassModalDialog-container { /* Glass modal background */
@@ -52,16 +52,17 @@ html.dark-mode .GDAMOPFCPE { /* Notebook info */
 html.dark-mode .GDAMOPFCN-B .GDAMOPFCC1B, html.dark-mode .GDAMOPFCDQB { /* Saved search */
   background-color: var(--dark-grey) !important;
 }
-html.dark-mode .GDAMOPFCFHB, html.dark-mode .GDAMOPFCO5B { /* Shortcuts modal */
+html.dark-mode .GJDCG5CJ3B, html.dark-mode .GJDCG5CH3B, html.dark-mode .GJDCG5CP5B, html.dark-mode .GJDCG5CFHB { /* Shortcuts modal */
+  background-color: var(--dark-grey) !important;
+  border-right: 3px solid var(--white-five) !important;
+}
+html.dark-mode .GJDCG5CP2 { /* Settings menu */
   background-color: var(--dark-grey) !important;
 }
-html.dark-mode .GDAMOPFCP2 { /* Settings menu */
+html.dark-mode .GJDCG5CC5B { /* App left sidebar */
   background-color: var(--dark-grey) !important;
 }
-html.dark-mode .GDAMOPFCH4B { /* App left sidebar */
-  background-color: var(--dark-grey) !important;
-}
-html.dark-mode .GDAMOPFCB5B {
+html.dark-mode .GJDCG5CC5B {
   background: var(--dark-grey) !important;
   background-color: var(--dark-grey) !important;
   border-right: 1px solid var(--white-five) !important;
@@ -69,7 +70,7 @@ html.dark-mode .GDAMOPFCB5B {
 html.dark-mode .GDAMOPFCJYB { /* Notes list head */
   background-color: var(--dark-grey) !important;
 }
-html.dark-mode .GDAMOPFCPPB { /* Notes list left border */
+html.dark-mode .GJDCG5CAQB { /* Notes list left border */
   background-color: var(--dark-grey) !important;
   border-left: 1px solid var(--white-five) !important;
 }
@@ -79,7 +80,7 @@ html.dark-mode .GDAMOPFCA5B { /* Notes list left border */
   background: var(--dark-grey) !important;
   background-color: var(--dark-grey) !important;
 }
-html.dark-mode .GDAMOPFCN3B { /* Profile top border */
+html.dark-mode .GJDCG5CP3B { /* Profile top border */
   border-top: 1px solid var(--white-five) !important;
 }
 html.dark-mode .focus-NotesView-Note.focus-NotesView-Note-selected .focus-NotesView-Note-selectOverlay { /* Selected note bordered box */
@@ -98,22 +99,22 @@ html.dark-mode .focus-NotesView-NotebookReminders-DropAreaContainer { /* Noteboo
 html.dark-mode .focus-NotesView-Subheader { /* Subheader border */
   border-bottom: 1px solid var(--white-five) !important;
 }
-html.dark-mode .GDAMOPFCJKB {
+html.dark-mode .GJDCG5CJLB {
   background-color: var(--dark-grey) !important;
 }
-html.dark-mode .GDAMOPFCIKB { /* Toolbar bottom border */
+html.dark-mode .GJDCG5CJKB { /* Toolbar bottom border */
   border-bottom: 1px solid var(--white-five) !important;
 }
 html.dark-mode .GDAMOPFCILB { /* Note attributes background */
   background: var(--dark-grey) !important;
 }
-html.dark-mode .GDAMOPFCP0 { /* Toolbar separators */
+html.dark-mode .GJDCG5CP0, html.dark-mode .GJDCG5CLKB { /* Toolbar separators */
   border-left: 1px solid var(--white-five) !important;
 }
 html.dark-mode .focus-NotesView-Note .focus-NotesView-Note-snippetDivider { /* Notes divider color */
   border-top: 1px solid var(--white-five) !important;
 }
-html.dark-mode .GDAMOPFCO3B { /* Profile background */
+html.dark-mode .GJDCG5CP3B { /* Profile background */
   background-color: var(--dark-grey) !important;
   border-top: 1px solid var(--white-five) !important;
 }
@@ -131,28 +132,28 @@ html.dark-mode div#gwt-debug-FocusView-root { /* Sidebar transition background *
 html.dark-mode .focus-NotesView-NotesView { /* Notes list body */
   background-color: var(--dark-grey) !important;
 }
-html.dark-mode .GDAMOPFCKNB, html.dark-mode .GDAMOPFCOPB { /* Note editor body */
+html.dark-mode .GJDCG5CMNB, html.dark-mode .GDAMOPFCOPB { /* Note editor body */
   background-color: var(--dark-grey) !important;
 }
-html.dark-mode .GDAMOPFCELB { /* Note editor toolbar */
+html.dark-mode .GJDCG5CKKB { /* Note editor toolbar */
   background-color: var(--dark-grey) !important;
 }
-html.dark-mode .GDAMOPFCJ1 { /* Note editor toolbar options */
+html.dark-mode .GJDCG5CJ1 { /* Note editor toolbar options */
   background-color: var(--dark-grey) !important;
 }
-html.dark-mode .GDAMOPFCLNB { /* Note editor background */
+html.dark-mode .GJDCG5CONB, html.dark-mode .GJDCG5CFQB { /* Note editor background */
   background-color: var(--dark-grey) !important;
 }
-html.dark-mode .GDAMOPFCOF.GDAMOPFCAG { /* Colors background */
+html.dark-mode .GJDCG5COF { /* Colors background */
   background-color: var(--dark-grey) !important;
 }
-html.dark-mode .GDAMOPFCHK, html.dark-mode .GDAMOPFCOQ.GDAMOPFCAR { /* Submenus background */
+html.dark-mode .GJDCG5CHK, html.dark-mode .GJDCG5CGK.GJDCG5CAK, html.dark-mode .GJDCG5COQ.GJDCG5CAR { /* Submenus background */
   background-color: var(--dark-grey) !important;
 }
 html.dark-mode .GDAMOPFCNHC { /* Dialogs background */
   background-color: var(--dark-grey) !important;
 }
-html.dark-mode .GDAMOPFCHLB { /* Note editor head */
+html.dark-mode .GJDCG5CFLB { /* Note editor head */
   background-color: var(--dark-grey) !important;
 }
 html.dark-mode div#imggal-glass { /* Image gallery background*/
