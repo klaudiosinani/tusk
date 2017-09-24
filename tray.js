@@ -24,9 +24,8 @@ exports.create = win => {
   const iconPath = path.join(__dirname, 'static/IconTray.png');
 
   const toggleWin = () => {
-    if (win.isVisible()) {
-      win.hide();
-    } else {
+    // Bring window on top if not visible
+    if (!win.isVisible()) {
       win.show();
     }
   };
