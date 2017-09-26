@@ -102,12 +102,12 @@ app.on('ready', () => {
   const windowContent = mainWindow.webContents;
 
   windowContent.on('dom-ready', () => {
-    windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'browser.css'), 'utf8'));
-    windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'dark-mode.css'), 'utf8'));
-    windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'black-mode.css'), 'utf8'));
-    windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'sepia-mode.css'), 'utf8'));
-    windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'vibrant-mode.css'), 'utf8'));
-    windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'vibrant-dark-mode.css'), 'utf8'));
+    windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'style/browser.css'), 'utf8'));
+    windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'style/dark-mode.css'), 'utf8'));
+    windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'style/black-mode.css'), 'utf8'));
+    windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'style/sepia-mode.css'), 'utf8'));
+    windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'style/vibrant-mode.css'), 'utf8'));
+    windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'style/vibrant-dark-mode.css'), 'utf8'));
     mainWindow.show();
   });
 
