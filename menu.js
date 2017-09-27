@@ -326,10 +326,22 @@ const darwinTpl = [{
       activate('toggle-tags');
     }
   }, {
+    label: 'Shortcuts',
+    accelerator: setAcc('shortcuts', 'CmdorCtrl+Shift+S'),
+    click() {
+      activate('shortcuts');
+    }
+  }, {
     label: 'Notebooks',
     accelerator: setAcc('toggle-notebooks', 'Shift+Alt+N'),
     click() {
       activate('toggle-notebooks');
+    }
+  }, {
+    label: 'Return to Notes',
+    accelerator: setAcc('return', 'Esc'),
+    click() {
+      activate('return');
     }
   }, {
     type: 'separator'
@@ -340,16 +352,10 @@ const darwinTpl = [{
       activate('settings');
     }
   }, {
-    label: 'Shortcuts',
-    accelerator: setAcc('shortcuts', 'CmdorCtrl+Shift+S'),
+    label: 'Edit Shortcut Keys',
+    accelerator: 'CmdorCtrl+.',
     click() {
-      activate('shortcuts');
-    }
-  }, {
-    label: 'Return to Notes',
-    accelerator: setAcc('return', 'Esc'),
-    click() {
-      activate('return');
+      activate('edit-shortcuts');
     }
   }, {
     type: 'separator'
@@ -723,10 +729,22 @@ const otherTpl = [{
       activate('toggle-tags');
     }
   }, {
+    label: 'Shortcuts',
+    accelerator: setAcc('shortcuts', 'CmdorCtrl+Shift+S'),
+    click() {
+      activate('shortcuts');
+    }
+  }, {
     label: 'Notebooks',
     accelerator: setAcc('toggle-notebooks', 'Shift+Alt+N'),
     click() {
       activate('toggle-notebooks');
+    }
+  }, {
+    label: 'Return to Notes',
+    accelerator: setAcc('return', 'Esc'),
+    click() {
+      activate('return');
     }
   }, {
     type: 'separator'
@@ -737,16 +755,10 @@ const otherTpl = [{
       activate('settings');
     }
   }, {
-    label: 'Shortcuts',
-    accelerator: setAcc('shortcuts', 'CmdorCtrl+Shift+S'),
+    label: 'Edit Shortcut Keys',
+    accelerator: 'CmdorCtrl+.',
     click() {
-      activate('shortcuts');
-    }
-  }, {
-    label: 'Return to Notes',
-    accelerator: setAcc('return', 'Esc'),
-    click() {
-      activate('return');
+      activate('edit-shortcuts');
     }
   }, {
     type: 'separator'
