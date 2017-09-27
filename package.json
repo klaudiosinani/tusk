@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "ms": "0.7.2",
+    "fs-extra": "^4.0.2",
     "simple-get": "^2.0.0",
     "time-stamp": "^2.0.0",
     "electron-dl": "^1.9.0",
