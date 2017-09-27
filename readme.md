@@ -27,6 +27,7 @@ Come over to our [Twitter](https://twitter.com/champloohq) account to share your
   - [Compact Mode](#compact-mode)
   - [Note Navigation](#note-navigation)
   - [Note Printing](#note-printing)
+  - [Custom Shortcut Keys](#custom-shortcut-keys)
   - [Scalable Interface](#scalable-interface)
   - [Export Notes](#export-notes)
   - [Yinxiang Support](#yinxiang-support)
@@ -130,6 +131,10 @@ Printing your notes is only a keystroke away. Press <kbd>Cmd/Ctrl</kbd> <kbd>Alt
         <img src="https://cdn.rawgit.com/champloohq/tusk/b7be04bd/media/print-note.gif" alt="Note Printing" width="100%">
       </a>
 </div>
+
+### Custom Shortcut Keys
+
+Adjust Tusk to your workflow. Navigate to `~/.tusk.json` or press <kbd>Cmd/Ctrl</kbd> <kbd>.</kbd> and modify any shortcut key to your own preference. To reset simply delete the tusk config file from your home directory.
 
 ### Scalable Interface
 
