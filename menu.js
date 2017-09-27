@@ -1,4 +1,6 @@
 'use strict';
+const fs = require('fs');
+const os = require('os');
 const path = require('path');
 const electron = require('electron');
 const config = require('./config');
@@ -11,12 +13,32 @@ const sourceURL = 'https://github.com/champloohq/tusk';
 const homepageURL = 'https://champloohq.github.io/tusk';
 const issueURL = 'https://github.com/champloohq/tusk/issues/new';
 const releaseURL = 'https://github.com/champloohq/tusk/releases/latest';
+const keymapFilePath = os.homedir() + '/.tusk/keymap.json';
+const keymap = initKeymap();
 
 function activate(command) {
   const appWindow = BrowserWindow.getAllWindows()[0];
   // Extra measure in order to be shown
   appWindow.show();
   appWindow.webContents.send(command);
+}
+
+// Returns the default value or the one defined in the keymap,json file
+function getAccelerator(command, defaultKeyCombo){
+  if (keymap.hasOwnProperty(command)) {
+    return keymap[command];
+  } else {
+    return defaultKeyCombo;
+  }
+}
+
+// Initializes the keymap file
+function initKeymap() {
+  if(fs.existsSync(keymapFilePath)){
+    return JSON.parse(fs.readFileSync(keymapFilePath, 'utf8'));
+  } else {
+    return {};
+  }
 }
 
 const helpSubmenu = [{
@@ -68,13 +90,13 @@ const darwinTpl = [{
     type: 'separator'
   }, {
     label: 'Navigate to Next Note',
-    accelerator: 'CmdorCtrl+Tab',
+    accelerator: getAccelerator('next-note', 'CmdorCtrl+Tab'),
     click() {
       activate('next-note');
     }
   }, {
     label: 'Navigate to Previous Note',
-    accelerator: 'CmdorCtrl+Shift+Tab',
+    accelerator: getAccelerator('previous-note', 'CmdorCtrl+Shift+Tab'),
     click() {
       activate('previous-note');
     }
@@ -82,13 +104,13 @@ const darwinTpl = [{
     type: 'separator'
   }, {
     label: 'Print Note',
-    accelerator: 'CmdorCtrl+Alt+P',
+    accelerator: getAccelerator('print', 'CmdorCtrl+Alt+P'),
     click() {
       activate('print');
     }
   }, {
     label: 'Export Note as PDF',
-    accelerator: 'CmdorCtrl+Shift+E',
+    accelerator: getAccelerator('export', 'CmdorCtrl+Shift+E'),
     click() {
       activate('export');
     }
@@ -132,7 +154,7 @@ const darwinTpl = [{
   label: 'File',
   submenu: [{
     label: 'Search',
-    accelerator: 'CmdorCtrl+F',
+    accelerator: getAccelerator('search', 'CmdorCtrl+F'),
     click() {
       activate('search');
     }
@@ -140,13 +162,13 @@ const darwinTpl = [{
     type: 'separator'
   }, {
     label: 'New Note',
-    accelerator: 'CmdorCtrl+N',
+    accelerator: getAccelerator('new-note', 'CmdorCtrl+N'),
     click() {
       activate('new-note');
     }
   }, {
     label: 'Delete Note',
-    accelerator: 'Delete',
+    accelerator: getAccelerator('delete-note', 'Delete'),
     click() {
       activate('delete-note');
     }
@@ -154,13 +176,13 @@ const darwinTpl = [{
     type: 'separator'
   }, {
     label: 'New Tag',
-    accelerator: 'CmdorCtrl+Shift+T',
+    accelerator: getAccelerator('new-tag', 'CmdorCtrl+Shift+T'),
     click() {
       activate('new-tag');
     }
   }, {
     label: 'New Notebook',
-    accelerator: 'CmdorCtrl+Shift+N',
+    accelerator: getAccelerator('new-notebook', 'CmdorCtrl+Shift+N'),
     click() {
       activate('new-notebook');
     }
@@ -168,13 +190,13 @@ const darwinTpl = [{
     type: 'separator'
   }, {
     label: 'Set Reminder',
-    accelerator: 'CmdorCtrl+E',
+    accelerator: getAccelerator('set-reminder', 'CmdorCtrl+E'),
     click() {
       activate('set-reminder');
     }
   }, {
     label: 'Add Shortcut',
-    accelerator: 'CmdorCtrl+Alt+S',
+    accelerator: getAccelerator('add-shortcut', 'CmdorCtrl+Alt+S'),
     click() {
       activate('add-shortcut');
     }
@@ -206,7 +228,7 @@ const darwinTpl = [{
   label: 'View',
   submenu: [{
     label: 'Reload',
-    accelerator: 'CmdOrCtrl+Shift+R',
+    accelerator: getAccelerator('reload', 'CmdOrCtrl+Shift+R'),
     click: (item, focusedWindow) => {
       if (focusedWindow) {
         focusedWindow.reload();
@@ -216,19 +238,19 @@ const darwinTpl = [{
     type: 'separator'
   }, {
     label: 'Make Text Larger',
-    accelerator: 'CmdOrCtrl+Plus',
+    accelerator: getAccelerator('zoom-in', 'CmdOrCtrl+Plus'),
     click() {
       activate('zoom-in');
     }
   }, {
     label: 'Make Text Smaller',
-    accelerator: 'CmdOrCtrl+-',
+    accelerator: getAccelerator('zoom-out', 'CmdOrCtrl+-'),
     click() {
       activate('zoom-out');
     }
   }, {
     label: 'Reset Zoom Level',
-    accelerator: 'CmdOrCtrl+0',
+    accelerator: getAccelerator('zoom-reset', 'CmdOrCtrl+0'),
     click() {
       activate('zoom-reset');
     }
@@ -236,43 +258,43 @@ const darwinTpl = [{
     type: 'separator'
   }, {
     label: 'Focus Mode',
-    accelerator: 'CmdOrCtrl+K',
+    accelerator: getAccelerator('focus-mode', 'CmdOrCtrl+K'),
     click() {
       activate('focus-mode');
     }
   }, {
     label: 'Exit Focus Mode',
-    accelerator: 'CmdorCtrl+O',
+    accelerator: getAccelerator('exit-focus-mode', 'CmdorCtrl+O'),
     click() {
       activate('exit-focus-mode');
     }
   }, {
     label: 'Toggle Sepia Mode',
-    accelerator: 'CmdOrCtrl+G',
+    accelerator: getAccelerator('toggle-sepia-mode', 'CmdOrCtrl+G'),
     click() {
       activate('toggle-sepia-mode');
     }
   }, {
     label: 'Toggle Dark Mode',
-    accelerator: 'CmdOrCtrl+D',
+    accelerator: getAccelerator('toggle-dark-mode', 'CmdOrCtrl+D'),
     click() {
       activate('toggle-dark-mode');
     }
   }, {
     label: 'Toggle Black Mode',
-    accelerator: 'CmdOrCtrl+Alt+E',
+    accelerator: getAccelerator('toggle-black-mode', 'CmdOrCtrl+Alt+E'),
     click() {
       activate('toggle-black-mode');
     }
   }, {
     label: 'Toggle Vibrant Mode',
-    accelerator: 'CmdOrCtrl+Alt+U',
+    accelerator: getAccelerator('toggle-vibrant-mode', 'CmdOrCtrl+Alt+U'),
     click() {
       activate('toggle-vibrant-mode');
     }
   }, {
     label: 'Toggle Vibrant Dark Mode',
-    accelerator: 'CmdOrCtrl+Alt+J',
+    accelerator: getAccelerator('toggle-vibrant-dark-mode', 'CmdOrCtrl+Alt+J'),
     click() {
       activate('toggle-vibrant-dark-mode');
     }
@@ -280,13 +302,13 @@ const darwinTpl = [{
     type: 'separator'
   }, {
     label: 'Tags',
-    accelerator: 'Shift+Alt+T',
+    accelerator: getAccelerator('toggle-tags', 'Shift+Alt+T'),
     click() {
       activate('toggle-tags');
     }
   }, {
     label: 'Notebooks',
-    accelerator: 'Shift+Alt+N',
+    accelerator: getAccelerator('toggle-notebooks', 'Shift+Alt+N'),
     click() {
       activate('toggle-notebooks');
     }
@@ -294,19 +316,19 @@ const darwinTpl = [{
     type: 'separator'
   }, {
     label: 'Settings',
-    accelerator: 'CmdorCtrl+,',
+    accelerator: getAccelerator('settings', 'CmdorCtrl+,'),
     click() {
       activate('settings');
     }
   }, {
     label: 'Shortcuts',
-    accelerator: 'CmdorCtrl+Shift+S',
+    accelerator: getAccelerator('shortcuts', 'CmdorCtrl+Shift+S'),
     click() {
       activate('shortcuts');
     }
   }, {
     label: 'Return to Notes',
-    accelerator: 'Esc',
+    accelerator: getAccelerator('return', 'Esc'),
     click() {
       activate('return');
     }
@@ -314,7 +336,7 @@ const darwinTpl = [{
     type: 'separator'
   }, {
     label: 'Toggle Full Screen',
-    accelerator: 'Ctrl+Command+F',
+    accelerator: getAccelerator('toggle-full-screen', 'Ctrl+Command+F'),
     click: (item, focusedWindow) => {
       if (focusedWindow) {
         focusedWindow.setFullScreen(!focusedWindow.isFullScreen());
@@ -323,7 +345,7 @@ const darwinTpl = [{
     }
   }, {
     label: 'Toggle Developer Tools',
-    accelerator: 'Alt+Command+I',
+    accelerator: getAccelerator('toggle-developer-tools', 'Alt+Command+I'),
     click: (item, focusedWindow) => {
       focusedWindow.toggleDevTools();
     }
@@ -334,44 +356,44 @@ const darwinTpl = [{
     label: 'Style',
     submenu: [{
       label: 'Bold text',
-      accelerator: 'CmdorCtrl+B',
+      accelerator: getAccelerator('bold', 'CmdorCtrl+B'),
       click() {
         activate('bold');
       }
     }, {
       label: 'Italic text',
-      accelerator: 'CmdorCtrl+I',
+      accelerator: getAccelerator('italic', 'CmdorCtrl+I'),
       click() {
         activate('italic');
       }
     }, {
       label: 'Underline text',
-      accelerator: 'CmdorCtrl+U',
+      accelerator: getAccelerator('underline', 'CmdorCtrl+U'),
       click() {
         activate('underline');
       }
     }, {
       label: 'Strikethrough text',
-      accelerator: 'CmdorCtrl+T',
+      accelerator: getAccelerator('strikethrough', 'CmdorCtrl+T'),
       click() {
         activate('strikethrough');
       }
     }]
   }, {
     label: 'Add link',
-    accelerator: 'CmdorCtrl+Shift+K',
+    accelerator: getAccelerator('add-link', 'CmdorCtrl+Shift+K'),
     click() {
       activate('add-link');
     }
   }, {
     label: 'Attach file',
-    accelerator: 'CmdorCtrl+Shift+F',
+    accelerator: getAccelerator('attach-file', 'CmdorCtrl+Shift+F'),
     click() {
       activate('attach-file');
     }
   }, {
     label: 'Insert from Drive',
-    accelerator: 'CmdorCtrl+Shift+D',
+    accelerator: getAccelerator('insert-drive', 'CmdorCtrl+Shift+D'),
     click() {
       activate('insert-drive');
     }
@@ -379,19 +401,19 @@ const darwinTpl = [{
     label: 'Paragraph',
     submenu: [{
       label: 'Align left',
-      accelerator: 'CmdorCtrl+Alt+L',
+      accelerator: getAccelerator('align-left', 'CmdorCtrl+Alt+L'),
       click() {
         activate('align-left');
       }
     }, {
       label: 'Align center',
-      accelerator: 'CmdorCtrl+Alt+M',
+      accelerator: getAccelerator('align-center', 'CmdorCtrl+Alt+M'),
       click() {
         activate('align-center');
       }
     }, {
       label: 'Align right',
-      accelerator: 'CmdorCtrl+Alt+R',
+      accelerator: getAccelerator('align-right', 'CmdorCtrl+Alt+R'),
       click() {
         activate('align-right');
       }
@@ -399,13 +421,13 @@ const darwinTpl = [{
       type: 'separator'
     }, {
       label: 'Increase indentation',
-      accelerator: 'CmdorCtrl+Alt+K',
+      accelerator: getAccelerator('increase-indentation', 'CmdorCtrl+Alt+K'),
       click() {
         activate('increase-indentation');
       }
     }, {
       label: 'Decrease indentation',
-      accelerator: 'CmdorCtrl+Shift+M',
+      accelerator: getAccelerator('decrease-indentation', 'CmdorCtrl+Shift+M'),
       click() {
         activate('decrease-indentation');
       }
@@ -413,13 +435,13 @@ const darwinTpl = [{
       type: 'separator'
     }, {
       label: 'Numbered list',
-      accelerator: 'CmdorCtrl+Shift+O',
+      accelerator: getAccelerator('numbered', 'CmdorCtrl+Shift+O'),
       click() {
         activate('numbered');
       }
     }, {
       label: 'Bulleted list',
-      accelerator: 'CmdorCtrl+Shift+.',
+      accelerator: getAccelerator('bulleted', 'CmdorCtrl+Shift+.'),
       click() {
         activate('bulleted');
       }
@@ -428,13 +450,13 @@ const darwinTpl = [{
     type: 'separator'
   }, {
     label: 'Checkbox',
-    accelerator: 'CmdorCtrl+Shift+C',
+    accelerator: getAccelerator('checkbox', 'CmdorCtrl+Shift+C'),
     click() {
       activate('checkbox');
     }
   }, {
     label: 'Code block',
-    accelerator: 'CmdorCtrl+Shift+L',
+    accelerator: getAccelerator('code-block', 'CmdorCtrl+Shift+L'),
     click() {
       activate('code-block');
     }
@@ -442,13 +464,13 @@ const darwinTpl = [{
     type: 'separator'
   }, {
     label: 'Subscript text',
-    accelerator: 'CmdorCtrl+Shift+]',
+    accelerator: getAccelerator('subscript', 'CmdorCtrl+Shift+]'),
     click() {
       activate('subscript');
     }
   }, {
     label: 'Superscript text',
-    accelerator: 'CmdorCtrl+Shift+[',
+    accelerator: getAccelerator('superscript', 'CmdorCtrl+Shift+['),
     click() {
       activate('superscript');
     }
@@ -456,13 +478,13 @@ const darwinTpl = [{
     type: 'separator'
   }, {
     label: 'Remove Formatting',
-    accelerator: 'CmdorCtrl+Shift+Space',
+    accelerator: getAccelerator('remove-formatting', 'CmdorCtrl+Shift+Space'),
     click() {
       activate('remove-formatting');
     }
   }, {
     label: 'Insert Horizontal Rule',
-    accelerator: 'CmdorCtrl+Shift+-',
+    accelerator: getAccelerator('horizontal-rule', 'CmdorCtrl+Shift+-'),
     click() {
       activate('horizontal-rule');
     }
@@ -491,7 +513,7 @@ const otherTpl = [{
   label: 'File',
   submenu: [{
     label: 'Search',
-    accelerator: 'CmdorCtrl+F',
+    accelerator: getAccelerator('search', 'CmdorCtrl+F'),
     click() {
       activate('search');
     }
@@ -499,13 +521,13 @@ const otherTpl = [{
     type: 'separator'
   }, {
     label: 'New Note',
-    accelerator: 'CmdorCtrl+N',
+    accelerator: getAccelerator('new-note', 'CmdorCtrl+N'),
     click() {
       activate('new-note');
     }
   }, {
     label: 'Delete Note',
-    accelerator: 'Delete',
+    accelerator: getAccelerator('delete-note', 'Delete'),
     click() {
       activate('delete-note');
     }
@@ -513,13 +535,13 @@ const otherTpl = [{
     type: 'separator'
   }, {
     label: 'New Tag',
-    accelerator: 'CmdorCtrl+Shift+T',
+    accelerator: getAccelerator('new-tag', 'CmdorCtrl+Shift+T'),
     click() {
       activate('new-tag');
     }
   }, {
     label: 'New Notebook',
-    accelerator: 'CmdorCtrl+Shift+N',
+    accelerator: getAccelerator('new-notebook', 'CmdorCtrl+Shift+N'),
     click() {
       activate('new-notebook');
     }
@@ -527,13 +549,13 @@ const otherTpl = [{
     type: 'separator'
   }, {
     label: 'Set Reminder',
-    accelerator: 'CmdorCtrl+E',
+    accelerator: getAccelerator('set-reminder', 'CmdorCtrl+E'),
     click() {
       activate('set-reminder');
     }
   }, {
     label: 'Add Shortcut',
-    accelerator: 'CmdorCtrl+Alt+S',
+    accelerator: getAccelerator('add-shortcut', 'CmdorCtrl+Alt+S'),
     click() {
       activate('add-shortcut');
     }
@@ -541,13 +563,13 @@ const otherTpl = [{
     type: 'separator'
   }, {
     label: 'Navigate to Next Note',
-    accelerator: 'CmdorCtrl+Tab',
+    accelerator: getAccelerator('next-note', 'CmdorCtrl+Tab'),
     click() {
       activate('next-note');
     }
   }, {
     label: 'Navigate to Previous Note',
-    accelerator: 'CmdorCtrl+Shift+Tab',
+    accelerator: getAccelerator('previous-note', 'CmdorCtrl+Shift+Tab'),
     click() {
       activate('previous-note');
     }
@@ -555,13 +577,13 @@ const otherTpl = [{
     type: 'separator'
   }, {
     label: 'Print Note',
-    accelerator: 'CmdorCtrl+Alt+P',
+    accelerator: getAccelerator('print', 'CmdorCtrl+Alt+P'),
     click() {
       activate('print');
     }
   }, {
     label: 'Export Note as PDF',
-    accelerator: 'CmdorCtrl+Shift+E',
+    accelerator: getAccelerator('export', 'CmdorCtrl+Shift+E'),
     click() {
       activate('export');
     }
@@ -615,7 +637,7 @@ const otherTpl = [{
   label: 'View',
   submenu: [{
     label: 'Reload',
-    accelerator: 'CmdOrCtrl+Shift+R',
+    accelerator: getAccelerator('reload', 'CmdOrCtrl+Shift+R'),
     click: (item, focusedWindow) => {
       if (focusedWindow) {
         focusedWindow.reload();
@@ -625,19 +647,19 @@ const otherTpl = [{
     type: 'separator'
   }, {
     label: 'Make Text Larger',
-    accelerator: 'CmdOrCtrl+Plus',
+    accelerator: getAccelerator('zoom-in', 'CmdOrCtrl+Plus'),
     click() {
       activate('zoom-in');
     }
   }, {
     label: 'Make Text Smaller',
-    accelerator: 'CmdOrCtrl+-',
+    accelerator: getAccelerator('zoom-out', 'CmdOrCtrl+-'),
     click() {
       activate('zoom-out');
     }
   }, {
     label: 'Reset Zoom Level',
-    accelerator: 'CmdOrCtrl+0',
+    accelerator: getAccelerator('zoom-reset', 'CmdOrCtrl+0'),
     click() {
       activate('zoom-reset');
     }
@@ -645,31 +667,31 @@ const otherTpl = [{
     type: 'separator'
   }, {
     label: 'Focus Mode',
-    accelerator: 'CmdOrCtrl+K',
+    accelerator: getAccelerator('focus-mode', 'CmdOrCtrl+K'),
     click() {
       activate('focus-mode');
     }
   }, {
     label: 'Exit Focus Mode',
-    accelerator: 'CmdorCtrl+O',
+    accelerator: getAccelerator('exit-focus-mode', 'CmdorCtrl+O'),
     click() {
       activate('exit-focus-mode');
     }
   }, {
     label: 'Toggle Sepia Mode',
-    accelerator: 'CmdOrCtrl+G',
+    accelerator: getAccelerator('toggle-sepia-mode', 'CmdOrCtrl+G'),
     click() {
       activate('toggle-sepia-mode');
     }
   }, {
     label: 'Toggle Dark Mode',
-    accelerator: 'CmdOrCtrl+D',
+    accelerator: getAccelerator('toggle-dark-mode', 'CmdOrCtrl+D'),
     click() {
       activate('toggle-dark-mode');
     }
   }, {
     label: 'Toggle Black Mode',
-    accelerator: 'CmdOrCtrl+Alt+E',
+    accelerator: getAccelerator('toggle-black-mode', 'CmdOrCtrl+Alt+E'),
     click() {
       activate('toggle-black-mode');
     }
@@ -677,13 +699,13 @@ const otherTpl = [{
     type: 'separator'
   }, {
     label: 'Tags',
-    accelerator: 'Shift+Alt+T',
+    accelerator: getAccelerator('toggle-tags', 'Shift+Alt+T'),
     click() {
       activate('toggle-tags');
     }
   }, {
     label: 'Notebooks',
-    accelerator: 'Shift+Alt+N',
+    accelerator: getAccelerator('toggle-notebooks', 'Shift+Alt+N'),
     click() {
       activate('toggle-notebooks');
     }
@@ -691,19 +713,19 @@ const otherTpl = [{
     type: 'separator'
   }, {
     label: 'Settings',
-    accelerator: 'CmdorCtrl+,',
+    accelerator: getAccelerator('settings', 'CmdorCtrl+,'),
     click() {
       activate('settings');
     }
   }, {
     label: 'Shortcuts',
-    accelerator: 'CmdorCtrl+Shift+S',
+    accelerator: getAccelerator('shortcuts', 'CmdorCtrl+Shift+S'),
     click() {
       activate('shortcuts');
     }
   }, {
     label: 'Return to Notes',
-    accelerator: 'Esc',
+    accelerator: getAccelerator('return', 'Esc'),
     click() {
       activate('return');
     }
@@ -711,7 +733,7 @@ const otherTpl = [{
     type: 'separator'
   }, {
     label: 'Toggle Full Screen',
-    accelerator: 'F11',
+    accelerator: getAccelerator('toggle-full-screen', 'F11'),
     click: (item, focusedWindow) => {
       if (focusedWindow) {
         focusedWindow.setFullScreen(!focusedWindow.isFullScreen());
@@ -720,7 +742,7 @@ const otherTpl = [{
     }
   }, {
     label: 'Toggle Developer Tools',
-    accelerator: 'Ctrl+Shift+I',
+    accelerator: getAccelerator('toggle-developer-tools', 'Ctrl+Shift+I'),
     click: (item, focusedWindow) => {
       focusedWindow.toggleDevTools();
     }
@@ -731,44 +753,44 @@ const otherTpl = [{
     label: 'Style',
     submenu: [{
       label: 'Bold text',
-      accelerator: 'CmdorCtrl+B',
+      accelerator: getAccelerator('bold', 'CmdorCtrl+B'),
       click() {
         activate('bold');
       }
     }, {
       label: 'Italic text',
-      accelerator: 'CmdorCtrl+I',
+      accelerator: getAccelerator('italic', 'CmdorCtrl+I'),
       click() {
         activate('italic');
       }
     }, {
       label: 'Underline text',
-      accelerator: 'CmdorCtrl+U',
+      accelerator: getAccelerator('underline', 'CmdorCtrl+U'),
       click() {
         activate('underline');
       }
     }, {
       label: 'Strikethrough text',
-      accelerator: 'CmdorCtrl+T',
+      accelerator: getAccelerator('strikethrough', 'CmdorCtrl+T'),
       click() {
         activate('strikethrough');
       }
     }]
   }, {
     label: 'Add link',
-    accelerator: 'CmdorCtrl+Shift+K',
+    accelerator: getAccelerator('add-link', 'CmdorCtrl+Shift+K'),
     click() {
       activate('add-link');
     }
   }, {
     label: 'Attach file',
-    accelerator: 'CmdorCtrl+Shift+F',
+    accelerator: getAccelerator('attach-file', 'CmdorCtrl+Shift+F'),
     click() {
       activate('attach-file');
     }
   }, {
     label: 'Insert from Drive',
-    accelerator: 'CmdorCtrl+Shift+D',
+    accelerator: getAccelerator('insert-drive', 'CmdorCtrl+Shift+D'),
     click() {
       activate('insert-drive');
     }
@@ -776,19 +798,19 @@ const otherTpl = [{
     label: 'Paragraph',
     submenu: [{
       label: 'Align left',
-      accelerator: 'CmdorCtrl+Alt+L',
+      accelerator: getAccelerator('align-left', 'CmdorCtrl+Alt+L'),
       click() {
         activate('align-left');
       }
     }, {
       label: 'Align center',
-      accelerator: 'CmdorCtrl+Alt+M',
+      accelerator: getAccelerator('align-center', 'CmdorCtrl+Alt+M'),
       click() {
         activate('align-center');
       }
     }, {
       label: 'Align right',
-      accelerator: 'CmdorCtrl+Alt+R',
+      accelerator: getAccelerator('align-right', 'CmdorCtrl+Alt+R'),
       click() {
         activate('align-right');
       }
@@ -796,13 +818,13 @@ const otherTpl = [{
       type: 'separator'
     }, {
       label: 'Increase indentation',
-      accelerator: 'CmdorCtrl+Alt+K',
+      accelerator: getAccelerator('indent', 'CmdorCtrl+Alt+K'),
       click() {
         activate('indent');
       }
     }, {
       label: 'Decrease indentation',
-      accelerator: 'CmdorCtrl+Shift+M',
+      accelerator: getAccelerator('outdent', 'CmdorCtrl+Shift+M'),
       click() {
         activate('outdent');
       }
@@ -810,13 +832,13 @@ const otherTpl = [{
       type: 'separator'
     }, {
       label: 'Numbered list',
-      accelerator: 'CmdorCtrl+Shift+O',
+      accelerator: getAccelerator('numbered', 'CmdorCtrl+Shift+O'),
       click() {
         activate('numbered');
       }
     }, {
       label: 'Bulleted list',
-      accelerator: 'CmdorCtrl+Shift+.',
+      accelerator: getAccelerator('bulleted', 'CmdorCtrl+Shift+.'),
       click() {
         activate('bulleted');
       }
@@ -825,13 +847,13 @@ const otherTpl = [{
     type: 'separator'
   }, {
     label: 'Checkbox',
-    accelerator: 'CmdorCtrl+Shift+C',
+    accelerator: getAccelerator('checkbox', 'CmdorCtrl+Shift+C'),
     click() {
       activate('checkbox');
     }
   }, {
     label: 'Code block',
-    accelerator: 'CmdorCtrl+Shift+L',
+    accelerator: getAccelerator('code-block', 'CmdorCtrl+Shift+L'),
     click() {
       activate('code-block');
     }
@@ -839,13 +861,13 @@ const otherTpl = [{
     type: 'separator'
   }, {
     label: 'Subscript text',
-    accelerator: 'CmdorCtrl+Shift+]',
+    accelerator: getAccelerator('subscript', 'CmdorCtrl+Shift+]'),
     click() {
       activate('subscript');
     }
   }, {
     label: 'Superscript text',
-    accelerator: 'CmdorCtrl+Shift+[',
+    accelerator: getAccelerator('superscript', 'CmdorCtrl+Shift+['),
     click() {
       activate('superscript');
     }
@@ -853,13 +875,13 @@ const otherTpl = [{
     type: 'separator'
   }, {
     label: 'Remove Formatting',
-    accelerator: 'CmdorCtrl+Shift+Space',
+    accelerator: getAccelerator('remove-formatting', 'CmdorCtrl+Shift+Space'),
     click() {
       activate('remove-formatting');
     }
   }, {
     label: 'Insert Horizontal Rule',
-    accelerator: 'CmdorCtrl+Shift+-',
+    accelerator: getAccelerator('horizontal-rule', 'CmdorCtrl+Shift+-'),
     click() {
       activate('horizontal-rule');
     }
