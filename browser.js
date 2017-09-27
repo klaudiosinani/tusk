@@ -1,10 +1,17 @@
 'use strict';
 const electron = require('electron');
+const os = require('os');
+const path = require('path');
 const config = require('./config');
 
+const join = path.join;
 const ipc = electron.ipcRenderer;
 const shell = electron.shell;
 const webFrame = electron.webFrame;
+
+const tuskJSON = '.tusk.json'; // Config file name
+const homeDir = os.homedir();
+const homeConfig = join(homeDir, tuskJSON); // Config file on home directory
 
 ipc.on('new-note', () => {
   // Create new note
@@ -324,6 +331,11 @@ ipc.on('zoom-reset', () => {
 ipc.on('settings', () => {
   // Toggle Settings
   shell.openExternal('https://www.evernote.com/Settings.action');
+});
+
+ipc.on('edit-shortcuts', () => {
+  // Toggle config file
+  shell.openExternal(homeConfig);
 });
 
 ipc.on('bold', () => {
