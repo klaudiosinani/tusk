@@ -136,6 +136,12 @@ Printing your notes is only a keystroke away. Press <kbd>Cmd/Ctrl</kbd> <kbd>Alt
 
 Adjust Tusk to your workflow. Navigate to `~/.tusk.json` or press <kbd>Cmd/Ctrl</kbd> <kbd>.</kbd> and modify any shortcut key to your own preference. To reset simply delete the tusk config file from your home directory.
 
+<div align="center">
+      <a href="https://github.com/champloohq/tusk">
+        <img src="https://cdn.rawgit.com/champloohq/tusk/882efdee/media/custom-shortcut-keys.gif" alt="Custom Shortcut Keys" width="100%">
+      </a>
+</div>
+
 ### Scalable Interface
 
 Adjust the zooming factor to your own preference by pressing <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>=</kbd> or <kbd>Cmd/Ctrl</kbd> <kbd>-</kbd>
