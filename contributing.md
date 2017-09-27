@@ -55,4 +55,4 @@ Come over and say hi anytime you feel like on [Gitter](https://gitter.im/tusk/Lo
 - Use a descriptive title for the pull request and commits
 - You might be asked to do changes to your pull request, you can do that by just [updating the existing one](https://github.com/RichardLitt/docs/blob/master/amending-a-commit-guide.md)
 
-> Inspired by project [AVA](https://github.com/avajs/ava/blob/master/contributing.md)'s contributing.md!
+> Inspired by project [AVA](https://github.com/avajs/ava/blob/master/contributing.md)'s contributing.md
