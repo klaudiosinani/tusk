@@ -39,6 +39,7 @@ Come over to our [Twitter](https://twitter.com/champloohq) account to share your
   - Background Behavior
   - Drag and Drop Files
 - [Upcoming Features](#upcoming-features)
+- [Related Apps](#related-apps)
 - [Disclaimer](#disclaimer)
 - [Team](#team)
 - [License](#license)
@@ -264,6 +265,12 @@ Feel like suggesting a new feature? Open a [`feature-request issue`](https://git
 - [ ] Automatic night mode
 - [ ] Code blocks highlighting
 - [ ] RTL support
+
+## Related Apps
+
+More awesome desktop apps.
+
+- [Ao](https://github.com/klauscfhq/ao) - ✔️ Charming MS To-Do desktop app
 
 ## Disclaimer
 
