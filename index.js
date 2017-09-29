@@ -88,6 +88,10 @@ function createMainWindow() {
     e.preventDefault();
   });
 
+  tuskWindow.on('unresponsive', e => {
+    console.log('Unresponsive Tusk window. ', e);
+  });
+
   tuskWindow.webContents.on('did-navigate-in-page', (e, url) => {
     config.set('lastURL', url);
   });
@@ -114,6 +118,10 @@ app.on('ready', () => {
   windowContent.on('new-window', (e, url) => {
     e.preventDefault();
     electron.shell.openExternal(url);
+  });
+
+  windowContent.on('crashed', e => {
+    console.log('Tusk window crashed. ', e);
   });
 
   update.init(electron.Menu.getApplicationMenu());
@@ -207,6 +215,11 @@ ipcMain.on('export-as-pdf', event => {
       });
     });
   });
+});
+
+process.on('uncaughtException', error => {
+  // Report uncaught exceptions
+  console.log(error);
 });
 
 app.on('activate', () => {
