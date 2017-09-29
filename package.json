@@ -72,7 +72,7 @@
     ],
     "appId": "com.champloohq.tusk",
     "linux": {
-      "category": "Productivity",
+      "category": "Office",
       "target": [
         {
           "target": "deb",
