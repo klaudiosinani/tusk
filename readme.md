@@ -12,7 +12,9 @@
 
 Tusk is an unofficial, open source, third-party, community driven, free Evernote app with a handful of useful features.
 
-Come over to our [Twitter](https://twitter.com/champloohq) account to share your thoughts on the project or to just say hi!
+Come over to our [Twitter](https://twitter.com/champloohq) account to share your thoughts on the project or to just say hi.
+
+You can find more desktop apps [here](#related-apps).
 
 ## Contents
 
@@ -40,8 +42,8 @@ Come over to our [Twitter](https://twitter.com/champloohq) account to share your
   - Drag and Drop Files
 - [Upcoming Features](#upcoming-features)
 - [Related Apps](#related-apps)
-- [Disclaimer](#disclaimer)
 - [Team](#team)
+- [Disclaimer](#disclaimer)
 - [License](#license)
 
 <sup>🍎 Macos only atm</sup><br/>
@@ -270,19 +272,19 @@ Feel like suggesting a new feature? Open a [`feature-request issue`](https://git
 
 More awesome desktop apps.
 
-- [Ao](https://github.com/klauscfhq/ao) - ✔️ Charming MS To-Do desktop app
-
-## Disclaimer
-
-Tusk is an unofficial, open source, third-party, community driven, free app and is not affiliated in any way with Evernote.
+- [Ao](https://github.com/klauscfhq/ao) - ✔️ Charming Microsoft To-Do desktop app.
 
 ## Team
 
-**<>** with ❤ by
+Coded with ❤ by
 
 [![Klaus Sinani](https://avatars.githubusercontent.com/u/12670537?s=130)](https://github.com/klauscfhq) | [![Mario Sinani](https://avatars.githubusercontent.com/u/29512262?s=130)](https://github.com/mariocfhq) | [![George Baxopoulos](https://avatars.githubusercontent.com/u/19195396?s=130)](https://github.com/georgebax) | [![Thanasis Gkanos](https://avatars1.githubusercontent.com/u/18072542?s=130)](https://github.com/ThanasisGkanos)
 --- | --- | --- | ---
 [Klaus Sinani](https://github.com/klauscfhq) | [Mario Sinani](https://github.com/mariocfhq) | [George Baxopoulos](https://github.com/georgebax) | [Thanasis Gkanos](https://github.com/ThanasisGkanos)
+
+## Disclaimer
+
+Tusk is an unofficial, open source, third-party, community driven, free app and is not affiliated in any way with Evernote.
 
 ## License
 
