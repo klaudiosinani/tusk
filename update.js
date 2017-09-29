@@ -88,7 +88,7 @@ module.exports.init = () => {
   });
 
   const version = electron.app.getVersion();
-  const feedURL = `https://hazel-dqdcpouiom.now.sh/update/${process.platform}/${version}`;
+  const feedURL = `https://tusk.now.sh/update/${process.platform}/${version}`;
   electron.autoUpdater.setFeedURL(feedURL);
 };
 
