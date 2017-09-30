@@ -271,7 +271,7 @@ Feel like suggesting a new feature? Open a [`feature-request issue`](https://git
 
 More awesome desktop apps.
 
-- [Ao](https://github.com/klauscfhq/ao) - ✔️ Charming Microsoft To-Do desktop app.
+- [Ao](https://github.com/klauscfhq/ao) - ✔️ Elegant Microsoft To-Do desktop app.
 
 ## Team
 
