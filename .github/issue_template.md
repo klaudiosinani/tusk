@@ -30,7 +30,7 @@ Tell us which operating system you are using, as well as which versions of [Tusk
 Run the following script to get your OS info quickly.
 
 ```bash
-node -e "var osInfo = require('os'); console.log('\n' + 'OS Type: ' + '\t' + osInfo.type() + '\n' + 'OS Platform:' + '\t' + osInfo.platform() + '\n' + 'OS Release: ' + '\t' + osInfo.release() + '\n');"
+node -e "const osInfo = require('os'); console.log('\n' + 'OS Type: ' + '\t' + osInfo.type() + '\n' + 'OS Platform:' + '\t' + osInfo.platform() + '\n' + 'OS Release: ' + '\t' + osInfo.release() + '\n' + 'Architecture: ' + '\t' + osInfo.arch() + '\n');"
 ```
 
 ## Additional Information
