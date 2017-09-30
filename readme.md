@@ -266,7 +266,6 @@ Feel like suggesting a new feature? Open a [`feature-request issue`](https://git
 - [ ] App pin lock
 - [ ] Automatic night mode
 - [ ] Code blocks highlighting
-- [ ] RTL support
 
 ## Related Apps
 
