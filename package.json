@@ -38,7 +38,7 @@
     "pack:windows": "electron-packager . --no-prune --overwrite --asar --out=dist --platform=win32 --arch=ia32 --icon=static/Icon.ico --version-string.ProductName=$npm_package_productName && cd dist/Tusk-win32-ia32 && zip -ryq9 ../Tusk-windows-v${npm_package_version}.zip *"
   },
   "dependencies": {
-    "ms": "0.7.2",
+    "ms": "^0.7.2",
     "fs-extra": "^4.0.2",
     "simple-get": "^2.0.0",
     "time-stamp": "^2.0.0",
@@ -50,10 +50,10 @@
   },
   "devDependencies": {
     "xo": "^0.19.0",
-    "electron": "^1.6.12",
-    "electron-packager": "^8.7.2",
-    "electron-builder": "19.19.1",
-    "electron-builder-squirrel-windows": "19.19.1",
+    "electron": "^1.7.8",
+    "electron-packager": "^9.1.0",
+    "electron-builder": "^19.33.0",
+    "electron-builder-squirrel-windows": "^19.33.0",
     "electron-installer-dmg": "^0.2.1"
   },
   "xo": {
