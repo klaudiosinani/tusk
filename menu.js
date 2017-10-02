@@ -17,10 +17,10 @@ const homeDir = os.homedir();
 const homeConfig = join(homeDir, tuskJSON); // Config file on home directory
 const defaultConfig = join(__dirname, '.', tuskJSON); // Default config file directory
 
-const sourceURL = 'https://github.com/champloohq/tusk';
-const homepageURL = 'https://champloohq.github.io/tusk';
-const issueURL = 'https://github.com/champloohq/tusk/issues/new';
-const releaseURL = 'https://github.com/champloohq/tusk/releases/latest';
+const sourceURL = 'https://github.com/klauscfhq/tusk';
+const homepageURL = 'https://klauscfhq.github.io/tusk';
+const issueURL = 'https://github.com/klauscfhq/tusk/issues/new';
+const releaseURL = 'https://github.com/klauscfhq/tusk/releases/latest';
 
 function activate(command) {
   const appWindow = BrowserWindow.getAllWindows()[0];
@@ -93,7 +93,7 @@ if (process.platform !== 'darwin') {
       electron.dialog.showMessageBox({
         title: `About Tusk`,
         message: `Tusk ${app.getVersion()}`,
-        detail: '<> with <3 by the Champloo HQ team',
+        detail: 'Coded with love by Klaus Sinani',
         icon: path.join(__dirname, 'static/Icon.png'),
         buttons: []
       });

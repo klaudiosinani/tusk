@@ -8,8 +8,8 @@ const app = electron.app;
 const shell = electron.shell;
 const dialog = electron.dialog;
 const currentVersion = app.getVersion();
-const updateURL = 'https://champloohq.github.io/tusk/update.json';
-const releaseURL = 'https://github.com/champloohq/tusk/releases/latest';
+const updateURL = 'https://klauscfhq.github.io/tusk/update.json';
+const releaseURL = 'https://github.com/klauscfhq/tusk/releases/latest';
 
 function checkUpdate(err, res, data) {
   if (err) {
