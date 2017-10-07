@@ -763,6 +763,13 @@ const otherTpl = [{
   }, {
     type: 'separator'
   }, {
+    label: 'Toggle Menu Bar',
+    type: 'checkbox',
+    checked: config.get('menuBarVisible'),
+    click() {
+      activate('toggle-menu-bar');
+    }
+  }, {
     label: 'Toggle Full Screen',
     accelerator: 'F11',
     click: (item, focusedWindow) => {
