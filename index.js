@@ -147,6 +147,21 @@ ipcMain.on('activate-vibrant', () => {
   }
 });
 
+ipcMain.on('activate-menu-bar', () => {
+  // Check if the menu bar was activated
+  if (config.get('menuBarVisible')) {
+    // Make the menu bar persistently visible
+    mainWindow.setMenuBarVisibility(true);
+    // Disable ALT key toggling
+    mainWindow.setAutoHideMenuBar(false);
+  } else {
+    // Hide the menu bar
+    mainWindow.setMenuBarVisibility(false);
+    // Restore ALT key toggling
+    mainWindow.setAutoHideMenuBar(true);
+  }
+});
+
 ipcMain.on('print-to-pdf', event => {
   // Get the current date-time
   const dateTime = timeStamp('YYYY-MM-DD_HH-mm-ss');

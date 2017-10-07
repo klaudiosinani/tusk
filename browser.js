@@ -180,6 +180,17 @@ ipc.on('toggle-vibrant-dark-mode', () => {
   vibrantDarkMode();
 });
 
+function toggleMenuBar() {
+  // Activates the menu bar on the main window
+  ipc.send('activate-menu-bar');
+}
+
+ipc.on('toggle-menu-bar', () => {
+  // Toggles on and off the menu bar
+  config.set('menuBarVisible', !config.get('menuBarVisible'));
+  toggleMenuBar();
+});
+
 function goToNote(key) {
   const index = key;
   selectNote(index);
@@ -470,6 +481,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // Preserve zoom factor
   const zoomFactor = config.get('zoomFactor');
   webFrame.setZoomFactor(zoomFactor);
+  // Toggle the menu bar
+  toggleMenuBar();
   // Toggle sepia mode
   sepiaMode();
   // Toggle black mode
