@@ -108,52 +108,6 @@ const darwinTpl = [{
   }, {
     type: 'separator'
   }, {
-    label: 'Navigate to Next Note',
-    accelerator: 'CmdorCtrl+Tab',
-    click() {
-      activate('next-note');
-    }
-  }, {
-    label: 'Navigate to Previous Note',
-    accelerator: 'CmdorCtrl+Shift+Tab',
-    click() {
-      activate('previous-note');
-    }
-  }, {
-    type: 'separator'
-  }, {
-    label: 'Print Note',
-    accelerator: setAcc('print', 'CmdorCtrl+Alt+P'),
-    click() {
-      activate('print');
-    }
-  }, {
-    label: 'Export Note as PDF',
-    accelerator: setAcc('export', 'CmdorCtrl+Shift+E'),
-    click() {
-      activate('export');
-    }
-  }, {
-    type: 'separator'
-  }, {
-    label: 'Switch to Yinxiang',
-    visible: !config.get('useYinxiang'),
-    click() {
-      config.set('useYinxiang', true);
-      app.relaunch();
-      app.quit();
-    }
-  }, {
-    label: 'Switch to Evernote',
-    visible: config.get('useYinxiang'),
-    click() {
-      config.set('useYinxiang', false);
-      app.relaunch();
-      app.quit();
-    }
-  }, {
-    type: 'separator'
-  }, {
     role: 'services',
     submenu: []
   }, {
@@ -180,44 +134,124 @@ const darwinTpl = [{
   }, {
     type: 'separator'
   }, {
-    label: 'New Note',
-    accelerator: setAcc('new-note', 'CmdorCtrl+N'),
+    label: 'Create',
+    submenu: [{
+      label: 'New Note',
+      accelerator: setAcc('new-note', 'CmdorCtrl+N'),
+      click() {
+        activate('new-note');
+      }
+    }, {
+      label: 'Delete Note',
+      accelerator: setAcc('delete-note', 'Delete'),
+      click() {
+        activate('delete-note');
+      }
+    }, {
+      type: 'separator'
+    }, {
+      label: 'New Tag',
+      accelerator: setAcc('new-tag', 'CmdorCtrl+Shift+T'),
+      click() {
+        activate('new-tag');
+      }
+    }, {
+      label: 'New Notebook',
+      accelerator: setAcc('new-notebook', 'CmdorCtrl+Shift+N'),
+      click() {
+        activate('new-notebook');
+      }
+    }, {
+      type: 'separator'
+    }, {
+      label: 'Set Reminder',
+      accelerator: setAcc('set-reminder', 'CmdorCtrl+E'),
+      click() {
+        activate('set-reminder');
+      }
+    }, {
+      label: 'Add Shortcut',
+      accelerator: setAcc('add-shortcut', 'CmdorCtrl+Alt+S'),
+      click() {
+        activate('add-shortcut');
+      }
+    }]
+  }, {
+    type: 'separator'
+  }, {
+    label: 'Navigate',
+    submenu: [{
+      label: 'Tags',
+      accelerator: setAcc('toggle-tags', 'Shift+Alt+T'),
+      click() {
+        activate('toggle-tags');
+      }
+    }, {
+      label: 'Shortcuts',
+      accelerator: setAcc('shortcuts', 'CmdorCtrl+Shift+S'),
+      click() {
+        activate('shortcuts');
+      }
+    }, {
+      label: 'Notebooks',
+      accelerator: setAcc('toggle-notebooks', 'Shift+Alt+N'),
+      click() {
+        activate('toggle-notebooks');
+      }
+    }, {
+      type: 'separator'
+    }, {
+      label: 'Return to Notes',
+      accelerator: setAcc('return', 'Esc'),
+      click() {
+        activate('return');
+      }
+    }]
+  }, {
+    type: 'separator'
+  }, {
+    label: 'Print Note',
+    accelerator: setAcc('print', 'CmdorCtrl+Alt+P'),
     click() {
-      activate('new-note');
+      activate('print');
     }
   }, {
-    label: 'Delete Note',
-    accelerator: setAcc('delete-note', 'Delete'),
+    label: 'Export Note as PDF',
+    accelerator: setAcc('export', 'CmdorCtrl+Shift+E'),
     click() {
-      activate('delete-note');
+      activate('export');
     }
   }, {
     type: 'separator'
   }, {
-    label: 'New Tag',
-    accelerator: setAcc('new-tag', 'CmdorCtrl+Shift+T'),
+    label: 'Settings',
+    accelerator: setAcc('settings', 'CmdorCtrl+,'),
     click() {
-      activate('new-tag');
+      activate('settings');
     }
   }, {
-    label: 'New Notebook',
-    accelerator: setAcc('new-notebook', 'CmdorCtrl+Shift+N'),
+    label: 'Edit Shortcut Keys',
+    accelerator: 'CmdorCtrl+.',
     click() {
-      activate('new-notebook');
+      activate('edit-shortcuts');
     }
   }, {
     type: 'separator'
   }, {
-    label: 'Set Reminder',
-    accelerator: setAcc('set-reminder', 'CmdorCtrl+E'),
+    label: 'Switch to Yinxiang',
+    visible: !config.get('useYinxiang'),
     click() {
-      activate('set-reminder');
+      config.set('useYinxiang', true);
+      app.relaunch();
+      app.quit();
     }
   }, {
-    label: 'Add Shortcut',
-    accelerator: setAcc('add-shortcut', 'CmdorCtrl+Alt+S'),
+    label: 'Switch to Evernote',
+    visible: config.get('useYinxiang'),
     click() {
-      activate('add-shortcut');
+      config.set('useYinxiang', false);
+      app.relaunch();
+      app.quit();
     }
   }]
 }, {
@@ -288,74 +322,53 @@ const darwinTpl = [{
       activate('exit-focus-mode');
     }
   }, {
-    label: 'Toggle Sepia Mode',
-    accelerator: setAcc('toggle-sepia-mode', 'CmdOrCtrl+G'),
-    click() {
-      activate('toggle-sepia-mode');
-    }
+    type: 'separator'
   }, {
-    label: 'Toggle Dark Mode',
-    accelerator: setAcc('toggle-dark-mode', 'CmdOrCtrl+D'),
-    click() {
-      activate('toggle-dark-mode');
-    }
-  }, {
-    label: 'Toggle Black Mode',
-    accelerator: setAcc('toggle-black-mode', 'CmdOrCtrl+Alt+E'),
-    click() {
-      activate('toggle-black-mode');
-    }
-  }, {
-    label: 'Toggle Vibrant Mode',
-    accelerator: setAcc('toggle-vibrant-mode', 'CmdOrCtrl+Alt+U'),
-    click() {
-      activate('toggle-vibrant-mode');
-    }
-  }, {
-    label: 'Toggle Vibrant Dark Mode',
-    accelerator: setAcc('toggle-vibrant-dark-mode', 'CmdOrCtrl+Alt+J'),
-    click() {
-      activate('toggle-vibrant-dark-mode');
-    }
+    label: 'Toggle Theme',
+    submenu: [{
+      label: 'Sepia Theme',
+      accelerator: setAcc('toggle-sepia-mode', 'CmdOrCtrl+G'),
+      click() {
+        activate('toggle-sepia-mode');
+      }
+    }, {
+      label: 'Dark Theme',
+      accelerator: setAcc('toggle-dark-mode', 'CmdOrCtrl+D'),
+      click() {
+        activate('toggle-dark-mode');
+      }
+    }, {
+      label: 'Black Theme',
+      accelerator: setAcc('toggle-black-mode', 'CmdOrCtrl+Alt+E'),
+      click() {
+        activate('toggle-black-mode');
+      }
+    }, {
+      label: 'Vibrant Theme',
+      accelerator: setAcc('toggle-vibrant-mode', 'CmdOrCtrl+Alt+U'),
+      click() {
+        activate('toggle-vibrant-mode');
+      }
+    }, {
+      label: 'Vibrant Dark Theme',
+      accelerator: setAcc('toggle-vibrant-dark-mode', 'CmdOrCtrl+Alt+J'),
+      click() {
+        activate('toggle-vibrant-dark-mode');
+      }
+    }]
   }, {
     type: 'separator'
   }, {
-    label: 'Tags',
-    accelerator: setAcc('toggle-tags', 'Shift+Alt+T'),
+    label: 'Navigate to Next Note',
+    accelerator: 'CmdorCtrl+Tab',
     click() {
-      activate('toggle-tags');
+      activate('next-note');
     }
   }, {
-    label: 'Shortcuts',
-    accelerator: setAcc('shortcuts', 'CmdorCtrl+Shift+S'),
+    label: 'Navigate to Previous Note',
+    accelerator: 'CmdorCtrl+Shift+Tab',
     click() {
-      activate('shortcuts');
-    }
-  }, {
-    label: 'Notebooks',
-    accelerator: setAcc('toggle-notebooks', 'Shift+Alt+N'),
-    click() {
-      activate('toggle-notebooks');
-    }
-  }, {
-    label: 'Return to Notes',
-    accelerator: setAcc('return', 'Esc'),
-    click() {
-      activate('return');
-    }
-  }, {
-    type: 'separator'
-  }, {
-    label: 'Settings',
-    accelerator: setAcc('settings', 'CmdorCtrl+,'),
-    click() {
-      activate('settings');
-    }
-  }, {
-    label: 'Edit Shortcut Keys',
-    accelerator: 'CmdorCtrl+.',
-    click() {
-      activate('edit-shortcuts');
+      activate('previous-note');
     }
   }, {
     type: 'separator'
@@ -545,59 +558,79 @@ const otherTpl = [{
   }, {
     type: 'separator'
   }, {
-    label: 'New Note',
-    accelerator: setAcc('new-note', 'CmdorCtrl+N'),
-    click() {
-      activate('new-note');
-    }
-  }, {
-    label: 'Delete Note',
-    accelerator: setAcc('delete-note', 'Delete'),
-    click() {
-      activate('delete-note');
-    }
+    label: 'Create',
+    submenu: [{
+      label: 'New Note',
+      accelerator: setAcc('new-note', 'CmdorCtrl+N'),
+      click() {
+        activate('new-note');
+      }
+    }, {
+      label: 'Delete Note',
+      accelerator: setAcc('delete-note', 'Delete'),
+      click() {
+        activate('delete-note');
+      }
+    }, {
+      type: 'separator'
+    }, {
+      label: 'New Tag',
+      accelerator: setAcc('new-tag', 'CmdorCtrl+Shift+T'),
+      click() {
+        activate('new-tag');
+      }
+    }, {
+      label: 'New Notebook',
+      accelerator: setAcc('new-notebook', 'CmdorCtrl+Shift+N'),
+      click() {
+        activate('new-notebook');
+      }
+    }, {
+      type: 'separator'
+    }, {
+      label: 'Set Reminder',
+      accelerator: setAcc('set-reminder', 'CmdorCtrl+E'),
+      click() {
+        activate('set-reminder');
+      }
+    }, {
+      label: 'Add Shortcut',
+      accelerator: setAcc('add-shortcut', 'CmdorCtrl+Alt+S'),
+      click() {
+        activate('add-shortcut');
+      }
+    }]
   }, {
     type: 'separator'
   }, {
-    label: 'New Tag',
-    accelerator: setAcc('new-tag', 'CmdorCtrl+Shift+T'),
-    click() {
-      activate('new-tag');
-    }
-  }, {
-    label: 'New Notebook',
-    accelerator: setAcc('new-notebook', 'CmdorCtrl+Shift+N'),
-    click() {
-      activate('new-notebook');
-    }
-  }, {
-    type: 'separator'
-  }, {
-    label: 'Set Reminder',
-    accelerator: setAcc('set-reminder', 'CmdorCtrl+E'),
-    click() {
-      activate('set-reminder');
-    }
-  }, {
-    label: 'Add Shortcut',
-    accelerator: setAcc('add-shortcut', 'CmdorCtrl+Alt+S'),
-    click() {
-      activate('add-shortcut');
-    }
-  }, {
-    type: 'separator'
-  }, {
-    label: 'Navigate to Next Note',
-    accelerator: 'CmdorCtrl+Tab',
-    click() {
-      activate('next-note');
-    }
-  }, {
-    label: 'Navigate to Previous Note',
-    accelerator: 'CmdorCtrl+Shift+Tab',
-    click() {
-      activate('previous-note');
-    }
+    label: 'Navigate',
+    submenu: [{
+      label: 'Tags',
+      accelerator: setAcc('toggle-tags', 'Shift+Alt+T'),
+      click() {
+        activate('toggle-tags');
+      }
+    }, {
+      label: 'Shortcuts',
+      accelerator: setAcc('shortcuts', 'CmdorCtrl+Shift+S'),
+      click() {
+        activate('shortcuts');
+      }
+    }, {
+      label: 'Notebooks',
+      accelerator: setAcc('toggle-notebooks', 'Shift+Alt+N'),
+      click() {
+        activate('toggle-notebooks');
+      }
+    }, {
+      type: 'separator'
+    }, {
+      label: 'Return to Notes',
+      accelerator: setAcc('return', 'Esc'),
+      click() {
+        activate('return');
+      }
+    }]
   }, {
     type: 'separator'
   }, {
@@ -611,6 +644,20 @@ const otherTpl = [{
     accelerator: setAcc('export', 'CmdorCtrl+Shift+E'),
     click() {
       activate('export');
+    }
+  }, {
+    type: 'separator'
+  }, {
+    label: 'Settings',
+    accelerator: setAcc('settings', 'CmdorCtrl+,'),
+    click() {
+      activate('settings');
+    }
+  }, {
+    label: 'Edit Shortcut Keys',
+    accelerator: 'CmdorCtrl+.',
+    click() {
+      activate('edit-shortcuts');
     }
   }, {
     type: 'separator'
@@ -703,62 +750,41 @@ const otherTpl = [{
       activate('exit-focus-mode');
     }
   }, {
-    label: 'Toggle Sepia Mode',
-    accelerator: setAcc('toggle-sepia-mode', 'CmdOrCtrl+G'),
-    click() {
-      activate('toggle-sepia-mode');
-    }
+    type: 'separator'
   }, {
-    label: 'Toggle Dark Mode',
-    accelerator: setAcc('toggle-dark-mode', 'CmdOrCtrl+D'),
-    click() {
-      activate('toggle-dark-mode');
-    }
-  }, {
-    label: 'Toggle Black Mode',
-    accelerator: setAcc('toggle-black-mode', 'CmdOrCtrl+Alt+E'),
-    click() {
-      activate('toggle-black-mode');
-    }
+    label: 'Toggle Theme',
+    submenu: [{
+      label: 'Sepia Theme',
+      accelerator: setAcc('toggle-sepia-mode', 'CmdOrCtrl+G'),
+      click() {
+        activate('toggle-sepia-mode');
+      }
+    }, {
+      label: 'Dark Theme',
+      accelerator: setAcc('toggle-dark-mode', 'CmdOrCtrl+D'),
+      click() {
+        activate('toggle-dark-mode');
+      }
+    }, {
+      label: 'Black Theme',
+      accelerator: setAcc('toggle-black-mode', 'CmdOrCtrl+Alt+E'),
+      click() {
+        activate('toggle-black-mode');
+      }
+    }]
   }, {
     type: 'separator'
   }, {
-    label: 'Tags',
-    accelerator: setAcc('toggle-tags', 'Shift+Alt+T'),
+    label: 'Navigate to Next Note',
+    accelerator: 'CmdorCtrl+Tab',
     click() {
-      activate('toggle-tags');
+      activate('next-note');
     }
   }, {
-    label: 'Shortcuts',
-    accelerator: setAcc('shortcuts', 'CmdorCtrl+Shift+S'),
+    label: 'Navigate to Previous Note',
+    accelerator: 'CmdorCtrl+Shift+Tab',
     click() {
-      activate('shortcuts');
-    }
-  }, {
-    label: 'Notebooks',
-    accelerator: setAcc('toggle-notebooks', 'Shift+Alt+N'),
-    click() {
-      activate('toggle-notebooks');
-    }
-  }, {
-    label: 'Return to Notes',
-    accelerator: setAcc('return', 'Esc'),
-    click() {
-      activate('return');
-    }
-  }, {
-    type: 'separator'
-  }, {
-    label: 'Settings',
-    accelerator: setAcc('settings', 'CmdorCtrl+,'),
-    click() {
-      activate('settings');
-    }
-  }, {
-    label: 'Edit Shortcut Keys',
-    accelerator: 'CmdorCtrl+.',
-    click() {
-      activate('edit-shortcuts');
+      activate('previous-note');
     }
   }, {
     type: 'separator'
