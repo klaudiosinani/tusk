@@ -53,43 +53,51 @@ exports.create = win => {
       activate('search');
     }
   }, {
-    label: 'New Tag',
-    click() {
-      showWin();
-      activate('new-tag');
-    }
+    type: 'separator'
   }, {
-    label: 'New Note',
-    click() {
-      showWin();
-      activate('new-note');
-    }
-  }, {
-    label: 'New Notebook',
-    click() {
-      showWin();
-      activate('new-notebook');
-    }
+    label: 'Create',
+    submenu: [{
+      label: 'New Tag',
+      click() {
+        showWin();
+        activate('new-tag');
+      }
+    }, {
+      label: 'New Note',
+      click() {
+        showWin();
+        activate('new-note');
+      }
+    }, {
+      label: 'New Notebook',
+      click() {
+        showWin();
+        activate('new-notebook');
+      }
+    }]
   }, {
     type: 'separator'
   }, {
-    label: 'Toggle Sepia Mode',
-    click() {
-      showWin();
-      activate('toggle-sepia-mode');
-    }
-  }, {
-    label: 'Toggle Dark Mode',
-    click() {
-      showWin();
-      activate('toggle-dark-mode');
-    }
-  }, {
-    label: 'Toggle Black Mode',
-    click() {
-      showWin();
-      activate('toggle-black-mode');
-    }
+    label: 'Toggle Theme',
+    submenu: [{
+      label: 'Sepia Theme',
+      click() {
+        showWin();
+        activate('toggle-sepia-mode');
+      }
+    }, {
+      label: 'Dark Theme',
+      click() {
+        showWin();
+        activate('toggle-dark-mode');
+      }
+    }, {
+      label: 'Black Theme',
+      click() {
+        showWin();
+        activate('toggle-black-mode');
+      }
+    }]
   }, {
     type: 'separator'
   }, {
