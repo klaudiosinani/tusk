@@ -38,7 +38,6 @@ You can find more desktop apps [here](#related-apps).
   - In-app Notifications
   - Background Behavior
   - Drag and Drop Files
-- [Upcoming Features](#upcoming-features)
 - [Related Apps](#related-apps)
 - [Team](#team)
 - [Disclaimer](#disclaimer)
@@ -255,15 +254,6 @@ Code block          | \```\nCode block\n\```
 Horizontal rule     | `---` or `===`
 
 <sub>`\n` is the `new line` character</sub>
-
-## Upcoming Features
-
-A list of features to be added on the upcoming releases.<br/>
-Feel like suggesting a new feature? Open a [`feature-request issue`](https://github.com/champloohq/tusk/issues/new) :tada:
-
-- [ ] App pin lock
-- [ ] Automatic night mode
-- [ ] Code blocks highlighting
 
 ## Related Apps
 
