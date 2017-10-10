@@ -373,6 +373,14 @@ const darwinTpl = [{
   }, {
     type: 'separator'
   }, {
+    label: 'Always on Top',
+    type: 'checkbox',
+    accelerator: 'CmdorCtrl+Shift+P',
+    click (item, focusedWindow) {
+      config.set('alwaysOnTop', item.checked);
+      focusedWindow.setAlwaysOnTop(item.checked);
+    }
+  }, {
     label: 'Toggle Full Screen',
     accelerator: 'Ctrl+Command+F',
     click: (item, focusedWindow) => {
@@ -788,6 +796,14 @@ const otherTpl = [{
     }
   }, {
     type: 'separator'
+  }, {
+    label: 'Always on Top',
+    type: 'checkbox',
+    accelerator: 'CmdorCtrl+Shift+P',
+    click (item, focusedWindow) {
+      config.set('alwaysOnTop', item.checked);
+      focusedWindow.setAlwaysOnTop(item.checked);
+    }
   }, {
     label: 'Toggle Menu Bar',
     type: 'checkbox',
