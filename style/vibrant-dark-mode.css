@@ -7,7 +7,7 @@ html.vibrant-dark-mode ::-webkit-scrollbar-track { /* Notes list scrollbar track
 html.vibrant-dark-mode .GJDCG5CIEB { /* Metting note background */
   background-color: var(--vibrant-black) !important;
 }
-html.vibrant-dark-mode .GJDCG5CNYB { /* Note list header */
+html.vibrant-dark-mode .GJDCG5COYB { /* Note list header */
   background-color: var(--transparent-white) !important;
 }
 html.vibrant-dark-mode .GJDCG5CBR.GJDCG5CCR, html.vibrant-dark-mode .GJDCG5CDR {
@@ -19,25 +19,25 @@ html.vibrant-dark-mode .Dropdown-menu {
 html.vibrant-dark-mode .GJDCG5CLGB, html.vibrant-dark-mode .GDAMOPFCAHB, html.vibrant-dark-mode .GDAMOPFCPGB, html.vibrant-dark-mode .GDAMOPFCHYC.GDAMOPFCLD { /* Chat windows */
   background: var(--vibrant-black) !important;
 }
-html.vibrant-dark-mode .GJDCG5CMKC { /* Reminder modal */
+html.vibrant-dark-mode .GJDCG5CJKC { /* Reminder modal */
   background: var(--vibrant-black) !important;
 }
 html.vibrant-dark-mode .GDAMOPFCHEB {
   background: var(--transparent-white) !important;
 }
-html.vibrant-dark-mode .GJDCG5CK-B, html.vibrant-dark-mode .GDAMOPFCEQB, html.vibrant-dark-mode .GDAMOPFCDAC.GDAMOPFCL5B { /* Search modal */
+html.vibrant-dark-mode .GJDCG5CJ-B, html.vibrant-dark-mode .GDAMOPFCEQB, html.vibrant-dark-mode .GDAMOPFCDAC.GDAMOPFCM5B { /* Search modal */
   background-color: var(--transparent-white) !important;
 }
-html.vibrant-dark-mode .GJDCG5CA0B {
+html.vibrant-dark-mode .GJDCG5CO-B, html.vibrant-dark-mode .GJDCG5CDXB {
   border-bottom: 1px solid var(--black-five) !important;
 }
-html.vibrant-dark-mode .GJDCG5CGWB, html.vibrant-dark-mode .GDAMOPFCIXB, html.vibrant-dark-mode .GJDCG5CKXB.GJDCG5CHXB, html.vibrant-dark-mode .GDAMOPFCFTB, html.vibrant-dark-mode .GJDCG5CP-B .GJDCG5CE1B { /* Notebooks modal */
+html.vibrant-dark-mode .GJDCG5CGWB, html.vibrant-dark-mode .GDAMOPFCIXB, html.vibrant-dark-mode .GJDCG5CKXB.GJDCG5CHXB, html.vibrant-dark-mode .GDAMOPFCFTB, html.vibrant-dark-mode .GJDCG5CO-B .GJDCG5CD1B { /* Notebooks modal */
   background-color: var(--vibrant-black) !important;
 }
-html.vibrant-dark-mode .GJDCG5CBXB.GJDCG5CNXB { /* Selected notebook in notebooks modal */
+html.vibrant-dark-mode .GJDCG5CCXB.GJDCG5COXB { /* Selected notebook in notebooks modal */
   background-color: #2dbe60 !important;
 }
-html.vibrant-dark-mode .GJDCG5CHTB { /* Select notebook at toolbar option */
+html.vibrant-dark-mode .GJDCG5CITB { /* Select notebook at toolbar option */
   background-color: var(--vibrant-black) !important;
 }
 html.vibrant-dark-mode .GJDCG5CJJ, html.vibrant-dark-mode .focus-drawer-Filter-input { /* Search notebook/tags input text */
@@ -55,17 +55,17 @@ html.vibrant-dark-mode .GDAMOPFCPE { /* Notebook info */
 html.vibrant-dark-mode .GDAMOPFCN-B .GDAMOPFCC1B, html.vibrant-dark-mode .GDAMOPFCDQB { /* Saved search */
   background-color: var(--transparent-white) !important;
 }
-html.vibrant-dark-mode .GJDCG5CJ3B, html.vibrant-dark-mode .GJDCG5CH3B, html.vibrant-dark-mode .GJDCG5CP5B, html.vibrant-dark-mode .GJDCG5CFHB { /* Shortcuts modal */
+html.vibrant-dark-mode .GJDCG5CJ3B, html.vibrant-dark-mode .GJDCG5CH3B, html.vibrant-dark-mode .GJDCG5CM5B, html.vibrant-dark-mode .GJDCG5CFHB { /* Shortcuts modal */
   background-color: var(--vibrant-black) !important;
   border-right: 3px solid var(--black-five) !important;
 }
 html.vibrant-dark-mode .GJDCG5CP2 { /* Settings menu */
   background-color: var(--vibrant-black) !important;
 }
-html.vibrant-dark-mode .GJDCG5CC5B { /* App left sidebar */
+html.vibrant-dark-mode .GJDCG5CB5B { /* App left sidebar */
   background-color: var(--vibrant-black) !important;
 }
-html.vibrant-dark-mode .GJDCG5CC5B {
+html.vibrant-dark-mode .GJDCG5CB5B {
   background: var(--vibrant-black) !important;
   background-color: var(--vibrant-black) !important;
   border-right: 1px solid var(--black-five) !important;
@@ -73,7 +73,7 @@ html.vibrant-dark-mode .GJDCG5CC5B {
 html.vibrant-dark-mode .GDAMOPFCJYB { /* Notes list head */
   background-color: var(--transparent-white) !important;
 }
-html.vibrant-dark-mode .GJDCG5CAQB { /* Notes list left border */
+html.vibrant-dark-mode .GJDCG5CBQB { /* Notes list left border */
   background-color: var(--transparent-white) !important;
   border-left: 1px solid var(--black-five) !important;
 }
@@ -83,7 +83,7 @@ html.vibrant-dark-mode .GDAMOPFCA5B { /* Notes list left border */
   background: var(--transparent-white) !important;
   background-color: var(--transparent-white) !important;
 }
-html.vibrant-dark-mode .GJDCG5CP3B { /* Profile top border */
+html.vibrant-dark-mode .GJDCG5CO3B { /* Profile top border */
   border-top: 1px solid var(--black-five) !important;
 }
 html.vibrant-dark-mode .focus-NotesView-Note.focus-NotesView-Note-selected .focus-NotesView-Note-selectOverlay { /* Selected note bordered box */
@@ -102,7 +102,7 @@ html.vibrant-dark-mode .focus-NotesView-NotebookReminders-DropAreaContainer { /*
 html.vibrant-dark-mode .focus-NotesView-Subheader { /* Subheader border */
   border-bottom: 1px solid var(--black-five) !important;
 }
-html.vibrant-dark-mode .GJDCG5CJLB {
+html.vibrant-dark-mode .GJDCG5CKLB {
   background-color: var(--transparent-white) !important;
 }
 html.vibrant-dark-mode .GJDCG5CJKB { /* Toolbar bottom border */
@@ -117,7 +117,7 @@ html.vibrant-dark-mode .GJDCG5CP0, html.vibrant-dark-mode .GJDCG5CLKB { /* Toolb
 html.vibrant-dark-mode .focus-NotesView-Note .focus-NotesView-Note-snippetDivider { /* Notes divider color */
   border-top: 1px solid var(--black-five) !important;
 }
-html.vibrant-dark-mode .GJDCG5CP3B { /* Profile background */
+html.vibrant-dark-mode .GJDCG5CO3B { /* Profile background */
   background-color: var(--vibrant-black) !important;
   border-top: 1px solid var(--black-five) !important;
 }
@@ -135,7 +135,7 @@ html.vibrant-dark-mode div#gwt-debug-FocusView-root { /* Sidebar transition back
 html.vibrant-dark-mode .focus-NotesView-NotesView { /* Notes list body */
   background-color: var(--transparent-white) !important;
 }
-html.vibrant-dark-mode .GJDCG5CMNB, html.vibrant-dark-mode .GDAMOPFCOPB { /* Note editor body */
+html.vibrant-dark-mode .GJDCG5CNNB, html.vibrant-dark-mode .GDAMOPFCOPB { /* Note editor body */
   background-color: var(--transparent-white) !important;
 }
 html.vibrant-dark-mode .GJDCG5CKKB { /* Note editor toolbar */
@@ -144,7 +144,7 @@ html.vibrant-dark-mode .GJDCG5CKKB { /* Note editor toolbar */
 html.vibrant-dark-mode .GJDCG5CJ1 { /* Note editor toolbar options */
   background-color: var(--transparent-white) !important;
 }
-html.vibrant-dark-mode .GJDCG5CONB, html.vibrant-dark-mode .GJDCG5CFQB { /* Note editor background */
+html.vibrant-dark-mode .GJDCG5CONB, html.vibrant-dark-mode .GJDCG5CGQB { /* Note editor background */
   background-color: var(--transparent-white) !important;
 }
 html.vibrant-dark-mode .GJDCG5COF { /* Colors background */
