@@ -27,7 +27,7 @@ body {
 #switch-link {
   -webkit-app-region: no-drag;
 }
-.GJDCG5CM4B { /* Elephant logo */
+.GJDCG5CL4B { /* Elephant logo */
   left: 0;
   right: 0;
   bottom: 0;
@@ -35,7 +35,7 @@ body {
   height: 66px;
   position: relative;
 }
-.GJDCG5CG5B, .GJDCG5CA5B { /* Sidebar buttons */
+.GJDCG5CF5B, .GJDCG5CF5B { /* Sidebar buttons */
   margin: 20px 0px !important;
 }
 .FocusClipperButton-button {
@@ -50,21 +50,21 @@ body {
 .focus-NotesView-RemindersList {
   background-color: #FFFFFF;
 }
-.GJDCG5CNYB { /* Note list header */
+.GJDCG5COYB { /* Note list header */
   background-color: #FFFFFF;
   margin-bottom:  -6px !important;
 }
-.GJDCG5CP3B { /* Profile background */
+.GJDCG5CO3B { /* Profile background */
   background-color: #F8F8F8 !important;
 }
-.GDAMOPFCPYB { /* Note list transition background */
+.GDAMOPFCOYB { /* Note list transition background */
   background-color: #FFFFFF !important;
 }
 div#gwt-debug-FocusView-root { /* Sidebar transition background */
   background-color: #F8F8F8 !important;
 }
 @media all and (max-width: 800px) {
-	.GJDCG5CAQB.GJDCG5CEQB {	/* Enter compact mode */
+	.GJDCG5CBQB.GJDCG5CFQB {	/* Enter compact mode */
     margin-left: 0px !important;
 	}
   div#gwt-debug-notesListView { /* Auto-hide note list */
