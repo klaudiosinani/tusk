@@ -7,7 +7,7 @@ html.vibrant-mode ::-webkit-scrollbar-track { /* Notes list scrollbar track */
 html.vibrant-mode .GJDCG5CIEB { /* Metting note background */
   background-color: var(--vibrant-grey) !important;
 }
-html.vibrant-mode .GJDCG5CNYB { /* Note list header */
+html.vibrant-mode .GJDCG5COYB { /* Note list header */
   background-color: var(--transparent-white) !important;
 }
 html.vibrant-mode .GJDCG5CBR.GJDCG5CCR, html.vibrant-mode .GJDCG5CDR {
@@ -19,25 +19,25 @@ html.vibrant-mode .Dropdown-menu {
 html.vibrant-mode .GJDCG5CLGB, html.vibrant-mode .GDAMOPFCAHB, html.vibrant-mode .GDAMOPFCPGB, html.vibrant-mode .GDAMOPFCHYC.GDAMOPFCLD { /* Chat windows */
   background: var(--vibrant-grey) !important;
 }
-html.vibrant-mode .GJDCG5CMKC { /* Reminder modal */
+html.vibrant-mode .GJDCG5CJKC { /* Reminder modal */
   background: var(--vibrant-grey) !important;
 }
 html.vibrant-mode .GDAMOPFCHEB {
   background: var(--transparent-white) !important;
 }
-html.vibrant-mode .GJDCG5CK-B, html.vibrant-mode .GDAMOPFCEQB, html.vibrant-mode .GDAMOPFCDAC.GDAMOPFCL5B { /* Search modal */
+html.vibrant-mode .GJDCG5CJ-B, html.vibrant-mode .GDAMOPFCEQB, html.vibrant-mode .GDAMOPFCDAC.GDAMOPFCM5B { /* Search modal */
   background-color: var(--transparent-white) !important;
 }
-html.vibrant-mode .GJDCG5CA0B {
+html.vibrant-mode .GJDCG5CO-B, html.vibrant-mode .GJDCG5CDXB {
   border-bottom: 1px solid var(--black-five) !important;
 }
-html.vibrant-mode .GJDCG5CGWB, html.vibrant-mode .GDAMOPFCIXB, html.vibrant-mode .GJDCG5CKXB.GJDCG5CHXB, html.vibrant-mode .GDAMOPFCFTB, html.vibrant-mode .GJDCG5CP-B .GJDCG5CE1B { /* Notebooks modal */
+html.vibrant-mode .GJDCG5CGWB, html.vibrant-mode .GDAMOPFCIXB, html.vibrant-mode .GJDCG5CKXB.GJDCG5CHXB, html.vibrant-mode .GDAMOPFCFTB, html.vibrant-mode .GJDCG5CO-B .GJDCG5CD1B { /* Notebooks modal */
   background-color: var(--vibrant-grey) !important;
 }
-html.vibrant-mode .GJDCG5CBXB.GJDCG5CNXB { /* Selected notebook in notebooks modal */
+html.vibrant-mode .GJDCG5CCXB.GJDCG5COXB { /* Selected notebook in notebooks modal */
   background-color: #2dbe60 !important;
 }
-html.vibrant-mode .GJDCG5CHTB { /* Select notebook at toolbar option */
+html.vibrant-mode .GJDCG5CITB { /* Select notebook at toolbar option */
   background-color: var(--vibrant-grey) !important;
 }
 html.vibrant-mode .GJDCG5CJJ, html.vibrant-mode .focus-drawer-Filter-input { /* Search notebook/tags input text */
@@ -55,17 +55,17 @@ html.vibrant-mode .GDAMOPFCPE { /* Notebook info */
 html.vibrant-mode .GDAMOPFCN-B .GDAMOPFCC1B, html.vibrant-mode .GDAMOPFCDQB { /* Saved search */
   background-color: var(--transparent-white) !important;
 }
-html.vibrant-mode .GJDCG5CJ3B, html.vibrant-mode .GJDCG5CH3B, html.vibrant-mode .GJDCG5CP5B, html.vibrant-mode .GJDCG5CFHB { /* Shortcuts modal */
+html.vibrant-mode .GJDCG5CJ3B, html.vibrant-mode .GJDCG5CH3B, html.vibrant-mode .GJDCG5CM5B, html.vibrant-mode .GJDCG5CFHB { /* Shortcuts modal */
   background-color: var(--vibrant-grey) !important;
   border-right: 3px solid var(--black-five) !important;
 }
 html.vibrant-mode .GJDCG5CP2 { /* Settings menu */
   background-color: var(--vibrant-grey) !important;
 }
-html.vibrant-mode .GJDCG5CC5B { /* App left sidebar */
+html.vibrant-mode .GJDCG5CB5B { /* App left sidebar */
   background-color: var(--vibrant-grey) !important;
 }
-html.vibrant-mode .GJDCG5CC5B {
+html.vibrant-mode .GJDCG5CB5B {
   background: var(--vibrant-grey) !important;
   background-color: var(--vibrant-grey) !important;
   border-right: 1px solid var(--black-five) !important;
@@ -73,7 +73,7 @@ html.vibrant-mode .GJDCG5CC5B {
 html.vibrant-mode .GDAMOPFCJYB { /* Notes list head */
   background-color: var(--transparent-white) !important;
 }
-html.vibrant-mode .GJDCG5CAQB { /* Notes list left border */
+html.vibrant-mode .GJDCG5CBQB { /* Notes list left border */
   background-color: var(--transparent-white) !important;
   border-left: 1px solid var(--black-five) !important;
 }
@@ -83,7 +83,7 @@ html.vibrant-mode .GDAMOPFCA5B { /* Notes list left border */
   background: var(--transparent-white) !important;
   background-color: var(--transparent-white) !important;
 }
-html.vibrant-mode .GJDCG5CP3B { /* Profile top border */
+html.vibrant-mode .GJDCG5CO3B { /* Profile top border */
   border-top: 1px solid var(--black-five) !important;
 }
 html.vibrant-mode .focus-NotesView-Note.focus-NotesView-Note-selected .focus-NotesView-Note-selectOverlay { /* Selected note bordered box */
@@ -102,7 +102,7 @@ html.vibrant-mode .focus-NotesView-NotebookReminders-DropAreaContainer { /* Note
 html.vibrant-mode .focus-NotesView-Subheader { /* Subheader border */
   border-bottom: 1px solid var(--black-five) !important;
 }
-html.vibrant-mode .GJDCG5CJLB {
+html.vibrant-mode .GJDCG5CKLB {
   background-color: var(--transparent-white) !important;
 }
 html.vibrant-mode .GJDCG5CJKB { /* Toolbar bottom border */
@@ -117,7 +117,7 @@ html.vibrant-mode .GJDCG5CP0, html.vibrant-mode .GJDCG5CLKB { /* Toolbar separat
 html.vibrant-mode .focus-NotesView-Note .focus-NotesView-Note-snippetDivider { /* Notes divider color */
   border-top: 1px solid var(--black-five) !important;
 }
-html.vibrant-mode .GJDCG5CP3B { /* Profile background */
+html.vibrant-mode .GJDCG5CO3B { /* Profile background */
   background-color: var(--vibrant-grey) !important;
   border-top: 1px solid var(--black-five) !important;
 }
@@ -135,7 +135,7 @@ html.vibrant-mode div#gwt-debug-FocusView-root { /* Sidebar transition backgroun
 html.vibrant-mode .focus-NotesView-NotesView { /* Notes list body */
   background-color: var(--transparent-white) !important;
 }
-html.vibrant-mode .GJDCG5CMNB, html.vibrant-mode .GDAMOPFCOPB { /* Note editor body */
+html.vibrant-mode .GJDCG5CNNB, html.vibrant-mode .GDAMOPFCOPB { /* Note editor body */
   background-color: var(--transparent-white) !important;
 }
 html.vibrant-mode .GJDCG5CKKB { /* Note editor toolbar */
@@ -144,7 +144,7 @@ html.vibrant-mode .GJDCG5CKKB { /* Note editor toolbar */
 html.vibrant-mode .GJDCG5CJ1 { /* Note editor toolbar options */
   background-color: var(--transparent-white) !important;
 }
-html.vibrant-mode .GJDCG5CONB, html.vibrant-mode .GJDCG5CFQB { /* Note editor background */
+html.vibrant-mode .GJDCG5CONB, html.vibrant-mode .GJDCG5CGQB { /* Note editor background */
   background-color: var(--transparent-white) !important;
 }
 html.vibrant-mode .GJDCG5COF { /* Colors background */
