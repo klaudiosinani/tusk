@@ -1,16 +1,18 @@
 <h1 align="center">
-      <a href="https://github.com/champloohq/tusk">
-        <img src="https://cdn.rawgit.com/champloohq/tusk/c0475c42/media/header.png" alt="Tusk" width="100%">
+      <a href="https://github.com/klauscfhq/tusk">
+        <img src="https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/header.png" alt="Tusk" width="100%">
       </a>
 </h1>
 
 > 🐘 Refined Evernote desktop app
 
-[![Build Status](https://travis-ci.org/champloohq/tusk.svg?branch=master)](https://travis-ci.org/champloohq/tusk) [![Build status](https://ci.appveyor.com/api/projects/status/kdpb85rhfkw8iif7?svg=true)](https://ci.appveyor.com/project/klauscfhq/tusk) [![Dependency Status](https://dependencyci.com/github/champloohq/tusk/badge)](https://dependencyci.com/github/champloohq/tusk) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/champloohq/tusk) [![Latest version](https://badge.fury.io/gh/champloohq%2Ftusk.svg)](https://github.com/champloohq/tusk/releases) [![DLs](https://img.shields.io/github/downloads/champloohq/tusk/total.svg)](https://github.com/champloohq/tusk/releases) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome-electron)
+[![Build Status](https://travis-ci.org/klauscfhq/tusk.svg?branch=master)](https://travis-ci.org/klauscfhq/tusk) [![Build status](https://ci.appveyor.com/api/projects/status/kdpb85rhfkw8iif7?svg=true)](https://ci.appveyor.com/project/klauscfhq/tusk) [![Dependency Status](https://dependencyci.com/github/klauscfhq/tusk/badge)](https://dependencyci.com/github/klauscfhq/tusk) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/klauscfhq/tusk) [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/klauscfhq/tusk) [![DLs](https://img.shields.io/github/downloads/klauscfhq/tusk/total.svg)](https://github.com/klauscfhq/tusk/releases) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome-electron)
 
 ## Description
 
 Tusk is an unofficial, open source, third-party, community driven, free Evernote app with a handful of useful features.
+
+Come over to our [Gitter](https://gitter.im/klauscfhq/tusk) channel to share your thoughts on the project or to just say hi.
 
 You can find more desktop apps [here](#related-apps).
 
@@ -33,7 +35,7 @@ You can find more desktop apps [here](#related-apps).
   - [Yinxiang Support](#yinxiang-support)
   - [Keyboard Shortcuts](#keyboard-shortcuts)
   - [Build-in Markdown](#build-in-markdown)
-  - [Cross Platform](https://github.com/champloohq/tusk/releases/latest)
+  - [Cross Platform](https://github.com/klauscfhq/tusk/releases/latest)
   - Automagical Auto-updates 🐘
   - In-app Notifications
   - Background Behavior
@@ -48,17 +50,17 @@ You can find more desktop apps [here](#related-apps).
 
 ## Install
 
-Head to the [releases](https://github.com/champloohq/tusk/releases/latest) page and download the appropriate installer for your system.
+Head to the [releases](https://github.com/klauscfhq/tusk/releases/latest) page and download the appropriate installer for your system.
 
 ## Features
 
 ### Vibrant Themes
 
-Refreshing [dark](https://cdn.rawgit.com/champloohq/tusk/5747f2cf/media/vibrant-dark-theme.png) and [light](https://cdn.rawgit.com/champloohq/tusk/5747f2cf/media/vibrant-light-theme.png) vibrant themes. Press <kbd>Cmd</kbd> <kbd>Alt</kbd> <kbd>U</kbd> / <kbd>Cmd</kbd> <kbd>Alt</kbd> <kbd>J</kbd> to activate them respectively.
+Refreshing [dark](https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/vibrant-dark-theme.png) and [light](https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/vibrant-light-theme.png) vibrant themes. Press <kbd>Cmd</kbd> <kbd>Alt</kbd> <kbd>U</kbd> / <kbd>Cmd</kbd> <kbd>Alt</kbd> <kbd>J</kbd> to activate them respectively.
 
 <div align="center">
-      <a href="https://github.com/champloohq/tusk">
-        <img src="https://cdn.rawgit.com/champloohq/tusk/5747f2cf/media/vibrant-theme.png" alt="Tusk Vibrant Theme" width="100%">
+      <a href="https://github.com/klauscfhq/tusk">
+        <img src="https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/vibrant-theme.png" alt="Tusk Vibrant Theme" width="100%">
       </a>
 </div>
 
@@ -67,8 +69,8 @@ Refreshing [dark](https://cdn.rawgit.com/champloohq/tusk/5747f2cf/media/vibrant-
 Perfect for glossy screens. Activate it by pressing <kbd>Cmd/Ctrl</kbd> <kbd>G</kbd>
 
 <div align="center">
-      <a href="https://github.com/champloohq/tusk">
-        <img src="https://cdn.rawgit.com/champloohq/tusk/0f0ab0a1/media/sepia-theme.png" alt="Tusk Sepia Theme" width="100%">
+      <a href="https://github.com/klauscfhq/tusk">
+        <img src="https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/sepia-theme.png" alt="Tusk Sepia Theme" width="100%">
       </a>
 </div>
 
@@ -77,8 +79,8 @@ Perfect for glossy screens. Activate it by pressing <kbd>Cmd/Ctrl</kbd> <kbd>G</
 Silky & relaxing. Make it yours by pressing <kbd>Cmd/Ctrl</kbd> <kbd>D</kbd>
 
 <div align="center">
-      <a href="https://github.com/champloohq/tusk">
-        <img src="https://cdn.rawgit.com/champloohq/tusk/c0475c42/media/dark-theme.png" alt="Tusk Dark Theme" width="100%">
+      <a href="https://github.com/klauscfhq/tusk">
+        <img src="https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/dark-theme.png" alt="Tusk Dark Theme" width="100%">
       </a>
 </div>
 
@@ -87,8 +89,8 @@ Silky & relaxing. Make it yours by pressing <kbd>Cmd/Ctrl</kbd> <kbd>D</kbd>
 Deep focus materialized. Boost your productivity by pressing <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>E</kbd>
 
 <div align="center">
-      <a href="https://github.com/champloohq/tusk">
-        <img src="https://cdn.rawgit.com/champloohq/tusk/c0475c42/media/black-theme.png" alt="Tusk Black Theme" width="100%">
+      <a href="https://github.com/klauscfhq/tusk">
+        <img src="https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/black-theme.png" alt="Tusk Black Theme" width="100%">
       </a>
 </div>
 
@@ -97,8 +99,8 @@ Deep focus materialized. Boost your productivity by pressing <kbd>Cmd/Ctrl</kbd>
 Press <kbd>Cmd/Ctrl</kbd> <kbd>K</kbd> and immerse yourself in a distraction-free note-taking mode.
 
 <div align="center">
-      <a href="https://github.com/champloohq/tusk">
-        <img src="https://cdn.rawgit.com/champloohq/tusk/c0475c42/media/focus-mode.png" alt="Tusk Focus Mode" width="100%">
+      <a href="https://github.com/klauscfhq/tusk">
+        <img src="https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/focus-mode.png" alt="Tusk Focus Mode" width="100%">
       </a>
 </div>
 
@@ -107,8 +109,8 @@ Press <kbd>Cmd/Ctrl</kbd> <kbd>K</kbd> and immerse yourself in a distraction-fre
 Get more for less. Keep your productivity to the maximum no matter the screen size. Simply downsize the window to enter the mode.
 
 <div align="center">
-      <a href="https://github.com/champloohq/tusk">
-        <img src="https://cdn.rawgit.com/champloohq/tusk/c0475c42/media/compact-mode.png" alt="Tusk Compact Mode" width="70%">
+      <a href="https://github.com/klauscfhq/tusk">
+        <img src="https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/compact-mode.png" alt="Tusk Compact Mode" width="70%">
       </a>
 </div>
 
@@ -117,8 +119,8 @@ Get more for less. Keep your productivity to the maximum no matter the screen si
 Navigate seamlessly between your notes by pressing <kbd>Cmd/Ctrl</kbd> <kbd>Tab</kbd> / <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>Tab</kbd> or jump directly to a specific note by using <kbd>Cmd/Ctrl</kbd> <kbd>1</kbd> - <kbd>9</kbd>
 
 <div align="center">
-      <a href="https://github.com/champloohq/tusk">
-        <img src="https://cdn.rawgit.com/champloohq/tusk/c0475c42/media/note-navigation.gif" alt="Note Navigation" width="100%">
+      <a href="https://github.com/klauscfhq/tusk">
+        <img src="https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/note-navigation.gif" alt="Note Navigation" width="100%">
       </a>
 </div>
 
@@ -127,8 +129,8 @@ Navigate seamlessly between your notes by pressing <kbd>Cmd/Ctrl</kbd> <kbd>Tab<
 Printing your notes is only a keystroke away. Press <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>P</kbd> and transfer them from screen to paper.
 
 <div align="center">
-      <a href="https://github.com/champloohq/tusk">
-        <img src="https://cdn.rawgit.com/champloohq/tusk/b7be04bd/media/print-note.gif" alt="Note Printing" width="100%">
+      <a href="https://github.com/klauscfhq/tusk">
+        <img src="https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/print-note.gif" alt="Note Printing" width="100%">
       </a>
 </div>
 
@@ -137,8 +139,8 @@ Printing your notes is only a keystroke away. Press <kbd>Cmd/Ctrl</kbd> <kbd>Alt
 Adjust Tusk to your workflow. Navigate to `~/.tusk.json` or press <kbd>Cmd/Ctrl</kbd> <kbd>.</kbd> and modify any shortcut key to your own preference. To reset simply delete the tusk config file from your home directory.
 
 <div align="center">
-      <a href="https://github.com/champloohq/tusk">
-        <img src="https://cdn.rawgit.com/champloohq/tusk/882efdee/media/custom-shortcut-keys.gif" alt="Custom Shortcut Keys" width="100%">
+      <a href="https://github.com/klauscfhq/tusk">
+        <img src="https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/custom-shortcut-keys.gif" alt="Custom Shortcut Keys" width="100%">
       </a>
 </div>
 
@@ -147,8 +149,8 @@ Adjust Tusk to your workflow. Navigate to `~/.tusk.json` or press <kbd>Cmd/Ctrl<
 Adjust the zooming factor to your own preference by pressing <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>=</kbd> or <kbd>Cmd/Ctrl</kbd> <kbd>-</kbd>
 
 <div align="center">
-      <a href="https://github.com/champloohq/tusk">
-        <img src="https://cdn.rawgit.com/champloohq/tusk/00c01c4d/media/scalable-interface.gif" alt="Scalable Interface" width="100%">
+      <a href="https://github.com/klauscfhq/tusk">
+        <img src="https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/scalable-interface.gif" alt="Scalable Interface" width="100%">
       </a>
 </div>
 
@@ -157,8 +159,8 @@ Adjust the zooming factor to your own preference by pressing <kbd>Cmd/Ctrl</kbd>
 Press <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>E</kbd> and save your notes effortlessly on your machine as `pdf` files.
 
 <div align="center">
-      <a href="https://github.com/champloohq/tusk">
-        <img src="https://cdn.rawgit.com/champloohq/tusk/b7be04bd/media/export-notes.gif" alt="Export Notes" width="100%">
+      <a href="https://github.com/klauscfhq/tusk">
+        <img src="https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/export-notes.gif" alt="Export Notes" width="100%">
       </a>
 </div>
 
@@ -167,8 +169,8 @@ Press <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>E</kbd> and save your notes effo
 Login with your Yinxiang account by visiting the `Tusk` menu on Macos or the `File` menu on Windows and Linux.
 
 <div align="center">
-      <a href="https://github.com/champloohq/tusk">
-        <img src="https://cdn.rawgit.com/champloohq/tusk/f4701b08/media/yinxiang-support.png" alt="Yinxiang Support" width="97%">
+      <a href="https://github.com/klauscfhq/tusk">
+        <img src="https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/yinxiang-support.png" alt="Yinxiang Support" width="97%">
       </a>
 </div>
 
@@ -238,7 +240,7 @@ Remove Formatting          | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>Space</kb
 Tusk takes advantage of the build-in Markdown support that lives inside the Evernote web editor.
 
 Here is cheat-sheet with all the available options.<br/>
-Is a syntax option missing? Open a [`pull-request`](https://github.com/champloohq/tusk/compare) or [`issue`](https://github.com/champloohq/tusk/issues/new) to include it.
+Is a syntax option missing? Open a [`pull-request`](https://github.com/klauscfhq/tusk/compare) or [`issue`](https://github.com/klauscfhq/tusk/issues/new) to include it.
 
 Description         | Syntax
 ------------------- | ---------
@@ -276,4 +278,4 @@ Tusk is an unofficial, open source, third-party, community driven, free app and 
 
 ## License
 
-[MIT](https://github.com/champloohq/tusk/blob/master/license.md)
+[MIT](https://github.com/klauscfhq/tusk/blob/master/license.md)
