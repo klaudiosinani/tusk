@@ -226,11 +226,11 @@
       </div>
       <img class="img-meta" src="https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/note-navigation.gif" width="100%">
       <div class="row center">
-        <h6 class="col s12 light">Tusk is an unofficial, open source, third-party, community driven, free Evernote app with a handful of useful features.</h6>
+        <h6 class="col s12 light"><span id="gh-latest"></span></h6>
       </div>
       <div class="row center">
-        <a href="https://github.com/klauscfhq/tusk/releases/latest" class="btn-large waves-effect waves-light btn-spacing black">Download</a>
-        <a href="https://github.com/klauscfhq/tusk" class="btn-large waves-effect waves-light btn-spacing black">Fork Source</a>
+        <a href="https://github.com/klauscfhq/tusk/releases/latest" class="btn-large waves-effect waves-light btn-spacing black"><i class="fa fa-download left"></i>Download</a>
+        <a href="https://github.com/klauscfhq/tusk" class="btn-large waves-effect waves-light btn-spacing black"><i class="fa fa-code-fork left"></i>Fork Source</a>
       </div>
     </div>
   </div>
@@ -385,6 +385,27 @@
       </div>
     </div>
   </footer>
+  <script>
+    var xmlhttp = new XMLHttpRequest();
+    var repoMetaURL = "https://api.github.com/repos/klauscfhq/tusk/commits/master";
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        var repoMeta = JSON.parse(this.responseText);
+
+        var commitURL = repoMeta.html_url;
+        var authorURL = repoMeta.author.html_url;
+        var commitMessage = repoMeta.commit.message;
+        var authorName = repoMeta.commit.author.name;
+        var commitDate = new Date(repoMeta.commit.author.date).toDateString();
+
+        var ghLatestActivity = 'Latest commit on Github: "' + '<a class="text-link" href="' + commitURL + '"' + '>' + commitMessage + '</a>' + '" by ' + '<a class="text-link" href="' + authorURL + '"' + '>' + authorName + '</a>' + ' on ' + commitDate + '.';
+
+        document.getElementById("gh-latest").innerHTML = ghLatestActivity;
+      }
+    };
+    xmlhttp.open("GET", repoMetaURL, true);
+    xmlhttp.send();
+  </script>
 </body>
 
 </html>
