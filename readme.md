@@ -1,7 +1,5 @@
 <h1 align="center">
-  <img src="https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/logo.png" width="19%">
-  <br/>
-  Tusk
+  <img src="https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/logo.png" width="20%"><br/>Tusk
 </h1>
 
 <h4 align="center">
