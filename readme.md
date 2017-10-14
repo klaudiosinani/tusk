@@ -1,7 +1,6 @@
 <h1 align="center">
-  <a href="https://github.com/klauscfhq/ao">
-    <img src="https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/logo.png"  alt="Tusk" width="19%">
-  </a><br/>
+  <img src="https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/logo.png" width="19%">
+  <br/>
   Tusk
 </h1>
 
