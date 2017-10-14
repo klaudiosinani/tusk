@@ -1,12 +1,21 @@
 <h1 align="center">
-      <a href="https://github.com/klauscfhq/tusk">
-        <img src="https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/header.png" alt="Tusk" width="100%">
-      </a>
+  <a href="https://github.com/klauscfhq/ao">
+    <img src="https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/logo.png"  alt="Tusk" width="19%">
+  </a><br/>
+  Tusk
 </h1>
 
-> 🐘 Refined Evernote desktop app
+<h4 align="center">
+  🐘 Refined Evernote desktop app
+</h4>
 
-[![Build Status](https://travis-ci.org/klauscfhq/tusk.svg?branch=master)](https://travis-ci.org/klauscfhq/tusk) [![Build status](https://ci.appveyor.com/api/projects/status/kdpb85rhfkw8iif7?svg=true)](https://ci.appveyor.com/project/klauscfhq/tusk) [![Dependency Status](https://dependencyci.com/github/klauscfhq/tusk/badge)](https://dependencyci.com/github/klauscfhq/tusk) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/klauscfhq/tusk) [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/klauscfhq/tusk) [![DLs](https://img.shields.io/github/downloads/klauscfhq/tusk/total.svg)](https://github.com/klauscfhq/tusk/releases) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome-electron)
+<div align="center">
+      <a href="https://github.com/klauscfhq/tusk">
+        <img src="https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/note-navigation.gif" alt="Tusk" width="100%">
+      </a>
+</div>
+
+[![Build Status](https://travis-ci.org/klauscfhq/tusk.svg?branch=master)](https://travis-ci.org/klauscfhq/tusk) [![Build status](https://ci.appveyor.com/api/projects/status/kdpb85rhfkw8iif7?svg=true)](https://ci.appveyor.com/project/klauscfhq/tusk) [![Dependency Status](https://dependencyci.com/github/champloohq/tusk/badge)](https://dependencyci.com/github/klauscfhq/tusk) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/klauscfhq/tusk) [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/klauscfhq/tusk) [![DLs](https://img.shields.io/github/downloads/klauscfhq/tusk/total.svg)](https://github.com/klauscfhq/tusk/releases) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome-electron)
 
 ## Description
 
