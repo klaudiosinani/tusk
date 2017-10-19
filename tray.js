@@ -1,6 +1,7 @@
 'use strict';
 const path = require('path');
 const electron = require('electron');
+const config = require('./config');
 
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
@@ -98,6 +99,15 @@ exports.create = win => {
         activate('toggle-black-mode');
       }
     }]
+  }, {
+    label: 'Auto Night Mode',
+    type: 'checkbox',
+    checked: config.get('autoNightMode'),
+    click(item) {
+      showWin();
+      config.set('autoNightMode', item.checked);
+      activate('auto-night-mode');
+    }
   }, {
     type: 'separator'
   }, {

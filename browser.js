@@ -2,6 +2,7 @@
 const electron = require('electron');
 const os = require('os');
 const path = require('path');
+const timeStamp = require('time-stamp');
 const config = require('./config');
 
 const join = path.join;
@@ -180,13 +181,55 @@ ipc.on('toggle-vibrant-dark-mode', () => {
   vibrantDarkMode();
 });
 
+function autoNightMode() {
+  // Switch between light and dark themes based on daytime
+  const time = timeStamp('HHmm');
+  switch (time <= 1800 && time >= 600) {
+    case true:
+      // Switch to the light theme
+      untoggleDark();
+      untoggleBlack();
+      untoggleSepia();
+      untoggleVibrant();
+      untoggleDarkVibrant();
+      break;
+
+    case false:
+      // Switch to the dark theme
+      untoggleBlack();
+      untoggleSepia();
+      untoggleVibrant();
+      untoggleDarkVibrant();
+      config.set('darkMode', true);
+      darkMode();
+      break;
+
+    default:
+      break;
+  }
+}
+
+function untoggleAutoNightMode() {
+  // Untoggle the auto night mode
+  untoggleDark();
+}
+
+ipc.on('auto-night-mode', () => {
+  // Toggle on and off the auto night mode
+  if (config.get('autoNightMode')) {
+    autoNightMode();
+  } else {
+    untoggleAutoNightMode();
+  }
+});
+
 function toggleMenuBar() {
-  // Activates the menu bar on the main window
+  // Activate the menu bar on the main window
   ipc.send('activate-menu-bar');
 }
 
 ipc.on('toggle-menu-bar', () => {
-  // Toggles on and off the menu bar
+  // Toggle on and off the menu bar
   config.set('menuBarVisible', !config.get('menuBarVisible'));
   toggleMenuBar();
 });
@@ -481,6 +524,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Preserve zoom factor
   const zoomFactor = config.get('zoomFactor');
   webFrame.setZoomFactor(zoomFactor);
+  // Toggle auto night mode
+  if (config.get('autoNightMode')) {
+    autoNightMode();
+  }
   // Toggle the menu bar
   toggleMenuBar();
   // Toggle sepia mode
