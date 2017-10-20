@@ -102,7 +102,11 @@ function createMainWindow() {
 app.on('ready', () => {
   electron.Menu.setApplicationMenu(appMenu);
   mainWindow = createMainWindow();
-  tray.create(mainWindow);
+  if (!config.get('hideTray')) {
+    // Check whether or not the tray
+    // icon is set to be hidden
+    tray.create(mainWindow);
+  }
   const windowContent = mainWindow.webContents;
 
   windowContent.on('dom-ready', () => {

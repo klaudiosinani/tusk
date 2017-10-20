@@ -825,6 +825,15 @@ const otherTpl = [{
       focusedWindow.setAlwaysOnTop(item.checked);
     }
   }, {
+    label: 'Hide Tray Icon',
+    type: 'checkbox',
+    checked: config.get('hideTray'),
+    click(item) {
+      config.set('hideTray', item.checked);
+      app.relaunch();
+      app.quit();
+    }
+  }, {
     label: 'Toggle Menu Bar',
     type: 'checkbox',
     checked: config.get('menuBarVisible'),
