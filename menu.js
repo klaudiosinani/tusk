@@ -290,23 +290,26 @@ const darwinTpl = [{
   }, {
     type: 'separator'
   }, {
-    label: 'Make Text Larger',
-    accelerator: 'CmdOrCtrl+Plus',
-    click() {
-      activate('zoom-in');
-    }
-  }, {
-    label: 'Make Text Smaller',
-    accelerator: 'CmdOrCtrl+-',
-    click() {
-      activate('zoom-out');
-    }
-  }, {
-    label: 'Reset Zoom Level',
-    accelerator: 'CmdOrCtrl+0',
-    click() {
-      activate('zoom-reset');
-    }
+    label: 'Font Size Options',
+    submenu: [{
+      label: 'Make Text Larger',
+      accelerator: 'CmdOrCtrl+Plus',
+      click() {
+        activate('zoom-in');
+      }
+    }, {
+      label: 'Make Text Smaller',
+      accelerator: 'CmdOrCtrl+-',
+      click() {
+        activate('zoom-out');
+      }
+    }, {
+      label: 'Reset Zoom Level',
+      accelerator: 'CmdOrCtrl+0',
+      click() {
+        activate('zoom-reset');
+      }
+    }]
   }, {
     type: 'separator'
   }, {
@@ -390,6 +393,8 @@ const darwinTpl = [{
       config.set('alwaysOnTop', item.checked);
       focusedWindow.setAlwaysOnTop(item.checked);
     }
+  }, {
+    type: 'separator'
   }, {
     label: 'Toggle Full Screen',
     accelerator: 'Ctrl+Command+F',
@@ -736,23 +741,26 @@ const otherTpl = [{
   }, {
     type: 'separator'
   }, {
-    label: 'Make Text Larger',
-    accelerator: 'CmdOrCtrl+Plus',
-    click() {
-      activate('zoom-in');
-    }
-  }, {
-    label: 'Make Text Smaller',
-    accelerator: 'CmdOrCtrl+-',
-    click() {
-      activate('zoom-out');
-    }
-  }, {
-    label: 'Reset Zoom Level',
-    accelerator: 'CmdOrCtrl+0',
-    click() {
-      activate('zoom-reset');
-    }
+    label: 'Font Size Options',
+    submenu: [{
+      label: 'Make Text Larger',
+      accelerator: 'CmdOrCtrl+Plus',
+      click() {
+        activate('zoom-in');
+      }
+    }, {
+      label: 'Make Text Smaller',
+      accelerator: 'CmdOrCtrl+-',
+      click() {
+        activate('zoom-out');
+      }
+    }, {
+      label: 'Reset Zoom Level',
+      accelerator: 'CmdOrCtrl+0',
+      click() {
+        activate('zoom-reset');
+      }
+    }]
   }, {
     type: 'separator'
   }, {
@@ -833,6 +841,8 @@ const otherTpl = [{
       app.relaunch();
       app.quit();
     }
+  }, {
+    type: 'separator'
   }, {
     label: 'Toggle Menu Bar',
     type: 'checkbox',
