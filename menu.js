@@ -22,6 +22,7 @@ const homepageURL = 'https://klauscfhq.github.io/tusk';
 const communityURL = 'https://gitter.im/klauscfhq/tusk';
 const issueURL = 'https://github.com/klauscfhq/tusk/issues/new';
 const releaseURL = 'https://github.com/klauscfhq/tusk/releases/latest';
+const licenseURL = 'https://github.com/klauscfhq/tusk/blob/master/license.md';
 
 function activate(command) {
   const appWindow = BrowserWindow.getAllWindows()[0];
@@ -54,7 +55,7 @@ function getConfig() {
 const tuskConfig = getConfig();
 
 function setAcc(custom, predifined) {
-  // Return the custom or predifined shortcut keys
+  // Return the custom or predefined shortcut keys
   if (Object.prototype.hasOwnProperty.call(tuskConfig.shortcutKeys, custom)) {
     return tuskConfig.shortcutKeys[custom];
   }
@@ -65,6 +66,11 @@ const helpSubmenu = [{
   label: `Tusk Homepage`,
   click() {
     shell.openExternal(homepageURL);
+  }
+}, {
+  label: `View License`,
+  click() {
+    shell.openExternal(licenseURL);
   }
 }, {
   label: 'Version ' + app.getVersion(),
