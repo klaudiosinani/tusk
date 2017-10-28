@@ -19,6 +19,7 @@ const defaultConfig = join(__dirname, '.', tuskJSON); // Default config file dir
 
 const sourceURL = 'https://github.com/klauscfhq/tusk';
 const homepageURL = 'https://klauscfhq.github.io/tusk';
+const communityURL = 'https://gitter.im/klauscfhq/tusk';
 const issueURL = 'https://github.com/klauscfhq/tusk/issues/new';
 const releaseURL = 'https://github.com/klauscfhq/tusk/releases/latest';
 
@@ -76,6 +77,11 @@ const helpSubmenu = [{
   label: `Report Issue`,
   click() {
     shell.openExternal(issueURL);
+  }
+}, {
+  label: `Community Discussion`,
+  click() {
+    shell.openExternal(communityURL);
   }
 }, {
   label: `Latest Release`,
