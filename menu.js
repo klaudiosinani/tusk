@@ -245,6 +245,14 @@ const darwinTpl = [{
       activate('settings');
     }
   }, {
+    label: 'Launch on Start',
+    type: 'checkbox',
+    checked: config.get('autoLaunch'),
+    click(item) {
+      config.set('autoLaunch', item.checked);
+      activate('auto-launch');
+    }
+  }, {
     label: 'Edit Shortcut Keys',
     accelerator: 'CmdorCtrl+.',
     click() {
@@ -690,6 +698,14 @@ const otherTpl = [{
     accelerator: setAcc('settings', 'CmdorCtrl+,'),
     click() {
       activate('settings');
+    }
+  }, {
+    label: 'Launch on Start',
+    type: 'checkbox',
+    checked: config.get('autoLaunch'),
+    click(item) {
+      config.set('autoLaunch', item.checked);
+      activate('auto-launch');
     }
   }, {
     label: 'Edit Shortcut Keys',
