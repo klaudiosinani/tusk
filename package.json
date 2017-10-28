@@ -32,6 +32,7 @@
     "start": "electron .",
     "pack": "build --dir",
     "dist": "build",
+    "clean": "node ./bin/clean.js",
     "authors": "./bin/update-authors.sh",
     "pack-all": "npm run pack:macos && npm run pack:linux && npm run pack:windows",
     "pack:macos": "electron-packager . --no-prune --overwrite --asar --out=dist --platform=darwin --arch=x64 --icon=static/Icon.icns && cd dist/Tusk-darwin-x64 && zip -ryXq9 ../Tusk-macos-v${npm_package_version}.zip Tusk.app && electron-installer-dmg ../Tusk-darwin-x64/Tusk.app Tusk --icon=../../static/Icon.icns && cp Tusk.dmg  ../../dist",
@@ -50,12 +51,13 @@
     "electron-context-menu": "^0.9.0"
   },
   "devDependencies": {
-    "xo": "^0.19.0",
     "electron": "^1.7.8",
-    "electron-packager": "^9.1.0",
     "electron-builder": "^19.33.0",
     "electron-builder-squirrel-windows": "^19.33.0",
-    "electron-installer-dmg": "^0.2.1"
+    "electron-installer-dmg": "^0.2.1",
+    "electron-packager": "^9.1.0",
+    "rimraf": "^2.6.2",
+    "xo": "^0.19.0"
   },
   "xo": {
     "esnext": true,
