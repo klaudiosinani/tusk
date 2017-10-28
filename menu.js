@@ -21,7 +21,7 @@ const sourceURL = 'https://github.com/klauscfhq/tusk';
 const homepageURL = 'https://klauscfhq.github.io/tusk';
 const communityURL = 'https://gitter.im/klauscfhq/tusk';
 const issueURL = 'https://github.com/klauscfhq/tusk/issues/new';
-const releaseURL = 'https://github.com/klauscfhq/tusk/releases/latest';
+const searchURL = 'https://github.com/search?q=+is:issue+repo:klauscfhq/tusk';
 const licenseURL = 'https://github.com/klauscfhq/tusk/blob/master/license.md';
 
 function activate(command) {
@@ -63,11 +63,6 @@ function setAcc(custom, predifined) {
 }
 
 const helpSubmenu = [{
-  label: `Tusk Homepage`,
-  click() {
-    shell.openExternal(homepageURL);
-  }
-}, {
   label: `View License`,
   click() {
     shell.openExternal(licenseURL);
@@ -75,6 +70,11 @@ const helpSubmenu = [{
 }, {
   label: 'Version ' + app.getVersion(),
   enabled: false
+}, {
+  label: `Tusk Homepage`,
+  click() {
+    shell.openExternal(homepageURL);
+  }
 }, {
   type: 'separator'
 }, {
@@ -88,14 +88,14 @@ const helpSubmenu = [{
     shell.openExternal(issueURL);
   }
 }, {
+  label: `Search Issues`,
+  click() {
+    shell.openExternal(searchURL);
+  }
+}, {
   label: `Community Discussion`,
   click() {
     shell.openExternal(communityURL);
-  }
-}, {
-  label: `Latest Release`,
-  click() {
-    shell.openExternal(releaseURL);
   }
 }];
 
