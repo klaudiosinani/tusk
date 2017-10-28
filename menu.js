@@ -67,6 +67,9 @@ const helpSubmenu = [{
     shell.openExternal(homepageURL);
   }
 }, {
+  label: 'Version ' + app.getVersion(),
+  enabled: false
+}, {
   type: 'separator'
 }, {
   label: 'Fork Source',
