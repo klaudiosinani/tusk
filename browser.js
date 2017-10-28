@@ -330,6 +330,21 @@ function exportAsPDF() {
 
 ipc.on('export', exportAsPDF);
 
+function toggleAutoLaunch() {
+  // Decide whether or not the app should launch on login
+  const startup = require('./startup');
+
+  if (config.get('autoLaunch')) {
+    // Activate app lauching
+    startup.activate();
+  } else {
+    // Deactivate app lauching
+    startup.deactivate();
+  }
+}
+
+ipc.on('auto-launch', toggleAutoLaunch);
+
 ipc.on('next-note', goToNextNote);
 
 ipc.on('previous-note', goToPreviewsNote);

@@ -40,15 +40,16 @@
     "pack:windows": "electron-packager . --no-prune --overwrite --asar --out=dist --platform=win32 --arch=ia32 --icon=static/Icon.ico --version-string.ProductName=$npm_package_productName && cd dist/Tusk-win32-ia32 && zip -ryq9 ../Tusk-windows-v${npm_package_version}.zip *"
   },
   "dependencies": {
-    "ms": "^2.0.0",
-    "fs-extra": "^4.0.2",
-    "simple-get": "^2.7.0",
-    "time-stamp": "^2.0.0",
+    "auto-launch": "^5.0.1",
+    "electron-config": "^1.0.0",
+    "electron-context-menu": "^0.9.0",
+    "electron-debug": "^1.3.0",
     "electron-dl": "^1.9.0",
     "electron-is-dev": "^0.1.2",
-    "electron-debug": "^1.3.0",
-    "electron-config": "^1.0.0",
-    "electron-context-menu": "^0.9.0"
+    "fs-extra": "^4.0.2",
+    "ms": "^2.0.0",
+    "simple-get": "^2.7.0",
+    "time-stamp": "^2.0.0"
   },
   "devDependencies": {
     "electron": "^1.7.8",
