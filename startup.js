@@ -22,7 +22,7 @@ function activate() {
 }
 
 function deactivate() {
-  // Deaactivate app launch on login
+  // Deactivate app launch on login
   return launchTusk
   .isEnabled()
   .then(enabled => {
