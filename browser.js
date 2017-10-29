@@ -335,10 +335,10 @@ function toggleAutoLaunch() {
   const startup = require('./startup');
 
   if (config.get('autoLaunch')) {
-    // Activate app lauching
+    // Activate app launching
     startup.activate();
   } else {
-    // Deactivate app lauching
+    // Deactivate app launching
     startup.deactivate();
   }
 }

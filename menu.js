@@ -54,12 +54,12 @@ function getConfig() {
 // Get the user-defined settings
 const tuskConfig = getConfig();
 
-function setAcc(custom, predifined) {
+function setAcc(custom, predefined) {
   // Return the custom or predefined shortcut keys
   if (Object.prototype.hasOwnProperty.call(tuskConfig.shortcutKeys, custom)) {
     return tuskConfig.shortcutKeys[custom];
   }
-  return predifined;
+  return predefined;
 }
 
 const helpSubmenu = [{
