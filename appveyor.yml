@@ -14,11 +14,11 @@ build_script:
   - npm test
   - npm run dist
 artifacts:
-  - path: dist\win\*.nupkg
+  - path: dist\squirrel-windows\*.nupkg
     name: nupkg
-  - path: dist\win\RELEASES
+  - path: dist\squirrel-windows\RELEASES
     name: releases
-  - path: dist\win\*.exe
+  - path: dist\squirrel-windows\*.exe
     name: installer
 deploy:
   description: 'Tusk - Refined Evernote desktop app'
