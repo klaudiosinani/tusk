@@ -4,32 +4,33 @@ language: c
 osx_image: xcode9
 matrix:
   include:
-    - os: osx
-    - os: linux
-      env: CC=clang CXX=clang++ npm_config_clang=1
-      compiler: clang
+  - os: osx
+  - os: linux
+    env: CC=clang CXX=clang++ npm_config_clang=1
+    compiler: clang
 addons:
   apt:
     packages:
-      - xz-utils
-      - icnsutils
-      - graphicsmagick
-      - rpm
+    - xz-utils
+    - icnsutils
+    - graphicsmagick
+    - rpm
 install:
-  - nvm install 6
-  - npm install
-  - npm prune
+- nvm install 6
+- npm install
+- npm prune
 script:
-  - npm test
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then npm run dist; fi
-  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then npm run pack:macos; fi
+- npm test
+- if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then npm run dist; fi
+- if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then npm run pack:macos; fi
 before_deploy:
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then rm -rf dist/linux-ia32-unpacked && rm -rf dist/linux-unpacked; fi
-  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then rm -rf dist/Tusk-darwin-x64; fi
+- if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then rm -rf dist/linux-ia32-unpacked && rm
+  -rf dist/linux-unpacked; fi
+- if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then rm -rf dist/Tusk-darwin-x64; fi
 deploy:
   provider: releases
   api_key:
-    secure: "pvEq2vy4EqJ8O/ttqZXmibUFJSgNR1qZhzZzA6Fsh6fVnwOzTrNvJPUduDj3g/Hhi5K9XwsPixSDdFLiFBuYWX7JrD0Y8cx8Ma3/kdKIYtwgwFPvv3mo/7wOLI/zjE56hF+SeMRlLsOM7AWRA5hheEgzChZRiZh6DSmQerh2Y22GPiLHYvmAmt4I0QkUNkLygFDcKY2p8nu+DccYZOYK7ZaxfFFLzUvGK8ibtCCOmoULTWFqETV2H3YkJ38yIt3Tm1yxOxeFsX5uqlzX02kUUO6rlsGBhoupQHQWmZfdkU95ALwNjlIi6gVC+0cDL98pBx86F6yeSNaf8Rx0qUBEWeb6GxhG8BCtlQYmgs4Ats7voKDIigDoSV2OX8G4kELEU0xiGBBrgYZ393kx/hkeYzDTGyZ1SOetS7QJeSX4Bhb9X/oSP+69Xpopor1HAyVEADg2haajSrFW/Jpk2rDjyrYlpl+3BYqNWi49sPQ+1czU/j/4O5WxPGlyfcLo6DunTorKI92zT5uS5xQ5NKzTMTIQC2Tc+29kFaHUIG5d8p3uPTNEbJS8OWJyMuI7Efj1OR/VRgtd0sEwM9qIWWYpsI378vr5bKzoPAUKU71ICzhDZC8jXdCvld+I8tN7jM9/f6tr2XKoHXYyo9sUPEfU1FNay2kI9cuFy3tXTPh6UjI="
+    secure: IdI0k89D9KgNQD/KlOg7K0A/ZB04Zrcl7HB90zzM9ip1lFXtxh20JzdmEnfSHGh6QICw1teM28RcesDeKckOo+6gTbOvTgstpFZiOVEKkGRzbccL9l8l8pL/YvHxooB8vsxKcKAkxGvLaisT4/yW1ZUIFihANWWt3bIJlYhh65eWNUf7xsvmmXvx+aaWihMcG5tZWTRvk3K0q2UPATFdffIRhmDPU67PxuWQn55shgChg7MSPhzU//YED+aLw2hJvVN53TXeUwsoJfayMFz071gZSEVYSnCIF5mcSrDbaIAPeiixOWOAkhfDgyVK1ut3I9t0Ie8om1r+jwyk7Kxgq6DJk5bmRayi9CARmU2v7fkdZAAJcnWaJ2SyvZC+wZ2K2o5Ky+X6Ou0+fxkdgwUkQx10QlosDnxlzOEFjmU7o/aujp81pUSS3mghRknfAIrG3F4mJj/EZzjIsetADFjQw7dNsD+SWGccft0MgltItSWqfeRJvhLhamOI4hqteyzhldVlaFha0zzryws3G1t3w7jYPf+9ecz/Asvo9vr20/LGeNJvDaDVwWz19K8TLM/fpwcxDFomLvXtBT0q+TuLGAGKHFAwQ/rbaFUtMXjunLRhx8Nnj4E4shaIiUr3i2x6dLqTxrLJq1347LDldvJ3FxAwomJmK8J8JtowA5S1dZs=
   file_glob: true
   file: dist/*
   skip_cleanup: true
