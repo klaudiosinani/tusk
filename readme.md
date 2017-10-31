@@ -39,12 +39,14 @@ You can find more desktop apps [here](#related-apps).
   - [Scalable Interface](#scalable-interface)
   - [Export Notes](#export-notes)
   - [Yinxiang Support](#yinxiang-support)
+  - [Auto Night Mode](#auto-night-mode)
   - [Keyboard Shortcuts](#keyboard-shortcuts)
   - [Build-in Markdown](#build-in-markdown)
   - [Cross Platform](https://github.com/klauscfhq/tusk/releases/latest)
   - Automagical Auto-updates 🐘
   - In-app Notifications
   - Background Behavior
+  - Launch on Start
   - Drag and Drop Files
 - [Related Apps](#related-apps)
 - [Team](#team)
@@ -179,6 +181,10 @@ Login with your Yinxiang account by visiting the `Tusk` menu on Macos or the `Fi
         <img src="https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/yinxiang-support.png" alt="Yinxiang Support" width="97%">
       </a>
 </div>
+
+### Auto Night Mode
+
+Press <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>N</kbd> and allow Ao to intelligently adjust to your environment.
 
 ### Keyboard shortcuts
 
