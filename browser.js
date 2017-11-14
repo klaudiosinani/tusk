@@ -223,6 +223,17 @@ ipc.on('auto-night-mode', () => {
   }
 });
 
+function toggleSideBar() {
+  // Make side bar visible & adjust left margin
+  document.documentElement.classList.toggle('side-bar-visible', config.get('sideBarVisible'));
+}
+
+ipc.on('toggle-side-bar', () => {
+  // Toggle on and off the side bar
+  config.set('sideBarVisible', !config.get('sideBarVisible'));
+  toggleSideBar();
+});
+
 function toggleMenuBar() {
   // Activate the menu bar on the main window
   ipc.send('activate-menu-bar');
@@ -549,6 +560,8 @@ document.addEventListener('DOMContentLoaded', () => {
   if (config.get('autoNightMode')) {
     autoNightMode();
   }
+  // Toggle the side bar
+  toggleSideBar();
   // Toggle the menu bar
   toggleMenuBar();
   // Toggle sepia mode
