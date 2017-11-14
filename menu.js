@@ -451,6 +451,13 @@ const darwinTpl = [{
   }, {
     type: 'separator'
   }, {
+    label: 'Toggle Side Bar',
+    type: 'checkbox',
+    checked: config.get('sideBarVisible'),
+    click() {
+      activate('toggle-side-bar');
+    }
+  }, {
     label: 'Toggle Full Screen',
     accelerator: 'Ctrl+Command+F',
     click: (item, focusedWindow) => {
@@ -913,6 +920,13 @@ const otherTpl = [{
     }
   }, {
     type: 'separator'
+  }, {
+    label: 'Toggle Side Bar',
+    type: 'checkbox',
+    checked: config.get('sideBarVisible'),
+    click() {
+      activate('toggle-side-bar');
+    }
   }, {
     label: 'Toggle Menu Bar',
     type: 'checkbox',

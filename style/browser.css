@@ -63,6 +63,18 @@ body {
 div#gwt-debug-FocusView-root { /* Sidebar transition background */
   background-color: #F8F8F8 !important;
 }
+div#gwt-debug-sidebar { /* Initialize side bar as hidden */
+  display: none;
+}
+div#gwt-debug-stage {
+  margin-left: 0px !important;
+}
+html.side-bar-visible div#gwt-debug-sidebar { /* Make side bar visible */
+  display: block !important;
+}
+html.side-bar-visible div#gwt-debug-stage {
+  margin-left: 73px !important;
+}
 @media all and (max-width: 800px) {
 	.GJDCG5CBQB.GJDCG5CFQB {	/* Enter compact mode */
     margin-left: 0px !important;
