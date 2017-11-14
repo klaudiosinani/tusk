@@ -301,6 +301,13 @@ const darwinTpl = [{
       app.relaunch();
       app.quit();
     }
+  }, {
+    type: 'separator'
+  }, {
+    label: 'Log out',
+    click() {
+      activate('log-out');
+    }
   }]
 }, {
   label: 'Edit',
@@ -755,6 +762,13 @@ const otherTpl = [{
       config.set('useYinxiang', false);
       app.relaunch();
       app.quit();
+    }
+  }, {
+    type: 'separator'
+  }, {
+    label: 'Log out',
+    click() {
+      activate('log-out');
     }
   }, {
     type: 'separator'

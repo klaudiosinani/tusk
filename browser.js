@@ -407,6 +407,12 @@ ipc.on('edit-shortcuts', () => {
   shell.openExternal(homeConfig);
 });
 
+ipc.on('log-out', () => {
+  // Log out
+  document.querySelector('#gwt-debug-AccountMenu-avatar').click();
+  document.querySelector('#gwt-debug-AccountMenu-logout').click();
+});
+
 ipc.on('bold', () => {
   // Bold text
   document.querySelector('#gwt-debug-FormattingBar-boldButton').click();
