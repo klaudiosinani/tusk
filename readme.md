@@ -60,6 +60,8 @@ You can find more desktop apps [here](#related-apps).
 
 Head to the [releases](https://github.com/klauscfhq/tusk/releases/latest) page and download the appropriate installer for your system.
 
+Macos users can also install through [homebrew-cask](https://caskroom.github.io/) `brew cask install tusk`
+
 ## Features
 
 ### Vibrant Themes
