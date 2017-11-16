@@ -15,23 +15,13 @@
       "name": "Mario Sinani",
       "email": "mariosinani@protonmail.ch",
       "url": "github.com/mariocfhq"
-    },
-    {
-      "name": "Thanasis Gkanos",
-      "email": "athanasiosgkanos@hotmail.com",
-      "url": "github.com/ThanasisGkanos"
-    },
-    {
-      "name": "George Baxopoulos",
-      "email": "baxopoulos.george@gmail.com",
-      "url": "github.com/georgebax"
     }
   ],
   "scripts": {
     "test": "xo",
     "start": "electron .",
     "pack": "build --dir",
-    "dist": "build",
+    "dist": "build --publish never",
     "clean": "node ./bin/clean.js",
     "authors": "./bin/update-authors.sh",
     "pack-all": "npm run pack:macos && npm run pack:linux && npm run pack:windows",
