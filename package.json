@@ -42,11 +42,11 @@
     "time-stamp": "^2.0.0"
   },
   "devDependencies": {
-    "electron": "^1.7.8",
-    "electron-builder": "^19.43.0",
-    "electron-builder-squirrel-windows": "^19.43.0",
-    "electron-installer-dmg": "^0.2.1",
-    "electron-packager": "^9.1.0",
+    "electron": "1.7.8",
+    "electron-builder": "19.33.0",
+    "electron-builder-squirrel-windows": "19.33.0",
+    "electron-installer-dmg": "0.2.1",
+    "electron-packager": "9.1.0",
     "rimraf": "^2.6.2",
     "xo": "^0.19.0"
   },
