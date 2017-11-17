@@ -10,6 +10,7 @@ const app = electron.app;
 const resolve = path.resolve;
 const shell = electron.shell;
 const appName = app.getName();
+const platform = process.platform;
 const BrowserWindow = electron.BrowserWindow;
 
 let configData;
@@ -17,6 +18,7 @@ let defaultConfigPath; // Path to the default config file
 const homeDir = os.homedir();
 const tuskJSON = '.tusk.json'; // Config file name on the home directory
 const homeConfig = join(homeDir, tuskJSON); // Path to the config file on the home directory
+const keymapsDir = resolve(__dirname, 'keymaps'); // Keymaps directory
 
 const sourceURL = 'https://github.com/klauscfhq/tusk';
 const homepageURL = 'https://klauscfhq.github.io/tusk';
@@ -32,32 +34,31 @@ function activate(command) {
   appWindow.webContents.send(command);
 }
 
-function getPath(platform) {
+function getPath() {
   // Retrieve the default path of the platform-dedicated config file
   switch (platform) {
     case ('darwin'):
-      defaultConfigPath = resolve('keymaps', 'darwin.json');
+      defaultConfigPath = join(keymapsDir, 'darwin.json');
       break;
 
     case ('linux'):
-      defaultConfigPath = resolve('keymaps', 'linux.json');
+      defaultConfigPath = join(keymapsDir, 'linux.json');
       break;
 
     case ('win32'):
-      defaultConfigPath = resolve('keymaps', 'win32.json');
+      defaultConfigPath = join(keymapsDir, 'win32.json');
       break;
 
     default:
-      defaultConfigPath = resolve('keymaps', 'linux.json');
+      defaultConfigPath = join(keymapsDir, 'linux.json');
       break;
   }
   return defaultConfigPath;
 }
 
 function getConfig() {
-  const platform = process.platform;
   // Get the dedicated config file for each platform
-  const defaultConfig = getPath(platform);
+  const defaultConfig = getPath();
   // Create a new default config file if it does not already exist
   if (!fs.existsSync(homeConfig)) {
     try {
