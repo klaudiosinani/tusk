@@ -189,7 +189,7 @@ Login with your Yinxiang account by visiting the `Tusk` menu on Macos or the `Fi
 
 ### Auto Night Mode
 
-Press <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>N</kbd> and allow Ao to intelligently adjust to your environment.
+Press <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>N</kbd> and allow Tusk to intelligently adjust to your environment.
 
 ### Keyboard shortcuts
 
