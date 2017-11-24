@@ -24,27 +24,27 @@ You can find more desktop apps [here](#related-apps).
 
 ## Features
 
-  - [Vibrant Themes](#vibrant-themes) 🍎
-  - [Sepia Theme](#sepia-theme)
-  - [Dark Theme](#dark-theme)
-  - [Black Theme](#black-theme)
-  - [Focus Mode](#focus-mode)
-  - [Compact Mode](#compact-mode)
-  - [Note Navigation](#note-navigation)
-  - [Note Printing](#note-printing)
-  - [Custom Shortcut Keys](#custom-shortcut-keys)
-  - [Scalable Interface](#scalable-interface)
-  - [Export Notes](#export-notes)
-  - [Yinxiang Support](#yinxiang-support)
-  - [Auto Night Mode](#auto-night-mode)
-  - [Keyboard Shortcuts](#keyboard-shortcuts)
-  - [Build-in Markdown](#build-in-markdown)
-  - [Cross Platform](https://github.com/klauscfhq/tusk/releases/latest)
-  - Automagical Auto-updates 🐘
-  - In-app Notifications
-  - Background Behavior
-  - Launch on Start
-  - Drag and Drop Files
+- [Vibrant Themes](#vibrant-themes) 🍎
+- [Sepia Theme](#sepia-theme)
+- [Dark Theme](#dark-theme)
+- [Black Theme](#black-theme)
+- [Focus Mode](#focus-mode)
+- [Compact Mode](#compact-mode)
+- [Note Navigation](#note-navigation)
+- [Note Printing](#note-printing)
+- [Custom Shortcut Keys](#custom-shortcut-keys)
+- [Scalable Interface](#scalable-interface)
+- [Export Notes](#export-notes)
+- [Yinxiang Support](#yinxiang-support)
+- [Auto Night Mode](#auto-night-mode)
+- [Keyboard Shortcuts](#keyboard-shortcuts)
+- [Build-in Markdown](#build-in-markdown)
+- [Cross Platform](https://github.com/klauscfhq/tusk/releases/latest)
+- Automagical Auto-updates 🐘
+- In-app Notifications
+- Background Behavior
+- Launch on Start
+- Drag and Drop Files
 
 <sup>🍎 Macos only atm</sup><br/>
 <sup>🐘 Windows only atm</sup>
