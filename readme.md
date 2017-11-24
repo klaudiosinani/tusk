@@ -22,11 +22,8 @@ Come over to our [Gitter](https://gitter.im/klauscfhq/tusk) channel to share you
 
 You can find more desktop apps [here](#related-apps).
 
-## Contents
+## Features
 
-- [Description](#description)
-- [Install](#install)
-- [Features](#features)
   - [Vibrant Themes](#vibrant-themes) 🍎
   - [Sepia Theme](#sepia-theme)
   - [Dark Theme](#dark-theme)
@@ -48,13 +45,19 @@ You can find more desktop apps [here](#related-apps).
   - Background Behavior
   - Launch on Start
   - Drag and Drop Files
+
+<sup>🍎 Macos only atm</sup><br/>
+<sup>🐘 Windows only atm</sup>
+
+## Contents
+
+- [Description](#description)
+- [Features](#features)
+- [Install](#install)
 - [Related Apps](#related-apps)
 - [Team](#team)
 - [Disclaimer](#disclaimer)
 - [License](#license)
-
-<sup>🍎 Macos only atm</sup><br/>
-<sup>🐘 Windows only atm</sup>
 
 ## Install
 
