@@ -10,6 +10,7 @@ module.exports = new Config({
     },
     menuBarVisible: false,
     sideBarVisible: false,
+    launchMinimized: false,
     autoNightMode: false,
     autoLaunch: false,
     hideTray: false,

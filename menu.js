@@ -740,12 +740,21 @@ const otherTpl = [{
       activate('settings');
     }
   }, {
+    type: 'separator'
+  }, {
     label: 'Launch on Start',
     type: 'checkbox',
     checked: config.get('autoLaunch'),
     click(item) {
       config.set('autoLaunch', item.checked);
       activate('auto-launch');
+    }
+  }, {
+    label: 'Launch Minimized',
+    type: 'checkbox',
+    checked: config.get('launchMinimized'),
+    click(item) {
+      config.set('launchMinimized', item.checked);
     }
   }, {
     label: 'Edit Shortcut Keys',

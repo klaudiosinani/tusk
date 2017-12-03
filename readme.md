@@ -44,6 +44,7 @@ You can find more desktop apps [here](#related-apps).
 - In-app Notifications
 - Background Behavior
 - Launch on Start
+- Launch Minimized
 - Drag and Drop Files
 
 <sup>🍎 Macos only atm</sup><br/>
