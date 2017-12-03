@@ -43,7 +43,7 @@
     "time-stamp": "^2.0.0"
   },
   "devDependencies": {
-    "electron": "1.7.8",
+    "electron": "1.7.9",
     "electron-builder": "19.33.0",
     "electron-builder-squirrel-windows": "19.33.0",
     "electron-installer-dmg": "0.2.1",
