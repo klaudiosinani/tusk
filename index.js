@@ -116,7 +116,13 @@ app.on('ready', () => {
     windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'style/sepia-mode.css'), 'utf8'));
     windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'style/vibrant-mode.css'), 'utf8'));
     windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'style/vibrant-dark-mode.css'), 'utf8'));
-    mainWindow.show();
+
+    if (config.get('launchMinimized')) {
+      // Check whether to launch the main window minimized
+      mainWindow.minimize();
+    } else {
+      mainWindow.show();
+    }
   });
 
   windowContent.on('new-window', (e, url) => {
