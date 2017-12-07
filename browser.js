@@ -226,6 +226,10 @@ ipc.on('auto-night-mode', () => {
 function toggleSideBar() {
   // Make side bar visible & adjust left margin
   document.documentElement.classList.toggle('side-bar-visible', config.get('sideBarVisible'));
+  if (process.platform === 'darwin') {
+    // Macos visual tweak
+    document.documentElement.classList.toggle('side-bar-visible-macos', !config.get('sideBarVisible'));
+  }
 }
 
 ipc.on('toggle-side-bar', () => {
