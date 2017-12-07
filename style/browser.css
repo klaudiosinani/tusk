@@ -75,6 +75,9 @@ html.side-bar-visible div#gwt-debug-sidebar { /* Make side bar visible */
 html.side-bar-visible div#gwt-debug-stage {
   margin-left: 73px !important;
 }
+html.side-bar-visible-macos div#gwt-debug-NotesHeader-title {
+  padding-top: 13px !important;
+}
 @media all and (max-width: 800px) {
 	.GJDCG5CBQB.GJDCG5CFQB {	/* Enter compact mode */
     margin-left: 0px !important;
