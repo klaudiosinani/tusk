@@ -40,7 +40,8 @@
     "fs-extra": "^4.0.2",
     "ms": "^2.0.0",
     "simple-get": "^2.7.0",
-    "time-stamp": "^2.0.0"
+    "time-stamp": "^2.0.0",
+    "decode-uri-component": "^0.2.0"
   },
   "devDependencies": {
     "electron": "1.7.9",
