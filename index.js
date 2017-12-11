@@ -6,6 +6,7 @@ const os = require('os');
 const isDevMode = require('electron-is-dev');
 const ms = require('ms');
 const timeStamp = require('time-stamp');
+const decodeUri = require('decode-uri-component');
 const appMenu = require('./menu');
 const tray = require('./tray');
 const config = require('./config');
@@ -127,6 +128,10 @@ app.on('ready', () => {
 
   windowContent.on('new-window', (e, url) => {
     e.preventDefault();
+    // Workaround for opening external links
+    const prefix = 'https://www.evernote.com/OutboundRedirect.action?dest=';
+    // Remove prefix & decode URL
+    url = decodeUri(url.replace(prefix, ''));
     electron.shell.openExternal(url);
   });
 
