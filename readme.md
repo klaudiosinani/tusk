@@ -64,7 +64,9 @@ You can find more desktop apps [here](#related-apps).
 
 Head to the [releases](https://github.com/klauscfhq/tusk/releases/latest) page and download the appropriate installer for your system.
 
-Macos users can also install through [homebrew-cask](https://caskroom.github.io/) `brew cask install tusk`
+Macos users can directly install through [homebrew-cask](https://caskroom.github.io/) `brew cask install tusk`
+
+Arch Linux users can directly install through [AUR](https://aur.archlinux.org/packages/tusk/) `yaourt tusk`   
 
 ## Features
 
