@@ -4,7 +4,7 @@ Thank you for taking the time to contribute to Tusk! ✨🎉
 
 ## Suggested quick smart steps
 
-- Run through the [contributing guidelines](https://github.com/tusk/tusk/blob/master/contributing.md)
+- Run through the [contributing guidelines](https://github.com/klauscfhq/tusk/blob/master/contributing.md)
 - Support questions are better asked in the project's [chat](https://gitter.im/klauscfhq/tusk). We will get back at you in a flash.
 - Ensure the issue is not already reported
 
