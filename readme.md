@@ -289,9 +289,9 @@ More awesome desktop apps.
 
 Coded with ❤ by
 
-[![Klaus Sinani](https://avatars.githubusercontent.com/u/12670537?s=130)](https://github.com/klauscfhq) | [![Mario Sinani](https://avatars.githubusercontent.com/u/29512262?s=130)](https://github.com/mariocfhq) | [![George Baxopoulos](https://avatars.githubusercontent.com/u/19195396?s=130)](https://github.com/georgebax) | [![Thanasis Gkanos](https://avatars1.githubusercontent.com/u/18072542?s=130)](https://github.com/ThanasisGkanos)
---- | --- | --- | ---
-[Klaus Sinani](https://github.com/klauscfhq) | [Mario Sinani](https://github.com/mariocfhq) | [George Baxopoulos](https://github.com/georgebax) | [Thanasis Gkanos](https://github.com/ThanasisGkanos)
+[![Klaus Sinani](https://avatars.githubusercontent.com/u/12670537?s=130)](https://github.com/klauscfhq) | [![Mario Sinani](https://avatars.githubusercontent.com/u/29512262?s=130)](https://github.com/mariocfhq) | [![Thanasis Gkanos](https://avatars1.githubusercontent.com/u/18072542?s=130)](https://github.com/ThanasisGkanos)
+--- | --- | ---
+[Klaus Sinani](https://github.com/klauscfhq) | [Mario Sinani](https://github.com/mariocfhq) | [Thanasis Gkanos](https://github.com/ThanasisGkanos)
 
 ## Disclaimer
 
