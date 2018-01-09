@@ -8,7 +8,7 @@ module.exports = new Config({
       width: 900,
       height: 500
     },
-    menuBarVisible: false,
+    menuBarVisible: true,
     sideBarVisible: false,
     launchMinimized: false,
     autoNightMode: false,
