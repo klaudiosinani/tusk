@@ -940,7 +940,7 @@ const otherTpl = [{
   }, {
     label: 'Toggle Menu Bar',
     type: 'checkbox',
-    checked: config.get('menuBarVisible'),
+    checked: !config.get('menuBarHidden'),
     click() {
       activate('toggle-menu-bar');
     }
