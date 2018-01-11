@@ -245,7 +245,7 @@ function toggleMenuBar() {
 
 ipc.on('toggle-menu-bar', () => {
   // Toggle on and off the menu bar
-  config.set('menuBarVisible', !config.get('menuBarVisible'));
+  config.set('menuBarHidden', !config.get('menuBarHidden'));
   toggleMenuBar();
 });
 
