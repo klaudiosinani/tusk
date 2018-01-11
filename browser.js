@@ -224,17 +224,17 @@ ipc.on('auto-night-mode', () => {
 });
 
 function toggleSideBar() {
-  // Make side bar visible & adjust left margin
-  document.documentElement.classList.toggle('side-bar-visible', config.get('sideBarVisible'));
+  // Hide side bar & adjust left margin
+  document.documentElement.classList.toggle('side-bar-hidden', config.get('sideBarHidden'));
   if (process.platform === 'darwin') {
     // Macos visual tweak
-    document.documentElement.classList.toggle('side-bar-visible-macos', !config.get('sideBarVisible'));
+    document.documentElement.classList.toggle('side-bar-hidden-macos', config.get('sideBarHidden'));
   }
 }
 
 ipc.on('toggle-side-bar', () => {
   // Toggle on and off the side bar
-  config.set('sideBarVisible', !config.get('sideBarVisible'));
+  config.set('sideBarHidden', !config.get('sideBarHidden'));
   toggleSideBar();
 });
 

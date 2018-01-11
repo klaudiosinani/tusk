@@ -454,7 +454,7 @@ const darwinTpl = [{
   }, {
     label: 'Toggle Side Bar',
     type: 'checkbox',
-    checked: config.get('sideBarVisible'),
+    checked: !config.get('sideBarHidden'),
     click() {
       activate('toggle-side-bar');
     }
@@ -933,7 +933,7 @@ const otherTpl = [{
   }, {
     label: 'Toggle Side Bar',
     type: 'checkbox',
-    checked: config.get('sideBarVisible'),
+    checked: !config.get('sideBarHidden'),
     click() {
       activate('toggle-side-bar');
     }

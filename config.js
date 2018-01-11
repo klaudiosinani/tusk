@@ -9,7 +9,7 @@ module.exports = new Config({
       height: 500
     },
     menuBarVisible: true,
-    sideBarVisible: true,
+    sideBarHidden: false,
     launchMinimized: false,
     autoNightMode: false,
     autoLaunch: false,
