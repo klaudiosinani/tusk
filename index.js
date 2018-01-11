@@ -168,16 +168,16 @@ ipcMain.on('activate-vibrant', () => {
 
 ipcMain.on('activate-menu-bar', () => {
   // Check if the menu bar was activated
-  if (config.get('menuBarVisible')) {
-    // Make the menu bar persistently visible
-    mainWindow.setMenuBarVisibility(true);
-    // Disable ALT key toggling
-    mainWindow.setAutoHideMenuBar(false);
-  } else {
+  if (config.get('menuBarHidden')) {
     // Hide the menu bar
     mainWindow.setMenuBarVisibility(false);
     // Restore ALT key toggling
     mainWindow.setAutoHideMenuBar(true);
+  } else {
+    // Make the menu bar persistently visible
+    mainWindow.setMenuBarVisibility(true);
+    // Disable ALT key toggling
+    mainWindow.setAutoHideMenuBar(false);
   }
 });
 
