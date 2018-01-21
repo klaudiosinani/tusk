@@ -4,29 +4,30 @@ language: c
 osx_image: xcode9
 matrix:
   include:
-  - os: osx
-  - os: linux
-    env: CC=clang CXX=clang++ npm_config_clang=1
-    compiler: clang
+    - os: osx
+    - os: linux
+      env: CC=clang CXX=clang++ npm_config_clang=1
+      compiler: clang
+      services:
+        - docker
 addons:
   apt:
     packages:
-    - xz-utils
-    - icnsutils
-    - graphicsmagick
-    - rpm
+      - xz-utils
+      - icnsutils
+      - graphicsmagick
+      - rpm
 install:
-- nvm install 6
-- npm install
-- npm prune
+  - nvm install 6
+  - npm install
+  - npm prune
 script:
-- npm test
-- if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then npm run dist; fi
-- if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then npm run pack:macos; fi
+  - npm test
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then npm run dist; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then npm run pack:macos; fi
 before_deploy:
-- if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then rm -rf dist/linux-ia32-unpacked && rm
-  -rf dist/linux-unpacked; fi
-- if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then rm -rf dist/Tusk-darwin-x64; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then rm -rf dist/linux-ia32-unpacked && rm -rf dist/linux-unpacked; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then rm -rf dist/Tusk-darwin-x64; fi
 deploy:
   provider: releases
   api_key:
