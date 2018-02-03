@@ -68,6 +68,11 @@ Macos users can directly install through [homebrew-cask](https://caskroom.github
 
 Arch Linux users can directly install through [AUR](https://aur.archlinux.org/packages/tusk/) `yaourt tusk`   
 
+#### Note
+
+The version available on `Homebrew Cask` or `AUR` may not be the latest.<br/>
+If that is the case, please consider downloading directly from the [Github releases](https://github.com/klauscfhq/tusk/releases/latest) page.
+
 ## Features
 
 ### Vibrant Themes
