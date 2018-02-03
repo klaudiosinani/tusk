@@ -28,9 +28,12 @@ const searchURL = 'https://github.com/search?q=+is:issue+repo:klauscfhq/tusk';
 const licenseURL = 'https://github.com/klauscfhq/tusk/blob/master/license.md';
 
 function activate(command) {
-  const appWindow = BrowserWindow.getAllWindows()[0];
-  // Extra measure in order to be shown
-  appWindow.show();
+  const [appWindow] = BrowserWindow.getAllWindows();
+
+  if (process.platform === 'darwin') {
+    appWindow.restore();
+  }
+
   appWindow.webContents.send(command);
 }
 
