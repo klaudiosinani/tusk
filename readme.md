@@ -22,7 +22,7 @@ Come over to our [Gitter](https://gitter.im/klauscfhq/tusk) channel to share you
 
 You can find more desktop apps [here](#related-apps).
 
-## Features
+## Highlights
 
 - [Vibrant Themes](#vibrant-themes) 🍎
 - [Sepia Theme](#sepia-theme)
@@ -53,8 +53,9 @@ You can find more desktop apps [here](#related-apps).
 ## Contents
 
 - [Description](#description)
-- [Features](#features)
+- [Highlights](#highlights)
 - [Install](#install)
+- [Features](#features)
 - [Related Apps](#related-apps)
 - [Team](#team)
 - [Disclaimer](#disclaimer)
@@ -64,14 +65,13 @@ You can find more desktop apps [here](#related-apps).
 
 Head to the [releases](https://github.com/klauscfhq/tusk/releases/latest) page and download the appropriate installer for your system.
 
-Macos users can directly install through [homebrew-cask](https://caskroom.github.io/) `brew cask install tusk`
+Macos users can directly install through [Homebrew Cask](https://caskroom.github.io/) `brew cask install tusk`
 
 Arch Linux users can directly install through [AUR](https://aur.archlinux.org/packages/tusk/) `yaourt tusk`   
 
 #### Note
 
-The version available on `Homebrew Cask` or `AUR` may not be the latest.<br/>
-If that is the case, please consider downloading directly from the [Github releases](https://github.com/klauscfhq/tusk/releases/latest) page.
+The version available on `Homebrew Cask` or `AUR` may not be the latest. If that is the case, please consider downloading directly from the [Github releases](https://github.com/klauscfhq/tusk/releases/latest) page.
 
 ## Features
 
@@ -294,9 +294,9 @@ More awesome desktop apps.
 
 Coded with ❤ by
 
-[![Klaus Sinani](https://avatars.githubusercontent.com/u/12670537?s=130)](https://github.com/klauscfhq) | [![Mario Sinani](https://avatars.githubusercontent.com/u/29512262?s=130)](https://github.com/mariocfhq) | [![Thanasis Gkanos](https://avatars1.githubusercontent.com/u/18072542?s=130)](https://github.com/ThanasisGkanos)
---- | --- | ---
-[Klaus Sinani](https://github.com/klauscfhq) | [Mario Sinani](https://github.com/mariocfhq) | [Thanasis Gkanos](https://github.com/ThanasisGkanos)
+- Klaus Sinani [(@klauscfhq)](https://github.com/klauscfhq) 
+- Mario Sinani [(@mariocfhq)](https://github.com/mariocfhq)
+- Thanasis Gkanos [(@ThanasisGkanos)](https://github.com/ThanasisGkanos)
 
 ## Disclaimer
 
