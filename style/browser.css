@@ -60,6 +60,9 @@ body {
 .GDAMOPFCOYB { /* Note list transition background */
   background-color: #FFFFFF !important;
 }
+div#gwt-debug-NotesHeader-title { /* Notes list title */
+  padding-bottom: 5px !important;
+}
 div#gwt-debug-FocusView-root { /* Sidebar transition background */
   background-color: #F8F8F8 !important;
 }
@@ -73,7 +76,7 @@ html.side-bar-hidden-macos div#gwt-debug-NotesHeader-title {
   padding-top: 13px !important;
 }
 @media all and (max-width: 800px) {
-	.GJDCG5CBQB.GJDCG5CFQB {	/* Enter compact mode */
+	.GJDCG5CBQB.GJDCG5CFQB { /* Enter compact mode */
     margin-left: 0px !important;
 	}
   div#gwt-debug-notesListView { /* Auto-hide note list */
