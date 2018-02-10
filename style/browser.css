@@ -24,7 +24,13 @@ body {
   border-radius: 0px !important;
   background: #2dbe60 !important;
 }
-#switch-link {
+#switch-link { /* Allow text selection on Macos */
+  -webkit-app-region: no-drag;
+}
+div#gwt-debug-NoteView-root {
+  -webkit-app-region: no-drag;
+}
+div#gwt-debug-notesListView {
   -webkit-app-region: no-drag;
 }
 .GJDCG5CL4B { /* Elephant logo */
