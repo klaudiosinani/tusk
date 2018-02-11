@@ -13,6 +13,12 @@ html.vibrant-dark-mode .GJDCG5COYB { /* Note list header */
 html.vibrant-dark-mode .GJDCG5CBR.GJDCG5CCR, html.vibrant-dark-mode .GJDCG5CDR {
   opacity: 1 !important;
 }
+html.vibrant-dark-mode div#gwt-debug-NotesHeaderView-root {
+  background: var(--transparent-white) !important;
+}
+html.vibrant-dark-mode div#gwt-debug-NoteAttributesView-root {
+  background: var(--transparent-white) !important;
+}
 html.vibrant-dark-mode .Dropdown-menu {
   background: var(--vibrant-black) !important;
 }
