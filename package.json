@@ -63,7 +63,7 @@
   "build": {
     "snap": {
       "grade": "stable",
-      "confinement": "classic"
+      "confinement": "strict"
     },
     "files": [
       "**/*",
