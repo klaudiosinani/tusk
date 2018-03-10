@@ -33,7 +33,7 @@ div#gwt-debug-NoteView-root {
 div#gwt-debug-notesListView {
   -webkit-app-region: no-drag;
 }
-.GJDCG5CL4B { /* Elephant logo */
+.GJDCG5CP4B { /* Elephant logo */
   left: 0;
   right: 0;
   bottom: 0;
@@ -41,7 +41,7 @@ div#gwt-debug-notesListView {
   height: 66px;
   position: relative;
 }
-.GJDCG5CF5B, .GJDCG5CF5B { /* Sidebar buttons */
+.GJDCG5CG5B, .GJDCG5CG5B { /* Sidebar buttons */
   margin: 20px 0px !important;
 }
 .FocusClipperButton-button {
@@ -66,11 +66,11 @@ div#gwt-debug-notesListView {
 .GDAMOPFCOYB { /* Note list transition background */
   background-color: #FFFFFF !important;
 }
-div#gwt-debug-NotesHeader-title { /* Notes list title */
-  padding-bottom: 5px !important;
+div#gwt-debug-NotesHeaderView-root {
+  background-color: #FFFFFF !important;
 }
-div#gwt-debug-FocusView-root { /* Sidebar transition background */
-  background-color: #F8F8F8 !important;
+div#gwt-debug-NotesHeader-title { /* Notes list title */
+  padding-bottom: 10px !important;
 }
 html.side-bar-hidden div#gwt-debug-sidebar { /* Make side bar visible */
   display: none !important;
@@ -82,9 +82,9 @@ html.side-bar-hidden-macos div#gwt-debug-NotesHeader-title {
   padding-top: 13px !important;
 }
 @media all and (max-width: 800px) {
-	.GJDCG5CBQB.GJDCG5CFQB { /* Enter compact mode */
+  div#gwt-debug-NoteView-root {
     margin-left: 0px !important;
-	}
+  }
   div#gwt-debug-notesListView { /* Auto-hide note list */
     visibility: hidden !important;
   }
