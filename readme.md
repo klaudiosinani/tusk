@@ -12,7 +12,29 @@
       </a>
 </div>
 
-[![Build Status](https://travis-ci.org/klauscfhq/tusk.svg?branch=master)](https://travis-ci.org/klauscfhq/tusk) [![Build status](https://ci.appveyor.com/api/projects/status/kdpb85rhfkw8iif7?svg=true)](https://ci.appveyor.com/project/klauscfhq/tusk) [![Dependency Status](https://dependencyci.com/github/champloohq/tusk/badge)](https://dependencyci.com/github/klauscfhq/tusk) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/klauscfhq/tusk) [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/klauscfhq/tusk) [![DLs](https://img.shields.io/github/downloads/klauscfhq/tusk/total.svg)](https://github.com/klauscfhq/tusk/releases) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome-electron)
+<p align="center">
+  <a href="https://travis-ci.org/klauscfhq/tusk">
+    <img alt="Build Status" src="https://travis-ci.org/klauscfhq/tusk.svg?branch=master">
+  </a>
+  <a href="https://ci.appveyor.com/project/klauscfhq/tusk">
+    <img alt="Build Status" src="https://ci.appveyor.com/api/projects/status/kdpb85rhfkw8iif7?svg=true">
+  </a>
+  <a href="https://tidelift.com/repo/github/champloohq/tusk">
+    <img alt="Dependency Status" src="https://tidelift.com/badges/github/champloohq/tusk?style=flat">
+  </a>
+  <a href="https://github.com/klauscfhq/tusk">
+    <img alt="XO code style" src="https://img.shields.io/badge/code_style-XO-5ed9c7.svg">
+  </a>
+  <a href="https://gitter.im/klauscfhq/tusk">
+    <img alt="Gitter" src="https://img.shields.io/gitter/room/nwjs/nw.js.svg">
+  </a>
+  <a href="https://github.com/klauscfhq/tusk/releases">
+    <img alt="DLs" src="https://img.shields.io/github/downloads/klauscfhq/tusk/total.svg">
+  </a>
+  <a href="https://github.com/sindresorhus/awesome-electron">
+    <img alt="Awesome" src="https://awesome.re/mentioned-badge.svg">
+  </a>
+</p>
 
 ## Description
 
@@ -48,7 +70,7 @@ You can find more desktop apps [here](#related-apps).
 - Drag and Drop Files
 
 <sup>🍎 Macos only atm</sup><br/>
-<sup>🐘 Windows only atm</sup>
+<sup>🐘 Windows & Linux only atm</sup>
 
 ## Contents
 
@@ -267,8 +289,7 @@ Remove Formatting          | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>Space</kb
 
 Tusk takes advantage of the build-in Markdown support that lives inside the Evernote web editor.
 
-Here is cheat-sheet with all the available options.<br/>
-Is a syntax option missing? Open a [`pull-request`](https://github.com/klauscfhq/tusk/compare) or [`issue`](https://github.com/klauscfhq/tusk/issues/new) to include it.
+Here is cheat-sheet with all the available options.
 
 Description         | Syntax
 ------------------- | ---------
@@ -296,7 +317,7 @@ More awesome desktop apps.
 
 Coded with ❤ by
 
-- Klaus Sinani [(@klauscfhq)](https://github.com/klauscfhq) 
+- Klaus Sinani [(@klauscfhq)](https://github.com/klauscfhq)
 - Mario Sinani [(@mariocfhq)](https://github.com/mariocfhq)
 - Thanasis Gkanos [(@ThanasisGkanos)](https://github.com/ThanasisGkanos)
 
