@@ -25,6 +25,18 @@ function displayAvailableUpdate(latestVersion) {
   return result;
 }
 
+function displayUnavailableUpdate(installedVersion) {
+  // Display unavailable update info-window
+  const result = dialog.showMessageBox({
+    icon: path.join(__dirname, 'static/Icon.png'),
+    title: 'No Update Available',
+    message: 'No update available',
+    detail: 'Version ' + installedVersion + ' is the latest version'
+  });
+  console.log('You are on the latest version', installedVersion);
+  return result;
+}
+
 function getLatestVersion(err, res, data) {
   if (err) {
     console.log('Update error.');
@@ -50,6 +62,19 @@ function response(result) {
   // send the user to the latest Github release
   if (result === 0) {
     shell.openExternal(releaseURL);
+  }
+}
+
+function manualUpdateCheck(err, res, data) {
+  // Manually check for updates
+  const latestVersion = getLatestVersion(err, res, data);
+  if (latestVersion === installedVersion) {
+    // No updates available
+    displayUnavailableUpdate(installedVersion);
+  } else {
+    // Set out update notification & get user response
+    const result = displayAvailableUpdate(latestVersion);
+    response(result);
   }
 }
 
@@ -101,4 +126,9 @@ module.exports.autoUpdateCheck = () => {
     // Check for updates automatically on Linux/Macos
     get.concat(updateURL, autoUpdateCheck);
   }
+};
+
+module.exports.manualUpdateCheck = () => {
+  // Check for updates manually
+  get.concat(updateURL, manualUpdateCheck);
 };

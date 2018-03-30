@@ -4,6 +4,7 @@ const path = require('path');
 const electron = require('electron');
 const fs = require('fs-extra');
 const config = require('./config');
+const update = require('./update');
 
 const join = path.join;
 const app = electron.app;
@@ -105,6 +106,11 @@ const helpSubmenu = [{
   label: `Tusk Homepage`,
   click() {
     shell.openExternal(homepageURL);
+  }
+}, {
+  label: `Check for Update`,
+  click() {
+    update.manualUpdateCheck();
   }
 }, {
   type: 'separator'
