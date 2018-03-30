@@ -113,6 +113,45 @@ const helpSubmenu = [{
     update.manualUpdateCheck();
   }
 }, {
+  label: `Update Check Frequency`,
+  submenu: [{
+    label: 'Once Every 2 Hours',
+    type: 'checkbox',
+    checked: (config.get('updateCheckPeriod') === '2h'),
+    click() {
+      config.set('updateCheckPeriod', '2h');
+      app.relaunch();
+      app.quit();
+    }
+  }, {
+    label: 'Once Every 6 Hours',
+    type: 'checkbox',
+    checked: (config.get('updateCheckPeriod') === '6h'),
+    click() {
+      config.set('updateCheckPeriod', '6h');
+      app.relaunch();
+      app.quit();
+    }
+  }, {
+    label: 'Once Every 12 Hours',
+    type: 'checkbox',
+    checked: (config.get('updateCheckPeriod') === '12h'),
+    click() {
+      config.set('updateCheckPeriod', '12h');
+      app.relaunch();
+      app.quit();
+    }
+  }, {
+    label: 'Once a Day',
+    type: 'checkbox',
+    checked: (config.get('updateCheckPeriod') === '24h'),
+    click() {
+      config.set('updateCheckPeriod', '24h');
+      app.relaunch();
+      app.quit();
+    }
+  }]
+}, {
   type: 'separator'
 }, {
   label: 'Keyboard Shortcuts Reference',
