@@ -26,6 +26,7 @@ const communityURL = 'https://gitter.im/klauscfhq/tusk';
 const issueURL = 'https://github.com/klauscfhq/tusk/issues/new';
 const searchURL = 'https://github.com/search?q=+is:issue+repo:klauscfhq/tusk';
 const licenseURL = 'https://github.com/klauscfhq/tusk/blob/master/license.md';
+const keyboardShortcutsRefURL = 'https://github.com/klauscfhq/tusk#keyboard-shortcuts';
 
 function activate(command) {
   const [appWindow] = BrowserWindow.getAllWindows();
@@ -103,6 +104,13 @@ const helpSubmenu = [{
   label: `Tusk Homepage`,
   click() {
     shell.openExternal(homepageURL);
+  }
+}, {
+  type: 'separator'
+}, {
+  label: 'Keyboard Shortcuts Reference',
+  click() {
+    shell.openExternal(keyboardShortcutsRefURL);
   }
 }, {
   type: 'separator'
