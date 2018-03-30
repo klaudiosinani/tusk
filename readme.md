@@ -19,8 +19,8 @@
   <a href="https://ci.appveyor.com/project/klauscfhq/tusk">
     <img alt="Build Status" src="https://ci.appveyor.com/api/projects/status/kdpb85rhfkw8iif7?svg=true">
   </a>
-  <a href="https://tidelift.com/repo/github/champloohq/tusk">
-    <img alt="Dependency Status" src="https://tidelift.com/badges/github/champloohq/tusk?style=flat">
+  <a href="https://tidelift.com/repo/github/klauscfhq/tusk">
+    <img alt="Dependency Status" src="https://tidelift.com/badges/github/klauscfhq/tusk?style=flat">
   </a>
   <a href="https://github.com/klauscfhq/tusk">
     <img alt="XO code style" src="https://img.shields.io/badge/code_style-XO-5ed9c7.svg">
