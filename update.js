@@ -1,57 +1,47 @@
 'use strict';
+const path = require('path');
 const electron = require('electron');
 const get = require('simple-get');
 
-let result;
-let latestVersion;
 const app = electron.app;
 const shell = electron.shell;
 const dialog = electron.dialog;
-const currentVersion = app.getVersion();
+const installedVersion = app.getVersion();
 const updateURL = 'https://klauscfhq.github.io/tusk/update.json';
 const releaseURL = 'https://github.com/klauscfhq/tusk/releases/latest';
 
-function checkUpdate(err, res, data) {
+function displayAvailableUpdate(latestVersion) {
+  // Display available update info-window
+  const result = dialog.showMessageBox({
+    icon: path.join(__dirname, 'static/Icon.png'),
+    title: 'Update Tusk',
+    message: 'Version ' + latestVersion + ' is now available',
+    detail: 'Click Download to get it now',
+    buttons: ['Download', 'Dismiss'],
+    defaultId: 0, // Make `Download` the default action button
+    cancelId: 1
+  });
+  console.log('Update to version', latestVersion, 'is now available');
+  return result;
+}
+
+function getLatestVersion(err, res, data) {
   if (err) {
     console.log('Update error.');
   } else if (res.statusCode === 200) {
     // Updating URL resolved properly
     try {
-      data = JSON.parse(data); // Parse JSON safely
+      // Safely parse JSON
+      data = JSON.parse(data);
     } catch (err) {
       console.log('Invalid JSON object');
     }
-    // Intialize the update process
-    latestVersion = data.version; // Get the latest version
-    console.log('Latest version of Tusk is: ' + latestVersion);
-    console.log('You are running Tusk on version: ' + currentVersion);
-    // Decide if the app should be updated
-    decideUpdate(latestVersion, currentVersion);
-    // Get user's response on update notification
-    response(result);
+    // Get latest version
+    const latestVersion = data.version;
+    return latestVersion;
   } else {
     // Updating URL did not resolve properly
     console.log('Unexpected status code error');
-  }
-}
-
-function decideUpdate(latestVerion, currentVersion) {
-  if (latestVersion === currentVersion) {
-    // User is already on the latest version
-    console.log('You are on the latest version');
-  } else {
-    // An updated version has been released
-    console.log('An update is available');
-    result = dialog.showMessageBox({
-      type: 'info',
-      buttons: ['Download', 'Dismiss'],
-      defaultId: 0, // Make `Download` the default action button
-      cancelId: 1,
-      title: 'Update Tusk',
-      message: 'Version ' + latestVersion + ' is now available',
-      detail: 'Click Download to get it now'
-    });
-    return result;
   }
 }
 
@@ -60,6 +50,16 @@ function response(result) {
   // send the user to the latest Github release
   if (result === 0) {
     shell.openExternal(releaseURL);
+  }
+}
+
+function autoUpdateCheck(err, res, data) {
+  // Automatically check for updates
+  const latestVersion = getLatestVersion(err, res, data);
+  if (latestVersion !== installedVersion) {
+    // Set out update notification & get user response
+    const result = displayAvailableUpdate(latestVersion);
+    response(result);
   }
 }
 
@@ -93,12 +93,12 @@ module.exports.init = () => {
   electron.autoUpdater.setFeedURL(feedURL);
 };
 
-module.exports.checkUpdate = () => {
+module.exports.autoUpdateCheck = () => {
   if (process.platform === 'win32') {
     // Auto-update on Windows
     electron.autoUpdater.checkForUpdates();
   } else {
-    // Check for updates manually on Linux/Macos
-    get.concat(updateURL, checkUpdate);
+    // Check for updates automatically on Linux/Macos
+    get.concat(updateURL, autoUpdateCheck);
   }
 };
