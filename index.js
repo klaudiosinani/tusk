@@ -144,7 +144,7 @@ app.on('ready', () => {
   if (!isDevMode) {
     setInterval(() => {
       update.autoUpdateCheck();
-    }, ms('1h'));
+    }, ms(config.get('updateCheckPeriod')));
   }
 });
 
