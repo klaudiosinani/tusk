@@ -13,23 +13,23 @@ const launchTusk = new AutoLaunch({
 function activate() {
   // Activate app launch on login
   return launchTusk
-  .isEnabled()
-  .then(enabled => {
-    if (!enabled) {
-      return launchTusk.enable();
-    }
-  });
+    .isEnabled()
+    .then(enabled => {
+      if (!enabled) {
+        return launchTusk.enable();
+      }
+    });
 }
 
 function deactivate() {
   // Deactivate app launch on login
   return launchTusk
-  .isEnabled()
-  .then(enabled => {
-    if (enabled) {
-      return launchTusk.disable();
-    }
-  });
+    .isEnabled()
+    .then(enabled => {
+      if (enabled) {
+        return launchTusk.disable();
+      }
+    });
 }
 
 module.exports = {activate, deactivate};
