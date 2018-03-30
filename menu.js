@@ -27,6 +27,7 @@ const issueURL = 'https://github.com/klauscfhq/tusk/issues/new';
 const searchURL = 'https://github.com/search?q=+is:issue+repo:klauscfhq/tusk';
 const licenseURL = 'https://github.com/klauscfhq/tusk/blob/master/license.md';
 const keyboardShortcutsRefURL = 'https://github.com/klauscfhq/tusk#keyboard-shortcuts';
+const searchFeatureRequestsURL = 'https://github.com/klauscfhq/tusk/labels/feature-request';
 
 function activate(command) {
   const [appWindow] = BrowserWindow.getAllWindows();
@@ -128,6 +129,11 @@ const helpSubmenu = [{
   label: `Search Issues`,
   click() {
     shell.openExternal(searchURL);
+  }
+}, {
+  label: `Search Feature Requests`,
+  click() {
+    shell.openExternal(searchFeatureRequestsURL);
   }
 }, {
   label: `Community Discussion`,
