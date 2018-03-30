@@ -46,6 +46,7 @@ function decideUpdate(latestVerion, currentVersion) {
       type: 'info',
       buttons: ['Download', 'Dismiss'],
       defaultId: 0, // Make `Download` the default action button
+      cancelId: 1,
       title: 'Update Tusk',
       message: 'Version ' + latestVersion + ' is now available',
       detail: 'Click Download to get it now'
