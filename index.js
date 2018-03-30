@@ -142,12 +142,8 @@ app.on('ready', () => {
   update.init(electron.Menu.getApplicationMenu());
 
   if (!isDevMode) {
-    setTimeout(() => {
-      update.checkUpdate();
-    }, ms('2m'));
-
     setInterval(() => {
-      update.checkUpdate();
+      update.autoUpdateCheck();
     }, ms('1h'));
   }
 });
