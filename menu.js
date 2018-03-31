@@ -3,6 +3,7 @@ const os = require('os');
 const path = require('path');
 const electron = require('electron');
 const fs = require('fs-extra');
+const timeStamp = require('time-stamp');
 const config = require('./config');
 const update = require('./update');
 
@@ -721,6 +722,16 @@ const darwinTpl = [{
   }, {
     type: 'separator'
   }, {
+    label: 'Insert Date-Time Stamp',
+    accelerator: setAcc('date-time-stamp', 'CmdOrCtrl+;'),
+    click() {
+      const dateTimeStamp = timeStamp('MM/DD/YYYY HH:mm');
+      const appWindow = BrowserWindow.getAllWindows()[0];
+      appWindow.webContents.insertText(dateTimeStamp);
+    }
+  }, {
+    type: 'separator'
+  }, {
     label: 'Checkbox',
     accelerator: setAcc('checkbox', 'CmdorCtrl+Shift+C'),
     click() {
@@ -1255,6 +1266,16 @@ const otherTpl = [{
         activate('bulleted');
       }
     }]
+  }, {
+    type: 'separator'
+  }, {
+    label: 'Insert Date-Time Stamp',
+    accelerator: setAcc('date-time-stamp', 'CmdOrCtrl+;'),
+    click() {
+      const dateTimeStamp = timeStamp('MM/DD/YYYY HH:mm');
+      const appWindow = BrowserWindow.getAllWindows()[0];
+      appWindow.webContents.insertText(dateTimeStamp);
+    }
   }, {
     type: 'separator'
   }, {
