@@ -123,7 +123,7 @@ exports.create = win => {
   }, {
     type: 'separator'
   }, {
-    label: `Settings`,
+    label: `Evernote Settings`,
     click() {
       shell.openExternal(settingsURL);
     }
