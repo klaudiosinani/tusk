@@ -128,7 +128,13 @@ function registerGlobalShortcuts() {
     activate('search');
   });
 
-  if (globalToggleTusk && globalSearchNote) {
+  const globalCreateNote = globalShortcut.register('Shift+Alt+C', () => {
+    // Global shortcut key for note creation
+    showWin();
+    activate('new-note');
+  });
+
+  if (globalToggleTusk && globalSearchNote && globalCreateNote) {
     console.log('Successfully registered global shortcut keys');
   } else {
     console.log('Global shortcut keys registration failed');
