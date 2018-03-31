@@ -374,7 +374,7 @@ const darwinTpl = [{
   }, {
     type: 'separator'
   }, {
-    label: 'Settings',
+    label: 'Evernote Settings',
     accelerator: setAcc('settings', 'CmdorCtrl+,'),
     click() {
       activate('settings');
@@ -882,7 +882,7 @@ const otherTpl = [{
   }, {
     type: 'separator'
   }, {
-    label: 'Settings',
+    label: 'Evernote Settings',
     accelerator: setAcc('settings', 'CmdorCtrl+,'),
     click() {
       activate('settings');
