@@ -95,6 +95,15 @@ function setAcc(custom, predefined) {
   return predefined;
 }
 
+function showWin() {
+  // Bring main app window on top if not visible or focused
+  const appWindow = BrowserWindow.getAllWindows()[0];
+  if (!appWindow.isVisible() || !appWindow.isFocused()) {
+    appWindow.show();
+    appWindow.focus();
+  }
+}
+
 function toggleWin() {
   // Toggle/untoggle main app window
   const appWindow = BrowserWindow.getAllWindows()[0];
@@ -113,7 +122,13 @@ function registerGlobalShortcuts() {
     toggleWin();
   });
 
-  if (globalToggleTusk) {
+  const globalSearchNote = globalShortcut.register('Shift+Alt+F', () => {
+    // Global shortcut key for note searching
+    showWin();
+    activate('search');
+  });
+
+  if (globalToggleTusk && globalSearchNote) {
     console.log('Successfully registered global shortcut keys');
   } else {
     console.log('Global shortcut keys registration failed');
