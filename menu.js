@@ -555,6 +555,45 @@ const darwinTpl = [{
       }
     }]
   }, {
+    label: 'Font Size',
+    submenu: [{
+      label: 'Header 1',
+      accelerator: 'Alt+CmdorCtrl+1',
+      click() {
+        activate('header-one');
+      }
+    }, {
+      label: 'Header 2',
+      accelerator: 'Alt+CmdorCtrl+2',
+      click() {
+        activate('header-two');
+      }
+    }, {
+      label: 'Header 3',
+      accelerator: 'Alt+CmdorCtrl+3',
+      click() {
+        activate('header-three');
+      }
+    }, {
+      label: 'Header 4',
+      accelerator: 'Alt+CmdorCtrl+4',
+      click() {
+        activate('header-four');
+      }
+    }, {
+      label: 'Header 5',
+      accelerator: 'Alt+CmdorCtrl+5',
+      click() {
+        activate('header-five');
+      }
+    }, {
+      label: 'Header 6',
+      accelerator: 'Alt+CmdorCtrl+6',
+      click() {
+        activate('header-six');
+      }
+    }]
+  }, {
     label: 'Add link',
     accelerator: setAcc('add-link', 'CmdorCtrl+Shift+K'),
     click() {
@@ -1039,6 +1078,45 @@ const otherTpl = [{
       accelerator: setAcc('strikethrough', 'CmdorCtrl+T'),
       click() {
         activate('strikethrough');
+      }
+    }]
+  }, {
+    label: 'Font Size',
+    submenu: [{
+      label: 'Header 1',
+      accelerator: 'Alt+CmdorCtrl+1',
+      click() {
+        activate('header-one');
+      }
+    }, {
+      label: 'Header 2',
+      accelerator: 'Alt+CmdorCtrl+2',
+      click() {
+        activate('header-two');
+      }
+    }, {
+      label: 'Header 3',
+      accelerator: 'Alt+CmdorCtrl+3',
+      click() {
+        activate('header-three');
+      }
+    }, {
+      label: 'Header 4',
+      accelerator: 'Alt+CmdorCtrl+4',
+      click() {
+        activate('header-four');
+      }
+    }, {
+      label: 'Header 5',
+      accelerator: 'Alt+CmdorCtrl+5',
+      click() {
+        activate('header-five');
+      }
+    }, {
+      label: 'Header 6',
+      accelerator: 'Alt+CmdorCtrl+6',
+      click() {
+        activate('header-six');
       }
     }]
   }, {
