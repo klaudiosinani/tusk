@@ -102,11 +102,13 @@ function createMainWindow() {
 
 app.on('ready', () => {
   electron.Menu.setApplicationMenu(appMenu);
-  appMenu.registerGlobalShortcuts();
   mainWindow = createMainWindow();
+  if (config.get('useGlobalShortcuts')) {
+    // Check whether the global shortcuts should be activated
+    appMenu.registerGlobalShortcuts();
+  }
   if (!config.get('hideTray')) {
-    // Check whether or not the tray
-    // icon is set to be hidden
+    // Check whether the tray icon should be activated
     tray.create(mainWindow);
   }
   const windowContent = mainWindow.webContents;

@@ -22,7 +22,8 @@ settings.setAll({
   vibrantDarkMode: settings.get('vibrantDarkMode', false),
   alwaysOnTop: settings.get('alwaysOnTop', false),
   useYinxiang: settings.get('useYinxiang', false),
-  updateCheckPeriod: settings.get('updateCheckPeriod', '2h')
+  updateCheckPeriod: settings.get('updateCheckPeriod', '2h'),
+  useGlobalShortcuts: settings.get('useGlobalShortcuts', false)
 });
 
 module.exports = settings;
