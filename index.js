@@ -102,6 +102,7 @@ function createMainWindow() {
 
 app.on('ready', () => {
   electron.Menu.setApplicationMenu(appMenu);
+  appMenu.registerGlobalShortcuts();
   mainWindow = createMainWindow();
   if (!config.get('hideTray')) {
     // Check whether or not the tray
