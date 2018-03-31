@@ -65,6 +65,30 @@ ipc.on('exit-focus-mode', () => {
   document.querySelector('#gwt-debug-NoteAttributes-doneButton').click();
 });
 
+ipc.on('header-one', () => {
+  document.querySelector('#gwt-debug-FontSizeDropdown-root-THIRTY_SIX').click();
+});
+
+ipc.on('header-two', () => {
+  document.querySelector('#gwt-debug-FontSizeDropdown-root-TWENTY_FOUR').click();
+});
+
+ipc.on('header-three', () => {
+  document.querySelector('#gwt-debug-FontSizeDropdown-root-EIGHTEEN').click();
+});
+
+ipc.on('header-four', () => {
+  document.querySelector('#gwt-debug-FontSizeDropdown-root-FOURTEEN').click();
+});
+
+ipc.on('header-five', () => {
+  document.querySelector('#gwt-debug-FontSizeDropdown-root-TWELVE').click();
+});
+
+ipc.on('header-six', () => {
+  document.querySelector('#gwt-debug-FontSizeDropdown-root-TEN').click();
+});
+
 function untoggleTheme(themeName, activateFunction) {
   // Deactivate theme status if it is not already deactivated
   switch (config.get(themeName)) {
