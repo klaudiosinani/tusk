@@ -10,6 +10,7 @@
     "bulleted": "Ctrl+Shift+.",
     "checkbox": "Ctrl+Shift+C",
     "code-block": "Ctrl+Shift+L",
+    "date-stamp": "Ctrl+Shift+;",
     "date-time-stamp": "Ctrl+;",
     "decrease-indentation": "Ctrl+Shift+M",
     "delete-note": "Delete",
