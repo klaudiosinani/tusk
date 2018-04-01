@@ -60,6 +60,7 @@ You can find more desktop apps [here](#related-apps).
 - [Yinxiang Support](#yinxiang-support)
 - [Auto Night Mode](#auto-night-mode)
 - [Keyboard Shortcuts](#keyboard-shortcuts)
+- [Global Shortcut Keys](#global-shortcut-keys)
 - [Build-in Markdown](#build-in-markdown)
 - [Cross Platform](https://github.com/klauscfhq/tusk/releases/latest)
 - Automagical Auto-updates 🐘
@@ -288,6 +289,16 @@ Superscript Text           | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>[</kbd>
 Insert Horizontal Rule     | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>-</kbd>
 Navigate to Previews Note  | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>Tab</kbd>
 Remove Formatting          | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>Space</kbd>
+
+### Global Shortcut Keys
+
+Access Tusk at any moment from anywhere within your operating system. All global shortcuts can be customized to match your own preference through the configuration file `~/.tusk.json`.
+
+Description                | Global Shortcut
+-------------------------- | --------------------------
+Toggle Tusk Window         | <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>A</kbd>
+Create New Note            | <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>C</kbd>
+Search Notes               | <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>F</kbd>
 
 ### Build-in Markdown
 
