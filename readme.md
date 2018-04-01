@@ -212,7 +212,7 @@ Press <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>E</kbd> and save your notes effo
 
 ### Yinxiang Support
 
-Login with your Yinxiang account by visiting the `Tusk` menu on Macos or the `File` menu on Windows and Linux.
+Login with your Yinxiang account by using the `File` > `Switch to Yinxiang` option.
 
 <div align="center">
       <a href="https://github.com/klauscfhq/tusk">
