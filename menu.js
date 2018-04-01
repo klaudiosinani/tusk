@@ -722,6 +722,14 @@ const darwinTpl = [{
   }, {
     type: 'separator'
   }, {
+    label: 'Insert Date Stamp',
+    accelerator: setAcc('date-stamp', 'CmdOrCtrl+Shift+;'),
+    click() {
+      const dateStamp = timeStamp('MM/DD/YYYY');
+      const appWindow = BrowserWindow.getAllWindows()[0];
+      appWindow.webContents.insertText(dateStamp);
+    }
+  }, {
     label: 'Insert Date-Time Stamp',
     accelerator: setAcc('date-time-stamp', 'CmdOrCtrl+;'),
     click() {
@@ -1268,6 +1276,14 @@ const otherTpl = [{
     }]
   }, {
     type: 'separator'
+  }, {
+    label: 'Insert Date Stamp',
+    accelerator: setAcc('date-stamp', 'CmdOrCtrl+Shift+;'),
+    click() {
+      const dateStamp = timeStamp('MM/DD/YYYY');
+      const appWindow = BrowserWindow.getAllWindows()[0];
+      appWindow.webContents.insertText(dateStamp);
+    }
   }, {
     label: 'Insert Date-Time Stamp',
     accelerator: setAcc('date-time-stamp', 'CmdOrCtrl+;'),

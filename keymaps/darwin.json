@@ -10,6 +10,7 @@
     "bulleted": "Cmd+Shift+.",
     "checkbox": "Cmd+Shift+C",
     "code-block": "Cmd+Shift+L",
+    "date-stamp": "Cmd+Shift+;",
     "date-time-stamp": "Cmd+;",
     "decrease-indentation": "Cmd+Shift+M",
     "delete-note": "Delete",
