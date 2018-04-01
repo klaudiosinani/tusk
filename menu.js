@@ -118,22 +118,25 @@ function toggleWin() {
 }
 
 function registerGlobalShortcuts() {
-  const globalToggleTusk = globalShortcut.register('Shift+Alt+A', () => {
+  const globalToggleTusk = globalShortcut.register(
     // Global shortcut key for toggling/untoggling main app window
-    toggleWin();
-  });
+    setAcc('global-toggle-tusk', 'Shift+Alt+A'), () => {
+      toggleWin();
+    });
 
-  const globalSearchNote = globalShortcut.register('Shift+Alt+F', () => {
+  const globalSearchNote = globalShortcut.register(
     // Global shortcut key for note searching
-    showWin();
-    activate('search');
-  });
+    setAcc('global-search', 'Shift+Alt+F'), () => {
+      showWin();
+      activate('search');
+    });
 
-  const globalCreateNote = globalShortcut.register('Shift+Alt+C', () => {
+  const globalCreateNote = globalShortcut.register(
     // Global shortcut key for note creation
-    showWin();
-    activate('new-note');
-  });
+    setAcc('global-new-note', 'Shift+Alt+C'), () => {
+      showWin();
+      activate('new-note');
+    });
 
   if (globalToggleTusk && globalSearchNote && globalCreateNote) {
     console.log('Successfully registered global shortcut keys');
