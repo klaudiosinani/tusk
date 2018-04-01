@@ -245,6 +245,7 @@ Bold Text                  | <kbd>Cmd/Ctrl</kbd> <kbd>B</kbd>
 Italic Text                | <kbd>Cmd/Ctrl</kbd> <kbd>I</kbd>
 Underline Text             | <kbd>Cmd/Ctrl</kbd> <kbd>U</kbd>
 Strikethrough Text         | <kbd>Cmd/Ctrl</kbd> <kbd>T</kbd>
+Insert Date-Time Stamp     | <kbd>Cmd/Ctrl</kbd> <kbd>;</kbd>
 Toggle Settings            | <kbd>Cmd/Ctrl</kbd> <kbd>,</kbd>
 Make Text Smaller          | <kbd>Cmd/Ctrl</kbd> <kbd>-</kbd>
 Edit Shortcut Keys         | <kbd>Cmd/Ctrl</kbd> <kbd>.</kbd>
