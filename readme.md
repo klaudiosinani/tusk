@@ -226,7 +226,7 @@ Press <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>N</kbd> and allow Tusk to intellig
 
 ### Keyboard shortcuts
 
-60+ keyboard shortcuts. Toggle anything in a flash.
+70+ keyboard shortcuts. Toggle anything in a flash.
 
 Description                | Keys
 -------------------------- | --------------------------
