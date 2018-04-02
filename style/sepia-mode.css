@@ -29,7 +29,7 @@ html.sepia-mode .GJDCG5CJ-B, html.sepia-mode .GDAMOPFCEQB, html.sepia-mode .GDAM
   background-color: var(--sepia) !important;
 }
 html.sepia-mode .GJDCG5CK-B, html.sepia-mode .GJDCG5CDXB {
-  border-bottom: 1px solid var(--sepia-five) !important;
+  border-bottom: 1px solid var(--black-five) !important;
 }
 html.sepia-mode .GJDCG5CEXB {
   border-bottom: 1px solid var(--sepia) !important;
@@ -38,13 +38,13 @@ html.sepia-mode .GJDCG5CGWB, html.sepia-mode .GDAMOPFCIXB, html.sepia-mode .GJDC
   background-color: var(--sepia) !important;
 }
 html.sepia-mode .GJDCG5CDXB.GJDCG5CPXB { /* Selected notebook in notebooks modal */
-  background-color: #2dbe60 !important;
+  background-color: #2DBE60 !important;
 }
 html.sepia-mode .GJDCG5CJTB { /* Select notebook at toolbar option */
   background-color: var(--sepia) !important;
 }
 html.sepia-mode .GJDCG5CJJ, html.sepia-mode .focus-drawer-Filter-input { /* Search notebook/tags input text */
-  color: #e1e1e1 !important;
+  color: #E1E1E1 !important;
 }
 html.sepia-mode div#gwt-debug-GlassModalDialog-container { /* Glass modal background */
   background-color: var(--sepia) !important;
@@ -53,84 +53,76 @@ html.sepia-mode div#gwt-debug-GlassModalDialog-glass { /* Glass modal bottom lin
   background-color: var(--sepia) !important;
 }
 html.sepia-mode .GDAMOPFCPE { /* Notebook info */
-  color: #e1e1e1 !important;
+  color: #E1E1E1 !important;
 }
 html.sepia-mode .GDAMOPFCN-B .GDAMOPFCC1B, html.sepia-mode .GDAMOPFCDQB { /* Saved search */
   background-color: var(--sepia) !important;
 }
 html.sepia-mode .GJDCG5CJ3B, html.sepia-mode .GJDCG5CH3B, html.sepia-mode .GJDCG5CN5B, html.sepia-mode .GJDCG5CGHB { /* Shortcuts modal */
   background-color: var(--sepia) !important;
-  border-right: 3px solid var(--sepia-five) !important;
+  border-right: 3px solid var(--black-five) !important;
 }
 html.sepia-mode .GJDCG5CP2 { /* Settings menu */
-  background-color: var(--sepia) !important;
-}
-html.sepia-mode .GJDCG5CC5B { /* App left sidebar */
   background-color: var(--sepia) !important;
 }
 html.sepia-mode .GJDCG5CC5B {
   background: var(--sepia) !important;
   background-color: var(--sepia) !important;
-  border-right: 1px solid var(--sepia-five) !important;
+  border-right: 1px solid var(--black-five) !important;
 }
 html.sepia-mode .GDAMOPFCJYB { /* Notes list head */
   background-color: var(--sepia) !important;
 }
 html.sepia-mode .GJDCG5CHQB { /* Notes list left border */
   background-color: var(--sepia) !important;
-  border-left: 1px solid var(--sepia-five) !important;
+  border-left: 1px solid var(--black-five) !important;
 }
 html.sepia-mode .GJDCG5CB-B {
   background-color: var(--sepia) !important;
 }
 html.sepia-mode .GDAMOPFCA5B { /* Notes list left border */
-  border-left: 1px solid var(--sepia-five) !important;
-  border-right: 1px solid var(--sepia-five) !important;
+  border-left: 1px solid var(--black-five) !important;
+  border-right: 1px solid var(--black-five) !important;
   background: var(--sepia) !important;
   background-color: var(--sepia) !important;
 }
-html.sepia-mode .GJDCG5CP3B { /* Profile top border */
-  border-top: 1px solid var(--sepia-five) !important;
-}
 html.sepia-mode .focus-NotesView-Note.focus-NotesView-Note-selected .focus-NotesView-Note-selectOverlay { /* Selected note bordered box */
-  border: 3px solid var(--sepia-five) !important;
+  border: 3px solid var(--black-five) !important;
 }
 html.sepia-mode .focus-NotesView-RemindersList { /* Reminders list borders */
-  border-top: 2px solid var(--sepia-five) !important;
-  border-bottom: 3px solid var(--sepia-five) !important;
-}
-html.sepia-mode .focus-NotesView-RemindersList { /* Reminders background */
   background-color: var(--sepia) !important;
+  border-top: 2px solid var(--black-five) !important;
+  border-bottom: 3px solid var(--black-five) !important;
 }
 html.sepia-mode .focus-NotesView-NotebookReminders-DropAreaContainer { /* Notebook reminder background */
   background: var(--sepia) !important;
 }
 html.sepia-mode .focus-NotesView-Subheader { /* Subheader border */
-  border-bottom: 1px solid var(--sepia-five) !important;
+  border-bottom: 1px solid var(--black-five) !important;
 }
 html.sepia-mode .GJDCG5CLLB {
   background-color: var(--sepia) !important;
 }
 html.sepia-mode .GJDCG5CJKB, html.sepia-mode .GJDCG5CA0B { /* Toolbar bottom border */
-  border-bottom: 1px solid var(--sepia-five) !important;
+  border-bottom: 1px solid var(--black-five) !important;
 }
 html.sepia-mode .GDAMOPFCILB, html.sepia-mode .GJDCG5CAOB { /* Note attributes background */
   background: var(--sepia) !important;
 }
 html.sepia-mode .GJDCG5CP0, html.sepia-mode .GJDCG5CLKB, html.sepia-mode .GJDCG5CCQB { /* Toolbar separators */
   background: var(--sepia) !important;
-  border-left: 1px solid var(--sepia-five) !important;
+  border-left: 1px solid var(--black-five) !important;
 }
 html.sepia-mode .focus-NotesView-Note .focus-NotesView-Note-snippetDivider { /* Notes divider color */
-  border-top: 1px solid var(--sepia-five) !important;
+  border-top: 1px solid var(--black-five) !important;
 }
 html.sepia-mode .GJDCG5CP3B { /* Profile background */
   background-color: var(--sepia) !important;
-  border-top: 1px solid var(--sepia-five) !important;
+  border-top: 1px solid var(--black-five) !important;
 }
 html.sepia-mode .GDAMOPFCPYB { /* Note list transition background */
   background-color: var(--sepia) !important;
-  border-top: 1px solid var(--sepia-five) !important;
+  border-top: 1px solid var(--black-five) !important;
 }
 html.sepia-mode .GDAMOPFCMYB { /* Note list header */
   background-color: var(--sepia) !important;
@@ -145,7 +137,7 @@ html.sepia-mode .focus-NotesView-NotesView { /* Notes list body */
 html.sepia-mode .GJDCG5CNNB, html.sepia-mode .GDAMOPFCOPB { /* Note editor body */
   background-color: var(--sepia) !important;
 }
-html.sepia-mode .GJDCG5CMKB { /* Note editor toolbar */
+html.sepia-mode .GJDCG5CKKB { /* Note editor toolbar */
   background-color: var(--sepia) !important;
   border-bottom: 1px solid var(--sepia) !important;
 }

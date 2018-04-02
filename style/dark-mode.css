@@ -38,13 +38,13 @@ html.dark-mode .GJDCG5CGWB, html.dark-mode .GDAMOPFCIXB, html.dark-mode .GJDCG5C
   background-color: var(--dark-grey) !important;
 }
 html.dark-mode .GJDCG5CDXB.GJDCG5CPXB { /* Selected notebook in notebooks modal */
-  background-color: #2dbe60 !important;
+  background-color: #2DBE60 !important;
 }
 html.dark-mode .GJDCG5CJTB { /* Select notebook at toolbar option */
   background-color: var(--dark-grey) !important;
 }
 html.dark-mode .GJDCG5CJJ, html.dark-mode .focus-drawer-Filter-input { /* Search notebook/tags input text */
-  color: #e1e1e1 !important;
+  color: #E1E1E1 !important;
 }
 html.dark-mode div#gwt-debug-GlassModalDialog-container { /* Glass modal background */
   background-color: var(--dark-grey) !important;
@@ -53,7 +53,7 @@ html.dark-mode div#gwt-debug-GlassModalDialog-glass { /* Glass modal bottom line
   background-color: var(--dark-grey) !important;
 }
 html.dark-mode .GDAMOPFCPE { /* Notebook info */
-  color: #e1e1e1 !important;
+  color: #E1E1E1 !important;
 }
 html.dark-mode .GDAMOPFCN-B .GDAMOPFCC1B, html.dark-mode .GDAMOPFCDQB { /* Saved search */
   background-color: var(--dark-grey) !important;
@@ -63,9 +63,6 @@ html.dark-mode .GJDCG5CJ3B, html.dark-mode .GJDCG5CH3B, html.dark-mode .GJDCG5CN
   border-right: 3px solid var(--white-five) !important;
 }
 html.dark-mode .GJDCG5CP2 { /* Settings menu */
-  background-color: var(--dark-grey) !important;
-}
-html.dark-mode .GJDCG5CC5B { /* App left sidebar */
   background-color: var(--dark-grey) !important;
 }
 html.dark-mode .GJDCG5CC5B {
@@ -89,17 +86,12 @@ html.dark-mode .GDAMOPFCA5B { /* Notes list left border */
   background: var(--dark-grey) !important;
   background-color: var(--dark-grey) !important;
 }
-html.dark-mode .GJDCG5CP3B { /* Profile top border */
-  border-top: 1px solid var(--white-five) !important;
-}
 html.dark-mode .focus-NotesView-Note.focus-NotesView-Note-selected .focus-NotesView-Note-selectOverlay { /* Selected note bordered box */
   border: 3px solid var(--white-five) !important;
 }
 html.dark-mode .focus-NotesView-RemindersList { /* Reminders list borders */
   border-top: 2px solid var(--white-five) !important;
   border-bottom: 3px solid var(--white-five) !important;
-}
-html.dark-mode .focus-NotesView-RemindersList { /* Reminders background */
   background-color: var(--dark-grey) !important;
 }
 html.dark-mode .focus-NotesView-NotebookReminders-DropAreaContainer { /* Notebook reminder background */
