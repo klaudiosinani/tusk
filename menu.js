@@ -526,6 +526,18 @@ const darwinTpl = [{
       click() {
         activate('toggle-black-mode');
       }
+    }, {
+      label: 'Vibrant Theme',
+      accelerator: setAcc('toggle-vibrant-mode', 'CmdOrCtrl+Alt+U'),
+      click() {
+        activate('toggle-vibrant-mode');
+      }
+    }, {
+      label: 'Vibrant Dark Theme',
+      accelerator: setAcc('toggle-vibrant-dark-mode', 'CmdOrCtrl+Alt+J'),
+      click() {
+        activate('toggle-vibrant-dark-mode');
+      }
     }]
   }, {
     label: 'Auto Night Mode',
