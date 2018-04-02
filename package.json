@@ -18,7 +18,9 @@
     }
   ],
   "scripts": {
-    "test": "xo",
+    "test": "npm run test:js && npm run test:css",
+    "test:js": "xo",
+    "test:css": "stylelint 'style/*.css'",
     "start": "electron .",
     "pack": "build --dir",
     "dist": "build --publish never",
@@ -41,6 +43,7 @@
     "fs-extra": "^4.0.2",
     "ms": "^2.0.0",
     "simple-get": "^2.7.0",
+    "stylelint": "^9.2.0",
     "time-stamp": "^2.0.0"
   },
   "devDependencies": {
@@ -59,6 +62,22 @@
       "node",
       "browser"
     ]
+  },
+  "stylelint": {
+    "rules": {
+      "block-closing-brace-empty-line-before": "never",
+      "block-closing-brace-newline-after": "always",
+      "block-no-empty": true,
+      "block-opening-brace-space-before": "always",
+      "color-hex-case": "upper",
+      "color-hex-length": "long",
+      "color-no-invalid-hex": true,
+      "comment-no-empty": true,
+      "declaration-block-semicolon-space-before": "never",
+      "indentation": 2,
+      "max-empty-lines": 0,
+      "no-duplicate-selectors": true
+    }
   },
   "build": {
     "snap": {
