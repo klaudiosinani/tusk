@@ -756,7 +756,7 @@ const darwinTpl = [{
     type: 'separator'
   }, {
     label: 'Checkbox',
-    accelerator: setAcc('checkbox', 'CmdorCtrl+Shift+C'),
+    accelerator: setAcc('checkbox', 'CmdorCtrl+Shift+B'),
     click() {
       activate('checkbox');
     }
@@ -1311,7 +1311,7 @@ const otherTpl = [{
     type: 'separator'
   }, {
     label: 'Checkbox',
-    accelerator: setAcc('checkbox', 'CmdorCtrl+Shift+C'),
+    accelerator: setAcc('checkbox', 'CmdorCtrl+Shift+B'),
     click() {
       activate('checkbox');
     }
