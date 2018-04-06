@@ -392,7 +392,7 @@ const darwinTpl = [{
       activate('auto-launch');
     }
   }, {
-    type: 'seperator'
+    type: 'separator'
   }, {
     label: 'Edit Shortcut Keys',
     accelerator: 'CmdorCtrl+.',
