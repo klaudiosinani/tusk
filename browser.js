@@ -100,10 +100,39 @@ function untoggleTheme(themeName, activateFunction) {
     default:
       break;
   }
+  // Switch to default font color
+  changeFontColor({color: 'black', theme: 'defaultMode'});
+}
+
+function getNoteFrame() {
+  // Retrieve the <iframe> tag where notes reside
+  return new Promise(resolve => {
+    function checkNoteFrame() {
+      // Wait until all notes have been loaded
+      const frame = document.querySelector('.RichTextArea-entinymce');
+      if (frame) {
+        resolve(frame);
+      }
+      setTimeout(checkNoteFrame, 50);
+    }
+    checkNoteFrame();
+  });
+}
+
+async function changeFontColor(optionsObj) {
+  // Change the default font color of all notes
+  const {color, theme} = optionsObj;
+  if (config.get(theme)) {
+    const frame = await getNoteFrame();
+    const style = document.createElement('style');
+    style.textContent = `body {color: ${color};}`;
+    return frame.contentDocument.head.appendChild(style);
+  }
 }
 
 function darkMode() {
   document.documentElement.classList.toggle('dark-mode', config.get('darkMode'));
+  changeFontColor({color: 'lightgrey', theme: 'darkMode'});
 }
 
 function untoggleDark() {
@@ -123,6 +152,7 @@ ipc.on('toggle-dark-mode', () => {
 
 function blackMode() {
   document.documentElement.classList.toggle('black-mode', config.get('blackMode'));
+  changeFontColor({color: 'lightgrey', theme: 'blackMode'});
 }
 
 function untoggleBlack() {
@@ -142,6 +172,7 @@ ipc.on('toggle-black-mode', () => {
 
 function sepiaMode() {
   document.documentElement.classList.toggle('sepia-mode', config.get('sepiaMode'));
+  changeFontColor({color: 'black', theme: 'sepiaMode'});
 }
 
 function untoggleSepia() {
@@ -165,6 +196,7 @@ function vibrantMode() {
   ipc.send('activate-vibrant');
   // Make app background transparent
   document.documentElement.style.backgroundColor = 'transparent';
+  changeFontColor({color: 'black', theme: 'vibrantMode'});
 }
 
 function untoggleVibrant() {
@@ -188,6 +220,7 @@ function vibrantDarkMode() {
   ipc.send('activate-vibrant');
   // Make app background transparent
   document.documentElement.style.backgroundColor = 'transparent';
+  changeFontColor({color: 'white', theme: 'vibrantDarkMode'});
 }
 
 function untoggleDarkVibrant() {
