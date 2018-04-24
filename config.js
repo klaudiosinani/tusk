@@ -15,6 +15,7 @@ settings.setAll({
   autoNightMode: settings.get('autoNightMode', false),
   autoLaunch: settings.get('autoLaunch', false),
   hideTray: settings.get('hideTray', false),
+  defaultMode: settings.get('defaultMode', true),
   darkMode: settings.get('darkMode', false),
   blackMode: settings.get('blackMode', false),
   sepiaMode: settings.get('sepiaMode', false),
