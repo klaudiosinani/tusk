@@ -12,6 +12,7 @@ const app = electron.app;
 const resolve = path.resolve;
 const shell = electron.shell;
 const appName = app.getName();
+const dialog = electron.dialog;
 const platform = process.platform;
 const BrowserWindow = electron.BrowserWindow;
 const globalShortcut = electron.globalShortcut;
@@ -142,6 +143,26 @@ function registerGlobalShortcuts() {
     console.log('Successfully registered global shortcut keys');
   } else {
     console.log('Global shortcut keys registration failed');
+  }
+}
+
+function confirmLogOut() {
+  const logOut = () => {
+    // Display log-out confirmation dialog
+    const response = dialog.showMessageBox({
+      icon: path.join(__dirname, 'static/Icon.png'),
+      title: 'Log Out Confirmation',
+      message: 'Log Out of Tusk',
+      detail: 'Are you sure you want to log out?',
+      buttons: ['Log Out', 'Dismiss'],
+      defaultId: 0, // Make `Log Out` the default action button
+      cancelId: 1
+    });
+    return response === 0;
+  };
+  // Check whether the log-out button was pressed
+  if (logOut()) {
+    activate('log-out');
   }
 }
 
@@ -431,7 +452,7 @@ const darwinTpl = [{
   }, {
     label: 'Log out',
     click() {
-      activate('log-out');
+      confirmLogOut();
     }
   }]
 }, {
@@ -978,7 +999,7 @@ const otherTpl = [{
   }, {
     label: 'Log out',
     click() {
-      activate('log-out');
+      confirmLogOut();
     }
   }, {
     type: 'separator'
