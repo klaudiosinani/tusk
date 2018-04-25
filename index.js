@@ -131,11 +131,16 @@ app.on('ready', () => {
 
   windowContent.on('new-window', (e, url) => {
     e.preventDefault();
-    // Workaround for opening external links
+    // Workaround for managing external links
     const prefix = 'https://www.evernote.com/OutboundRedirect.action?dest=';
     // Remove prefix & decode URL
     url = decodeUri(url.replace(prefix, ''));
-    electron.shell.openExternal(url);
+    // Determine URL type
+    if (url.split('/', 4).includes('shard')) {
+      windowContent.downloadURL(url); // Initialize file download
+    } else {
+      electron.shell.openExternal(url); // Open external link in browser
+    }
   });
 
   windowContent.on('crashed', e => {
