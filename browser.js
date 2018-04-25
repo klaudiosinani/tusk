@@ -57,12 +57,21 @@ ipc.on('search', () => {
 
 ipc.on('focus-mode', () => {
   // Toggle focus mode
-  document.querySelector('#gwt-debug-NoteAttributes-focusButton').click();
-});
+  const mode = {
+    enter() {
+      document.querySelector('#gwt-debug-NoteAttributes-focusButton').click();
+    },
+    exit() {
+      document.querySelector('#gwt-debug-NoteAttributes-doneButton').click();
+    }
+  };
 
-ipc.on('exit-focus-mode', () => {
-  // Exit focus mode
-  document.querySelector('#gwt-debug-NoteAttributes-doneButton').click();
+  const isFocusMode = () => {
+    // Check if focus-mode is already active
+    return document.querySelector('#gwt-debug-NoteAttributes-focusButton').style.length;
+  };
+
+  return isFocusMode() ? mode.exit() : mode.enter();
 });
 
 ipc.on('header-one', () => {
