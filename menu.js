@@ -466,7 +466,7 @@ const darwinTpl = [{
   }, {
     type: 'separator'
   }, {
-    label: 'Log out',
+    label: 'Log Out',
     click() {
       confirmLogOut();
     }
@@ -1010,7 +1010,7 @@ const otherTpl = [{
   }, {
     type: 'separator'
   }, {
-    label: 'Log out',
+    label: 'Log Out',
     click() {
       confirmLogOut();
     }
