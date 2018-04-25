@@ -530,20 +530,6 @@ const darwinTpl = [{
   }, {
     type: 'separator'
   }, {
-    label: 'Focus Mode',
-    accelerator: setAcc('focus-mode', 'CmdOrCtrl+K'),
-    click() {
-      activate('focus-mode');
-    }
-  }, {
-    label: 'Exit Focus Mode',
-    accelerator: setAcc('exit-focus-mode', 'CmdorCtrl+O'),
-    click() {
-      activate('exit-focus-mode');
-    }
-  }, {
-    type: 'separator'
-  }, {
     label: 'Toggle Theme',
     submenu: [{
       label: 'Sepia Theme',
@@ -628,6 +614,12 @@ const darwinTpl = [{
         focusedWindow.setFullScreen(!focusedWindow.isFullScreen());
         focusedWindow.send('window:fullscreen', {state: focusedWindow.isFullScreen()});
       }
+    }
+  }, {
+    label: 'Toggle Focus Mode',
+    accelerator: setAcc('toggle-focus-mode', 'CmdOrCtrl+K'),
+    click() {
+      activate('focus-mode');
     }
   }, {
     label: 'Toggle Developer Tools',
@@ -1078,20 +1070,6 @@ const otherTpl = [{
   }, {
     type: 'separator'
   }, {
-    label: 'Focus Mode',
-    accelerator: setAcc('focus-mode', 'CmdOrCtrl+K'),
-    click() {
-      activate('focus-mode');
-    }
-  }, {
-    label: 'Exit Focus Mode',
-    accelerator: setAcc('exit-focus-mode', 'CmdorCtrl+O'),
-    click() {
-      activate('exit-focus-mode');
-    }
-  }, {
-    type: 'separator'
-  }, {
     label: 'Toggle Theme',
     submenu: [{
       label: 'Sepia Theme',
@@ -1179,6 +1157,12 @@ const otherTpl = [{
         focusedWindow.setFullScreen(!focusedWindow.isFullScreen());
         focusedWindow.send('window:fullscreen', {state: focusedWindow.isFullScreen()});
       }
+    }
+  }, {
+    label: 'Toggle Focus Mode',
+    accelerator: setAcc('toggle-focus-mode', 'CmdOrCtrl+K'),
+    click() {
+      activate('focus-mode');
     }
   }, {
     label: 'Toggle Developer Tools',
