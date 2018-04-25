@@ -193,7 +193,7 @@ ipcMain.on('print-to-pdf', event => {
   const filePath = path.join(tmpDir, fileName);
   // Get the window with the note that is to be printed
   const noteWindow = BrowserWindow.fromWebContents(event.sender);
-  // Intialize printing process
+  // Initialize printing process
   noteWindow.webContents.printToPDF({}, (error, data) => {
     if (error) {
       return console.log(error.message);
@@ -228,7 +228,7 @@ ipcMain.on('export-as-pdf', event => {
       extensions: ['*']
     }]
   };
-  // Intialize printing process
+  // Initialize printing process
   noteWindow.webContents.printToPDF({}, (error, data) => {
     if (error) {
       return console.log(error.message);
@@ -239,7 +239,7 @@ ipcMain.on('export-as-pdf', event => {
       if (fileName === undefined) {
         return console.log('Note was not exported');
       }
-      // Intialize the file writing process
+      // Initialize the file writing process
       fs.writeFile(fileName, data, err => {
         if (err) {
           dialog.showErrorBox('Exporting note error', err.message);
