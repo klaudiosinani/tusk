@@ -79,6 +79,7 @@ You can find more desktop apps [here](#related-apps).
 - [Highlights](#highlights)
 - [Install](#install)
 - [Features](#features)
+- [Development](#development)
 - [Related Apps](#related-apps)
 - [Team](#team)
 - [Disclaimer](#disclaimer)
@@ -321,6 +322,17 @@ Code block          | \```\nCode block\n\```
 Horizontal rule     | `---` or `===`
 
 <sub>`\n` is the `new line` character</sub>
+
+## Development
+
+For more info on how to contribute to the project, please read the [contributing guidelines](https://github.com/klauscfhq/tusk/blob/master/contributing.md).
+
+- Fork the repository and clone it to your machine
+- Navigate to your local fork: `cd tusk`
+- Install the project dependencies: `npm install` or `yarn install`
+- Run Tusk on dev mode: `npm start` or `yarn start`
+- Lint code for errors: `npm test` or `yarn test`
+- Build binaries and installers: `npm run dist` or `yarn dist`
 
 ## Related Apps
 
