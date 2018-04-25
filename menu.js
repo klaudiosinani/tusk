@@ -158,11 +158,32 @@ function confirmLogOut() {
       defaultId: 0, // Make `Log Out` the default action button
       cancelId: 1
     });
-    return response === 0;
+    return (response === 0);
   };
   // Check whether the log-out button was pressed
   if (logOut()) {
     activate('log-out');
+  }
+}
+
+function requestAppRestart() {
+  const restart = () => {
+    // Display restart confirmation dialog on settings update
+    const response = dialog.showMessageBox({
+      icon: path.join(__dirname, 'static/Icon.png'),
+      title: 'Restart Required',
+      message: 'Restart Tusk to Activate New Settings',
+      detail: 'Would you like to restart now?',
+      buttons: ['Restart', 'Dismiss'],
+      defaultId: 0, // Make `Restart` the default action button
+      cancelId: 1
+    });
+    return (response === 0);
+  };
+  // Check whether the restart button was pressed
+  if (restart()) {
+    app.quit();
+    app.relaunch();
   }
 }
 
@@ -192,8 +213,7 @@ const helpSubmenu = [{
     checked: (config.get('updateCheckPeriod') === '2h'),
     click() {
       config.set('updateCheckPeriod', '2h');
-      app.relaunch();
-      app.quit();
+      requestAppRestart();
     }
   }, {
     label: 'Once Every 6 Hours',
@@ -201,8 +221,7 @@ const helpSubmenu = [{
     checked: (config.get('updateCheckPeriod') === '6h'),
     click() {
       config.set('updateCheckPeriod', '6h');
-      app.relaunch();
-      app.quit();
+      requestAppRestart();
     }
   }, {
     label: 'Once Every 12 Hours',
@@ -210,8 +229,7 @@ const helpSubmenu = [{
     checked: (config.get('updateCheckPeriod') === '12h'),
     click() {
       config.set('updateCheckPeriod', '12h');
-      app.relaunch();
-      app.quit();
+      requestAppRestart();
     }
   }, {
     label: 'Once a Day',
@@ -219,8 +237,7 @@ const helpSubmenu = [{
     checked: (config.get('updateCheckPeriod') === '24h'),
     click() {
       config.set('updateCheckPeriod', '24h');
-      app.relaunch();
-      app.quit();
+      requestAppRestart();
     }
   }]
 }, {
@@ -426,8 +443,7 @@ const darwinTpl = [{
     checked: config.get('useGlobalShortcuts'),
     click(item) {
       config.set('useGlobalShortcuts', item.checked);
-      app.relaunch();
-      app.quit();
+      requestAppRestart();
     }
   }, {
     type: 'separator'
@@ -973,8 +989,7 @@ const otherTpl = [{
     checked: config.get('useGlobalShortcuts'),
     click(item) {
       config.set('useGlobalShortcuts', item.checked);
-      app.relaunch();
-      app.quit();
+      requestAppRestart();
     }
   }, {
     type: 'separator'
@@ -983,16 +998,14 @@ const otherTpl = [{
     visible: !config.get('useYinxiang'),
     click() {
       config.set('useYinxiang', true);
-      app.relaunch();
-      app.quit();
+      requestAppRestart();
     }
   }, {
     label: 'Switch to Evernote',
     visible: config.get('useYinxiang'),
     click() {
       config.set('useYinxiang', false);
-      app.relaunch();
-      app.quit();
+      requestAppRestart();
     }
   }, {
     type: 'separator'
@@ -1139,8 +1152,7 @@ const otherTpl = [{
     checked: config.get('hideTray'),
     click(item) {
       config.set('hideTray', item.checked);
-      app.relaunch();
-      app.quit();
+      requestAppRestart();
     }
   }, {
     type: 'separator'
