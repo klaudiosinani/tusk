@@ -56,13 +56,14 @@ You can find more desktop apps [here](#related-apps).
 - [Note Printing](#note-printing)
 - [Custom Shortcut Keys](#custom-shortcut-keys)
 - [Scalable Interface](#scalable-interface)
-- [Export Notes](#export-notes)
+- [Export Notes as PDF](#export-notes-as-pdf)
 - [Yinxiang Support](#yinxiang-support)
 - [Auto Night Mode](#auto-night-mode)
 - [Keyboard Shortcuts](#keyboard-shortcuts)
 - [Global Shortcut Keys](#global-shortcut-keys)
 - [Built-in Markdown](#built-in-markdown)
 - [Cross Platform](https://github.com/klauscfhq/tusk/releases/latest)
+- Export Notes as Markdown
 - Automagical Auto-updates 🐘
 - In-app Notifications
 - Background Behavior
@@ -201,7 +202,7 @@ Adjust the zooming factor to your own preference by pressing <kbd>Cmd/Ctrl</kbd>
       </a>
 </div>
 
-### Export Notes
+### Export Notes as PDF
 
 Press <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>E</kbd> and save your notes effortlessly on your machine as `pdf` files.
 
@@ -246,6 +247,7 @@ Bold Text                  | <kbd>Cmd/Ctrl</kbd> <kbd>B</kbd>
 Italic Text                | <kbd>Cmd/Ctrl</kbd> <kbd>I</kbd>
 Underline Text             | <kbd>Cmd/Ctrl</kbd> <kbd>U</kbd>
 Strikethrough Text         | <kbd>Cmd/Ctrl</kbd> <kbd>T</kbd>
+Export Note as Markdown    | <kbd>Cmd/Ctrl</kbd> <kbd>O</kbd>
 Insert Date-Time Stamp     | <kbd>Cmd/Ctrl</kbd> <kbd>;</kbd>
 Toggle Settings            | <kbd>Cmd/Ctrl</kbd> <kbd>,</kbd>
 Make Text Smaller          | <kbd>Cmd/Ctrl</kbd> <kbd>-</kbd>
