@@ -417,13 +417,22 @@ ipc.on('export', exportAsPDF);
 async function exportAsMarkdown() {
   // Get frame of selected note
   const selectedNoteFrame = await getNoteFrame();
-  // Convert note to markdown
+
+  // Get note title
+  const getTitle = () => {
+    const title = document.querySelector('#gwt-debug-NoteTitleView-label').innerHTML;
+    return title.length ? title.trim().replace(/&nbsp;/g, ' ') : 'note';
+  };
+
+  // Covert note to markdown
   const toMarkdown = noteFrame => {
     const turndownUtil = new Turndown();
     return turndownUtil.turndown(noteFrame.contentDocument.body);
   };
+
   // Saving options
   const options = {
+    defaultPath: getTitle(),
     filters: [{
       name: 'Markdown File',
       extensions: ['md']
@@ -432,6 +441,7 @@ async function exportAsMarkdown() {
       extensions: ['*']
     }]
   };
+
   // Initialize saving dialog
   dialog.showSaveDialog(options, fileName => {
     if (fileName === undefined) {
