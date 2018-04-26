@@ -411,13 +411,13 @@ const darwinTpl = [{
     label: 'Export Note as',
     submenu: [{
       label: 'PDF File',
-      accelerator: setAcc('export', 'CmdorCtrl+Shift+E'),
+      accelerator: setAcc('export-pdf', 'CmdorCtrl+Shift+E'),
       click() {
         activate('export');
       }
     }, {
       label: 'Markdown File',
-      accelerator: 'CmdorCtrl+O',
+      accelerator: setAcc('export-markdown', 'CmdorCtrl+O'),
       click() {
         activate('export-as-markdown');
       }
@@ -949,13 +949,13 @@ const otherTpl = [{
     label: 'Export Note as',
     submenu: [{
       label: 'PDF File',
-      accelerator: setAcc('export', 'CmdorCtrl+Shift+E'),
+      accelerator: setAcc('export-pdf', 'CmdorCtrl+Shift+E'),
       click() {
         activate('export');
       }
     }, {
       label: 'Markdown File',
-      accelerator: 'CmdorCtrl+O',
+      accelerator: setAcc('export-markdown', 'CmdorCtrl+O'),
       click() {
         activate('export-as-markdown');
       }
