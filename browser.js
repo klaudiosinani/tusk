@@ -2,11 +2,14 @@
 const electron = require('electron');
 const os = require('os');
 const path = require('path');
+const fs = require('fs-extra');
 const timeStamp = require('time-stamp');
+const Turndown = require('turndown');
 const config = require('./config');
 
 const join = path.join;
 const ipc = electron.ipcRenderer;
+const dialog = electron.remote.dialog;
 const shell = electron.shell;
 const webFrame = electron.webFrame;
 
@@ -410,6 +413,40 @@ function exportAsPDF() {
 }
 
 ipc.on('export', exportAsPDF);
+
+async function exportAsMarkdown() {
+  // Get frame of selected note
+  const selectedNoteFrame = await getNoteFrame();
+  // Convert note to markdown
+  const toMarkdown = noteFrame => {
+    const turndownUtil = new Turndown();
+    return turndownUtil.turndown(noteFrame.contentDocument.body);
+  };
+  // Saving options
+  const options = {
+    filters: [{
+      name: 'Markdown File',
+      extensions: ['md']
+    }, {
+      name: 'All Files',
+      extensions: ['*']
+    }]
+  };
+  // Initialize saving dialog
+  dialog.showSaveDialog(options, fileName => {
+    if (fileName === undefined) {
+      return console.log('Note was not exported');
+    }
+    fs.writeFile(fileName, toMarkdown(selectedNoteFrame), error => {
+      if (error) {
+        dialog.showErrorBox('Exporting note as Markdown error', error.message);
+        return console.log(error.message);
+      }
+    });
+  });
+}
+
+ipc.on('export-as-markdown', exportAsMarkdown);
 
 function toggleAutoLaunch() {
   // Decide whether or not the app should launch on login
