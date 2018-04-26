@@ -408,11 +408,20 @@ const darwinTpl = [{
       activate('print');
     }
   }, {
-    label: 'Export Note as PDF',
-    accelerator: setAcc('export', 'CmdorCtrl+Shift+E'),
-    click() {
-      activate('export');
-    }
+    label: 'Export Note as',
+    submenu: [{
+      label: 'PDF File',
+      accelerator: setAcc('export', 'CmdorCtrl+Shift+E'),
+      click() {
+        activate('export');
+      }
+    }, {
+      label: 'Markdown File',
+      accelerator: 'CmdorCtrl+O',
+      click() {
+        activate('export-as-markdown');
+      }
+    }]
   }, {
     type: 'separator'
   }, {
@@ -937,11 +946,20 @@ const otherTpl = [{
       activate('print');
     }
   }, {
-    label: 'Export Note as PDF',
-    accelerator: setAcc('export', 'CmdorCtrl+Shift+E'),
-    click() {
-      activate('export');
-    }
+    label: 'Export Note as',
+    submenu: [{
+      label: 'PDF File',
+      accelerator: setAcc('export', 'CmdorCtrl+Shift+E'),
+      click() {
+        activate('export');
+      }
+    }, {
+      label: 'Markdown File',
+      accelerator: 'CmdorCtrl+O',
+      click() {
+        activate('export-as-markdown');
+      }
+    }]
   }, {
     type: 'separator'
   }, {
