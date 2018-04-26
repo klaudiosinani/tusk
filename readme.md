@@ -38,7 +38,7 @@
 
 ## Description
 
-Tusk is an unofficial, open source, third-party, community driven, free Evernote app with a handful of useful features.
+Tusk is an unofficial, featureful, open source, community-driven, free Evernote app that is used by people in more than [130 countries](https://snapcraft.io/tusk).
 
 Come over to our [Gitter](https://gitter.im/klauscfhq/tusk) channel to share your thoughts on the project or to just say hi.
 
@@ -61,7 +61,7 @@ You can find more desktop apps [here](#related-apps).
 - [Auto Night Mode](#auto-night-mode)
 - [Keyboard Shortcuts](#keyboard-shortcuts)
 - [Global Shortcut Keys](#global-shortcut-keys)
-- [Build-in Markdown](#build-in-markdown)
+- [Built-in Markdown](#built-in-markdown)
 - [Cross Platform](https://github.com/klauscfhq/tusk/releases/latest)
 - Automagical Auto-updates 🐘
 - In-app Notifications
@@ -300,7 +300,7 @@ Toggle Tusk Window         | <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>A</kbd>
 Create New Note            | <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>C</kbd>
 Search Notes               | <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>F</kbd>
 
-### Build-in Markdown
+### Built-in Markdown
 
 Tusk takes advantage of the build-in Markdown support that lives inside the Evernote web editor.
 
@@ -349,7 +349,7 @@ Coded with ❤ by
 
 ## Disclaimer
 
-Tusk is an unofficial, open source, third-party, community driven, free app and is not affiliated in any way with Evernote.
+Tusk is an unofficial, open source, third-party, community-driven, free app and is not affiliated in any way with Evernote.
 
 ## License
 
