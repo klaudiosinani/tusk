@@ -108,7 +108,7 @@ Refreshing [dark](https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/vibrant-d
 
 <div align="center">
       <a href="https://github.com/klauscfhq/tusk">
-        <img src="https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/vibrant-theme.png" alt="Tusk Vibrant Theme" width="100%">
+        <img src="media/vibrant-theme.png" alt="Tusk Vibrant Theme" width="100%">
       </a>
 </div>
 
