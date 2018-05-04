@@ -68,6 +68,7 @@ You can find more desktop apps [here](#related-apps).
 - [Highlights](#highlights)
 - [Install](#install)
 - [Features](#features)
+- [Keyboard Shortcuts](#keyboard-shortcuts)
 - [Development](#development)
 - [Related Apps](#related-apps)
 - [Team](#team)
@@ -76,13 +77,21 @@ You can find more desktop apps [here](#related-apps).
 
 ## Install
 
+#### Github Releases
+
 Head to the [releases](https://github.com/klauscfhq/tusk/releases/latest) page and download the appropriate installer for your system.
+
+#### Snap
 
 Ubuntu Linux users can directly install through [Snap](https://snapcraft.io/tusk) `snap install tusk`
 
+#### Homebrew
+
 Macos users can directly install through [Homebrew Cask](https://caskroom.github.io/) `brew cask install tusk`
 
-Arch Linux users can directly install through [AUR](https://aur.archlinux.org/packages/tusk/) `yaourt tusk`   
+#### AUR
+
+Arch Linux users can directly install through [AUR](https://aur.archlinux.org/packages/tusk/) `yaourt tusk`
 
 #### Note
 
@@ -92,7 +101,9 @@ The version available on `Homebrew Cask` or `AUR` may not be the latest. If that
 
 ### Vibrant Themes
 
-Press <kbd>Cmd</kbd> <kbd>Alt</kbd> <kbd>U</kbd> / <kbd>Cmd</kbd> <kbd>Alt</kbd> <kbd>J</kbd> to activate the [dark](https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/vibrant-dark-theme.png) or [light](https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/vibrant-light-theme.png) vibrant theme respectively. Please note that the feature is available [**only on Macos**](https://github.com/klauscfhq/tusk/issues/19).
+Press <kbd>Cmd</kbd> <kbd>Alt</kbd> <kbd>U</kbd> / <kbd>Cmd</kbd> <kbd>Alt</kbd> <kbd>J</kbd> to activate the [dark](https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/vibrant-dark-theme.png) or [light](https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/vibrant-light-theme.png) vibrant theme respectively.
+
+Please note that the feature is available [**only on Macos**](https://github.com/klauscfhq/tusk/issues/19).
 
 <div align="center">
       <a href="https://github.com/klauscfhq/tusk">
@@ -218,12 +229,43 @@ Press <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>N</kbd> and allow Tusk to intellig
 
 Press <kbd>Cmd/Ctrl</kbd> <kbd>O</kbd> and instantly export your notes as `markdown` files.
 
-### Keyboard shortcuts
+### Built-in Markdown
 
-70+ keyboard shortcuts. Toggle anything in a flash.
+Tusk takes advantage of the build-in Markdown support that lives inside the Evernote web editor.
 
 <details>
-<summary>View all the available keyboard shortcuts.</summary>
+<summary>View all the available options.</summary>
+
+<br/>
+
+Description         | Syntax
+------------------- | ---------
+Bold text           | `**Bold**`
+Italic text         | `*Italic*`
+Highlight text      | `!!Highlight!!`
+Strikethrough text  | `~~Strikethrough~~`
+Bulleted list       | `* Bulleted list`
+Numbered list       | `1. Numbered list`
+Toggle Checkbox     | `[]`
+Complete Checkbox   | `[x]`
+Inline code         | \`Inline code\`
+Code block          | \```\nCode block\n\```
+Horizontal rule     | `---` or `===`
+
+<sub>`\n` is the `new line` character</sub>
+
+<br/>
+
+</details>
+
+## Keyboard Shortcuts
+
+### Local Shortcut Keys
+
+70+ local keyboard shortcuts. Toggle anything in a flash.
+
+<details>
+<summary>View all the available local keyboard shortcuts.</summary>
 
 <br/>
 
@@ -298,7 +340,7 @@ Remove Formatting          | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>Space</kb
 Access Tusk at any moment from anywhere within your operating system. All global shortcuts can be customized to match your own preference through the configuration file `~/.tusk.json`.
 
 <details>
-<summary>View all the available global shortcuts.</summary>
+<summary>View all the available global keyboard shortcuts.</summary>
 
 <br/>
 
@@ -307,36 +349,6 @@ Description                | Global Shortcut
 Toggle Tusk Window         | <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>A</kbd>
 Create New Note            | <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>C</kbd>
 Search Notes               | <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>F</kbd>
-
-<br/>
-
-</details>
-
-### Built-in Markdown
-
-Tusk takes advantage of the build-in Markdown support that lives inside the Evernote web editor.
-
-
-<details>
-<summary>View all the available options.</summary>
-
-<br/>
-
-Description         | Syntax
-------------------- | ---------
-Bold text           | `**Bold**`
-Italic text         | `*Italic*`
-Highlight text      | `!!Highlight!!`
-Strikethrough text  | `~~Strikethrough~~`
-Bulleted list       | `* Bulleted list`
-Numbered list       | `1. Numbered list`
-Toggle Checkbox     | `[]`
-Complete Checkbox   | `[x]`
-Inline code         | \`Inline code\`
-Code block          | \```\nCode block\n\```
-Horizontal rule     | `---` or `===`
-
-<sub>`\n` is the `new line` character</sub>
 
 <br/>
 
