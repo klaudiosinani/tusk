@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/logo.png" width="20%"><br/>Tusk
+  <img src="https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/logo.png" width="19%"><br/>Tusk
 </h1>
 
 <h4 align="center">
@@ -46,32 +46,20 @@ You can find more desktop apps [here](#related-apps).
 
 ## Highlights
 
-- [Vibrant Themes](#vibrant-themes) 🍎
-- [Sepia Theme](#sepia-theme)
-- [Dark Theme](#dark-theme)
-- [Black Theme](#black-theme)
-- [Focus Mode](#focus-mode)
-- [Compact Mode](#compact-mode)
-- [Note Navigation](#note-navigation)
-- [Note Printing](#note-printing)
-- [Custom Shortcut Keys](#custom-shortcut-keys)
-- [Scalable Interface](#scalable-interface)
-- [Export Notes as PDF](#export-notes-as-pdf)
-- [Yinxiang Support](#yinxiang-support)
-- [Auto Night Mode](#auto-night-mode)
-- [Keyboard Shortcuts](#keyboard-shortcuts)
-- [Global Shortcut Keys](#global-shortcut-keys)
-- [Built-in Markdown](#built-in-markdown)
-- [Cross Platform](https://github.com/klauscfhq/tusk/releases/latest)
-- Export Notes as Markdown
-- Automagical Auto-updates 🐘
-- In-app Notifications
-- Background Behavior
-- Launch on Start
-- Launch Minimized
+- Multiple Themes
+- Cross Platform
+- Focus, Compact & Auto-Night Modes
+- Local & Global Keyboard Shortcuts
+- Customizable Keyboard Shortcuts
+- Export Notes as PDF & Markdown files
+- Automatic Updates 🐘
+- Note Printing
+- Adjustable Interface
+- Note Navigation
+- Yinxiang Support
+- Deep OS Integration
 - Drag and Drop Files
 
-<sup>🍎 Macos only atm</sup><br/>
 <sup>🐘 Windows & Linux only atm</sup>
 
 ## Contents
@@ -104,7 +92,7 @@ The version available on `Homebrew Cask` or `AUR` may not be the latest. If that
 
 ### Vibrant Themes
 
-Refreshing [dark](https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/vibrant-dark-theme.png) and [light](https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/vibrant-light-theme.png) vibrant themes. Press <kbd>Cmd</kbd> <kbd>Alt</kbd> <kbd>U</kbd> / <kbd>Cmd</kbd> <kbd>Alt</kbd> <kbd>J</kbd> to activate them respectively.
+Press <kbd>Cmd</kbd> <kbd>Alt</kbd> <kbd>U</kbd> / <kbd>Cmd</kbd> <kbd>Alt</kbd> <kbd>J</kbd> to activate the [dark](https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/vibrant-dark-theme.png) or [light](https://cdn.rawgit.com/klauscfhq/tusk/33f2eae5/media/vibrant-light-theme.png) vibrant theme respectively. Please note that the feature is available [**only on Macos**](https://github.com/klauscfhq/tusk/issues/19).
 
 <div align="center">
       <a href="https://github.com/klauscfhq/tusk">
@@ -226,9 +214,18 @@ Login with your Yinxiang account by using the `File` > `Switch to Yinxiang` opti
 
 Press <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>N</kbd> and allow Tusk to intelligently adjust to your environment.
 
+### Export Notes as Markdown
+
+Press <kbd>Cmd/Ctrl</kbd> <kbd>O</kbd> and instantly export your notes as `markdown` files.
+
 ### Keyboard shortcuts
 
 70+ keyboard shortcuts. Toggle anything in a flash.
+
+<details>
+<summary>View all the available keyboard shortcuts.</summary>
+
+<br/>
 
 Description                | Keys
 -------------------------- | --------------------------
@@ -292,9 +289,18 @@ Insert Horizontal Rule     | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>-</kbd>
 Navigate to Previews Note  | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>Tab</kbd>
 Remove Formatting          | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>Space</kbd>
 
+<br/>
+
+</details>
+
 ### Global Shortcut Keys
 
 Access Tusk at any moment from anywhere within your operating system. All global shortcuts can be customized to match your own preference through the configuration file `~/.tusk.json`.
+
+<details>
+<summary>View all the available global shortcuts.</summary>
+
+<br/>
 
 Description                | Global Shortcut
 -------------------------- | --------------------------
@@ -302,11 +308,19 @@ Toggle Tusk Window         | <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>A</kbd>
 Create New Note            | <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>C</kbd>
 Search Notes               | <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>F</kbd>
 
+<br/>
+
+</details>
+
 ### Built-in Markdown
 
 Tusk takes advantage of the build-in Markdown support that lives inside the Evernote web editor.
 
-Here is cheat-sheet with all the available options.
+
+<details>
+<summary>View all the available options.</summary>
+
+<br/>
 
 Description         | Syntax
 ------------------- | ---------
@@ -323,6 +337,10 @@ Code block          | \```\nCode block\n\```
 Horizontal rule     | `---` or `===`
 
 <sub>`\n` is the `new line` character</sub>
+
+<br/>
+
+</details>
 
 ## Development
 
