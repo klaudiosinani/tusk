@@ -46,17 +46,17 @@ You can find more desktop apps [here](#related-apps).
 
 ## Highlights
 
-- Multiple Themes
+- [Black](#black-theme), [Dark](#dark-theme), [Sepia](#sepia-theme) & [Vibrant](#vibrant-themes) Themes
+- [Focus](#focus-mode), [Compact](#compact-mode) & [Auto-Night](#auto-night-mode) Modes
+- [Local](#local-shortcut-keys) & [Global](#global-shortcut-keys) Keyboard Shortcuts
+- [Customizable Keyboard Shortcuts](#custom-shortcut-keys)
+- Export Notes as [PDF](#export-notes-as-pdf) & [Markdown](#export-notes-as-markdown) files
+- [Note Printing](#note-printing)
+- [Scalable Interface](#scalable-interface)
+- [Note Navigation](#note-navigation)
+- [Yinxiang Support](#yinxiang-support)
 - Cross Platform
-- Focus, Compact & Auto-Night Modes
-- Local & Global Keyboard Shortcuts
-- Customizable Keyboard Shortcuts
-- Export Notes as PDF & Markdown files
 - Automatic Updates 🐘
-- Note Printing
-- Adjustable Interface
-- Note Navigation
-- Yinxiang Support
 - Deep OS Integration
 - Drag and Drop Files
 
