@@ -691,4 +691,9 @@ document.addEventListener('DOMContentLoaded', () => {
   vibrantMode();
   // Toggle vibrant dark mode
   vibrantDarkMode();
+
+  getNoteFrame().then(noteDOM => {
+    noteDOM.contentDocument.body.setAttribute('dir', 'auto');
+    document.getElementById('gwt-debug-NoteTitleView-container').setAttribute('dir', 'auto');
+  });
 });
