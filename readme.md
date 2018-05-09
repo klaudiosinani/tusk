@@ -57,6 +57,7 @@ You can find more desktop apps [here](#related-apps).
 - [Yinxiang Support](#yinxiang-support)
 - Cross Platform
 - Automatic Updates 🐘
+- RTL Support
 - Deep OS Integration
 - Drag and Drop Files
 
