@@ -692,7 +692,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Toggle vibrant dark mode
   vibrantDarkMode();
 
-  getNoteFrame().then((noteDOM) => {
+  getNoteFrame().then(noteDOM => {
     noteDOM.contentDocument.body.setAttribute('dir', 'auto');
     document.getElementById('gwt-debug-NoteTitleView-container').setAttribute('dir', 'auto');
   });
