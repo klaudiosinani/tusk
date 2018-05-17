@@ -23,6 +23,7 @@ require('electron-dl')();
 require('electron-context-menu')();
 
 let mainWindow;
+const subWindows = [];
 let exiting = false;
 const yinxiangURL = 'https://app.yinxiang.com/Login.action';
 const evernoteURL = 'https://www.evernote.com/Login.action';
@@ -40,13 +41,12 @@ if (functioning) {
   app.quit();
 }
 
-function createMainWindow() {
+function createNewWindow(url, options) {
+  options = options || {};
   const lastWindowState = config.get('lastWindowState');
   const maxWindowInteger = 2147483647;
   const darkModeFlag = config.get('darkMode') || config.get('blackMode');
-  const lastURL = config.get('useYinxiang') ? yinxiangURL : evernoteURL;
-
-  const tuskWindow = new electron.BrowserWindow({
+  const defaultOptions = {
     title: app.getName(),
     x: lastWindowState.x,
     y: lastWindowState.y,
@@ -65,21 +65,10 @@ function createMainWindow() {
       nodeIntegration: false,
       plugins: true
     }
-  });
+  };
 
-  tuskWindow.loadURL(lastURL);
-
-  tuskWindow.on('close', e => {
-    if (!exiting) {
-      e.preventDefault();
-
-      if (process.platform === 'darwin') {
-        app.hide();
-      } else {
-        tuskWindow.hide();
-      }
-    }
-  });
+  const tuskWindow = new electron.BrowserWindow(Object.assign(defaultOptions, options));
+  tuskWindow.loadURL(url);
 
   tuskWindow.on('enter-full-screen', () => {
     tuskWindow.setMaximumSize(maxWindowInteger, maxWindowInteger);
@@ -97,21 +86,7 @@ function createMainWindow() {
     config.set('lastURL', url);
   });
 
-  return tuskWindow;
-}
-
-app.on('ready', () => {
-  electron.Menu.setApplicationMenu(appMenu);
-  mainWindow = createMainWindow();
-  if (config.get('useGlobalShortcuts')) {
-    // Check whether the global shortcuts should be activated
-    appMenu.registerGlobalShortcuts();
-  }
-  if (!config.get('hideTray')) {
-    // Check whether the tray icon should be activated
-    tray.create(mainWindow);
-  }
-  const windowContent = mainWindow.webContents;
+  const windowContent = tuskWindow.webContents;
 
   windowContent.on('dom-ready', () => {
     windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'style/browser.css'), 'utf8'));
@@ -120,13 +95,6 @@ app.on('ready', () => {
     windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'style/sepia-mode.css'), 'utf8'));
     windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'style/vibrant-mode.css'), 'utf8'));
     windowContent.insertCSS(fs.readFileSync(path.join(__dirname, 'style/vibrant-dark-mode.css'), 'utf8'));
-
-    if (config.get('launchMinimized')) {
-      // Check whether to launch the main window minimized
-      mainWindow.minimize();
-    } else {
-      mainWindow.show();
-    }
   });
 
   windowContent.on('new-window', (e, url) => {
@@ -147,6 +115,64 @@ app.on('ready', () => {
     console.log('Tusk window crashed. ', e);
   });
 
+  return tuskWindow;
+}
+
+function createMainWindow() {
+  const lastURL = config.get('useYinxiang') ? yinxiangURL : evernoteURL;
+  const tuskWindow = createNewWindow(lastURL);
+
+  tuskWindow.on('close', e => {
+    if (!exiting) {
+      e.preventDefault();
+
+      if (process.platform === 'darwin') {
+        app.hide();
+      } else {
+        tuskWindow.hide();
+      }
+    }
+  });
+
+  tuskWindow.webContents.on('dom-ready', () => {
+    if (config.get('launchMinimized')) {
+      // Check whether to launch the main window minimized
+      tuskWindow.minimize();
+    } else {
+      tuskWindow.show();
+    }
+  });
+
+  return tuskWindow;
+}
+
+function createSubWindow(url, options) {
+  options = options || {};
+  const id = subWindows.length;
+  const tuskWindow = createNewWindow(url, Object.assign(options, {
+    show: true
+  }));
+
+  tuskWindow.on('close', () => {
+    subWindows[id] = null;
+  });
+
+  return tuskWindow;
+}
+
+app.on('ready', () => {
+  electron.Menu.setApplicationMenu(appMenu);
+  mainWindow = createMainWindow();
+
+  if (config.get('useGlobalShortcuts')) {
+    // Check whether the global shortcuts should be activated
+    appMenu.registerGlobalShortcuts();
+  }
+  if (!config.get('hideTray')) {
+    // Check whether the tray icon should be activated
+    tray.create(mainWindow);
+  }
+
   update.init(electron.Menu.getApplicationMenu());
 
   if (!isDevMode) {
@@ -154,6 +180,27 @@ app.on('ready', () => {
       update.autoUpdateCheck();
     }, ms(config.get('updateCheckPeriod')));
   }
+});
+
+// Put notes opened in a new window into focus mode
+ipcMain.on('note-frame-loaded', event => {
+  if (event.sender !== mainWindow.webContents) {
+    event.sender.send('focus-mode');
+  }
+});
+
+// Open a sub window, offset from calling window
+// Set width equal to the approximate note frame in main window
+ipcMain.on('open-sub-window', event => {
+  const noteWindow = BrowserWindow.fromWebContents(event.sender);
+  const noteWindowPosition = noteWindow.getPosition();
+  const mainWindowSize = mainWindow.getSize();
+  const options = {
+    x: noteWindowPosition[0] + 50,
+    y: noteWindowPosition[1] - 50,
+    width: mainWindowSize[0] - 430
+  };
+  subWindows.push(createSubWindow(noteWindow.webContents.getURL(), options));
 });
 
 ipcMain.on('activate-vibrant', () => {
@@ -218,9 +265,9 @@ ipcMain.on('export-as-pdf', event => {
   // String to be removed from note title
   const removeString = ' | Evernote Web';
   // Get the note title
-  const noteTitle = mainWindow.webContents.getTitle().replace(removeString, '');
-  console.log('Note to be exported is titled: ' + noteTitle);
   const noteWindow = BrowserWindow.fromWebContents(event.sender);
+  const noteTitle = noteWindow.webContents.getTitle().replace(removeString, '');
+  console.log('Note to be exported is titled: ' + noteTitle);
   // `Save note` dialog options
   const options = {
     // Suggest note title as filename

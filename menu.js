@@ -34,7 +34,7 @@ const keyboardShortcutsRefURL = 'https://github.com/klauscfhq/tusk#keyboard-shor
 const searchFeatureRequestsURL = 'https://github.com/klauscfhq/tusk/labels/feature-request';
 
 function activate(command) {
-  const [appWindow] = BrowserWindow.getAllWindows();
+  const appWindow = BrowserWindow.getFocusedWindow();
 
   if (process.platform === 'darwin') {
     appWindow.restore();
