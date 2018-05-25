@@ -19,18 +19,6 @@
   <a href="https://ci.appveyor.com/project/klauscfhq/tusk">
     <img alt="Build Status" src="https://ci.appveyor.com/api/projects/status/kdpb85rhfkw8iif7?svg=true">
   </a>
-  <a href="https://tidelift.com/repo/github/klauscfhq/tusk">
-    <img alt="Dependency Status" src="https://tidelift.com/badges/github/klauscfhq/tusk?style=flat">
-  </a>
-  <a href="https://github.com/klauscfhq/tusk">
-    <img alt="XO code style" src="https://img.shields.io/badge/code_style-XO-5ed9c7.svg">
-  </a>
-  <a href="https://gitter.im/klauscfhq/tusk">
-    <img alt="Gitter" src="https://img.shields.io/gitter/room/nwjs/nw.js.svg">
-  </a>
-  <a href="https://github.com/klauscfhq/tusk/releases">
-    <img alt="DLs" src="https://img.shields.io/github/downloads/klauscfhq/tusk/total.svg">
-  </a>
   <a href="https://github.com/sindresorhus/awesome-electron">
     <img alt="Awesome" src="https://awesome.re/mentioned-badge.svg">
   </a>
@@ -38,9 +26,9 @@
 
 ## Description
 
-Tusk is an unofficial, featureful, open source, community-driven, free Evernote app that is used by people in more than [130 countries](https://snapcraft.io/tusk).
+Tusk is an unofficial, featureful, open source, community-driven, free Evernote app used by people in more than [130 countries](https://snapcraft.io/tusk).
 
-Come over to our [Gitter](https://gitter.im/klauscfhq/tusk) channel to share your thoughts on the project or to just say hi.
+Come over to [Gitter](https://gitter.im/klauscfhq/tusk) or [Twitter](https://twitter.com/klauscfhq) to share your thoughts on the project.
 
 You can find more desktop apps [here](#related-apps).
 
@@ -230,35 +218,6 @@ Press <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>N</kbd> and allow Tusk to intellig
 
 Press <kbd>Cmd/Ctrl</kbd> <kbd>O</kbd> and instantly export your notes as `markdown` files.
 
-### Built-in Markdown
-
-Tusk takes advantage of the build-in Markdown support that lives inside the Evernote web editor.
-
-<details>
-<summary>View all the available options.</summary>
-
-<br/>
-
-Description         | Syntax
-------------------- | ---------
-Bold text           | `**Bold**`
-Italic text         | `*Italic*`
-Highlight text      | `!!Highlight!!`
-Strikethrough text  | `~~Strikethrough~~`
-Bulleted list       | `* Bulleted list`
-Numbered list       | `1. Numbered list`
-Toggle Checkbox     | `[]`
-Complete Checkbox   | `[x]`
-Inline code         | \`Inline code\`
-Code block          | \```\nCode block\n\```
-Horizontal rule     | `---` or `===`
-
-<sub>`\n` is the `new line` character</sub>
-
-<br/>
-
-</details>
-
 ## Keyboard Shortcuts
 
 ### Local Shortcut Keys
@@ -368,9 +327,7 @@ For more info on how to contribute to the project, please read the [contributing
 
 ## Related Apps
 
-More awesome desktop apps.
-
-- [Ao](https://github.com/klauscfhq/ao) - ✔️ Elegant Microsoft To-Do desktop app.
+- [Ao](https://github.com/klauscfhq/ao) - Elegant Microsoft To-Do desktop app.
 
 ## Team
 
