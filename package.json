@@ -84,7 +84,10 @@
   "build": {
     "snap": {
       "grade": "stable",
-      "confinement": "strict"
+      "confinement": "strict",
+      "synopsis": " Refined Evernote desktop app",
+      "description": "Tusk is an unofficial, featureful, open source, community-driven, free Evernote app used by people in more than 130 countries.",
+      "category": "Office"
     },
     "files": [
       "**/*",
