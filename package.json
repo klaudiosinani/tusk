@@ -54,11 +54,9 @@
     "electron-builder-squirrel-windows": "19.33.0",
     "electron-installer-dmg": "0.2.1",
     "electron-packager": "9.1.0",
-    "rimraf": "^2.6.2",
     "xo": "^0.20.0"
   },
   "xo": {
-    "esnext": true,
     "space": 2,
     "envs": [
       "node",
