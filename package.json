@@ -42,6 +42,7 @@
     "electron-settings": "^3.1.4",
     "fs-extra": "^4.0.2",
     "ms": "^2.0.0",
+    "signale": "^1.1.0",
     "simple-get": "^2.7.0",
     "stylelint": "^9.2.0",
     "time-stamp": "^2.0.0",
@@ -53,11 +54,9 @@
     "electron-builder-squirrel-windows": "19.33.0",
     "electron-installer-dmg": "0.2.1",
     "electron-packager": "9.1.0",
-    "rimraf": "^2.6.2",
     "xo": "^0.20.0"
   },
   "xo": {
-    "esnext": true,
     "space": 2,
     "envs": [
       "node",
@@ -83,7 +82,10 @@
   "build": {
     "snap": {
       "grade": "stable",
-      "confinement": "strict"
+      "confinement": "strict",
+      "synopsis": " Refined Evernote desktop app",
+      "description": "Tusk is an unofficial, featureful, open source, community-driven, free Evernote app used by people in more than 130 countries.",
+      "category": "Office"
     },
     "files": [
       "**/*",
