@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="media/logo.png" width="19%"><br/>Tusk
+  <img src="media/logo.png" width="18%"><br/>Tusk
 </h1>
 
 <h4 align="center">
@@ -8,7 +8,7 @@
 
 <div align="center">
       <a href="https://github.com/klauscfhq/tusk">
-        <img src="media/note-navigation.gif" alt="Tusk" width="100%">
+        <img src="media/note-navigation.gif" alt="Tusk" width="95%">
       </a>
 </div>
 
@@ -96,7 +96,7 @@ Please note that the feature is available [**only on Macos**](https://github.com
 
 <div align="center">
       <a href="https://github.com/klauscfhq/tusk">
-        <img src="media/vibrant-theme.png" alt="Tusk Vibrant Theme" width="100%">
+        <img src="media/vibrant-theme.png" alt="Vibrant Theme" width="100%">
       </a>
 </div>
 
@@ -106,7 +106,7 @@ Perfect for glossy screens. Activate it by pressing <kbd>Cmd/Ctrl</kbd> <kbd>G</
 
 <div align="center">
       <a href="https://github.com/klauscfhq/tusk">
-        <img src="media/sepia-theme.png" alt="Tusk Sepia Theme" width="100%">
+        <img src="media/sepia-theme.png" alt="Sepia Theme" width="86%">
       </a>
 </div>
 
@@ -116,7 +116,7 @@ Silky & relaxing. Make it yours by pressing <kbd>Cmd/Ctrl</kbd> <kbd>D</kbd>
 
 <div align="center">
       <a href="https://github.com/klauscfhq/tusk">
-        <img src="media/dark-theme.png" alt="Tusk Dark Theme" width="100%">
+        <img src="media/dark-theme.png" alt="Dark Theme" width="85%">
       </a>
 </div>
 
@@ -126,7 +126,7 @@ Deep focus materialized. Boost your productivity by pressing <kbd>Cmd/Ctrl</kbd>
 
 <div align="center">
       <a href="https://github.com/klauscfhq/tusk">
-        <img src="media/black-theme.png" alt="Tusk Black Theme" width="100%">
+        <img src="media/black-theme.png" alt="Black Theme" width="85%">
       </a>
 </div>
 
@@ -136,7 +136,7 @@ Press <kbd>Cmd/Ctrl</kbd> <kbd>K</kbd> and immerse yourself in a distraction-fre
 
 <div align="center">
       <a href="https://github.com/klauscfhq/tusk">
-        <img src="media/focus-mode.png" alt="Tusk Focus Mode" width="100%">
+        <img src="media/focus-mode.png" alt="Focus Mode" width="85%">
       </a>
 </div>
 
@@ -146,7 +146,7 @@ Get more for less. Keep your productivity to the maximum no matter the screen si
 
 <div align="center">
       <a href="https://github.com/klauscfhq/tusk">
-        <img src="media/compact-mode.png" alt="Tusk Compact Mode" width="70%">
+        <img src="media/compact-mode.png" alt="Compact Mode" width="70%">
       </a>
 </div>
 
@@ -156,7 +156,7 @@ Navigate seamlessly between your notes by pressing <kbd>Cmd/Ctrl</kbd> <kbd>Tab<
 
 <div align="center">
       <a href="https://github.com/klauscfhq/tusk">
-        <img src="media/note-navigation.gif" alt="Note Navigation" width="100%">
+        <img src="media/note-navigation.gif" alt="Note Navigation" width="92%">
       </a>
 </div>
 
@@ -166,7 +166,7 @@ Printing your notes is only a keystroke away. Press <kbd>Cmd/Ctrl</kbd> <kbd>Alt
 
 <div align="center">
       <a href="https://github.com/klauscfhq/tusk">
-        <img src="media/print-note.gif" alt="Note Printing" width="100%">
+        <img src="media/print-note.gif" alt="Note Printing" width="93%">
       </a>
 </div>
 
@@ -176,7 +176,7 @@ Adjust Tusk to your workflow. Navigate to `~/.tusk.json` or press <kbd>Cmd/Ctrl<
 
 <div align="center">
       <a href="https://github.com/klauscfhq/tusk">
-        <img src="media/custom-shortcut-keys.gif" alt="Custom Shortcut Keys" width="100%">
+        <img src="media/custom-shortcut-keys.gif" alt="Custom Shortcut Keys" width="85%">
       </a>
 </div>
 
@@ -186,7 +186,7 @@ Adjust the zooming factor to your own preference by pressing <kbd>Cmd/Ctrl</kbd>
 
 <div align="center">
       <a href="https://github.com/klauscfhq/tusk">
-        <img src="media/scalable-interface.gif" alt="Scalable Interface" width="100%">
+        <img src="media/scalable-interface.gif" alt="Scalable Interface" width="90%">
       </a>
 </div>
 
@@ -196,7 +196,7 @@ Press <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>E</kbd> and save your notes effo
 
 <div align="center">
       <a href="https://github.com/klauscfhq/tusk">
-        <img src="media/export-notes.gif" alt="Export Notes" width="100%">
+        <img src="media/export-notes.gif" alt="Export Notes" width="93%">
       </a>
 </div>
 
@@ -206,7 +206,7 @@ Login with your Yinxiang account by using the `File` > `Switch to Yinxiang` opti
 
 <div align="center">
       <a href="https://github.com/klauscfhq/tusk">
-        <img src="media/yinxiang-support.png" alt="Yinxiang Support" width="97%">
+        <img src="media/yinxiang-support.png" alt="Yinxiang Support" width="87%">
       </a>
 </div>
 
