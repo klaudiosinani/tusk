@@ -37,7 +37,7 @@
     "electron-settings": "^3.1.4",
     "fs-extra": "^4.0.2",
     "ms": "^2.0.0",
-    "signale": "^1.1.0",
+    "signale": "*",
     "simple-get": "^2.7.0",
     "stylelint": "^9.2.0",
     "time-stamp": "^2.0.0",
