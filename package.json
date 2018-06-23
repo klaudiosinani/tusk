@@ -18,18 +18,13 @@
     }
   ],
   "scripts": {
-    "test": "npm run test:js && npm run test:css",
-    "test:js": "xo",
-    "test:css": "stylelint 'style/*.css'",
     "start": "electron .",
-    "pack": "build --dir",
     "dist": "build --publish never",
     "clean": "node ./bin/clean.js",
-    "authors": "./bin/update-authors.sh",
-    "pack-all": "npm run pack:macos && npm run pack:linux && npm run pack:windows",
-    "pack:macos": "electron-packager . --no-prune --overwrite --asar --out=dist --platform=darwin --arch=x64 --icon=static/Icon.icns && cd dist/Tusk-darwin-x64 && zip -ryXq9 ../Tusk-macos-v${npm_package_version}.zip Tusk.app && electron-installer-dmg ../Tusk-darwin-x64/Tusk.app Tusk --icon=../../static/Icon.icns && cp Tusk.dmg  ../../dist",
-    "pack:linux": "electron-packager . --no-prune --overwrite --out=dist --platform=linux --arch=x64 --app-bundle-id=com.hyper-pokemon.tusk && cd dist/Tusk-linux-x64/ && zip -ryq9 ../Tusk-linux-v${npm_package_version}.zip *",
-    "pack:windows": "electron-packager . --no-prune --overwrite --asar --out=dist --platform=win32 --arch=ia32 --icon=static/Icon.ico --version-string.ProductName=$npm_package_productName && cd dist/Tusk-win32-ia32 && zip -ryq9 ../Tusk-windows-v${npm_package_version}.zip *"
+    "test": "npm run test:js && npm run test:css",
+    "test:css": "stylelint 'style/*.css'",
+    "test:js": "xo",
+    "pack:macos": "electron-packager . --no-prune --overwrite --asar --out=dist --platform=darwin --arch=x64 --icon=static/Icon.icns && cd dist/Tusk-darwin-x64 && zip -ryXq9 ../tusk-macos-${npm_package_version}.zip Tusk.app && electron-installer-dmg ../Tusk-darwin-x64/Tusk.app Tusk --icon=../../static/Icon.icns && cp Tusk.dmg ../../dist/tusk-macos-${npm_package_version}.dmg"
   },
   "dependencies": {
     "auto-launch": "^5.0.1",
@@ -42,7 +37,7 @@
     "electron-settings": "^3.1.4",
     "fs-extra": "^4.0.2",
     "ms": "^2.0.0",
-    "signale": "^1.1.0",
+    "signale": "*",
     "simple-get": "^2.7.0",
     "stylelint": "^9.2.0",
     "time-stamp": "^2.0.0",
@@ -82,10 +77,7 @@
   "build": {
     "snap": {
       "grade": "stable",
-      "confinement": "strict",
-      "synopsis": " Refined Evernote desktop app",
-      "description": "Tusk is an unofficial, featureful, open source, community-driven, free Evernote app used by people in more than 130 countries.",
-      "category": "Office"
+      "confinement": "strict"
     },
     "files": [
       "**/*",
@@ -94,6 +86,8 @@
     ],
     "appId": "com.klauscfhq.tusk",
     "linux": {
+      "synopsis": " Refined Evernote desktop app",
+      "description": "Tusk is an unofficial, featureful, open source, community-driven, free Evernote app used by people in more than 130 countries.",
       "category": "Office",
       "target": [
         {
