@@ -7,9 +7,9 @@
 </h4>
 
 <div align="center">
-      <a href="https://github.com/klauscfhq/tusk">
-        <img src="media/note-navigation.gif" alt="Tusk" width="95%">
-      </a>
+  <a href="https://github.com/klauscfhq/tusk">
+    <img src="media/note-navigation.gif" alt="Tusk" width="95%">
+  </a>
 </div>
 
 <p align="center">
@@ -29,6 +29,8 @@
 Tusk is an unofficial, featureful, open source, community-driven, free Evernote app used by people in more than [130 countries](https://snapcraft.io/tusk).
 
 Come over to [Gitter](https://gitter.im/klauscfhq/tusk) or [Twitter](https://twitter.com/klauscfhq) to share your thoughts on the project.
+
+Visit the [contributing guidelines](https://github.com/klauscfhq/tusk/blob/master/contributing.md#translating-documentation) to learn more on how to translate this document into more languages.
 
 You can find more desktop apps [here](#related-apps).
 
