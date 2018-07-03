@@ -36,10 +36,17 @@ You may find an issue is assigned, or has the [`assigned` label](https://github.
 
 Come over and say hi anytime you feel like on [Gitter](https://gitter.im/klauscfhq/tusk).
 
+### Translating Documentation
+
+- Make sure that the document is not already translated in that language.
+- Add the name of the language to the document as an extension, e.g: `readme.JP.md`
+- Place the translated document inside the [`docs`](https://github.com/klauscfhq/tusk/tree/master/docs) directory.
+- Create a Pull Request including the language in the title, e.g: `Readme: Japanese Translation`
+
 ### Submitting an issue
 
 - Search the issue tracker before opening an issue
-- Ensure you're using the latest version of Tusk (Quick cheat) ![Latest version](https://badge.fury.io/gh/klauscfhq%2Ftusk.svg)
+- Ensure you're using the latest version of Tusk: ![Latest version](https://badge.fury.io/gh/klauscfhq%2Ftusk.svg)
 - Use a descriptive title
 - Include as much information as possible;
   - Steps to reproduce the issue
