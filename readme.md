@@ -330,6 +330,7 @@ For more info on how to contribute to the project, please read the [contributing
 ## Related Apps
 
 - [Ao](https://github.com/klauscfhq/ao) - Elegant Microsoft To-Do desktop app.
+- [Taskbook](https://github.com/klauscfhq/taskbook) - Tasks, boards & notes for the command-line habitat.
 
 ## Team
 
