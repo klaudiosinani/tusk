@@ -24,14 +24,14 @@ const tuskJSON = '.tusk.json'; // Config file name on the home directory
 const homeConfig = join(homeDir, tuskJSON); // Path to the config file on the home directory
 const keymapsDir = resolve(__dirname, 'keymaps'); // Keymaps directory
 
-const sourceURL = 'https://github.com/klauscfhq/tusk';
-const homepageURL = 'https://klauscfhq.github.io/tusk';
-const communityURL = 'https://gitter.im/klauscfhq/tusk';
-const issueURL = 'https://github.com/klauscfhq/tusk/issues/new';
-const searchURL = 'https://github.com/search?q=+is:issue+repo:klauscfhq/tusk';
-const licenseURL = 'https://github.com/klauscfhq/tusk/blob/master/license.md';
-const keyboardShortcutsRefURL = 'https://github.com/klauscfhq/tusk#keyboard-shortcuts';
-const searchFeatureRequestsURL = 'https://github.com/klauscfhq/tusk/labels/feature-request';
+const sourceURL = 'https://github.com/klaussinani/tusk';
+const homepageURL = 'https://klaussinani.github.io/tusk';
+const communityURL = 'https://gitter.im/klaussinani/tusk';
+const issueURL = 'https://github.com/klaussinani/tusk/issues/new';
+const searchURL = 'https://github.com/search?q=+is:issue+repo:klaussinani/tusk';
+const licenseURL = 'https://github.com/klaussinani/tusk/blob/master/license.md';
+const keyboardShortcutsRefURL = 'https://github.com/klaussinani/tusk#keyboard-shortcuts';
+const searchFeatureRequestsURL = 'https://github.com/klaussinani/tusk/labels/feature-request';
 
 function activate(command) {
   const [appWindow] = BrowserWindow.getAllWindows();

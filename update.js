@@ -7,8 +7,8 @@ const app = electron.app;
 const shell = electron.shell;
 const dialog = electron.dialog;
 const installedVersion = app.getVersion();
-const updateURL = 'https://klauscfhq.github.io/tusk/update.json';
-const releaseURL = 'https://github.com/klauscfhq/tusk/releases/latest';
+const updateURL = 'https://klaussinani.github.io/tusk/update.json';
+const releaseURL = 'https://github.com/klaussinani/tusk/releases/latest';
 
 function displayAvailableUpdate(latestVersion) {
   // Display available update info-window

@@ -8,7 +8,7 @@ const BrowserWindow = electron.BrowserWindow;
 const shell = electron.shell;
 let tray = null;
 const settingsURL = 'https://www.evernote.com/Settings.action';
-const issueURL = 'https://github.com/klauscfhq/tusk/issues/new';
+const issueURL = 'https://github.com/klaussinani/tusk/issues/new';
 
 function activate(command) {
   const appWindow = BrowserWindow.getAllWindows()[0];
