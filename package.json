@@ -4,11 +4,11 @@
   "version": "0.11.0",
   "description": "Refined Evernote desktop app",
   "license": "MIT",
-  "repository": "klauscfhq/tusk",
+  "repository": "klaussinani/tusk",
   "author": {
     "name": "Klaus Sinani",
-    "email": "klauscfhq@protonmail.com",
-    "url": "https://klauscfhq.github.io"
+    "email": "klaussinani@gmail.com",
+    "url": "https://klaussinani.github.io"
   },
   "maintainers": [
     {
@@ -84,7 +84,7 @@
       "!media${/*}",
       "!docs${/*}"
     ],
-    "appId": "com.klauscfhq.tusk",
+    "appId": "com.klaussinani.tusk",
     "linux": {
       "synopsis": " Refined Evernote desktop app",
       "description": "Tusk is an unofficial, featureful, open source, community-driven, free Evernote app used by people in more than 130 countries.",
