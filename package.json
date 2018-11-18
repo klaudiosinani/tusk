@@ -44,7 +44,7 @@
     "turndown": "^4.0.1"
   },
   "devDependencies": {
-    "electron": "1.8.4",
+    "electron": "3.0.8",
     "electron-builder": "19.33.0",
     "electron-builder-squirrel-windows": "19.33.0",
     "electron-installer-dmg": "0.2.1",
