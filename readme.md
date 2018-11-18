@@ -7,16 +7,16 @@
 </h4>
 
 <div align="center">
-  <a href="https://github.com/klauscfhq/tusk">
+  <a href="https://github.com/klaussinani/tusk">
     <img src="media/note-navigation.gif" alt="Tusk" width="95%">
   </a>
 </div>
 
 <p align="center">
-  <a href="https://travis-ci.org/klauscfhq/tusk">
-    <img alt="Build Status" src="https://travis-ci.org/klauscfhq/tusk.svg?branch=master">
+  <a href="https://travis-ci.org/klaussinani/tusk">
+    <img alt="Build Status" src="https://travis-ci.org/klaussinani/tusk.svg?branch=master">
   </a>
-  <a href="https://ci.appveyor.com/project/klauscfhq/tusk">
+  <a href="https://ci.appveyor.com/project/klaussinani/tusk">
     <img alt="Build Status" src="https://ci.appveyor.com/api/projects/status/kdpb85rhfkw8iif7?svg=true">
   </a>
   <a href="https://github.com/sindresorhus/awesome-electron">
@@ -28,9 +28,9 @@
 
 Tusk is an unofficial, featureful, open source, community-driven, free Evernote app used by people in more than [130 countries](https://snapcraft.io/tusk).
 
-Come over to [Gitter](https://gitter.im/klauscfhq/tusk) or [Twitter](https://twitter.com/klauscfhq) to share your thoughts on the project.
+Come over to [Gitter](https://gitter.im/klaussinani/tusk) or [Twitter](https://twitter.com/klaussinani) to share your thoughts on the project.
 
-Visit the [contributing guidelines](https://github.com/klauscfhq/tusk/blob/master/contributing.md#translating-documentation) to learn more on how to translate this document into more languages.
+Visit the [contributing guidelines](https://github.com/klaussinani/tusk/blob/master/contributing.md#translating-documentation) to learn more on how to translate this document into more languages.
 
 You can find more desktop apps [here](#related-apps).
 
@@ -70,7 +70,7 @@ You can find more desktop apps [here](#related-apps).
 
 #### Github Releases
 
-Head to the [releases](https://github.com/klauscfhq/tusk/releases/latest) page and download the appropriate installer for your system.
+Head to the [releases](https://github.com/klaussinani/tusk/releases/latest) page and download the appropriate installer for your system.
 
 #### Snap
 
@@ -86,18 +86,18 @@ Arch Linux users can directly install through [AUR](https://aur.archlinux.org/pa
 
 #### Note
 
-The version available on `Homebrew Cask` or `AUR` may not be the latest. If that is the case, please consider downloading directly from the [Github releases](https://github.com/klauscfhq/tusk/releases/latest) page.
+The version available on `Homebrew Cask` or `AUR` may not be the latest. If that is the case, please consider downloading directly from the [Github releases](https://github.com/klaussinani/tusk/releases/latest) page.
 
 ## Features
 
 ### Vibrant Themes
 
-Press <kbd>Cmd</kbd> <kbd>Alt</kbd> <kbd>U</kbd> / <kbd>Cmd</kbd> <kbd>Alt</kbd> <kbd>J</kbd> to activate the [dark](https://raw.githubusercontent.com/klauscfhq/tusk/master/media/vibrant-dark-theme.png) or [light](https://raw.githubusercontent.com/klauscfhq/tusk/master/media/vibrant-light-theme.png) vibrant theme respectively.
+Press <kbd>Cmd</kbd> <kbd>Alt</kbd> <kbd>U</kbd> / <kbd>Cmd</kbd> <kbd>Alt</kbd> <kbd>J</kbd> to activate the [dark](https://raw.githubusercontent.com/klaussinani/tusk/master/media/vibrant-dark-theme.png) or [light](https://raw.githubusercontent.com/klaussinani/tusk/master/media/vibrant-light-theme.png) vibrant theme respectively.
 
-Please note that the feature is available [**only on Macos**](https://github.com/klauscfhq/tusk/issues/19).
+Please note that the feature is available [**only on Macos**](https://github.com/klaussinani/tusk/issues/19).
 
 <div align="center">
-      <a href="https://github.com/klauscfhq/tusk">
+      <a href="https://github.com/klaussinani/tusk">
         <img src="media/vibrant-theme.png" alt="Vibrant Theme" width="100%">
       </a>
 </div>
@@ -107,7 +107,7 @@ Please note that the feature is available [**only on Macos**](https://github.com
 Perfect for glossy screens. Activate it by pressing <kbd>Cmd/Ctrl</kbd> <kbd>G</kbd>
 
 <div align="center">
-      <a href="https://github.com/klauscfhq/tusk">
+      <a href="https://github.com/klaussinani/tusk">
         <img src="media/sepia-theme.png" alt="Sepia Theme" width="86%">
       </a>
 </div>
@@ -117,7 +117,7 @@ Perfect for glossy screens. Activate it by pressing <kbd>Cmd/Ctrl</kbd> <kbd>G</
 Silky & relaxing. Make it yours by pressing <kbd>Cmd/Ctrl</kbd> <kbd>D</kbd>
 
 <div align="center">
-      <a href="https://github.com/klauscfhq/tusk">
+      <a href="https://github.com/klaussinani/tusk">
         <img src="media/dark-theme.png" alt="Dark Theme" width="85%">
       </a>
 </div>
@@ -127,7 +127,7 @@ Silky & relaxing. Make it yours by pressing <kbd>Cmd/Ctrl</kbd> <kbd>D</kbd>
 Deep focus materialized. Boost your productivity by pressing <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>E</kbd>
 
 <div align="center">
-      <a href="https://github.com/klauscfhq/tusk">
+      <a href="https://github.com/klaussinani/tusk">
         <img src="media/black-theme.png" alt="Black Theme" width="85%">
       </a>
 </div>
@@ -137,7 +137,7 @@ Deep focus materialized. Boost your productivity by pressing <kbd>Cmd/Ctrl</kbd>
 Press <kbd>Cmd/Ctrl</kbd> <kbd>K</kbd> and immerse yourself in a distraction-free note-taking mode.
 
 <div align="center">
-      <a href="https://github.com/klauscfhq/tusk">
+      <a href="https://github.com/klaussinani/tusk">
         <img src="media/focus-mode.png" alt="Focus Mode" width="85%">
       </a>
 </div>
@@ -147,7 +147,7 @@ Press <kbd>Cmd/Ctrl</kbd> <kbd>K</kbd> and immerse yourself in a distraction-fre
 Get more for less. Keep your productivity to the maximum no matter the screen size. Simply downsize the window to enter the mode.
 
 <div align="center">
-      <a href="https://github.com/klauscfhq/tusk">
+      <a href="https://github.com/klaussinani/tusk">
         <img src="media/compact-mode.png" alt="Compact Mode" width="70%">
       </a>
 </div>
@@ -157,7 +157,7 @@ Get more for less. Keep your productivity to the maximum no matter the screen si
 Navigate seamlessly between your notes by pressing <kbd>Cmd/Ctrl</kbd> <kbd>Tab</kbd> / <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>Tab</kbd> or jump directly to a specific note by using <kbd>Cmd/Ctrl</kbd> <kbd>1</kbd> - <kbd>9</kbd>
 
 <div align="center">
-      <a href="https://github.com/klauscfhq/tusk">
+      <a href="https://github.com/klaussinani/tusk">
         <img src="media/note-navigation.gif" alt="Note Navigation" width="92%">
       </a>
 </div>
@@ -167,7 +167,7 @@ Navigate seamlessly between your notes by pressing <kbd>Cmd/Ctrl</kbd> <kbd>Tab<
 Printing your notes is only a keystroke away. Press <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>P</kbd> and transfer them from screen to paper.
 
 <div align="center">
-      <a href="https://github.com/klauscfhq/tusk">
+      <a href="https://github.com/klaussinani/tusk">
         <img src="media/print-note.gif" alt="Note Printing" width="93%">
       </a>
 </div>
@@ -177,7 +177,7 @@ Printing your notes is only a keystroke away. Press <kbd>Cmd/Ctrl</kbd> <kbd>Alt
 Adjust Tusk to your workflow. Navigate to `~/.tusk.json` or press <kbd>Cmd/Ctrl</kbd> <kbd>.</kbd> and modify any shortcut key to your own preference. To reset simply delete the tusk config file from your home directory.
 
 <div align="center">
-      <a href="https://github.com/klauscfhq/tusk">
+      <a href="https://github.com/klaussinani/tusk">
         <img src="media/custom-shortcut-keys.gif" alt="Custom Shortcut Keys" width="85%">
       </a>
 </div>
@@ -187,7 +187,7 @@ Adjust Tusk to your workflow. Navigate to `~/.tusk.json` or press <kbd>Cmd/Ctrl<
 Adjust the zooming factor to your own preference by pressing <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>=</kbd> or <kbd>Cmd/Ctrl</kbd> <kbd>-</kbd>
 
 <div align="center">
-      <a href="https://github.com/klauscfhq/tusk">
+      <a href="https://github.com/klaussinani/tusk">
         <img src="media/scalable-interface.gif" alt="Scalable Interface" width="90%">
       </a>
 </div>
@@ -197,7 +197,7 @@ Adjust the zooming factor to your own preference by pressing <kbd>Cmd/Ctrl</kbd>
 Press <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>E</kbd> and save your notes effortlessly on your machine as `pdf` files.
 
 <div align="center">
-      <a href="https://github.com/klauscfhq/tusk">
+      <a href="https://github.com/klaussinani/tusk">
         <img src="media/export-notes.gif" alt="Export Notes" width="93%">
       </a>
 </div>
@@ -207,7 +207,7 @@ Press <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>E</kbd> and save your notes effo
 Login with your Yinxiang account by using the `File` > `Switch to Yinxiang` option.
 
 <div align="center">
-      <a href="https://github.com/klauscfhq/tusk">
+      <a href="https://github.com/klaussinani/tusk">
         <img src="media/yinxiang-support.png" alt="Yinxiang Support" width="87%">
       </a>
 </div>
@@ -318,7 +318,7 @@ Search Notes               | <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>F</kbd>
 
 ## Development
 
-For more info on how to contribute to the project, please read the [contributing guidelines](https://github.com/klauscfhq/tusk/blob/master/contributing.md).
+For more info on how to contribute to the project, please read the [contributing guidelines](https://github.com/klaussinani/tusk/blob/master/contributing.md).
 
 - Fork the repository and clone it to your machine
 - Navigate to your local fork: `cd tusk`
@@ -329,14 +329,14 @@ For more info on how to contribute to the project, please read the [contributing
 
 ## Related Apps
 
-- [Ao](https://github.com/klauscfhq/ao) - Elegant Microsoft To-Do desktop app.
-- [Taskbook](https://github.com/klauscfhq/taskbook) - Tasks, boards & notes for the command-line habitat.
+- [Ao](https://github.com/klaussinani/ao) - Elegant Microsoft To-Do desktop app.
+- [Taskbook](https://github.com/klaussinani/taskbook) - Tasks, boards & notes for the command-line habitat.
 
 ## Team
 
 Coded with ❤ by
 
-- Klaus Sinani [(@klauscfhq)](https://github.com/klauscfhq)
+- Klaus Sinani [(@klaussinani)](https://github.com/klaussinani)
 - Mario Sinani [(@mariocfhq)](https://github.com/mariocfhq)
 - Thanasis Gkanos [(@ThanasisGkanos)](https://github.com/ThanasisGkanos)
 
@@ -346,4 +346,4 @@ Tusk is an unofficial, open source, third-party, community-driven, free app and 
 
 ## License
 
-[MIT](https://github.com/klauscfhq/tusk/blob/master/license.md)
+[MIT](https://github.com/klaussinani/tusk/blob/master/license.md)
