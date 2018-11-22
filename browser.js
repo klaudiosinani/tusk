@@ -695,5 +695,22 @@ document.addEventListener('DOMContentLoaded', () => {
   getNoteFrame().then(noteDOM => {
     noteDOM.contentDocument.body.setAttribute('dir', 'auto');
     document.getElementById('gwt-debug-NoteTitleView-container').setAttribute('dir', 'auto');
+    addNewWindowButton();
+    ipc.send('note-frame-loaded');
   });
 });
+
+// Add new window button to the note frame
+function addNewWindowButton() {
+  const span = document.createElement('span');
+  span.appendChild(document.createTextNode('New Window'));
+  span.setAttribute('class', 'GJDCG5CBD GJDCG5CNOB');
+
+  const div = document.createElement('div');
+  div.setAttribute('id', 'tusk-new-window');
+  div.setAttribute('class', 'GJDCG5COOB');
+  div.appendChild(span);
+
+  document.querySelector('#gwt-debug-NoteAttributes-focusButton').parentElement.prepend(div);
+  document.getElementById('tusk-new-window').addEventListener('click', () => ipc.send('open-sub-window'));
+}
