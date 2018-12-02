@@ -16,12 +16,6 @@
   <a href="https://travis-ci.org/klaussinani/tusk">
     <img alt="Build Status" src="https://travis-ci.org/klaussinani/tusk.svg?branch=master">
   </a>
-  <a href="https://ci.appveyor.com/project/klaussinani/tusk">
-    <img alt="Build Status" src="https://ci.appveyor.com/api/projects/status/kdpb85rhfkw8iif7?svg=true">
-  </a>
-  <a href="https://github.com/sindresorhus/awesome-electron">
-    <img alt="Awesome" src="https://awesome.re/mentioned-badge.svg">
-  </a>
 </p>
 
 ## Description
@@ -36,22 +30,16 @@ You can find more desktop apps [here](#related-apps).
 
 ## Highlights
 
-- [Black](#black-theme), [Dark](#dark-theme), [Sepia](#sepia-theme) & [Vibrant](#vibrant-themes) Themes
-- [Focus](#focus-mode), [Compact](#compact-mode) & [Auto-Night](#auto-night-mode) Modes
-- [Local](#local-shortcut-keys) & [Global](#global-shortcut-keys) Keyboard Shortcuts
-- [Customizable Keyboard Shortcuts](#custom-shortcut-keys)
-- Export Notes as [PDF](#export-notes-as-pdf) & [Markdown](#export-notes-as-markdown) files
-- [Note Printing](#note-printing)
-- [Scalable Interface](#scalable-interface)
-- [Note Navigation](#note-navigation)
-- [Yinxiang Support](#yinxiang-support)
+- Black, Dark & Sepia Themes
+- Focus, Compact & Auto-Night Modes
+- Local & Global Customizable Keyboard Shortcuts
+- Export Notes as PDF & Markdown Files
+- Note Navigation
+- Yinxiang Support
 - Cross Platform
-- Automatic Updates 🐘
-- RTL Support
-- Deep OS Integration
+- Scalable Interface
+- Update Notifications
 - Drag and Drop Files
-
-<sup>🐘 Windows & Linux only atm</sup>
 
 ## Contents
 
@@ -89,18 +77,6 @@ Arch Linux users can directly install through [AUR](https://aur.archlinux.org/pa
 The version available on `Homebrew Cask` or `AUR` may not be the latest. If that is the case, please consider downloading directly from the [Github releases](https://github.com/klaussinani/tusk/releases/latest) page.
 
 ## Features
-
-### Vibrant Themes
-
-Press <kbd>Cmd</kbd> <kbd>Alt</kbd> <kbd>U</kbd> / <kbd>Cmd</kbd> <kbd>Alt</kbd> <kbd>J</kbd> to activate the [dark](https://raw.githubusercontent.com/klaussinani/tusk/master/media/vibrant-dark-theme.png) or [light](https://raw.githubusercontent.com/klaussinani/tusk/master/media/vibrant-light-theme.png) vibrant theme respectively.
-
-Please note that the feature is available [**only on Macos**](https://github.com/klaussinani/tusk/issues/19).
-
-<div align="center">
-      <a href="https://github.com/klaussinani/tusk">
-        <img src="media/vibrant-theme.png" alt="Vibrant Theme" width="100%">
-      </a>
-</div>
 
 ### Sepia Theme
 
@@ -325,7 +301,7 @@ For more info on how to contribute to the project, please read the [contributing
 - Install the project dependencies: `npm install` or `yarn install`
 - Run Tusk on dev mode: `npm start` or `yarn start`
 - Lint code for errors: `npm test` or `yarn test`
-- Build binaries and installers: `npm run dist` or `yarn dist`
+- Build binaries and installers: `npm run release` or `yarn release`
 
 ## Related Apps
 
@@ -333,8 +309,6 @@ For more info on how to contribute to the project, please read the [contributing
 - [Taskbook](https://github.com/klaussinani/taskbook) - Tasks, boards & notes for the command-line habitat.
 
 ## Team
-
-Coded with ❤ by
 
 - Klaus Sinani [(@klaussinani)](https://github.com/klaussinani)
 - Mario Sinani [(@mariocfhq)](https://github.com/mariocfhq)
