@@ -14,17 +14,13 @@
     {
       "name": "Mario Sinani",
       "email": "mariosinani@protonmail.ch",
-      "url": "github.com/mariocfhq"
+      "url": "https://github.com/mariocfhq"
     }
   ],
   "scripts": {
-    "start": "electron .",
-    "dist": "build --publish never",
-    "clean": "node ./bin/clean.js",
-    "test": "npm run test:js && npm run test:css",
-    "test:css": "stylelint 'style/*.css'",
-    "test:js": "xo",
-    "pack:macos": "electron-packager . --no-prune --overwrite --asar --out=dist --platform=darwin --arch=x64 --icon=static/Icon.icns && cd dist/Tusk-darwin-x64 && zip -ryXq9 ../tusk-macos-${npm_package_version}.zip Tusk.app && electron-installer-dmg ../Tusk-darwin-x64/Tusk.app Tusk --icon=../../static/Icon.icns && cp Tusk.dmg ../../dist/tusk-macos-${npm_package_version}.dmg"
+    "test": "xo && stylelint 'style/*.css'",
+    "release": "build --publish always",
+    "start": "electron ."
   },
   "dependencies": {
     "auto-launch": "^5.0.1",
@@ -37,7 +33,6 @@
     "electron-settings": "^3.1.4",
     "fs-extra": "^4.0.2",
     "ms": "^2.0.0",
-    "signale": "^1.2.1",
     "simple-get": "^2.7.0",
     "stylelint": "^9.2.0",
     "time-stamp": "^2.0.0",
@@ -46,17 +41,14 @@
   "devDependencies": {
     "electron": "3.0.9",
     "electron-builder": "20.38.2",
-    "electron-builder-squirrel-windows": "19.33.0",
-    "electron-installer-dmg": "0.2.1",
-    "electron-packager": "9.1.0",
-    "xo": "^0.20.0"
+    "xo": "*"
   },
   "xo": {
-    "space": 2,
     "envs": [
-      "node",
-      "browser"
-    ]
+      "browser",
+      "node"
+    ],
+    "space": 2
   },
   "stylelint": {
     "rules": {
@@ -75,30 +67,26 @@
     }
   },
   "build": {
-    "snap": {
-      "grade": "stable",
-      "confinement": "strict"
-    },
+    "appId": "com.klaussinani.tusk",
     "files": [
       "**/*",
       "!media${/*}",
       "!docs${/*}"
     ],
-    "appId": "com.klaussinani.tusk",
     "linux": {
-      "synopsis": " Refined Evernote desktop app",
-      "description": "Tusk is an unofficial, featureful, open source, community-driven, free Evernote app used by people in more than 130 countries.",
       "category": "Office",
+      "description": "Tusk is an unofficial, featureful, open source, community-driven, free Evernote app used by people in more than 130 countries.",
+      "synopsis": "Refined Evernote desktop app",
       "target": [
         {
-          "target": "deb",
+          "target": "AppImage",
           "arch": [
             "ia32",
             "x64"
           ]
         },
         {
-          "target": "AppImage",
+          "target": "deb",
           "arch": [
             "ia32",
             "x64"
@@ -118,6 +106,10 @@
           ]
         }
       ]
+    },
+    "snap": {
+      "grade": "stable",
+      "confinement": "strict"
     },
     "win": {
       "target": [
