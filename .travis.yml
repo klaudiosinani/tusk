@@ -1,67 +1,40 @@
-sudo: required
-dist: trusty
-language: c
-osx_image: xcode9
 matrix:
   include:
     - os: osx
+      osx_image: xcode9.4
+      language: node_js
+      node_js: "10"
+      env:
+        - ELECTRON_CACHE=$HOME/.cache/electron
+        - ELECTRON_BUILDER_CACHE=$HOME/.cache/electron-builder
+
     - os: linux
-      env: CC=clang CXX=clang++ npm_config_clang=1
-      compiler: clang
-      services:
-        - docker
-addons:
-  apt:
-    packages:
-      - xz-utils
-      - icnsutils
-      - graphicsmagick
-      - rpm
-      - snapd
-      - gnome-keyring
-      - libgnome-keyring-dev
-      - libsecret-1-dev
-      - python-gnomekeyring
-env:
-  global:
-    - ELECTRON_CACHE=$HOME/.cache/electron
-    - ELECTRON_BUILDER_CACHE=$HOME/.cache/electron-builder
-    - FAILURE_ARCHIVE_FILE=travis-build-id-$TRAVIS_BUILD_ID.tar.gz
+      services: docker
+      language: generic
+
 cache:
   directories:
     - node_modules
     - $HOME/.cache/electron
     - $HOME/.cache/electron-builder
-    - $HOME/.cache/snapcraft
-install:
-  - nvm install 6
-  - npm install
-  - npm prune
+
 script:
-  - npm test
   - |
-    if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then
-      docker run --rm -ti \
-        --env-file <(env | grep -iE 'DEBUG|NODE_|ELECTRON_|YARN_|NPM_|CI|CIRCLE|TRAVIS|APPVEYOR_|CSC_|GH_|GITHUB_|BT_|AWS_|STRIP|BUILD_') \
-        --env ELECTRON_CACHE="/root/.cache/electron" \
-        --env ELECTRON_BUILDER_CACHE="/root/.cache/electron-builder" \
+    if [ "$TRAVIS_OS_NAME" == "linux" ]; then
+      docker run --rm \
+        --env-file <(env | grep -v '\r' | grep -iE 'DEBUG|NODE_|ELECTRON_|YARN_|NPM_|CI|CIRCLE|TRAVIS|APPVEYOR_|CSC_|_TOKEN|_KEY|AWS_|STRIP|BUILD_') \
         -v ${PWD}:/project \
         -v ~/.cache/electron:/root/.cache/electron \
         -v ~/.cache/electron-builder:/root/.cache/electron-builder \
-        -v ~/.cache/snapcraft:/root/.cache/snapcraft \
-        electronuserland/builder:8 \
-        /bin/bash -c "apt-get update && apt-get install libsecret-1-dev -y && npm run dist"
+        electronuserland/builder:wine \
+        /bin/bash -c "yarn --link-duplicates --pure-lockfile && yarn release --linux --win"
+    else
+      yarn release
     fi
-  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then npm run pack:macos; fi
-before_deploy:
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo rm -rf dist/linux-*; fi
-  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then rm -rf dist/Tusk-darwin-x64; fi
-deploy:
-  provider: releases
-  api_key:
-    secure: IdI0k89D9KgNQD/KlOg7K0A/ZB04Zrcl7HB90zzM9ip1lFXtxh20JzdmEnfSHGh6QICw1teM28RcesDeKckOo+6gTbOvTgstpFZiOVEKkGRzbccL9l8l8pL/YvHxooB8vsxKcKAkxGvLaisT4/yW1ZUIFihANWWt3bIJlYhh65eWNUf7xsvmmXvx+aaWihMcG5tZWTRvk3K0q2UPATFdffIRhmDPU67PxuWQn55shgChg7MSPhzU//YED+aLw2hJvVN53TXeUwsoJfayMFz071gZSEVYSnCIF5mcSrDbaIAPeiixOWOAkhfDgyVK1ut3I9t0Ie8om1r+jwyk7Kxgq6DJk5bmRayi9CARmU2v7fkdZAAJcnWaJ2SyvZC+wZ2K2o5Ky+X6Ou0+fxkdgwUkQx10QlosDnxlzOEFjmU7o/aujp81pUSS3mghRknfAIrG3F4mJj/EZzjIsetADFjQw7dNsD+SWGccft0MgltItSWqfeRJvhLhamOI4hqteyzhldVlaFha0zzryws3G1t3w7jYPf+9ecz/Asvo9vr20/LGeNJvDaDVwWz19K8TLM/fpwcxDFomLvXtBT0q+TuLGAGKHFAwQ/rbaFUtMXjunLRhx8Nnj4E4shaIiUr3i2x6dLqTxrLJq1347LDldvJ3FxAwomJmK8J8JtowA5S1dZs=
-  file_glob: true
-  file: dist/*
-  skip_cleanup: true
-  on:
-    tags: true
+
+before_cache:
+  - rm -rf $HOME/.cache/electron-builder/wine
+
+branches:
+  except:
+    - "/^v\\d+\\.\\d+\\.\\d+$/"
