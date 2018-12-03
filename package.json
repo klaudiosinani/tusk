@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "test": "xo && stylelint 'style/*.css'",
-    "release": "build --publish always",
+    "release": "build",
     "start": "electron ."
   },
   "dependencies": {
@@ -113,7 +113,13 @@
     },
     "win": {
       "target": [
-        "squirrel"
+        {
+          "target": "nsis",
+          "arch": [
+            "ia32",
+            "x64"
+          ]
+        }
       ]
     }
   }
