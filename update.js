@@ -3,9 +3,7 @@ const path = require('path');
 const electron = require('electron');
 const get = require('simple-get');
 
-const app = electron.app;
-const shell = electron.shell;
-const dialog = electron.dialog;
+const {app, dialog, shell} = electron;
 const installedVersion = app.getVersion();
 const updateURL = 'https://klaussinani.github.io/tusk/update.json';
 const releaseURL = 'https://github.com/klaussinani/tusk/releases/latest';
@@ -45,7 +43,7 @@ function getLatestVersion(err, res, data) {
     try {
       // Safely parse JSON
       data = JSON.parse(data);
-    } catch (err) {
+    } catch (error) {
       console.log('Invalid JSON object');
     }
     // Get latest version
