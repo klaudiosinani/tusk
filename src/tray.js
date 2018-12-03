@@ -10,7 +10,6 @@ const issueURL = 'https://github.com/klaussinani/tusk/issues/new';
 
 function activate(command) {
   const appWindow = BrowserWindow.getAllWindows()[0];
-  // Extra measure in order to be shown
   appWindow.show();
   appWindow.webContents.send(command);
 }
@@ -20,10 +19,9 @@ exports.create = win => {
     return;
   }
 
-  const iconPath = path.join(__dirname, 'static/IconTray.png');
+  const iconPath = path.join(__dirname, '../static/IconTray.png');
 
   const toggleWin = () => {
-    // Toggle/untoggle window
     if (win.isVisible()) {
       win.hide();
     } else {
@@ -32,7 +30,6 @@ exports.create = win => {
   };
 
   const showWin = () => {
-    // Bring window on top if not visible
     if (!win.isVisible()) {
       win.show();
     }
