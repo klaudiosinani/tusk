@@ -7,11 +7,9 @@ const timeStamp = require('time-stamp');
 const Turndown = require('turndown');
 const config = require('./config');
 
-const join = path.join;
-const ipc = electron.ipcRenderer;
-const dialog = electron.remote.dialog;
-const shell = electron.shell;
-const webFrame = electron.webFrame;
+const {join} = path;
+const {dialog} = electron.remote;
+const {ipcRenderer: ipc, shell, webFrame} = electron;
 
 const tuskJSON = '.tusk.json'; // Config file name
 const homeDir = os.homedir();
@@ -421,7 +419,7 @@ async function exportAsMarkdown() {
   // Get note title
   const getTitle = () => {
     const title = document.querySelector('#gwt-debug-NoteTitleView-label').innerHTML;
-    return title.length ? title.trim().replace(/&nbsp;/g, ' ') : 'note';
+    return title.length > 0 ? title.trim().replace(/&nbsp;/g, ' ') : 'note';
   };
 
   // Covert note to markdown

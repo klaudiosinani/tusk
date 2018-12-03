@@ -7,15 +7,11 @@ const timeStamp = require('time-stamp');
 const config = require('./config');
 const update = require('./update');
 
-const join = path.join;
-const app = electron.app;
-const resolve = path.resolve;
-const shell = electron.shell;
+const {app, BrowserWindow, dialog, globalShortcut, shell} = electron;
+const {join, resolve} = path;
+const {platform} = process;
+
 const appName = app.getName();
-const dialog = electron.dialog;
-const platform = process.platform;
-const BrowserWindow = electron.BrowserWindow;
-const globalShortcut = electron.globalShortcut;
 
 let configData;
 let defaultConfigPath; // Path to the default config file
@@ -73,14 +69,14 @@ function getConfig() {
     try {
       fs.copySync(defaultConfig, homeConfig);
       console.log('Tusk config file was created successfully');
-    } catch (err) {
-      console.error(err);
+    } catch (error) {
+      console.error(error);
     }
   }
   // Parse the content of the config file
   try {
     configData = JSON.parse(fs.readFileSync(homeConfig, 'utf8'));
-  } catch (err) {
+  } catch (error) {
     console.log('Invalid JSON object');
   }
   return configData;
@@ -188,7 +184,7 @@ function requestAppRestart() {
 }
 
 const helpSubmenu = [{
-  label: `View License`,
+  label: 'View License',
   click() {
     shell.openExternal(licenseURL);
   }
@@ -196,17 +192,17 @@ const helpSubmenu = [{
   label: 'Version ' + app.getVersion(),
   enabled: false
 }, {
-  label: `Tusk Homepage`,
+  label: 'Tusk Homepage',
   click() {
     shell.openExternal(homepageURL);
   }
 }, {
-  label: `Check for Update`,
+  label: 'Check for Update',
   click() {
     update.manualUpdateCheck();
   }
 }, {
-  label: `Update Check Frequency`,
+  label: 'Update Check Frequency',
   submenu: [{
     label: 'Once Every 2 Hours',
     type: 'checkbox',
@@ -255,22 +251,22 @@ const helpSubmenu = [{
     shell.openExternal(sourceURL);
   }
 }, {
-  label: `Report Issue`,
+  label: 'Report Issue',
   click() {
     shell.openExternal(issueURL);
   }
 }, {
-  label: `Search Issues`,
+  label: 'Search Issues',
   click() {
     shell.openExternal(searchURL);
   }
 }, {
-  label: `Search Feature Requests`,
+  label: 'Search Feature Requests',
   click() {
     shell.openExternal(searchFeatureRequestsURL);
   }
 }, {
-  label: `Community Discussion`,
+  label: 'Community Discussion',
   click() {
     shell.openExternal(communityURL);
   }
@@ -283,7 +279,7 @@ if (process.platform !== 'darwin') {
     role: 'about',
     click() {
       electron.dialog.showMessageBox({
-        title: `About Tusk`,
+        title: 'About Tusk',
         message: `Tusk ${app.getVersion()} (${os.arch()})`,
         detail: 'Created by Klaus Sinani',
         icon: path.join(__dirname, 'static/Icon.png'),
