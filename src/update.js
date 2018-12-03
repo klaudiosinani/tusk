@@ -9,14 +9,13 @@ const updateURL = 'https://klaussinani.github.io/tusk/update.json';
 const releaseURL = 'https://github.com/klaussinani/tusk/releases/latest';
 
 function displayAvailableUpdate(latestVersion) {
-  // Display available update info-window
   const result = dialog.showMessageBox({
     icon: path.join(__dirname, 'static/Icon.png'),
     title: 'Update Tusk',
     message: 'Version ' + latestVersion + ' is now available',
     detail: 'Click Download to get it now',
     buttons: ['Download', 'Dismiss'],
-    defaultId: 0, // Make `Download` the default action button
+    defaultId: 0,
     cancelId: 1
   });
   console.log('Update to version', latestVersion, 'is now available');
@@ -24,7 +23,6 @@ function displayAvailableUpdate(latestVersion) {
 }
 
 function displayUnavailableUpdate(installedVersion) {
-  // Display unavailable update info-window
   const result = dialog.showMessageBox({
     icon: path.join(__dirname, 'static/Icon.png'),
     title: 'No Update Available',
@@ -39,48 +37,38 @@ function getLatestVersion(err, res, data) {
   if (err) {
     console.log('Update error.');
   } else if (res.statusCode === 200) {
-    // Updating URL resolved properly
     try {
-      // Safely parse JSON
       data = JSON.parse(data);
     } catch (error) {
       console.log('Invalid JSON object');
     }
-    // Get latest version
+
     const latestVersion = data.version;
     return latestVersion;
   } else {
-    // Updating URL did not resolve properly
     console.log('Unexpected status code error');
   }
 }
 
 function response(result) {
-  // If the `Download` button was pressed
-  // send the user to the latest Github release
   if (result === 0) {
     shell.openExternal(releaseURL);
   }
 }
 
 function manualUpdateCheck(err, res, data) {
-  // Manually check for updates
   const latestVersion = getLatestVersion(err, res, data);
   if (latestVersion === installedVersion) {
-    // No updates available
     displayUnavailableUpdate(installedVersion);
   } else {
-    // Set out update notification & get user response
     const result = displayAvailableUpdate(latestVersion);
     response(result);
   }
 }
 
 function autoUpdateCheck(err, res, data) {
-  // Automatically check for updates
   const latestVersion = getLatestVersion(err, res, data);
   if (latestVersion !== installedVersion) {
-    // Set out update notification & get user response
     const result = displayAvailableUpdate(latestVersion);
     response(result);
   }
@@ -118,15 +106,12 @@ module.exports.init = () => {
 
 module.exports.autoUpdateCheck = () => {
   if (process.platform === 'win32') {
-    // Auto-update on Windows
     electron.autoUpdater.checkForUpdates();
   } else {
-    // Check for updates automatically on Linux/Macos
     get.concat(updateURL, autoUpdateCheck);
   }
 };
 
 module.exports.manualUpdateCheck = () => {
-  // Check for updates manually
   get.concat(updateURL, manualUpdateCheck);
 };

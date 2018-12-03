@@ -14,11 +14,11 @@ const {platform} = process;
 const appName = app.getName();
 
 let configData;
-let defaultConfigPath; // Path to the default config file
+let defaultConfigPath;
 const homeDir = os.homedir();
-const tuskJSON = '.tusk.json'; // Config file name on the home directory
-const homeConfig = join(homeDir, tuskJSON); // Path to the config file on the home directory
-const keymapsDir = resolve(__dirname, 'keymaps'); // Keymaps directory
+const tuskJSON = '.tusk.json';
+const homeConfig = join(homeDir, tuskJSON);
+const keymapsDir = resolve(__dirname, 'keymaps');
 
 const sourceURL = 'https://github.com/klaussinani/tusk';
 const homepageURL = 'https://klaussinani.github.io/tusk';
@@ -40,7 +40,6 @@ function activate(command) {
 }
 
 function getPath() {
-  // Retrieve the default path of the platform-dedicated config file
   switch (platform) {
     case ('darwin'):
       defaultConfigPath = join(keymapsDir, 'darwin.json');
@@ -62,9 +61,7 @@ function getPath() {
 }
 
 function getConfig() {
-  // Get the dedicated config file for each platform
   const defaultConfig = getPath();
-  // Create a new default config file if it does not already exist
   if (!fs.existsSync(homeConfig)) {
     try {
       fs.copySync(defaultConfig, homeConfig);
@@ -73,7 +70,7 @@ function getConfig() {
       console.error(error);
     }
   }
-  // Parse the content of the config file
+
   try {
     configData = JSON.parse(fs.readFileSync(homeConfig, 'utf8'));
   } catch (error) {
@@ -82,11 +79,9 @@ function getConfig() {
   return configData;
 }
 
-// Get the user-defined settings
 const tuskConfig = getConfig();
 
 function setAcc(custom, predefined) {
-  // Return the custom or predefined shortcut keys
   if (Object.prototype.hasOwnProperty.call(tuskConfig.shortcutKeys, custom)) {
     return tuskConfig.shortcutKeys[custom];
   }
@@ -94,7 +89,6 @@ function setAcc(custom, predefined) {
 }
 
 function showWin() {
-  // Bring main app window on top if not visible or focused
   const appWindow = BrowserWindow.getAllWindows()[0];
   if (!appWindow.isVisible() || !appWindow.isFocused()) {
     appWindow.show();
@@ -103,7 +97,6 @@ function showWin() {
 }
 
 function toggleWin() {
-  // Toggle/untoggle main app window
   const appWindow = BrowserWindow.getAllWindows()[0];
   if (appWindow.isVisible() && appWindow.isFocused()) {
     appWindow.hide();
@@ -116,20 +109,17 @@ function toggleWin() {
 
 function registerGlobalShortcuts() {
   const globalToggleTusk = globalShortcut.register(
-    // Global shortcut key for toggling/untoggling main app window
     setAcc('global-toggle-tusk', 'Shift+Alt+A'), () => {
       toggleWin();
     });
 
   const globalSearchNote = globalShortcut.register(
-    // Global shortcut key for note searching
     setAcc('global-search', 'Shift+Alt+F'), () => {
       showWin();
       activate('search');
     });
 
   const globalCreateNote = globalShortcut.register(
-    // Global shortcut key for note creation
     setAcc('global-new-note', 'Shift+Alt+C'), () => {
       showWin();
       activate('new-note');
@@ -144,19 +134,18 @@ function registerGlobalShortcuts() {
 
 function confirmLogOut() {
   const logOut = () => {
-    // Display log-out confirmation dialog
     const response = dialog.showMessageBox({
       icon: path.join(__dirname, 'static/Icon.png'),
       title: 'Log Out Confirmation',
       message: 'Log Out of Tusk',
       detail: 'Are you sure you want to log out?',
       buttons: ['Log Out', 'Dismiss'],
-      defaultId: 0, // Make `Log Out` the default action button
+      defaultId: 0,
       cancelId: 1
     });
     return (response === 0);
   };
-  // Check whether the log-out button was pressed
+
   if (logOut()) {
     activate('log-out');
   }
@@ -164,19 +153,18 @@ function confirmLogOut() {
 
 function requestAppRestart() {
   const restart = () => {
-    // Display restart confirmation dialog on settings update
     const response = dialog.showMessageBox({
       icon: path.join(__dirname, 'static/Icon.png'),
       title: 'Restart Required',
       message: 'Restart Tusk to Activate New Settings',
       detail: 'Would you like to restart now?',
       buttons: ['Restart', 'Dismiss'],
-      defaultId: 0, // Make `Restart` the default action button
+      defaultId: 0,
       cancelId: 1
     });
     return (response === 0);
   };
-  // Check whether the restart button was pressed
+
   if (restart()) {
     app.quit();
     app.relaunch();
@@ -553,18 +541,6 @@ const darwinTpl = [{
       accelerator: setAcc('toggle-black-mode', 'CmdOrCtrl+Alt+E'),
       click() {
         activate('toggle-black-mode');
-      }
-    }, {
-      label: 'Vibrant Theme',
-      accelerator: setAcc('toggle-vibrant-mode', 'CmdOrCtrl+Alt+U'),
-      click() {
-        activate('toggle-vibrant-mode');
-      }
-    }, {
-      label: 'Vibrant Dark Theme',
-      accelerator: setAcc('toggle-vibrant-dark-mode', 'CmdOrCtrl+Alt+J'),
-      click() {
-        activate('toggle-vibrant-dark-mode');
       }
     }]
   }, {

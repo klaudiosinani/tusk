@@ -11,7 +11,6 @@ const launchTusk = new AutoLaunch({
 });
 
 function activate() {
-  // Activate app launch on login
   return launchTusk
     .isEnabled()
     .then(enabled => {
@@ -22,7 +21,6 @@ function activate() {
 }
 
 function deactivate() {
-  // Deactivate app launch on login
   return launchTusk
     .isEnabled()
     .then(enabled => {

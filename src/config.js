@@ -2,7 +2,6 @@
 const fs = require('fs-extra');
 const settings = require('electron-settings');
 
-// Ensure creation of `Settings` file on startup
 fs.ensureFileSync(settings.file());
 
 settings.setAll({
