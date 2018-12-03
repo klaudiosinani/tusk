@@ -2,7 +2,7 @@
 const electron = require('electron');
 const AutoLaunch = require('auto-launch');
 
-const app = electron.app;
+const {app} = electron;
 
 const launchTusk = new AutoLaunch({
   name: 'Tusk',

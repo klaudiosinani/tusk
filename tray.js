@@ -3,9 +3,7 @@ const path = require('path');
 const electron = require('electron');
 const config = require('./config');
 
-const app = electron.app;
-const BrowserWindow = electron.BrowserWindow;
-const shell = electron.shell;
+const {app, BrowserWindow, shell} = electron;
 let tray = null;
 const settingsURL = 'https://www.evernote.com/Settings.action';
 const issueURL = 'https://github.com/klaussinani/tusk/issues/new';
@@ -111,12 +109,12 @@ exports.create = win => {
   }, {
     type: 'separator'
   }, {
-    label: `Evernote Settings`,
+    label: 'Evernote Settings',
     click() {
       shell.openExternal(settingsURL);
     }
   }, {
-    label: `Report Issue`,
+    label: 'Report Issue',
     click() {
       shell.openExternal(issueURL);
     }

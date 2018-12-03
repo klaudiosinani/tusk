@@ -12,11 +12,7 @@ const tray = require('./tray');
 const config = require('./config');
 const update = require('./update');
 
-const app = electron.app;
-const BrowserWindow = electron.BrowserWindow;
-const ipcMain = electron.ipcMain;
-const shell = electron.shell;
-const dialog = electron.dialog;
+const {app, BrowserWindow, dialog, ipcMain, shell} = electron;
 
 require('electron-debug')({enabled: true});
 require('electron-dl')();
