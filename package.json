@@ -47,6 +47,9 @@
       "browser",
       "node"
     ],
+    "rules": {
+      "quote-props": 0
+    },
     "space": 2
   },
   "stylelint": {
