@@ -1,33 +1,41 @@
 'use strict';
-const electron = require('electron');
+const {app} = require('electron');
 const AutoLaunch = require('auto-launch');
+const {is} = require('./util');
+const settings = require('./settings');
 
-const {app} = electron;
-
-const launchTusk = new AutoLaunch({
+const _settings = {
   name: 'Tusk',
-  path: (process.platform === 'darwin') ? app.getPath('exe').replace(/\.app\/Content.*/, '.app') : undefined,
+  path: is.darwin ? app.getPath('exe').replace(/\.app\/Content.*/, '.app') : undefined,
   isHidden: true
-});
+};
 
-function activate() {
-  return launchTusk
-    .isEnabled()
-    .then(enabled => {
-      if (!enabled) {
-        return launchTusk.enable();
-      }
-    });
+class Startup {
+  constructor(settings) {
+    this._launcher = new AutoLaunch(settings);
+  }
+
+  async _activate() {
+    const enabled = await this._launcher.isEnabled();
+    if (!enabled) {
+      return this._launcher.enable();
+    }
+  }
+
+  async _deactivate() {
+    const enabled = await this._launcher.isEnabled();
+    if (enabled) {
+      return this._launcher.disable();
+    }
+  }
+
+  autoLaunch() {
+    if (settings.get('autoLaunch')) {
+      this._activate();
+    } else {
+      this._deactivate();
+    }
+  }
 }
 
-function deactivate() {
-  return launchTusk
-    .isEnabled()
-    .then(enabled => {
-      if (enabled) {
-        return launchTusk.disable();
-      }
-    });
-}
-
-module.exports = {activate, deactivate};
+module.exports = new Startup(_settings);
