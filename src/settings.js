@@ -23,7 +23,7 @@ settings.setAll({
     sepia: settings.get('mode.sepia', false)
   },
   sideBarHidden: settings.get('sideBarHidden', false),
-  updateCheckPeriod: settings.get('updateCheckPeriod', 4),
+  updateCheckPeriod: settings.get('updateCheckPeriod', '4'),
   useGlobalShortcuts: settings.get('useGlobalShortcuts', false),
   useYinxiang: settings.get('useYinxiang', false),
   zoomFactor: settings.get('zoomFactor', 1)
