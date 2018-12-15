@@ -1,30 +1,32 @@
 'use strict';
-const path = require('path');
+const {app, BrowserWindow, ipcMain, Menu, shell} = require('electron');
 const fs = require('fs');
-const electron = require('electron');
-const os = require('os');
-const isDevMode = require('electron-is-dev');
-const ms = require('ms');
-const timeStamp = require('time-stamp');
-const decodeUri = require('decode-uri-component');
-const appMenu = require('./src/menu');
+const {is, formatTitle, formatURL, readSheet} = require('./src/util');
+const file = require('./src/file');
+const menu = require('./src/menu');
+const pdf = require('./src/pdf');
+const settings = require('./src/settings');
+const shortcut = require('./src/keymap');
+const time = require('./src/time');
 const tray = require('./src/tray');
-const config = require('./src/config');
 const update = require('./src/update');
+const url = require('./src/url');
+const win = require('./src/win');
 
-const {app, BrowserWindow, dialog, ipcMain, Menu, shell} = electron;
-const {join} = path;
+const {log} = console;
 
 require('electron-debug')({enabled: true});
 require('electron-dl')();
 require('electron-context-menu')();
 
-let mainWindow;
 let exiting = false;
-const yinxiangURL = 'https://app.yinxiang.com/Login.action';
-const evernoteURL = 'https://www.evernote.com/Login.action';
+let mainWindow;
 
-const functioning = app.makeSingleInstance(() => {
+if (!app.requestSingleInstanceLock()) {
+  app.quit();
+}
+
+app.on('second-instance', () => {
   if (mainWindow) {
     if (mainWindow.isMinimized()) {
       mainWindow.restore();
@@ -33,36 +35,11 @@ const functioning = app.makeSingleInstance(() => {
   }
 });
 
-if (functioning) {
-  app.quit();
-}
-
 function createMainWindow() {
-  const lastWindowState = config.get('lastWindowState');
-  const maxWindowInteger = 2147483647;
-  const darkModeFlag = config.get('darkMode') || config.get('blackMode');
-  const lastURL = config.get('useYinxiang') ? yinxiangURL : evernoteURL;
+  const options = Object.assign(win.defaultOpts, settings.get('lastWindowState'));
+  const lastURL = settings.get('useYinxiang') ? url.yinxiang : url.evernote;
 
-  const tuskWindow = new BrowserWindow({
-    title: app.getName(),
-    x: lastWindowState.x,
-    y: lastWindowState.y,
-    width: lastWindowState.width,
-    height: lastWindowState.height,
-    minWidth: 400,
-    minHeight: 200,
-    icon: process.platform === 'linux' && join(__dirname, '../static/Icon.png'),
-    alwaysOnTop: config.get('alwaysOnTop'),
-    titleBarStyle: 'hiddenInset',
-    darkTheme: darkModeFlag,
-    autoHideMenuBar: true,
-    show: false,
-    webPreferences: {
-      preload: join(__dirname, 'src/browser.js'),
-      nodeIntegration: false,
-      plugins: true
-    }
-  });
+  const tuskWindow = new BrowserWindow(options);
 
   tuskWindow.loadURL(lastURL);
 
@@ -70,7 +47,7 @@ function createMainWindow() {
     if (!exiting) {
       e.preventDefault();
 
-      if (process.platform === 'darwin') {
+      if (is.darwin) {
         app.hide();
       } else {
         tuskWindow.hide();
@@ -78,150 +55,74 @@ function createMainWindow() {
     }
   });
 
-  tuskWindow.on('enter-full-screen', () => {
-    tuskWindow.setMaximumSize(maxWindowInteger, maxWindowInteger);
-  });
-
   tuskWindow.on('page-title-updated', e => {
     e.preventDefault();
   });
 
-  tuskWindow.on('unresponsive', e => {
-    console.log('Unresponsive Tusk window. ', e);
-  });
+  tuskWindow.on('unresponsive', log);
 
-  tuskWindow.webContents.on('did-navigate-in-page', (e, url) => {
-    config.set('lastURL', url);
+  tuskWindow.webContents.on('did-navigate-in-page', (_, url) => {
+    settings.set('lastURL', url);
   });
 
   return tuskWindow;
 }
 
 app.on('ready', () => {
-  Menu.setApplicationMenu(appMenu);
+  Menu.setApplicationMenu(menu);
   mainWindow = createMainWindow();
-  if (config.get('useGlobalShortcuts')) {
-    appMenu.registerGlobalShortcuts();
-  }
-  if (!config.get('hideTray')) {
-    tray.create(mainWindow);
-  }
-  const windowContent = mainWindow.webContents;
 
-  windowContent.on('dom-ready', () => {
-    windowContent.insertCSS(fs.readFileSync(join(__dirname, 'src/style/browser.css'), 'utf8'));
-    windowContent.insertCSS(fs.readFileSync(join(__dirname, 'src/style/dark-mode.css'), 'utf8'));
-    windowContent.insertCSS(fs.readFileSync(join(__dirname, 'src/style/black-mode.css'), 'utf8'));
-    windowContent.insertCSS(fs.readFileSync(join(__dirname, 'src/style/sepia-mode.css'), 'utf8'));
+  if (settings.get('useGlobalShortcuts')) {
+    shortcut.registerGlobal();
+  }
 
-    if (config.get('launchMinimized')) {
+  if (!settings.get('hideTray')) {
+    tray.create();
+  }
+
+  const {webContents} = mainWindow;
+
+  webContents.on('dom-ready', () => {
+    const stylesheets = fs.readdirSync(file.style);
+    stylesheets.forEach(x => webContents.insertCSS(readSheet(x)));
+
+    if (settings.get('launchMinimized')) {
       mainWindow.minimize();
     } else {
       mainWindow.show();
     }
   });
 
-  windowContent.on('new-window', (e, url) => {
+  webContents.on('new-window', (e, url) => {
     e.preventDefault();
-    const prefix = 'https://www.evernote.com/OutboundRedirect.action?dest=';
-    url = decodeUri(url.replace(prefix, ''));
-    if (url.split('/', 4).includes('shard')) {
-      windowContent.downloadURL(url);
+    url = formatURL(url);
+
+    if (is.downloadURL(url)) {
+      webContents.downloadURL(url);
     } else {
       shell.openExternal(url);
     }
   });
 
-  windowContent.on('crashed', e => {
-    console.log('Tusk window crashed. ', e);
-  });
+  webContents.on('crashed', log);
 
-  update.init(Menu.getApplicationMenu());
-
-  if (!isDevMode) {
-    setInterval(() => {
-      update.autoUpdateCheck();
-    }, ms(config.get('updateCheckPeriod')));
-  }
+  setInterval(() => update.auto(), time.ms(settings.get('updateCheckPeriod')));
 });
 
-ipcMain.on('activate-menu-bar', () => {
-  if (config.get('menuBarHidden')) {
-    mainWindow.setMenuBarVisibility(false);
-    mainWindow.setAutoHideMenuBar(true);
-  } else {
-    mainWindow.setMenuBarVisibility(true);
-    mainWindow.setAutoHideMenuBar(false);
-  }
+ipcMain.on('print-to-pdf', pdf.print);
+
+ipcMain.on('export-as-pdf', e => {
+  const {webContents} = mainWindow;
+  pdf.save(e, formatTitle(webContents.getTitle()));
 });
 
-ipcMain.on('print-to-pdf', event => {
-  const dateTime = timeStamp('YYYY-MM-DD_HH-mm-ss');
-  const tmpDir = os.tmpdir();
-  const fileName = 'Tusk_Note_' + dateTime + '.pdf';
-  console.log('Date - time: ' + dateTime);
-  console.log('Temp directory: ' + tmpDir);
-  console.log('File to be printed: ' + fileName);
-  const filePath = join(tmpDir, fileName);
-  const noteWindow = BrowserWindow.fromWebContents(event.sender);
-  noteWindow.webContents.printToPDF({}, (error, data) => {
-    if (error) {
-      return console.log(error.message);
-    }
-    fs.writeFile(filePath, data, err => {
-      if (err) {
-        return console.log(err.message);
-      }
-      shell.openExternal('file://' + filePath);
-    });
-  });
-});
+process.on('uncaughtException', log);
 
-ipcMain.on('export-as-pdf', event => {
-  const removeString = ' | Evernote Web';
-  const noteTitle = mainWindow.webContents.getTitle().replace(removeString, '');
-  console.log('Note to be exported is titled: ' + noteTitle);
-  const noteWindow = BrowserWindow.fromWebContents(event.sender);
-  const options = {
-    defaultPath: noteTitle,
-    filters: [{
-      name: 'PDF File',
-      extensions: ['pdf']
-    }, {
-      name: 'All Files',
-      extensions: ['*']
-    }]
-  };
-  noteWindow.webContents.printToPDF({}, (error, data) => {
-    if (error) {
-      return console.log(error.message);
-    }
-    dialog.showSaveDialog(options, fileName => {
-      if (fileName === undefined) {
-        return console.log('Note was not exported');
-      }
-      fs.writeFile(fileName, data, err => {
-        if (err) {
-          dialog.showErrorBox('Exporting note error', err.message);
-          return console.log(err.message);
-        }
-      });
-    });
-  });
-});
-
-process.on('uncaughtException', error => {
-  console.log(error);
-});
-
-app.on('activate', () => {
-  mainWindow.show();
-});
+app.on('activate', () => mainWindow.show());
 
 app.on('before-quit', () => {
   exiting = true;
-
   if (!mainWindow.isFullScreen()) {
-    config.set('lastWindowState', mainWindow.getBounds());
+    settings.set('lastWindowState', mainWindow.getBounds());
   }
 });
