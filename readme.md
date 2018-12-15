@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="media/logo.png" width="18%"><br/>Tusk
+  <img src="docs/media/logo.png" width="18%"><br/>Tusk
 </h1>
 
 <h4 align="center">
@@ -8,7 +8,7 @@
 
 <div align="center">
   <a href="https://github.com/klaussinani/tusk">
-    <img src="media/note-navigation.gif" alt="Tusk" width="95%">
+    <img src="docs/media/note-navigation.gif" alt="Tusk" width="95%">
   </a>
 </div>
 
