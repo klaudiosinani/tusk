@@ -1,117 +1,78 @@
 'use strict';
-const path = require('path');
-const electron = require('electron');
-const get = require('simple-get');
+const {app} = require('electron');
+const {get} = require('https');
+const dialog = require('./dialog');
+const url = require('./url');
 
-const {app, dialog, shell} = electron;
-const installedVersion = app.getVersion();
-const updateURL = 'https://klaussinani.github.io/tusk/update.json';
-const releaseURL = 'https://github.com/klaussinani/tusk/releases/latest';
+const {log} = console;
 
-function displayAvailableUpdate(latestVersion) {
-  const result = dialog.showMessageBox({
-    icon: path.join(__dirname, 'static/Icon.png'),
-    title: 'Update Tusk',
-    message: 'Version ' + latestVersion + ' is now available',
-    detail: 'Click Download to get it now',
-    buttons: ['Download', 'Dismiss'],
-    defaultId: 0,
-    cancelId: 1
-  });
-  console.log('Update to version', latestVersion, 'is now available');
-  return result;
-}
+class Update {
+  _compareToLocal(version) {
+    const [x, y] = [version, app.getVersion()].map(x => x.split('.').map(Number));
 
-function displayUnavailableUpdate(installedVersion) {
-  const result = dialog.showMessageBox({
-    icon: path.join(__dirname, 'static/Icon.png'),
-    title: 'No Update Available',
-    message: 'No update available',
-    detail: 'Version ' + installedVersion + ' is the latest version'
-  });
-  console.log('You are on the latest version', installedVersion);
-  return result;
-}
-
-function getLatestVersion(err, res, data) {
-  if (err) {
-    console.log('Update error.');
-  } else if (res.statusCode === 200) {
-    try {
-      data = JSON.parse(data);
-    } catch (error) {
-      console.log('Invalid JSON object');
+    for (let i = 0; i < 3; i++) {
+      const dif = x[i] - y[i];
+      if (dif !== 0) {
+        return dif;
+      }
     }
 
-    const latestVersion = data.version;
-    return latestVersion;
-  } else {
-    console.log('Unexpected status code error');
+    return 0;
+  }
+
+  _fetchUpdateData() {
+    return new Promise((resolve, reject) => {
+      const request = get(url.update, res => {
+        const {statusCode: sc} = res;
+
+        if (sc < 200 || sc > 299) {
+          reject(new Error(`Request to get update data failed with HTTP status code: ${sc}`));
+        }
+
+        const data = [];
+        res.on('data', d => data.push(d));
+        res.on('end', () => resolve(JSON.parse(data.join(''))));
+      });
+
+      request.on('error', err => reject(err));
+    });
+  }
+
+  _hasUpdate(version) {
+    return this._compareToLocal(version) > 0;
+  }
+
+  async auto() {
+    let latestVer;
+
+    try {
+      const data = await this._fetchUpdateData();
+      latestVer = data.version;
+    } catch (error) {
+      return log(error);
+    }
+
+    if (this._hasUpdate(latestVer)) {
+      return dialog.getUpdate(latestVer);
+    }
+  }
+
+  async check() {
+    let latestVer;
+
+    try {
+      const data = await this._fetchUpdateData();
+      latestVer = data.version;
+    } catch (error) {
+      return dialog.updateError(error.message);
+    }
+
+    if (this._hasUpdate(latestVer)) {
+      return dialog.getUpdate(latestVer);
+    }
+
+    return dialog.noUpdate();
   }
 }
 
-function response(result) {
-  if (result === 0) {
-    shell.openExternal(releaseURL);
-  }
-}
-
-function manualUpdateCheck(err, res, data) {
-  const latestVersion = getLatestVersion(err, res, data);
-  if (latestVersion === installedVersion) {
-    displayUnavailableUpdate(installedVersion);
-  } else {
-    const result = displayAvailableUpdate(latestVersion);
-    response(result);
-  }
-}
-
-function autoUpdateCheck(err, res, data) {
-  const latestVersion = getLatestVersion(err, res, data);
-  if (latestVersion !== installedVersion) {
-    const result = displayAvailableUpdate(latestVersion);
-    response(result);
-  }
-}
-
-module.exports.init = () => {
-  if (process.platform !== 'win32') {
-    return;
-  }
-
-  electron.autoUpdater.on('checking-for-update', () => {
-    console.log('checking-for-update');
-  });
-
-  electron.autoUpdater.on('update-available', () => {
-    console.log('update-available');
-  });
-
-  electron.autoUpdater.on('update-not-available', () => {
-    console.log('update-not-available');
-  });
-
-  electron.autoUpdater.on('update-downloaded', () => {
-    console.log('update-downloaded');
-  });
-
-  electron.autoUpdater.on('error', err => {
-    console.log('Error fetching updates', err);
-  });
-
-  const version = electron.app.getVersion();
-  const feedURL = `https://tusk.now.sh/update/${process.platform}/${version}`;
-  electron.autoUpdater.setFeedURL(feedURL);
-};
-
-module.exports.autoUpdateCheck = () => {
-  if (process.platform === 'win32') {
-    electron.autoUpdater.checkForUpdates();
-  } else {
-    get.concat(updateURL, autoUpdateCheck);
-  }
-};
-
-module.exports.manualUpdateCheck = () => {
-  get.concat(updateURL, manualUpdateCheck);
-};
+module.exports = new Update();
