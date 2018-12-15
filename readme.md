@@ -78,123 +78,24 @@ The version available on `Homebrew Cask` or `AUR` may not be the latest. If that
 
 ## Features
 
-### Sepia Theme
+Visit the project [homepage](https://klaussinani.github.io/tusk) to view all features in detail.
 
-Perfect for glossy screens. Activate it by pressing <kbd>Cmd/Ctrl</kbd> <kbd>G</kbd>
-
-<div align="center">
-      <a href="https://github.com/klaussinani/tusk">
-        <img src="media/sepia-theme.png" alt="Sepia Theme" width="86%">
-      </a>
-</div>
-
-### Dark Theme
-
-Silky & relaxing. Make it yours by pressing <kbd>Cmd/Ctrl</kbd> <kbd>D</kbd>
-
-<div align="center">
-      <a href="https://github.com/klaussinani/tusk">
-        <img src="media/dark-theme.png" alt="Dark Theme" width="85%">
-      </a>
-</div>
-
-### Black Theme
-
-Deep focus materialized. Boost your productivity by pressing <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>E</kbd>
-
-<div align="center">
-      <a href="https://github.com/klaussinani/tusk">
-        <img src="media/black-theme.png" alt="Black Theme" width="85%">
-      </a>
-</div>
-
-### Focus Mode
-
-Press <kbd>Cmd/Ctrl</kbd> <kbd>K</kbd> and immerse yourself in a distraction-free note-taking mode.
-
-<div align="center">
-      <a href="https://github.com/klaussinani/tusk">
-        <img src="media/focus-mode.png" alt="Focus Mode" width="85%">
-      </a>
-</div>
-
-### Compact Mode
-
-Get more for less. Keep your productivity to the maximum no matter the screen size. Simply downsize the window to enter the mode.
-
-<div align="center">
-      <a href="https://github.com/klaussinani/tusk">
-        <img src="media/compact-mode.png" alt="Compact Mode" width="70%">
-      </a>
-</div>
-
-### Note Navigation
-
-Navigate seamlessly between your notes by pressing <kbd>Cmd/Ctrl</kbd> <kbd>Tab</kbd> / <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>Tab</kbd> or jump directly to a specific note by using <kbd>Cmd/Ctrl</kbd> <kbd>1</kbd> - <kbd>9</kbd>
-
-<div align="center">
-      <a href="https://github.com/klaussinani/tusk">
-        <img src="media/note-navigation.gif" alt="Note Navigation" width="92%">
-      </a>
-</div>
-
-### Note Printing
-
-Printing your notes is only a keystroke away. Press <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>P</kbd> and transfer them from screen to paper.
-
-<div align="center">
-      <a href="https://github.com/klaussinani/tusk">
-        <img src="media/print-note.gif" alt="Note Printing" width="93%">
-      </a>
-</div>
-
-### Custom Shortcut Keys
-
-Adjust Tusk to your workflow. Navigate to `~/.tusk.json` or press <kbd>Cmd/Ctrl</kbd> <kbd>.</kbd> and modify any shortcut key to your own preference. To reset simply delete the tusk config file from your home directory.
-
-<div align="center">
-      <a href="https://github.com/klaussinani/tusk">
-        <img src="media/custom-shortcut-keys.gif" alt="Custom Shortcut Keys" width="85%">
-      </a>
-</div>
-
-### Scalable Interface
-
-Adjust the zooming factor to your own preference by pressing <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>=</kbd> or <kbd>Cmd/Ctrl</kbd> <kbd>-</kbd>
-
-<div align="center">
-      <a href="https://github.com/klaussinani/tusk">
-        <img src="media/scalable-interface.gif" alt="Scalable Interface" width="90%">
-      </a>
-</div>
-
-### Export Notes as PDF
-
-Press <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>E</kbd> and save your notes effortlessly on your machine as `pdf` files.
-
-<div align="center">
-      <a href="https://github.com/klaussinani/tusk">
-        <img src="media/export-notes.gif" alt="Export Notes" width="93%">
-      </a>
-</div>
-
-### Yinxiang Support
-
-Login with your Yinxiang account by using the `File` > `Switch to Yinxiang` option.
-
-<div align="center">
-      <a href="https://github.com/klaussinani/tusk">
-        <img src="media/yinxiang-support.png" alt="Yinxiang Support" width="87%">
-      </a>
-</div>
-
-### Auto Night Mode
-
-Press <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>N</kbd> and allow Tusk to intelligently adjust to your environment.
-
-### Export Notes as Markdown
-
-Press <kbd>Cmd/Ctrl</kbd> <kbd>O</kbd> and instantly export your notes as `markdown` files.
+- Auto Night Mode - Press <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>N</kbd> to allow Tusk to adjust to your environment.
+- Black Theme - Activate it by pressing <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>E</kbd>.
+- Compact Mode - Downsize the window to enter the mode.
+- Custom Shortcut Keys - Navigate to `~/.tusk.json` or press <kbd>Cmd/Ctrl</kbd> <kbd>.</kbd> to modify any shortcut key. To reset delete `~/.tusk.json` & restart the app.
+- Dark Theme - Activate it by pressing <kbd>Cmd/Ctrl</kbd> <kbd>D</kbd>.
+- Drag & Drop Files - Attach files by dragging them to the app window.
+- Export Notes as Markdown - Press <kbd>Cmd/Ctrl</kbd> <kbd>O</kbd> to save your notes as `Markdown` files.
+- Export Notes as PDF - Press <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>E</kbd> to save your notes as `PDF` files.
+- Focus Mode - Activate it by pressing <kbd>Cmd/Ctrl</kbd> <kbd>K</kbd>.
+- Global Shortcut Keys - Enable them by using the `File` > `Enable Global Shortcut Keys` option.
+- Note Navigation - Navigate your notes by pressing <kbd>Cmd/Ctrl</kbd> <kbd>Tab</kbd> / <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>Tab</kbd> or jump directly to one by using <kbd>Cmd/Ctrl</kbd> <kbd>1</kbd> - <kbd>9</kbd>.
+- Note Printing - Press <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>P</kbd> to print your notes.
+- Scalable Interface - Adjust the zooming factor by pressing <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>=</kbd> or <kbd>Cmd/Ctrl</kbd> <kbd>-</kbd>.
+- Sepia Theme - Activate it by pressing <kbd>Cmd/Ctrl</kbd> <kbd>G</kbd>.
+- Update Notifications - Customize the apps update checking frequency.
+- Yinxiang Support - Login to Yinxiang by using the `File` > `Switch to Yinxiang` option.
 
 ## Keyboard Shortcuts
 
