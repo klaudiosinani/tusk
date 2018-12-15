@@ -1,5 +1,5 @@
 'use strict';
-const {join} = require('path');
+const {dirname, join} = require('path');
 const fs = require('fs');
 const decodeUri = require('decode-uri-component');
 const url = require('./url');
@@ -45,8 +45,13 @@ class Util {
   }
 
   touchFileSync(x) {
+    const dir = dirname(x);
+
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir);
+    }
+
     return fs.closeSync(fs.openSync(x, 'a'));
   }
 }
-
 module.exports = new Util();
