@@ -1,8 +1,9 @@
 'use strict';
 const {app, Menu, shell, Tray} = require('electron');
 const {is} = require('./util');
-const settings = require('./settings');
+const dialog = require('./dialog');
 const file = require('./file');
+const settings = require('./settings');
 const url = require('./url');
 const win = require('./win');
 
@@ -101,7 +102,10 @@ function create() {
     }, {
       type: 'separator'
     }, {
-      role: 'quit'
+      label: 'Exit',
+      click() {
+        dialog.confirmExit();
+      }
     }
   ]);
 
