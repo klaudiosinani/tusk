@@ -12,8 +12,8 @@ settings.setAll({
   lastWindowState: {
     x: settings.get('lastWindowState.x'),
     y: settings.get('lastWindowState.y'),
-    width: settings.get('lastWindowState.width', 900),
-    height: settings.get('lastWindowState.height', 500)
+    width: settings.get('lastWindowState.width'),
+    height: settings.get('lastWindowState.height')
   },
   launchMinimized: settings.get('launchMinimized', false),
   menuBarHidden: settings.get('menuBarHidden', false),
