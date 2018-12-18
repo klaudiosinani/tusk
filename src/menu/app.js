@@ -1,5 +1,6 @@
 'use strict';
 const {app} = require('electron');
+const dialog = require('./../dialog');
 
 module.exports = {
   label: app.getName(),
@@ -18,7 +19,10 @@ module.exports = {
     }, {
       type: 'separator'
     }, {
-      role: 'quit'
+      label: 'Exit',
+      click() {
+        dialog.confirmExit();
+      }
     }
   ]
 };
