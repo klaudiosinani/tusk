@@ -36,10 +36,9 @@ app.on('second-instance', () => {
 });
 
 function createMainWindow() {
-  const options = Object.assign(win.defaultOpts, settings.get('lastWindowState'));
   const lastURL = settings.get('useYinxiang') ? url.yinxiang : url.evernote;
 
-  const tuskWindow = new BrowserWindow(options);
+  const tuskWindow = new BrowserWindow(win.defaultOpts);
 
   tuskWindow.loadURL(lastURL);
 

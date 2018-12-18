@@ -1,13 +1,36 @@
 'use strict';
-const {app, BrowserWindow} = require('electron');
 const {join} = require('path');
+const electron = require('electron');
 const {is} = require('./util');
 const file = require('./file');
 const settings = require('./settings');
 
+const {app, BrowserWindow} = electron;
+
 class Win {
-  get defaultOpts() {
+  get _screenDimensions() {
+    const {width, height} = electron.screen.getPrimaryDisplay().workAreaSize;
+    return [width, height];
+  }
+
+  get _defaultDimensions() {
+    return this._screenDimensions.map(x => Math.round(x * 0.9));
+  }
+
+  get _lastState() {
+    const {x, y, width, height} = settings.get('lastWindowState');
+    const [defaultWidth, defaultHeight] = this._defaultDimensions;
+
     return {
+      x,
+      y,
+      width: width || defaultWidth,
+      height: height || defaultHeight
+    };
+  }
+
+  get defaultOpts() {
+    return Object.assign({}, this._lastState, {
       alwaysOnTop: settings.get('alwaysOnTop'),
       autoHideMenuBar: settings.get('menuBarHidden'),
       darkTheme: settings.get('mode.dark') || settings.get('mode.black'),
@@ -22,7 +45,7 @@ class Win {
         plugins: true,
         preload: join(__dirname, './browser.js')
       }
-    };
+    });
   }
 
   activate(command) {
