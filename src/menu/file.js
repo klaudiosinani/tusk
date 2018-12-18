@@ -180,8 +180,11 @@ module.exports = {
         dialog.confirmSignOut();
       }
     }, {
-      role: 'quit',
-      visible: !is.darwin
+      label: 'Exit',
+      visible: !is.darwin,
+      click() {
+        dialog.confirmExit();
+      }
     }
   ]
 };

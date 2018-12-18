@@ -36,6 +36,15 @@ class Dialog {
     );
   }
 
+  _exit() {
+    return this._create({
+      buttons: ['Exit', 'Dismiss'],
+      detail: 'Are you sure you want to exit?',
+      message: 'Exit Tusk',
+      title: 'Tusk - Exit Confirmation'
+    });
+  }
+
   _signOut() {
     return this._create({
       buttons: ['Sign Out', 'Dismiss'],
@@ -66,6 +75,12 @@ class Dialog {
   confirmAbout() {
     if (this._about() === 1) {
       clipboard.writeText(this._systemInfo);
+    }
+  }
+
+  confirmExit() {
+    if (this._exit() === 0) {
+      app.quit();
     }
   }
 
