@@ -29,14 +29,17 @@ class Win {
     };
   }
 
+  get _minDimensions() {
+    const [minWidth, minHeight] = this._screenDimensions.map(x => Math.round(x * 0.3));
+    return {minWidth, minHeight};
+  }
+
   get defaultOpts() {
-    return Object.assign({}, this._lastState, {
+    return Object.assign({}, this._minDimensions, this._lastState, {
       alwaysOnTop: settings.get('alwaysOnTop'),
       autoHideMenuBar: settings.get('menuBarHidden'),
       darkTheme: settings.get('mode.dark') || settings.get('mode.black'),
       icon: is.linux && file.icon,
-      minHeight: 200,
-      minWidth: 400,
       show: false,
       title: app.getName(),
       titleBarStyle: 'hiddenInset',
