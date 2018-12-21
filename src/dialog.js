@@ -105,7 +105,8 @@ class Dialog {
     return this._create({
       detail: `Tusk is running on the latest ${app.getVersion()} version`,
       message: 'There are currently no updates available',
-      title: 'Tusk - No Update Available'
+      title: 'Tusk - No Update Available',
+      buttons: ['Done']
     });
   }
 
