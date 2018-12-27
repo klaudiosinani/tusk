@@ -2,6 +2,7 @@
 const {activate} = require('./../win');
 const {is} = require('./../util');
 const {setAcc} = require('./../keymap');
+const dialog = require('./../dialog');
 const settings = require('./../settings');
 
 module.exports = {
@@ -98,6 +99,15 @@ module.exports = {
       click(item, focusedWindow) {
         settings.set('alwaysOnTop', item.checked);
         focusedWindow.setAlwaysOnTop(item.checked);
+      }
+    }, {
+      label: 'Hide Tray Icon',
+      type: 'checkbox',
+      visible: !is.darwin,
+      checked: settings.get('hideTray'),
+      click(item) {
+        settings.set('hideTray', item.checked);
+        dialog.confirmRestart();
       }
     }, {
       type: 'separator'
