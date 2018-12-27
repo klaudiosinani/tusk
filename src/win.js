@@ -63,7 +63,7 @@ class Win {
 
   appear() {
     const [win] = BrowserWindow.getAllWindows();
-    if (!win.isVisible()) {
+    if (!win.isVisible() || !win.isFocused()) {
       win.show();
       win.focus();
     }
