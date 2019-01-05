@@ -4,6 +4,7 @@ const os = require('os');
 const {activate} = require('./win');
 const {release} = require('./url');
 const file = require('./file');
+const settings = require('./settings');
 
 class Dialog {
   get _systemInfo() {
@@ -79,7 +80,11 @@ class Dialog {
   }
 
   confirmExit() {
-    if (this._exit() === 0) {
+    if (settings.get('requestExitConfirmation')) {
+      if (this._exit() === 0) {
+        app.quit();
+      }
+    } else {
       app.quit();
     }
   }
