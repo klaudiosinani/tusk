@@ -142,7 +142,6 @@ New Notebook               | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>N</kbd>
 New Tag                    | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>T</kbd>
 Numbered List              | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>O</kbd>
 Print Note                 | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>P</kbd>
-Reload Tusk                | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>R</kbd>
 Remove Formatting          | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>Space</kbd>
 Reset Zoom Level           | <kbd>Cmd/Ctrl</kbd> <kbd>0</kbd>
 Return to Notes            | <kbd>Esc</kbd>
@@ -156,19 +155,16 @@ Superscript Text           | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>[</kbd>
 Toggle Black Theme         | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>E</kbd>
 Toggle Checkbox            | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>B</kbd>
 Toggle Dark Theme          | <kbd>Cmd/Ctrl</kbd> <kbd>D</kbd>
-Toggle Dev Tools           | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>I</kbd>
 Toggle Focus Mode          | <kbd>Cmd/Ctrl</kbd> <kbd>K</kbd>
-Toggle Full Screen         | <kbd>F11</kbd>
 Toggle Notebooks           | <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>N</kbd>
 Toggle Sepia Theme         | <kbd>Cmd/Ctrl</kbd> <kbd>G</kbd>
 Toggle Settings            | <kbd>Cmd/Ctrl</kbd> <kbd>,</kbd>
 Toggle Shortcuts           | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>S</kbd>
 Toggle Sidebar             | <kbd>Cmd/Ctrl</kbd> <kbd>\\</kbd>
 Toggle Tags                | <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>T</kbd>
-Toggle Vibrant Dark Theme  | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>J</kbd>
-Toggle Vibrant Light Theme | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>U</kbd>
 Toggle Window Menu         | <kbd>Alt</kbd>
 Underline Text             | <kbd>Cmd/Ctrl</kbd> <kbd>U</kbd>
+
 <br/>
 
 </details>
