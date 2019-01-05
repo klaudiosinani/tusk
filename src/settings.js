@@ -22,6 +22,7 @@ settings.setAll({
     dark: settings.get('mode.dark', false),
     sepia: settings.get('mode.sepia', false)
   },
+  requestExitConfirmation: settings.get('requestExitConfirmation', true),
   sideBarHidden: settings.get('sideBarHidden', false),
   updateCheckPeriod: settings.get('updateCheckPeriod', '4'),
   useGlobalShortcuts: settings.get('useGlobalShortcuts', false),
