@@ -139,6 +139,13 @@ module.exports = {
         activate('auto-launch');
       }
     }, {
+      label: 'Launch Minimized',
+      type: 'checkbox',
+      checked: settings.get('launchMinimized'),
+      click(item) {
+        settings.set('launchMinimized', item.checked);
+      }
+    }, {
       type: 'separator'
     }, {
       label: 'Edit Shortcut Keys',
