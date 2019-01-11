@@ -46,8 +46,6 @@ module.exports = {
     'toggle-sepia-mode': 'Cmd+G',
     'toggle-sidebar': 'Cmd+\\',
     'toggle-tags': 'Shift+Alt+T',
-    'toggle-vibrant-dark-mode': 'Cmd+Alt+J',
-    'toggle-vibrant-mode': 'Cmd+Alt+U',
     'underline': 'Cmd+U'
   }
 };
