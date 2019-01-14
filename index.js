@@ -31,6 +31,7 @@ app.on('second-instance', () => {
     if (mainWindow.isMinimized()) {
       mainWindow.restore();
     }
+
     mainWindow.show();
   }
 });

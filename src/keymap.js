@@ -10,6 +10,7 @@ class Keymap {
     if (Object.prototype.hasOwnProperty.call(shortcutKeys, custom)) {
       return shortcutKeys[custom];
     }
+
     return predefined;
   }
 
