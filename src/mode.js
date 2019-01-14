@@ -18,7 +18,7 @@ class Mode {
     const style = document.createElement('style');
     const fontColor = settings.get(`mode.${mode}`) ? this._colors[mode] : this._colors.default;
     style.textContent = `body {color: ${fontColor};}`;
-    return frame.contentDocument.head.appendChild(style);
+    return frame.contentDocument.head.append(style);
   }
 
   _toggle(mode) {
@@ -69,8 +69,10 @@ class Mode {
         if (frame) {
           resolve(frame);
         }
+
         setTimeout(checkNoteFrame, 50);
       };
+
       checkNoteFrame();
     });
   }
@@ -88,7 +90,7 @@ class Mode {
   async autoWritingDirection() {
     const frame = await this.getNoteFrame();
     frame.contentDocument.body.setAttribute('dir', 'auto');
-    document.getElementById('gwt-debug-NoteTitleView-container').setAttribute('dir', 'auto');
+    document.querySelector('#gwt-debug-NoteTitleView-container').setAttribute('dir', 'auto');
   }
 
   sepia() {
