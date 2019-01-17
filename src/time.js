@@ -3,7 +3,7 @@
 class Time {
   date() {
     const _ = new Date();
-    return [_.getMonth(), _.getDay(), _.getFullYear()].join('/');
+    return [_.getMonth() + 1, _.getDate(), _.getFullYear()].join('/');
   }
 
   dateTime() {
