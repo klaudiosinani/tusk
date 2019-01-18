@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "test": "xo && stylelint 'src/style/*.css'",
-    "release": "build --publish always",
+    "release": "build --win --x64",
     "start": "electron ."
   },
   "dependencies": {
@@ -103,6 +103,9 @@
           ]
         }
       ]
+    },
+    "nsis": {
+      "license": "license.md"
     },
     "snap": {
       "grade": "stable",
