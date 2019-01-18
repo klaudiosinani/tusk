@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "test": "xo && stylelint 'src/style/*.css'",
-    "release": "build --win --x64",
+    "release": "build --publish always",
     "start": "electron ."
   },
   "dependencies": {
