@@ -115,6 +115,12 @@ module.exports = {
             activate('export');
           }
         }, {
+          label: 'HTML File',
+          accelerator: setAcc('export-html', 'CmdorCtrl+Shift+H'),
+          click() {
+            activate('export-as-html');
+          }
+        }, {
           label: 'Markdown File',
           accelerator: setAcc('export-markdown', 'CmdorCtrl+O'),
           click() {
