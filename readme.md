@@ -182,9 +182,9 @@ Access Tusk at any moment from anywhere within your operating system. All global
 
 Description                | Global Shortcut
 -------------------------- | --------------------------
-Toggle Tusk Window         | <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>A</kbd>
-Create New Note            | <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>C</kbd>
-Search Notes               | <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>F</kbd>
+Toggle Tusk Window         | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>A</kbd>
+Create New Note            | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>C</kbd>
+Search Notes               | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>F</kbd>
 
 <br/>
 
