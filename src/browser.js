@@ -1,8 +1,8 @@
 'use strict';
 const {ipcRenderer: ipc} = require('electron');
-const md = require('./md');
 const mode = require('./mode');
 const nav = require('./nav');
+const save = require('./save');
 const settings = require('./settings');
 const startup = require('./startup');
 
@@ -10,7 +10,9 @@ ipc.on('print', () => ipc.send('print-to-pdf'));
 
 ipc.on('export', () => ipc.send('export-as-pdf'));
 
-ipc.on('export-as-markdown', () => md.save());
+ipc.on('export-as-markdown', () => save.md());
+
+ipc.on('export-as-html', () => save.html());
 
 ipc.on('auto-launch', () => startup.autoLaunch());
 

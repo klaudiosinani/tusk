@@ -16,6 +16,7 @@ module.exports = {
     'date-time-stamp': 'Ctrl+;',
     'decrease-indentation': 'Ctrl+Shift+M',
     'delete-note': 'Delete',
+    'export-html': 'Ctrl+Shift+H',
     'export-markdown': 'Ctrl+O',
     'export-pdf': 'Ctrl+Shift+E',
     'global-new-note': 'Shift+Alt+C',
