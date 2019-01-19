@@ -16,18 +16,18 @@ class Keymap {
 
   registerGlobal() {
     const toggleTusk = globalShortcut.register(
-      this.setAcc('global-toggle-tusk', 'Shift+Alt+A'), () => {
+      this.setAcc('global-toggle-window', 'CmdorCtrl+Alt+A'), () => {
         win.toggle();
       });
 
     const searchNote = globalShortcut.register(
-      this.setAcc('global-search', 'Shift+Alt+F'), () => {
+      this.setAcc('global-search-note', 'CmdorCtrl+Alt+F'), () => {
         win.appear();
         win.activate('search');
       });
 
     const createNote = globalShortcut.register(
-      this.setAcc('global-new-note', 'Shift+Alt+C'), () => {
+      this.setAcc('global-create-note', 'CmdorCtrl+Alt+C'), () => {
         win.appear();
         win.activate('new-note');
       });
