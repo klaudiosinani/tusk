@@ -87,6 +87,7 @@ Visit the project [homepage](https://klaussinani.github.io/tusk) to view all fea
 - Dark Theme - Activate it by pressing <kbd>Cmd/Ctrl</kbd> <kbd>D</kbd>.
 - Drag & Drop Files - Attach files by dragging them to the app window.
 - Export Notes as Markdown - Press <kbd>Cmd/Ctrl</kbd> <kbd>O</kbd> to save your notes as `Markdown` files.
+- Export Notes as HTML - Press <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>H</kbd> to save your notes as `HTML` files.
 - Export Notes as PDF - Press <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>E</kbd> to save your notes as `PDF` files.
 - Focus Mode - Activate it by pressing <kbd>Cmd/Ctrl</kbd> <kbd>K</kbd>.
 - Global Shortcut Keys - Enable them by using the `File` > `Enable Global Shortcut Keys` option.
@@ -124,6 +125,7 @@ Code Block                 | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>L</kbd>
 Decrease Indentation       | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>M</kbd>
 Delete Note                | <kbd>Delete</kbd>
 Edit Shortcut Keys         | <kbd>Cmd/Ctrl</kbd> <kbd>.</kbd>
+Export Note as HTML         | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>H</kbd>
 Export Note as Markdown    | <kbd>Cmd/Ctrl</kbd> <kbd>O</kbd>
 Export Note as PDF         | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>E</kbd>
 Increase Indentation       | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>K</kbd>
