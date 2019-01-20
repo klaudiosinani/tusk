@@ -33,7 +33,7 @@ You can find more desktop apps [here](#related-apps).
 - Black, Dark & Sepia Themes
 - Focus, Compact & Auto-Night Modes
 - Local & Global Customizable Keyboard Shortcuts
-- Export Notes as PDF & Markdown Files
+- Export Notes as PDF, HTML & Markdown Files
 - Note Navigation
 - Yinxiang Support
 - Cross Platform
