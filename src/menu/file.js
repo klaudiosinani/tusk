@@ -164,8 +164,8 @@ module.exports = {
       type: 'checkbox',
       checked: settings.get('useGlobalShortcuts'),
       click(item) {
-        settings.set('useGlobalShortcuts', item.checked);
-        dialog.confirmRestart();
+        dialog.confirmActivationRestart('useGlobalShortcuts', item.checked);
+        item.checked = settings.get('useGlobalShortcuts');
       }
     }, {
       label: 'Request Exit Confirmation',

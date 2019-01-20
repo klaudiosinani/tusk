@@ -32,34 +32,34 @@ module.exports = {
         {
           label: 'Once Every 4 Hours',
           type: 'checkbox',
-          checked: (settings.get('updateCheckPeriod') === '4'),
-          click() {
-            settings.set('updateCheckPeriod', '4');
-            dialog.confirmRestart();
+          checked: settings.get('updateCheckPeriod') === '4',
+          click(item) {
+            dialog.confirmActivationRestart('updateCheckPeriod', '4');
+            item.checked = settings.get('updateCheckPeriod') === '4';
           }
         }, {
           label: 'Once Every 8 Hours',
           type: 'checkbox',
-          checked: (settings.get('updateCheckPeriod') === '8'),
-          click() {
-            settings.set('updateCheckPeriod', '8');
-            dialog.confirmRestart();
+          checked: settings.get('updateCheckPeriod') === '8',
+          click(item) {
+            dialog.confirmActivationRestart('updateCheckPeriod', '8');
+            item.checked = settings.get('updateCheckPeriod') === '8';
           }
         }, {
           label: 'Once Every 12 Hours',
           type: 'checkbox',
-          checked: (settings.get('updateCheckPeriod') === '12'),
-          click() {
-            settings.set('updateCheckPeriod', '12');
-            dialog.confirmRestart();
+          checked: settings.get('updateCheckPeriod') === '12',
+          click(item) {
+            dialog.confirmActivationRestart('updateCheckPeriod', '12');
+            item.checked = settings.get('updateCheckPeriod') === '12';
           }
         }, {
           label: 'Once a Day',
           type: 'checkbox',
-          checked: (settings.get('updateCheckPeriod') === '24'),
-          click() {
-            settings.set('updateCheckPeriod', '24');
-            dialog.confirmRestart();
+          checked: settings.get('updateCheckPeriod') === '24',
+          click(item) {
+            dialog.confirmActivationRestart('updateCheckPeriod', '24');
+            item.checked = settings.get('updateCheckPeriod') === '24';
           }
         }
       ]
