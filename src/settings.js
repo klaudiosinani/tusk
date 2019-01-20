@@ -8,6 +8,7 @@ settings.setAll({
   alwaysOnTop: settings.get('alwaysOnTop', false),
   autoLaunch: settings.get('autoLaunch', false),
   autoNightMode: settings.get('autoNightMode', false),
+  disableAutoUpdateCheck: settings.get('disableAutoUpdateCheck', false),
   hideTray: settings.get('hideTray', false),
   lastWindowState: {
     x: settings.get('lastWindowState.x'),
