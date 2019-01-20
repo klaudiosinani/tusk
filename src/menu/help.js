@@ -28,6 +28,7 @@ module.exports = {
       }
     }, {
       label: 'Update Check Frequency',
+      enabled: !settings.get('disableAutoUpdateCheck'),
       submenu: [
         {
           label: 'Once Every 4 Hours',
@@ -63,6 +64,14 @@ module.exports = {
           }
         }
       ]
+    }, {
+      label: 'Disable Automatic Update Check',
+      type: 'checkbox',
+      checked: settings.get('disableAutoUpdateCheck'),
+      click(item) {
+        dialog.confirmActivationRestart('disableAutoUpdateCheck', item.checked);
+        item.checked = settings.get('disableAutoUpdateCheck');
+      }
     }, {
       type: 'separator'
     }, {
