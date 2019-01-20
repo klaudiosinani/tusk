@@ -89,8 +89,9 @@ class Dialog {
     }
   }
 
-  confirmRestart() {
+  confirmActivationRestart(option, state) {
     if (this._restart() === 0) {
+      settings.set(option, state);
       app.quit();
       app.relaunch();
     }

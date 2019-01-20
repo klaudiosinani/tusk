@@ -106,8 +106,8 @@ module.exports = {
       visible: !is.darwin,
       checked: settings.get('hideTray'),
       click(item) {
-        settings.set('hideTray', item.checked);
-        dialog.confirmRestart();
+        dialog.confirmActivationRestart('hideTray', item.checked);
+        item.checked = settings.get('hideTray');
       }
     }, {
       type: 'separator'
