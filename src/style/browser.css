@@ -3,10 +3,7 @@
   --sepia: rgba(251, 240, 217, 1);
   --dark-grey: rgba(33, 33, 33, 1);
   --black-five: rgba(0, 0, 0, 0.05);
-  --vibrant-black: rgba(30, 14, 29, 1);
-  --vibrant-grey: rgba(216, 203, 199, 1);
   --white-five: rgba(255, 255, 255, 0.05);
-  --transparent-white: rgba(255, 255, 255, 0);
 }
 html {
   overflow: hidden;
@@ -36,7 +33,7 @@ div#gwt-debug-notesListView {
 div#gwt-debug-FocusView-root { /* Main app window background */
   background-color: white !important;
 }
-.GJDCG5CP4B { /* Elephant logo */
+.GJDCG5CO4B { /* Elephant logo */
   left: 0;
   right: 0;
   bottom: 0;
@@ -44,7 +41,7 @@ div#gwt-debug-FocusView-root { /* Main app window background */
   height: 66px;
   position: relative;
 }
-.GJDCG5CG5B { /* Sidebar buttons */
+.GJDCG5CF5B { /* Sidebar buttons */
   margin: 20px 0px !important;
 }
 .FocusClipperButton-button {
@@ -60,11 +57,8 @@ div#gwt-debug-FocusView-root { /* Main app window background */
   background-color: #FFFFFF;
   margin-bottom:  -6px !important;
 }
-.GJDCG5CP3B { /* Profile background */
+.GJDCG5CO3B { /* Profile background */
   background-color: #F8F8F8 !important;
-}
-.GJDCG5CE1B { /* Note list transition background */
-  background-color: #FFFFFF !important;
 }
 div#gwt-debug-NotesHeaderView-root {
   background-color: #FFFFFF !important;
