@@ -20,7 +20,7 @@
 
 ## Description
 
-Tusk is an unofficial, featureful, open source, community-driven, free Evernote app used by people in more than [130 countries](https://snapcraft.io/tusk).
+Tusk is an unofficial, featureful, open source, community-driven, free Evernote app used by people in more than [140 countries](https://snapcraft.io/tusk).
 
 Come over to [Gitter](https://gitter.im/klaussinani/tusk) or [Twitter](https://twitter.com/klaussinani) to share your thoughts on the project.
 
