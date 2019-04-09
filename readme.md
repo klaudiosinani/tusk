@@ -26,7 +26,7 @@ Come over to [Gitter](https://gitter.im/klaussinani/tusk) or [Twitter](https://t
 
 Visit the [contributing guidelines](https://github.com/klaussinani/tusk/blob/master/contributing.md#translating-documentation) to learn more on how to translate this document into more languages.
 
-You can find more desktop apps [here](#related-apps).
+You can find more apps [here](#related-apps).
 
 ## Highlights
 
