@@ -1,7 +1,7 @@
 'use strict';
 const {app, BrowserWindow, ipcMain, Menu, shell} = require('electron');
 const fs = require('fs');
-const {is, formatTitle, formatURL, readSheet} = require('./src/util');
+const {is, formatTitle, formatURL, formatYinxiangURL, readSheet} = require('./src/util');
 const file = require('./src/file');
 const menu = require('./src/menu');
 const pdf = require('./src/pdf');
@@ -95,7 +95,7 @@ app.on('ready', () => {
 
   webContents.on('new-window', (e, url) => {
     e.preventDefault();
-    url = formatURL(url);
+    url = settings.get('useYinxiang') ? formatYinxiangURL(url) : formatURL(url);
 
     if (is.downloadURL(url)) {
       webContents.downloadURL(url);

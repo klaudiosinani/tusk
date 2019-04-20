@@ -40,6 +40,10 @@ class Util {
     return decodeUri(x.replace(url.redirect, ''));
   }
 
+  formatYinxiangURL(x) {
+    return decodeUri(x.replace(url.yinxiangRedirect, ''));
+  }
+
   readSheet(x) {
     return fs.readFileSync(join(__dirname, './style', x), 'utf8');
   }
