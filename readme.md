@@ -26,7 +26,7 @@ Come over to [Gitter](https://gitter.im/klaussinani/tusk) or [Twitter](https://t
 
 Visit the [contributing guidelines](https://github.com/klaussinani/tusk/blob/master/contributing.md#translating-documentation) to learn more on how to translate this document into more languages.
 
-You can find more desktop apps [here](#related-apps).
+You can find more apps [here](#related-apps).
 
 ## Highlights
 
@@ -60,21 +60,17 @@ You can find more desktop apps [here](#related-apps).
 
 Head to the [releases](https://github.com/klaussinani/tusk/releases/latest) page and download the appropriate installer for your system.
 
-#### Snap
+#### Snapcraft
 
-Ubuntu Linux users can directly install through [Snap](https://snapcraft.io/tusk) `snap install tusk`
+Ubuntu Linux users can directly install through [Snapcraft](https://snapcraft.io/tusk) `snap install tusk`
 
 #### Homebrew
 
 Macos users can directly install through [Homebrew Cask](https://caskroom.github.io/) `brew cask install tusk`
 
-#### AUR
-
-Arch Linux users can directly install through [AUR](https://aur.archlinux.org/packages/tusk/) `yaourt tusk`
-
 #### Note
 
-The version available on `Homebrew Cask` or `AUR` may not be the latest. If that is the case, please consider downloading directly from the [Github releases](https://github.com/klaussinani/tusk/releases/latest) page.
+The version available on `Homebrew Cask` may not be the latest, since unlike `Snapcraft`, it is not offically maintained. If that is the case, please consider downloading directly from the [Github releases](https://github.com/klaussinani/tusk/releases/latest) page.
 
 ## Features
 
