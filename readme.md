@@ -22,7 +22,7 @@
 
 Tusk is an unofficial, featureful, open source, community-driven, free Evernote app used by people in more than [140 countries](https://snapcraft.io/tusk).
 
-Tusk is [indicated by Evernote itself](https://help.evernote.com/hc/en-us/articles/208313748-Evernote-on-Linux) as an alternative client for Linux environments trusted by the open source community.
+Tusk is [indicated by Evernote](https://help.evernote.com/hc/en-us/articles/208313748-Evernote-on-Linux) as an alternative client for Linux environments trusted by the open source community.
 
 Come over to [Gitter](https://gitter.im/klaussinani/tusk) or [Twitter](https://twitter.com/klaussinani) to share your thoughts on the project.
 
