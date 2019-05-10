@@ -205,7 +205,7 @@ For more info on how to contribute to the project, please read the [contributing
 ## Team
 
 - Klaus Sinani [(@klaussinani)](https://github.com/klaussinani)
-- Mario Sinani [(@mariocfhq)](https://github.com/mariocfhq)
+- Mario Sinani [(@mariosinani)](https://github.com/mariosinani)
 - Thanasis Gkanos [(@ThanasisGkanos)](https://github.com/ThanasisGkanos)
 
 ## Disclaimer
