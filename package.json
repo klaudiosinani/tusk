@@ -18,6 +18,7 @@
     }
   ],
   "scripts": {
+    "postinstall": "electron-builder install-app-deps",
     "test": "xo && stylelint 'src/style/*.css'",
     "release": "build --publish always",
     "start": "electron ."
