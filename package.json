@@ -1,7 +1,7 @@
 {
   "name": "tusk",
   "productName": "Tusk",
-  "version": "0.22.0",
+  "version": "0.23.0",
   "description": "Refined Evernote desktop app",
   "license": "MIT",
   "repository": "klaussinani/tusk",
