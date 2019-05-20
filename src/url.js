@@ -15,5 +15,5 @@ module.exports = {
   source: 'https://github.com/klaussinani/tusk',
   update: 'https://klaussinani.github.io/tusk/update.json',
   yinxiang: 'https://app.yinxiang.com/Login.action',
-  yinxiangRedirect: 'https://app.yinxiang.com/OutboundRedirect.action?dest=',
+  yinxiangRedirect: 'https://app.yinxiang.com/OutboundRedirect.action?dest='
 };
