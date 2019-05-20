@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) Klaus Sinani <klaussinani@gmail.com> (klaussinani.github.io)
+Copyright (c) 2017 - present Klaus Sinani <klaussinani@gmail.com> (klaussinani.github.io)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
