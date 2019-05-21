@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  label: 'Edit',
+  label: '&Edit',
   submenu: [
     {
       type: 'separator'
