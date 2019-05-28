@@ -3,7 +3,7 @@
 </h1>
 
 <h4 align="center">
-  🐘 Refined Evernote desktop app
+  Refined Evernote desktop app
 </h4>
 
 <div align="center">
