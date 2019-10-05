@@ -13,7 +13,7 @@ module.exports = {
   searchFeatureRequests: 'https://github.com/klaussinani/tusk/labels/feature-request',
   settings: 'https://www.evernote.com/Settings.action',
   source: 'https://github.com/klaussinani/tusk',
-  update: 'https://klaussinani.github.io/tusk/update.json',
+  update: 'https://raw.githubusercontent.com/klaussinani/tusk/master/docs/update.json',
   yinxiang: 'https://app.yinxiang.com/Login.action',
   yinxiangRedirect: 'https://app.yinxiang.com/OutboundRedirect.action?dest='
 };
