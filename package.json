@@ -33,7 +33,7 @@
     "turndown": "^5.0.1"
   },
   "devDependencies": {
-    "electron": "4.2.2",
+    "electron": "6.0.11",
     "electron-builder": "20.40.2",
     "stylelint": "^9.9.0",
     "xo": "*"
