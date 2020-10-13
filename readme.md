@@ -210,7 +210,7 @@ For more info on how to contribute to the project, please read the [contributing
 
 - Klaus Sinani [(@klaussinani)](https://github.com/klaussinani)
 - Mario Sinani [(@mariosinani)](https://github.com/mariosinani)
-- Thanasis Gkanos [(@athangkanos)](https://github.com/athangkanos)
+- Athan Gkanos [(@athangkanos)](https://github.com/athangkanos)
 
 ## Disclaimer
 
