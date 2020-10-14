@@ -41,7 +41,11 @@ function createMainWindow() {
 
   const tuskWindow = new BrowserWindow(win.defaultOpts);
 
-  tuskWindow.loadURL(lastURL);
+  let ua = tuskWindow.webContents.userAgent;
+  ua = ua.replace(/APPLICATION NAME HERE\/[0-9\.-]*/,'');
+  ua = ua.replace(/Electron\/*/,'');
+  tuskWindow.webContents.userAgent = ua;
+  tuskWindow.loadURL(lastURL)
 
   tuskWindow.on('close', e => {
     if (!exiting) {
