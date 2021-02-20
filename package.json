@@ -20,22 +20,22 @@
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
     "test": "xo && stylelint 'src/style/*.css'",
-    "release": "build --publish always",
+    "release": "electron-builder --publish always",
     "start": "electron ."
   },
   "dependencies": {
-    "auto-launch": "^5.0.1",
+    "auto-launch": "^5.0.5",
     "decode-uri-component": "^0.2.0",
-    "electron-context-menu": "^0.9.0",
-    "electron-debug": "^1.3.0",
-    "electron-dl": "^1.11.0",
-    "electron-settings": "^3.1.4",
-    "turndown": "^5.0.1"
+    "electron-context-menu": "^2.4.0",
+    "electron-debug": "^3.2.0",
+    "electron-dl": "^3.1.0",
+    "electron-settings": "^4.0.2",
+    "turndown": "^7.0.0"
   },
   "devDependencies": {
-    "electron": "6.0.11",
-    "electron-builder": "21.2.0",
-    "stylelint": "^9.9.0",
+    "electron": "11.3.0",
+    "electron-builder": "22.9.1",
+    "stylelint": "^13.11.0",
     "xo": "*"
   },
   "xo": {

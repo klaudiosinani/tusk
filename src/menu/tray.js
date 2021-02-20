@@ -72,10 +72,10 @@ module.exports = [
   }, {
     label: 'Auto Night Mode',
     type: 'checkbox',
-    checked: settings.get('autoNightMode'),
+    checked: settings.getSync('autoNightMode'),
     click(item) {
       win.appear();
-      settings.set('autoNightMode', item.checked);
+      settings.setSync('autoNightMode', item.checked);
       win.activate('auto-night-mode');
     }
   }, {

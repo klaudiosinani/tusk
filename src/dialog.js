@@ -27,14 +27,16 @@ class Dialog {
     });
   }
 
-  _create(options) {
-    return dialog.showMessageBox(
+  async _create (options) {
+    const response = await dialog.showMessageBox(
       Object.assign({
         cancelId: 1,
         defaultId: 0,
         icon: file.icon
       }, options)
     );
+
+    return response.response
   }
 
   _exit() {
@@ -73,15 +75,15 @@ class Dialog {
     });
   }
 
-  confirmAbout() {
-    if (this._about() === 1) {
+  async confirmAbout() {
+    if (await this._about() === 1) {
       clipboard.writeText(this._systemInfo);
     }
   }
 
-  confirmExit() {
-    if (settings.get('requestExitConfirmation')) {
-      if (this._exit() === 0) {
+  async confirmExit() {
+    if (settings.getSync('requestExitConfirmation')) {
+      if (await this._exit() === 0) {
         app.quit();
       }
     } else {
@@ -89,16 +91,16 @@ class Dialog {
     }
   }
 
-  confirmActivationRestart(option, state) {
-    if (this._restart() === 0) {
-      settings.set(option, state);
+  async confirmActivationRestart (option, state) {
+    if (await this._restart() === 0) {
+      settings.setSync(option, state);
       app.quit();
       app.relaunch();
     }
   }
 
-  confirmSignOut() {
-    if (this._signOut() === 0) {
+  async confirmSignOut() {
+    if (await this._signOut() === 0) {
       activate('log-out');
     }
   }
@@ -116,8 +118,8 @@ class Dialog {
     });
   }
 
-  getUpdate(version) {
-    if (this._update(version) === 0) {
+  async getUpdate(version) {
+    if (await this._update(version) === 0) {
       shell.openExternal(release);
     }
   }

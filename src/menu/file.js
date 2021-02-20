@@ -139,17 +139,17 @@ module.exports = {
     }, {
       label: 'Launch on Start',
       type: 'checkbox',
-      checked: settings.get('autoLaunch'),
+      checked: settings.getSync('autoLaunch'),
       click(item) {
-        settings.set('autoLaunch', item.checked);
+        settings.setSync('autoLaunch', item.checked);
         activate('auto-launch');
       }
     }, {
       label: 'Launch Minimized',
       type: 'checkbox',
-      checked: settings.get('launchMinimized'),
+      checked: settings.getSync('launchMinimized'),
       click(item) {
-        settings.set('launchMinimized', item.checked);
+        settings.setSync('launchMinimized', item.checked);
       }
     }, {
       type: 'separator'
@@ -162,33 +162,33 @@ module.exports = {
     }, {
       label: 'Enable Global Shortcut Keys',
       type: 'checkbox',
-      checked: settings.get('useGlobalShortcuts'),
+      checked: settings.getSync('useGlobalShortcuts'),
       click(item) {
         dialog.confirmActivationRestart('useGlobalShortcuts', item.checked);
-        item.checked = settings.get('useGlobalShortcuts');
+        item.checked = settings.getSync('useGlobalShortcuts');
       }
     }, {
       label: 'Request Exit Confirmation',
       type: 'checkbox',
-      checked: settings.get('requestExitConfirmation'),
+      checked: settings.getSync('requestExitConfirmation'),
       click(item) {
-        settings.set('requestExitConfirmation', item.checked);
+        settings.setSync('requestExitConfirmation', item.checked);
       }
     }, {
       type: 'separator'
     }, {
       label: 'Switch to Yinxiang',
-      visible: !settings.get('useYinxiang'),
+      visible: !settings.getSync('useYinxiang'),
       click() {
-        settings.set('useYinxiang', true);
+        settings.setSync('useYinxiang', true);
         app.relaunch();
         app.quit();
       }
     }, {
       label: 'Switch to Evernote',
-      visible: settings.get('useYinxiang'),
+      visible: settings.getSync('useYinxiang'),
       click() {
-        settings.set('useYinxiang', false);
+        settings.setSync('useYinxiang', false);
         app.relaunch();
         app.quit();
       }
