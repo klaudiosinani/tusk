@@ -28,49 +28,49 @@ module.exports = {
       }
     }, {
       label: 'Update Check Frequency',
-      enabled: !settings.get('disableAutoUpdateCheck'),
+      enabled: !settings.getSync('disableAutoUpdateCheck'),
       submenu: [
         {
           label: 'Once Every 4 Hours',
           type: 'checkbox',
-          checked: settings.get('updateCheckPeriod') === '4',
+          checked: settings.getSync('updateCheckPeriod') === '4',
           click(item) {
             dialog.confirmActivationRestart('updateCheckPeriod', '4');
-            item.checked = settings.get('updateCheckPeriod') === '4';
+            item.checked = settings.getSync('updateCheckPeriod') === '4';
           }
         }, {
           label: 'Once Every 8 Hours',
           type: 'checkbox',
-          checked: settings.get('updateCheckPeriod') === '8',
+          checked: settings.getSync('updateCheckPeriod') === '8',
           click(item) {
             dialog.confirmActivationRestart('updateCheckPeriod', '8');
-            item.checked = settings.get('updateCheckPeriod') === '8';
+            item.checked = settings.getSync('updateCheckPeriod') === '8';
           }
         }, {
           label: 'Once Every 12 Hours',
           type: 'checkbox',
-          checked: settings.get('updateCheckPeriod') === '12',
+          checked: settings.getSync('updateCheckPeriod') === '12',
           click(item) {
             dialog.confirmActivationRestart('updateCheckPeriod', '12');
-            item.checked = settings.get('updateCheckPeriod') === '12';
+            item.checked = settings.getSync('updateCheckPeriod') === '12';
           }
         }, {
           label: 'Once a Day',
           type: 'checkbox',
-          checked: settings.get('updateCheckPeriod') === '24',
+          checked: settings.getSync('updateCheckPeriod') === '24',
           click(item) {
             dialog.confirmActivationRestart('updateCheckPeriod', '24');
-            item.checked = settings.get('updateCheckPeriod') === '24';
+            item.checked = settings.getSync('updateCheckPeriod') === '24';
           }
         }
       ]
     }, {
       label: 'Disable Automatic Update Check',
       type: 'checkbox',
-      checked: settings.get('disableAutoUpdateCheck'),
+      checked: settings.getSync('disableAutoUpdateCheck'),
       click(item) {
         dialog.confirmActivationRestart('disableAutoUpdateCheck', item.checked);
-        item.checked = settings.get('disableAutoUpdateCheck');
+        item.checked = settings.getSync('disableAutoUpdateCheck');
       }
     }, {
       type: 'separator'

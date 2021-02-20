@@ -30,7 +30,7 @@ class Startup {
   }
 
   autoLaunch() {
-    if (settings.get('autoLaunch')) {
+    if (settings.getSync('autoLaunch')) {
       this._activate();
     } else {
       this._deactivate();

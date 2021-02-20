@@ -16,17 +16,17 @@ class Mode {
   async _setFontColor(mode) {
     const frame = await this.getNoteFrame();
     const style = document.createElement('style');
-    const fontColor = settings.get(`mode.${mode}`) ? this._colors[mode] : this._colors.default;
+    const fontColor = settings.getSync(`mode.${mode}`) ? this._colors[mode] : this._colors.default;
     style.textContent = `body {color: ${fontColor};}`;
     return frame.contentDocument.head.append(style);
   }
 
   _toggle(mode) {
-    const modes = settings.get('mode');
+    const modes = settings.getSync('mode');
 
     Object.keys(modes).forEach(x => {
-      settings.set(`mode.${x}`, (x === mode) ? !modes[x] : false);
-      document.documentElement.classList.toggle(`${x}-mode`, settings.get(`mode.${x}`));
+      settings.setSync(`mode.${x}`, (x === mode) ? !modes[x] : false);
+      document.documentElement.classList.toggle(`${x}-mode`, settings.getSync(`mode.${x}`));
     });
 
     this._setFontColor(mode);
@@ -35,12 +35,12 @@ class Mode {
   _enableAutoNight() {
     if (time.isDaytime()) {
       this._toggle(null);
-    } else if (!settings.get('mode.dark')) {
+    } else if (!settings.getSync('mode.dark')) {
       this._toggle('dark');
     }
 
     setTimeout(() => {
-      if (settings.get('autoNightMode')) {
+      if (settings.getSync('autoNightMode')) {
         return this._enableAutoNight();
       }
     }, time.ms(time.transitionSpan()));
@@ -51,7 +51,7 @@ class Mode {
   }
 
   autoNight() {
-    return settings.get('autoNightMode') ? this._enableAutoNight() : this._disableAutoNight();
+    return settings.getSync('autoNightMode') ? this._enableAutoNight() : this._disableAutoNight();
   }
 
   black() {
@@ -78,7 +78,7 @@ class Mode {
   }
 
   restore() {
-    const modes = settings.get('mode');
+    const modes = settings.getSync('mode');
     Object.keys(modes).forEach(x => {
       if (modes[x]) {
         this._setFontColor(x);

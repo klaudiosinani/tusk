@@ -69,10 +69,10 @@ module.exports = {
     }, {
       label: 'Auto Night Mode',
       type: 'checkbox',
-      checked: settings.get('autoNightMode'),
+      checked: settings.getSync('autoNightMode'),
       accelerator: 'CmdorCtrl+Alt+N',
       click(item) {
-        settings.set('autoNightMode', item.checked);
+        settings.setSync('autoNightMode', item.checked);
         activate('auto-night-mode');
       }
     }, {
@@ -94,27 +94,27 @@ module.exports = {
     }, {
       label: 'Always on Top',
       type: 'checkbox',
-      checked: settings.get('alwaysOnTop'),
+      checked: settings.getSync('alwaysOnTop'),
       accelerator: 'CmdorCtrl+Shift+P',
       click(item, focusedWindow) {
-        settings.set('alwaysOnTop', item.checked);
+        settings.setSync('alwaysOnTop', item.checked);
         focusedWindow.setAlwaysOnTop(item.checked);
       }
     }, {
       label: 'Hide Tray Icon',
       type: 'checkbox',
       visible: !is.darwin,
-      checked: settings.get('hideTray'),
+      checked: settings.getSync('hideTray'),
       click(item) {
         dialog.confirmActivationRestart('hideTray', item.checked);
-        item.checked = settings.get('hideTray');
+        item.checked = settings.getSync('hideTray');
       }
     }, {
       type: 'separator'
     }, {
       label: 'Toggle Side Bar',
       type: 'checkbox',
-      checked: !settings.get('sideBarHidden'),
+      checked: !settings.getSync('sideBarHidden'),
       accelerator: setAcc('toggle-sidebar', 'CmdorCtrl+\\'),
       click() {
         activate('toggle-side-bar');
@@ -122,10 +122,10 @@ module.exports = {
     }, {
       label: 'Toggle Menu Bar',
       type: 'checkbox',
-      checked: !settings.get('menuBarHidden'),
+      checked: !settings.getSync('menuBarHidden'),
       visible: !is.darwin,
       click(item, focusedWindow) {
-        settings.set('menuBarHidden', !item.checked);
+        settings.setSync('menuBarHidden', !item.checked);
         focusedWindow.setMenuBarVisibility(item.checked);
         focusedWindow.setAutoHideMenuBar(!item.checked);
       }
