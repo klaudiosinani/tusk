@@ -128,3 +128,4 @@ app.on('before-quit', () => {
     settings.set('lastWindowState', mainWindow.getBounds());
   }
 });
+hello brother
