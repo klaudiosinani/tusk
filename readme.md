@@ -70,7 +70,7 @@ Ubuntu Linux users can directly install through [Snapcraft](https://snapcraft.io
 
 #### Homebrew
 
-Macos users can directly install through [Homebrew Cask](https://caskroom.github.io/) `brew cask install tusk`
+Macos users can directly install through [Homebrew Cask](https://formulae.brew.sh/cask/tusk) `brew install --cask tusk`
 
 #### Note
 
