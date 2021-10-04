@@ -6,7 +6,7 @@ const dialog = require('./../dialog');
 const settings = require('./../settings');
 
 module.exports = {
-  label: 'View',
+  label: '&View',
   submenu: [
     {
       label: 'Reload',
