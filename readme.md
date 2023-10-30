@@ -26,7 +26,7 @@ Tusk is [indicated by Evernote](https://help.evernote.com/hc/en-us/articles/2083
 
 You can now support the development process through [GitHub Sponsors](https://github.com/sponsors/klaussinani).
 
-Come over to [Gitter](https://gitter.im/klaussinani/tusk) or [Twitter](https://twitter.com/klaussinani) to share your thoughts on the project.
+Come over to [Gitter](https://gitter.im/klaussinani/tusk) or [𝕏 (Twitter)](https://twitter.com/klaussinani) to share your thoughts on the project.
 
 Visit the [contributing guidelines](https://github.com/klaussinani/tusk/blob/master/contributing.md#translating-documentation) to learn more on how to translate this document into more languages.
 
