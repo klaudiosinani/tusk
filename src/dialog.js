@@ -21,7 +21,7 @@ class Dialog {
   _about() {
     return this._create({
       buttons: ['Done', 'Copy'],
-      detail: `Created by Klaus Sinani.\n\n${this._systemInfo}`,
+      detail: `Created by Klaudio Sinani.\n\n${this._systemInfo}`,
       message: `Tusk ${app.getVersion()} (${os.arch()})`,
       title: 'About Tusk'
     });
