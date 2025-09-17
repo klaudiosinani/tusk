@@ -16,7 +16,7 @@
 
 <p align="center">
   <a href="https://travis-ci.org/klaudiosinani/tusk">
-    <img alt="Build Status" src="https://travis-ci.org/klaudiosinani/tusk.svg?branch=master">
+    <img alt="Total Downloads" src="https://img.shields.io/github/downloads/klaudiosinani/tusk/total?style=flat&label=Total%20Downloads">
   </a>
 </p>
 
