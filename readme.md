@@ -1,5 +1,9 @@
+<div align="center">
+  <img src="docs/media/logo.png" width="18%"><br/>
+</div>
+
 <h1 align="center">
-  <img src="docs/media/logo.png" width="18%"><br/>Tusk
+  Tusk
 </h1>
 
 <h4 align="center">
@@ -7,14 +11,12 @@
 </h4>
 
 <div align="center">
-  <a href="https://github.com/klaussinani/tusk">
     <img src="docs/media/note-navigation.gif" alt="Tusk" width="100%">
-  </a>
 </div>
 
 <p align="center">
-  <a href="https://travis-ci.org/klaussinani/tusk">
-    <img alt="Build Status" src="https://travis-ci.org/klaussinani/tusk.svg?branch=master">
+  <a href="https://travis-ci.org/klaudiosinani/tusk">
+    <img alt="Build Status" src="https://travis-ci.org/klaudiosinani/tusk.svg?branch=master">
   </a>
 </p>
 
@@ -38,11 +40,9 @@ Tusk is an unofficial, featureful, open source, community-driven, free Evernote 
 
 Tusk is [indicated by Evernote](https://help.evernote.com/hc/en-us/articles/208313748-Evernote-on-Linux) as an alternative client for Linux environments trusted by the open source community.
 
-You can now support the development process through [GitHub Sponsors](https://github.com/sponsors/klaussinani).
+You can now support the development process through [GitHub Sponsors](https://github.com/sponsors/klaudiosinani).
 
-Come over to [Gitter](https://gitter.im/klaussinani/tusk) or [Twitter](https://twitter.com/klaussinani) to share your thoughts on the project.
-
-Visit the [contributing guidelines](https://github.com/klaussinani/tusk/blob/master/contributing.md#translating-documentation) to learn more on how to translate this document into more languages.
+Visit the [contributing guidelines](https://github.com/klaudiosinani/tusk/blob/master/contributing.md#translating-documentation) to learn more on how to translate this document into more languages.
 
 You can find more apps [here](#related-apps).
 
@@ -77,7 +77,7 @@ You can find more apps [here](#related-apps).
 
 #### Github Releases
 
-Head to the [releases](https://github.com/klaussinani/tusk/releases/latest) page and download the appropriate installer for your system.
+Head to the [releases](https://github.com/klaudiosinani/tusk/releases/latest) page and download the appropriate installer for your system.
 
 #### Snapcraft
 
@@ -89,11 +89,11 @@ Macos users can directly install through [Homebrew Cask](https://caskroom.github
 
 #### Note
 
-The version available on `Homebrew Cask` may not be the latest, since unlike `Snapcraft`, it is not offically maintained. If that is the case, please consider downloading directly from the [Github releases](https://github.com/klaussinani/tusk/releases/latest) page.
+The version available on `Homebrew Cask` may not be the latest, since unlike `Snapcraft`, it is not offically maintained. If that is the case, please consider downloading directly from the [Github releases](https://github.com/klaudiosinani/tusk/releases/latest) page.
 
 ## Features
 
-Visit the project [homepage](https://klaussinani.github.io/tusk) to view all features in detail.
+Visit the project [homepage](https://klaudiosinani.com/tusk) to view all features in detail.
 
 - Auto Night Mode - Press <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>N</kbd> to allow Tusk to adjust to your environment.
 - Black Theme - Activate it by pressing <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>E</kbd>.
@@ -118,11 +118,6 @@ Visit the project [homepage](https://klaussinani.github.io/tusk) to view all fea
 ### Local Shortcut Keys
 
 70+ local keyboard shortcuts. Toggle anything in a flash.
-
-<details>
-<summary>View all the available local keyboard shortcuts.</summary>
-
-<br/>
 
 Description                | Keys
 -------------------------- | --------------------------
@@ -182,18 +177,9 @@ Toggle Tags                | <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>T</kbd>
 Toggle Window Menu         | <kbd>Alt</kbd>
 Underline Text             | <kbd>Cmd/Ctrl</kbd> <kbd>U</kbd>
 
-<br/>
-
-</details>
-
 ### Global Shortcut Keys
 
 Access Tusk at any moment from anywhere within your operating system. All global shortcuts can be customized to match your own preference through the configuration file `~/.tusk.json`.
-
-<details>
-<summary>View all the available global keyboard shortcuts.</summary>
-
-<br/>
 
 Description                | Global Shortcut
 -------------------------- | --------------------------
@@ -201,13 +187,9 @@ Toggle Tusk Window         | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>A</kbd>
 Create New Note            | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>C</kbd>
 Search Notes               | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>F</kbd>
 
-<br/>
-
-</details>
-
 ## Development
 
-For more info on how to contribute to the project, please read the [contributing guidelines](https://github.com/klaussinani/tusk/blob/master/contributing.md).
+For more info on how to contribute to the project, please read the [contributing guidelines](https://github.com/klaudiosinani/tusk/blob/master/contributing.md).
 
 - Fork the repository and clone it to your machine
 - Navigate to your local fork: `cd tusk`
@@ -223,9 +205,8 @@ For more info on how to contribute to the project, please read the [contributing
 
 ## Team
 
-- Klaudio Sinani [(@klaussinani)](https://github.com/klaudiosinani)
+- Klaudio Sinani [(@klaudiosinani)](https://github.com/klaudiosinani)
 - Mario Sinani [(@mariosinani)](https://github.com/mariosinani)
-- Athan Gkanos [(@athangkanos)](https://github.com/athangkanos)
 
 ## Sponsors
 
@@ -239,4 +220,4 @@ Tusk is an unofficial, open source, third-party, community-driven, free app and 
 
 ## License
 
-[MIT](https://github.com/klaussinani/tusk/blob/master/license.md)
+[MIT](https://github.com/klaudiosinani/tusk/blob/master/license.md)

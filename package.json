@@ -4,11 +4,11 @@
   "version": "0.23.0",
   "description": "Refined Evernote desktop app",
   "license": "MIT",
-  "repository": "klaussinani/tusk",
+  "repository": "klaudiosinani/tusk",
   "author": {
-    "name": "Klaus Sinani",
-    "email": "klaussinani@gmail.com",
-    "url": "https://klaussinani.github.io"
+    "name": "Klaudio Sinani",
+    "email": "klaudiosinani@protonmail.ch",
+    "url": "https://klaudiosinani.com"
   },
   "maintainers": [
     {
@@ -65,7 +65,7 @@
     }
   },
   "build": {
-    "appId": "com.klaussinani.tusk",
+    "appId": "com.klaudiosinani.tusk",
     "files": [
       "**/*",
       "!media${/*}",

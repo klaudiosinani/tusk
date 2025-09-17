@@ -1,19 +1,19 @@
 'use strict';
 
 module.exports = {
-  community: 'https://gitter.im/klaussinani/tusk',
+  community: 'https://github.com/klaudiosinani/tusk',
   evernote: 'https://www.evernote.com/Login.action',
-  homepage: 'https://klaussinani.github.io/tusk',
-  issue: 'https://github.com/klaussinani/tusk/issues/new',
-  keyboardShortcutsRef: 'https://github.com/klaussinani/tusk#keyboard-shortcuts',
-  license: 'https://github.com/klaussinani/tusk/blob/master/license.md',
+  homepage: 'https://klaudiosinani.com/tusk',
+  issue: 'https://github.com/klaudiosinani/tusk/issues/new',
+  keyboardShortcutsRef: 'https://github.com/klaudiosinani/tusk#keyboard-shortcuts',
+  license: 'https://github.com/klaudiosinani/tusk/blob/master/license.md',
   redirect: 'https://www.evernote.com/OutboundRedirect.action?dest=',
-  release: 'https://github.com/klaussinani/tusk/releases/latest',
-  search: 'https://github.com/search?q=+is:issue+repo:klaussinani/tusk',
-  searchFeatureRequests: 'https://github.com/klaussinani/tusk/labels/feature-request',
+  release: 'https://github.com/klaudiosinani/tusk/releases/latest',
+  search: 'https://github.com/search?q=+is:issue+repo:klaudiosinani/tusk',
+  searchFeatureRequests: 'https://github.com/klaudiosinani/tusk/labels/feature-request',
   settings: 'https://www.evernote.com/Settings.action',
-  source: 'https://github.com/klaussinani/tusk',
-  update: 'https://raw.githubusercontent.com/klaussinani/tusk/master/docs/update.json',
+  source: 'https://github.com/klaudiosinani/tusk',
+  update: 'https://raw.githubusercontent.com/klaudiosinani/tusk/master/docs/update.json',
   yinxiang: 'https://app.yinxiang.com/Login.action',
   yinxiangRedirect: 'https://app.yinxiang.com/OutboundRedirect.action?dest='
 };
