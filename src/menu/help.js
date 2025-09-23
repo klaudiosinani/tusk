@@ -6,7 +6,7 @@ const update = require('./../update');
 const url = require('./../url');
 
 module.exports = {
-  label: 'Help',
+  label: '&Help',
   submenu: [
     {
       label: 'View License',

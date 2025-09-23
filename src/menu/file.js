@@ -9,7 +9,7 @@ const settings = require('./../settings');
 const url = require('./../url');
 
 module.exports = {
-  label: 'File',
+  label: '&File',
   submenu: [
     {
       label: 'Search',
