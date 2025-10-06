@@ -1,2 +1,0 @@
-include: [".well-known", "update.json"]
-auto: true
