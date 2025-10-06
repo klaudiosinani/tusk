@@ -15,9 +15,7 @@
 </div>
 
 <p align="center">
-  <a href="https://travis-ci.org/klaudiosinani/tusk">
-    <img alt="Total Downloads" src="https://img.shields.io/github/downloads/klaudiosinani/tusk/total?style=flat&label=Total%20Downloads">
-  </a>
+  <img alt="Total Downloads" src="https://img.shields.io/github/downloads/klaudiosinani/tusk/total?style=flat&label=Total%20Downloads">
 </p>
 
 <div align="center">
@@ -39,6 +37,8 @@
 Tusk is an unofficial, featureful, open source, community-driven, free Evernote app used by people in more than [140 countries](https://snapcraft.io/tusk).
 
 Tusk is [indicated by Evernote](https://help.evernote.com/hc/en-us/articles/208313748-Evernote-on-Linux) as an alternative client for Linux environments trusted by the open source community.
+
+Read this document in: [Albanian - Shqip](https://github.com/klaudiosinani/tusk/blob/master/docs/translations/readme.AL.md).
 
 You can now support the development process through [GitHub Sponsors](https://github.com/sponsors/klaudiosinani).
 
@@ -119,73 +119,73 @@ Visit the project [homepage](https://klaudiosinani.com/tusk) to view all feature
 
 70+ local keyboard shortcuts. Toggle anything in a flash.
 
-Description                | Keys
--------------------------- | --------------------------
-Activate Auto Night Mode   | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>N</kbd>
-Add Link                   | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>K</kbd>
-Add Shortcut               | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>S</kbd>
-Align Center               | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>M</kbd>
-Align Left                 | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>L</kbd>
-Align Right                | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>R</kbd>
-Attach File                | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>F</kbd>
-Bold Text                  | <kbd>Cmd/Ctrl</kbd> <kbd>B</kbd>
-Bulleted List              | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>.</kbd>
-Change Font Size           | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>1</kbd> - <kbd>6</kbd>
-Code Block                 | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>L</kbd>
-Decrease Indentation       | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>M</kbd>
-Delete Note                | <kbd>Delete</kbd>
-Edit Shortcut Keys         | <kbd>Cmd/Ctrl</kbd> <kbd>.</kbd>
-Export Note as HTML         | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>H</kbd>
-Export Note as Markdown    | <kbd>Cmd/Ctrl</kbd> <kbd>O</kbd>
-Export Note as PDF         | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>E</kbd>
-Increase Indentation       | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>K</kbd>
-Insert Date Stamp          | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>;</kbd>
-Insert Date-Time Stamp     | <kbd>Cmd/Ctrl</kbd> <kbd>;</kbd>
-Insert from Drive          | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>D</kbd>
-Insert Horizontal Rule     | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>-</kbd>
-Italic Text                | <kbd>Cmd/Ctrl</kbd> <kbd>I</kbd>
-Jump to Note               | <kbd>Cmd/Ctrl</kbd> <kbd>1</kbd> - <kbd>9</kbd>
-Make Text Larger           | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>=</kbd>
-Make Text Smaller          | <kbd>Cmd/Ctrl</kbd> <kbd>-</kbd>
-Navigate to Next Note      | <kbd>Cmd/Ctrl</kbd> <kbd>Tab</kbd>
-Navigate to Previews Note  | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>Tab</kbd>
-New Note                   | <kbd>Cmd/Ctrl</kbd> <kbd>N</kbd>
-New Notebook               | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>N</kbd>
-New Tag                    | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>T</kbd>
-Numbered List              | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>O</kbd>
-Print Note                 | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>P</kbd>
-Remove Formatting          | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>Space</kbd>
-Reset Zoom Level           | <kbd>Cmd/Ctrl</kbd> <kbd>0</kbd>
-Return to Notes            | <kbd>Esc</kbd>
-Save Note                  | <kbd>Cmd/Ctrl</kbd> <kbd>S</kbd>
-Search Notes               | <kbd>Cmd/Ctrl</kbd> <kbd>F</kbd>
-Set Always on Top          | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>P</kbd>
-Set Reminder               | <kbd>Cmd/Ctrl</kbd> <kbd>E</kbd>
-Strikethrough Text         | <kbd>Cmd/Ctrl</kbd> <kbd>T</kbd>
-Subscript Text             | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>]</kbd>
-Superscript Text           | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>[</kbd>
-Toggle Black Theme         | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>E</kbd>
-Toggle Checkbox            | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>B</kbd>
-Toggle Dark Theme          | <kbd>Cmd/Ctrl</kbd> <kbd>D</kbd>
-Toggle Focus Mode          | <kbd>Cmd/Ctrl</kbd> <kbd>K</kbd>
-Toggle Notebooks           | <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>N</kbd>
-Toggle Sepia Theme         | <kbd>Cmd/Ctrl</kbd> <kbd>G</kbd>
-Toggle Settings            | <kbd>Cmd/Ctrl</kbd> <kbd>,</kbd>
-Toggle Shortcuts           | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>S</kbd>
-Toggle Sidebar             | <kbd>Cmd/Ctrl</kbd> <kbd>\\</kbd>
-Toggle Tags                | <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>T</kbd>
-Toggle Window Menu         | <kbd>Alt</kbd>
-Underline Text             | <kbd>Cmd/Ctrl</kbd> <kbd>U</kbd>
+| Description               | Keys                                                           |
+| ------------------------- | -------------------------------------------------------------- |
+| Activate Auto Night Mode  | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>N</kbd>                |
+| Add Link                  | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>K</kbd>              |
+| Add Shortcut              | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>S</kbd>                |
+| Align Center              | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>M</kbd>                |
+| Align Left                | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>L</kbd>                |
+| Align Right               | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>R</kbd>                |
+| Attach File               | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>F</kbd>              |
+| Bold Text                 | <kbd>Cmd/Ctrl</kbd> <kbd>B</kbd>                               |
+| Bulleted List             | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>.</kbd>              |
+| Change Font Size          | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>1</kbd> - <kbd>6</kbd> |
+| Code Block                | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>L</kbd>              |
+| Decrease Indentation      | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>M</kbd>              |
+| Delete Note               | <kbd>Delete</kbd>                                              |
+| Edit Shortcut Keys        | <kbd>Cmd/Ctrl</kbd> <kbd>.</kbd>                               |
+| Export Note as HTML       | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>H</kbd>              |
+| Export Note as Markdown   | <kbd>Cmd/Ctrl</kbd> <kbd>O</kbd>                               |
+| Export Note as PDF        | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>E</kbd>              |
+| Increase Indentation      | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>K</kbd>                |
+| Insert Date Stamp         | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>;</kbd>              |
+| Insert Date-Time Stamp    | <kbd>Cmd/Ctrl</kbd> <kbd>;</kbd>                               |
+| Insert from Drive         | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>D</kbd>              |
+| Insert Horizontal Rule    | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>-</kbd>              |
+| Italic Text               | <kbd>Cmd/Ctrl</kbd> <kbd>I</kbd>                               |
+| Jump to Note              | <kbd>Cmd/Ctrl</kbd> <kbd>1</kbd> - <kbd>9</kbd>                |
+| Make Text Larger          | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>=</kbd>              |
+| Make Text Smaller         | <kbd>Cmd/Ctrl</kbd> <kbd>-</kbd>                               |
+| Navigate to Next Note     | <kbd>Cmd/Ctrl</kbd> <kbd>Tab</kbd>                             |
+| Navigate to Previews Note | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>Tab</kbd>            |
+| New Note                  | <kbd>Cmd/Ctrl</kbd> <kbd>N</kbd>                               |
+| New Notebook              | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>N</kbd>              |
+| New Tag                   | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>T</kbd>              |
+| Numbered List             | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>O</kbd>              |
+| Print Note                | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>P</kbd>                |
+| Remove Formatting         | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>Space</kbd>          |
+| Reset Zoom Level          | <kbd>Cmd/Ctrl</kbd> <kbd>0</kbd>                               |
+| Return to Notes           | <kbd>Esc</kbd>                                                 |
+| Save Note                 | <kbd>Cmd/Ctrl</kbd> <kbd>S</kbd>                               |
+| Search Notes              | <kbd>Cmd/Ctrl</kbd> <kbd>F</kbd>                               |
+| Set Always on Top         | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>P</kbd>              |
+| Set Reminder              | <kbd>Cmd/Ctrl</kbd> <kbd>E</kbd>                               |
+| Strikethrough Text        | <kbd>Cmd/Ctrl</kbd> <kbd>T</kbd>                               |
+| Subscript Text            | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>]</kbd>              |
+| Superscript Text          | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>[</kbd>              |
+| Toggle Black Theme        | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>E</kbd>                |
+| Toggle Checkbox           | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>B</kbd>              |
+| Toggle Dark Theme         | <kbd>Cmd/Ctrl</kbd> <kbd>D</kbd>                               |
+| Toggle Focus Mode         | <kbd>Cmd/Ctrl</kbd> <kbd>K</kbd>                               |
+| Toggle Notebooks          | <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>N</kbd>                   |
+| Toggle Sepia Theme        | <kbd>Cmd/Ctrl</kbd> <kbd>G</kbd>                               |
+| Toggle Settings           | <kbd>Cmd/Ctrl</kbd> <kbd>,</kbd>                               |
+| Toggle Shortcuts          | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>S</kbd>              |
+| Toggle Sidebar            | <kbd>Cmd/Ctrl</kbd> <kbd>\\</kbd>                              |
+| Toggle Tags               | <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>T</kbd>                   |
+| Toggle Window Menu        | <kbd>Alt</kbd>                                                 |
+| Underline Text            | <kbd>Cmd/Ctrl</kbd> <kbd>U</kbd>                               |
 
 ### Global Shortcut Keys
 
 Access Tusk at any moment from anywhere within your operating system. All global shortcuts can be customized to match your own preference through the configuration file `~/.tusk.json`.
 
-Description                | Global Shortcut
--------------------------- | --------------------------
-Toggle Tusk Window         | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>A</kbd>
-Create New Note            | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>C</kbd>
-Search Notes               | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>F</kbd>
+| Description        | Global Shortcut                                 |
+| ------------------ | ----------------------------------------------- |
+| Toggle Tusk Window | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>A</kbd> |
+| Create New Note    | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>C</kbd> |
+| Search Notes       | <kbd>Cmd/Ctrl</kbd> <kbd>Alt</kbd> <kbd>F</kbd> |
 
 ## Development
 
