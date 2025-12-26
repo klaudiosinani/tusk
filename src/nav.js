@@ -5,7 +5,7 @@ const settings = require('./settings');
 
 class Nav {
   constructor() {
-    this._defaultZoomFactor = 1.0;
+    this._defaultZoomFactor = 1;
     this._lowerZoomLimit = 0.7;
     this._noteSelector = '.focus-NotesView-Note';
     this._notesList = '.NotesView-ScrollWindow > div';
@@ -17,18 +17,10 @@ class Nav {
   }
 
   _currentIdx() {
-    let currentIdx = 0;
-
     const selectedNote = document.querySelector(this._selectedNoteSelector);
     const notesArray = document.querySelector(this._notesListSelector).querySelectorAll(this._noteSelector);
 
-    for (let i = 0; i < notesArray.length; i++) {
-      if (notesArray[i] === selectedNote) {
-        currentIdx = i + 1;
-      }
-    }
-
-    return currentIdx;
+    return notesArray.findIndex(note => note === selectedNote) + 1;
   }
 
   _scrollUp() {
