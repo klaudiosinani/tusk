@@ -5,7 +5,7 @@ const {setAcc} = require('./../keymap');
 const time = require('./../time');
 
 module.exports = {
-  label: 'Format',
+  label: 'F&ormat',
   submenu: [
     {
       label: 'Style',
